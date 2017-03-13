@@ -1,7 +1,0 @@
-settings:
-    memory_limit: 1024M
-    colors: true
-paths:
-    log: var/logs
-include:
-  - pimcore
