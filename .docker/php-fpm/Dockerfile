@@ -53,4 +53,17 @@ RUN wget http://prdownloads.sourceforge.net/advancemame/advancecomp-1.17.tar.gz 
 RUN apt-get remove -y autoconf automake libtool nasm make pkg-config libz-dev build-essential g++ \
         && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
 
+
+RUN echo "xdebug.idekey = PHPSTORM" >> /etc/php/7.1/fpm/conf.d/20-xdebug.ini && \
+    echo "xdebug.default_enable = 1" >> /etc/php/7.1/fpm/conf.d/20-xdebug.ini && \
+    echo "xdebug.remote_enable = 1" >> /etc/php/7.1/fpm/conf.d/20-xdebug.ini && \
+    echo "xdebug.remote_autostart = 1" >> /etc/php/7.1/fpm/conf.d/20-xdebug.ini && \
+    echo "xdebug.remote_connect_back = 0" >> /etc/php/7.1/fpm/conf.d/20-xdebug.ini && \
+    echo "xdebug.profiler_enable = 0" >> /etc/php/7.1/fpm/conf.d/20-xdebug.ini && \
+    echo "xdebug.remote_host = 127.0.0.1" >> /etc/php/7.1/fpm/conf.d/20-xdebug.ini
+
+COPY entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/entrypoint.sh
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+CMD ["php-fpm"]
 WORKDIR "/application"
