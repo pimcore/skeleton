@@ -36,7 +36,7 @@ services:
     container_name: pimcore-php-fpm
     working_dir: /application
     volumes:
-      - .:/application
+      - .:/application:cached
       - ./.docker/php-fpm/php-ini-overrides.ini:/etc/php/7.1/fpm/conf.d/99-overrides.ini
     links:
      - mariadb:mariadb
