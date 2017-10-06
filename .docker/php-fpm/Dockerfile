@@ -5,12 +5,16 @@ RUN apt-get update \
     && apt-get -y --no-install-recommends install  php-memcached php7.1-mbstring php7.1-mysql php-redis php7.1-bcmath php7.1-bz2 php7.1-gd php7.1-imap php-imagick php7.1-intl php7.1-ldap php7.1-soap php-ssh2 php7.1-xmlrpc php7.1-xsl php-yaml php-xhprof php-xdebug
 
 # Pimcore Stuff
-RUN apt-get -y --no-install-recommends install ffmpeg wkhtmltopdf html2text ghostscript libreoffice pngcrush jpegoptim exiftool poppler-utils git wget
+RUN apt-get -y --no-install-recommends install ffmpeg html2text ghostscript libreoffice pngcrush jpegoptim exiftool poppler-utils git wget
 
 # Install Build Tools (getting removed later)
 RUN apt-get -y --no-install-recommends install autoconf automake libtool nasm make pkg-config libz-dev build-essential g++
 
 RUN cd ~
+
+RUN wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+       && tar xvf wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
+       && mv wkhtmltox/bin/wkhtmlto* /usr/bin/
 
 # Install Mozjpeg
 RUN git clone https://github.com/mozilla/mozjpeg.git  \
