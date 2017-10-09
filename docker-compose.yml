@@ -32,7 +32,8 @@ services:
       - php-fpm:php-fpm
 
   php-fpm:
-    build: .docker/php-fpm
+    image: dpfaffenbauer/pimcore-docker-php-fpm:PHP7
+# for PHP7.1 use: dpfaffenbauer/pimcore-docker-php-fpm
     container_name: pimcore-php-fpm
     working_dir: /application
     volumes:
