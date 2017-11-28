@@ -4,44 +4,29 @@ services:
     image: redis:alpine
     container_name: pimcore-redis
 
-  mariadb:
+  db:
     image: mariadb:10.1
     container_name: pimcore-mariadb
     working_dir: /application
     command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci]
     volumes:
-      - .:/application
       - pimcore-database:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=ROOT
       - MYSQL_DATABASE=pimcore
       - MYSQL_USER=pimcore
       - MYSQL_PASSWORD=pimcore
-
-  webserver:
-    image: httpd
-    container_name: pimcore-webserver
-    working_dir: /application
-    volumes:
-        - .:/application
-        - ./.docker/apache/httpd.conf:/usr/local/apache2/conf/httpd.conf
-        - ./.docker/apache/pimcore.conf:/usr/local/apache2/conf/sites-enabled/100-pimcore.conf
-    ports:
-     - "2000:80"
-    links:
-      - php-fpm:php-fpm
-
-  php-fpm:
-    image: dpfaffenbauer/pimcore-docker-php-fpm:PHP7
-# for PHP7.1 use: dpfaffenbauer/pimcore-docker-php-fpm
+      
+  php:
+    image: dpfaffenbauer/pimcore-docker-php-fpm:PHP7-apache
+# for PHP7.1 use: dpfaffenbauer/pimcore-docker-php-fpm:PHP7.1-apache
     container_name: pimcore-php-fpm
     working_dir: /application
     volumes:
-      - .:/application:cached
-      - ./.docker/php-fpm/php-ini-overrides.ini:/etc/php/7.1/fpm/conf.d/99-overrides.ini
-      - ./.docker/php-fpm/php-ini-overrides.ini:/etc/php/7.1/cli/conf.d/99-overrides.ini
+      - .:/var/www/html:cached
+      - .docker/php/php-ini-overrides.ini:/usr/local/etc/php/conf.d/99-overrides.ini
     links:
-     - mariadb:mariadb
+     - db:db
      - redis:redis
 
 volumes:
