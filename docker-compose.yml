@@ -25,6 +25,8 @@ services:
     volumes:
       - .:/var/www/html:cached
       - .docker/php/php-ini-overrides.ini:/usr/local/etc/php/conf.d/99-overrides.ini
+    ports:
+      - "2000:80"
     links:
      - db:db
      - redis:redis
