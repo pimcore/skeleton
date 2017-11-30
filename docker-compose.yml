@@ -21,7 +21,6 @@ services:
     image: dpfaffenbauer/pimcore-docker-php-fpm:PHP7-apache
 # for PHP7.1 use: dpfaffenbauer/pimcore-docker-php-fpm:PHP7.1-apache
     container_name: pimcore-php-fpm
-    working_dir: /application
     volumes:
       - .:/var/www/html:cached
       - .docker/php/php-ini-overrides.ini:/usr/local/etc/php/conf.d/99-overrides.ini
