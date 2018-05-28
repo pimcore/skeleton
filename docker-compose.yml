@@ -24,8 +24,10 @@ services:
     volumes:
       - .:/var/www/html:cached
       - .docker/php/php-ini-overrides.ini:/usr/local/etc/php/conf.d/99-overrides.ini
+      - .docker/php/001-ssl.conf:/etc/apache2/sites-enabled/001-ssl.conf
     ports:
-      - "2000:80"
+      - 2000:80
+      - 2001:443
     links:
      - db:db
      - redis:redis
