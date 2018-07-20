@@ -1,5 +1,59 @@
 {
+  "name": "pimcore/skeleton",
+  "type": "project",
+  "license": "GPL-3.0-or-later",
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
   "require": {
     "pimcore/pimcore": "5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "": ["src/"],
+      "Pimcore\\Model\\DataObject\\": "var/classes/DataObject",
+      "Pimcore\\Model\\Object\\": "var/classes/Object",
+      "Website\\": "legacy/website/lib"
+    },
+    "classmap": [
+      "app/AppKernel.php"
+    ],
+    "scripts": {
+      "post-create-project-cmd": "Pimcore\\Composer::postCreateProject",
+      "post-install-cmd": [
+        "Pimcore\\Composer::postInstall",
+        "@symfony-scripts"
+      ],
+      "post-update-cmd": [
+        "Pimcore\\Composer::postUpdate",
+        "@symfony-scripts"
+      ],
+      "symfony-scripts": [
+        "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+        "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+        "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+        "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+      ]
+    },
+    "extra": {
+      "symfony-app-dir": "app",
+      "symfony-bin-dir": "bin",
+      "symfony-var-dir": "var",
+      "symfony-web-dir": "web",
+      "symfony-tests-dir": "tests",
+      "symfony-assets-install": "relative",
+      "merge-plugin": {
+        "include": [
+          "composer.local.json"
+        ],
+        "recurse": true,
+        "replace": false,
+        "merge-dev": true,
+        "merge-extra": false,
+        "merge-extra-deep": false,
+        "merge-scripts": false
+      }
+    }
   }
 }
