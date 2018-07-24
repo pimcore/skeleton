@@ -7,7 +7,7 @@
     "sort-packages": true
   },
   "require": {
-    "pimcore/pimcore": "5.*"
+    "pimcore/pimcore": "dev-v5.4.0-dev"
   },
   "autoload": {
     "psr-4": {

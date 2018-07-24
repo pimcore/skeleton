@@ -9,8 +9,11 @@ If you're new to Pimcore, we recomment to start with one of our demo packages:
 
 
 ## Getting started 
+## Getting started 
 ```bash
 composer create-project pimcore/skeleton my-project
+cd ./my-project
+./vendor/bin/pimcore-install
 ```
 
 - Point your virtual host to `my-project/web` 

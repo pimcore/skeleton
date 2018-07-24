@@ -14,20 +14,12 @@
 
 use Pimcore\Tool;
 use Symfony\Component\Debug\Debug;
-use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 
-if (!defined('PIMCORE_PROJECT_ROOT')) {
-    define(
-        'PIMCORE_PROJECT_ROOT',
-        getenv('PIMCORE_PROJECT_ROOT')
-            ?: getenv('REDIRECT_PIMCORE_PROJECT_ROOT')
-            ?: realpath(__DIR__ . '/..')
-    );
-}
+include __DIR__ . "/../vendor/autoload.php";
 
-require_once PIMCORE_PROJECT_ROOT . '/pimcore/config/bootstrap.php';
+\Pimcore\Bootstrap::setProjectRoot();
+\Pimcore\Bootstrap::boostrap();
 
 $request = Request::createFromGlobals();
 
@@ -37,17 +29,12 @@ Tool::setCurrentRequest($request);
 
 // redirect to installer if pimcore is not installed
 if (!is_file(\Pimcore\Config::locateConfigFile('system.php'))) {
-    if (file_exists(__DIR__ . '/install.php')) {
-        (new RedirectResponse('/install', Response::HTTP_FOUND))->send();
-        return;
-    }
-
     Debug::enable(E_ALL, true);
-    throw new RuntimeException('Pimcore is not installed and the installer is not available. Please add the installer or install via command line.');
+    throw new RuntimeException('Pimcore is not installed! Please install via command line.');
 }
 
 /** @var \Pimcore\Kernel $kernel */
-$kernel = require_once PIMCORE_PROJECT_ROOT . '/pimcore/config/kernel.php';
+$kernel = \Pimcore\Bootstrap::kernel();
 
 // reset current request - will be read from request stack from now on
 Tool::setCurrentRequest(null);
