@@ -34,6 +34,9 @@
       "Pimcore\\Composer::postUpdate",
       "@symfony-scripts"
     ],
+    "pre-package-update": [
+      "Pimcore\\Composer::prePackageUpdate"
+    ],
     "symfony-scripts": [
       "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
       "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
@@ -53,7 +56,7 @@
         "composer.local.json"
       ],
       "recurse": true,
-      "replace": false,
+      "replace": true,
       "merge-dev": true,
       "merge-extra": false,
       "merge-extra-deep": false,
