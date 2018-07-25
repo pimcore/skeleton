@@ -33,7 +33,8 @@
     ],
     "post-update-cmd": [
       "Pimcore\\Composer::postUpdate",
-      "@symfony-scripts"
+      "@symfony-scripts",
+      "Pimcore\\Composer::executeMigrationsUp"
     ],
     "pre-package-update": [
       "Pimcore\\Composer::prePackageUpdate"
