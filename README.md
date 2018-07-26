@@ -5,7 +5,7 @@ If you are new to Pimcore, it's better to start with one of our demo packages, l
 
 ## Getting started 
 ```bash
-composer create-project pimcore/skeleton my-project
+composer create-project pimcore/skeleton:dev-master my-project
 cd ./my-project
 ./vendor/bin/pimcore-install
 ```
