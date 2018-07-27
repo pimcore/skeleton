@@ -18,5 +18,5 @@ cd ./my-project
 ## Other demo/skeleton packages
 - [Pimcore Basic Demo (PHP-Templates)](https://github.com/pimcore/demo-basic)
 - [Pimcore Basic Demo (Twig-Templates)](https://github.com/pimcore/demo-basic-twig)
-- [Pimcore Advanced Demo](https://github.com/pimcore/demo-advanced) 
+- [Pimcore Advanced Demo](https://github.com/pimcore/demo-ecommerce) 
 - [Pimcore Skeleton](https://github.com/pimcore/skeleton)
