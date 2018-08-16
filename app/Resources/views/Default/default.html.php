@@ -102,7 +102,7 @@
 
 <div id="site">
     <div id="logo">
-        <a href="http://www.pimcore.com/"><img src="/pimcore/static6/img/logo-claim-gray.svg" style="width: 400px;" /></a>
+        <a href="http://www.pimcore.com/"><img src="/bundles/pimcoreadmin/img/logo-claim-gray.svg" style="width: 400px;" /></a>
         <hr />
     </div>
 
