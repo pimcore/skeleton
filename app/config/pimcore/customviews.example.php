@@ -6,7 +6,7 @@ return [
             'treetype' => 'object',                                             // element type is "object"
             'name' => 'Articles',                                               // display name
             'condition' => null,                                                // SQL condition
-            'icon' => '/pimcore/static6/img/flat-color-icons/reading.svg',      // tree icon
+            'icon' => '/bundles/pimcoreadmin/img/flat-color-icons/reading.svg',      // tree icon
             'id' => 1,                                                          // unique (!!!) custom view ID
             'rootfolder' => '/blog',                                            // root node
             'showroot' => false,                                                // show root node or just children?
@@ -50,7 +50,7 @@ return [
         [
             'treetype' => 'document',                                           // document view
             'name' => 'Basic Examples',
-            'icon' => '/pimcore/static6/img/flat-color-icons/text.svg',
+            'icon' => '/bundles/pimcoreadmin/img/flat-color-icons/text.svg',
             'id' => 2,                                                          // again, unique ID
             'rootfolder' => '/en/basic-examples',
             'showroot' => true,
@@ -93,7 +93,7 @@ return [
         [
             'treetype' => 'asset',                                              // asset view
             'name' => 'Panama',
-            'icon' => '/pimcore/static6/img/flat-color-icons/stack_of_photos.svg',
+            'icon' => '/bundles/pimcoreadmin/img/flat-color-icons/stack_of_photos.svg',
             'id' => 3,
             'rootfolder' => '/examples/panama',
             'showroot' => true,

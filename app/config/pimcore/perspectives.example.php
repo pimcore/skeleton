@@ -62,7 +62,7 @@ return [
 
     ],
     'Alternative view' => [
-        'icon' => '/pimcore/static6/img/flat-color-icons/biohazard.svg',
+        'icon' => '/bundles/pimcoreadmin/img/flat-color-icons/biohazard.svg',
         'toolbar' => [
             'file' => 1,
             'extras' => [
@@ -158,7 +158,7 @@ return [
         ]
     ],
     'Assets only' => [
-        'icon' => '/pimcore/static6/img/flat-color-icons/webcam.svg',
+        'icon' => '/bundles/pimcoreadmin/img/flat-color-icons/webcam.svg',
         'elementTree' => [
             [
                 'type' => 'assets',
