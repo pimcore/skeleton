@@ -8,7 +8,7 @@ services:
     image: mariadb:10.1
     container_name: pimcore-mariadb
     working_dir: /application
-    command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --innodb-file-format=Barracuda, --innodb_large_prefix=1]
+    command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --innodb_file_format=Barracuda, --innodb_large_prefix=1, --innodb_file_per_table=1]
     volumes:
       - pimcore-database:/var/lib/mysql
     environment:
@@ -16,20 +16,37 @@ services:
       - MYSQL_DATABASE=pimcore
       - MYSQL_USER=pimcore
       - MYSQL_PASSWORD=pimcore
-      
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 2002:8080
+
   php:
-    image: dpfaffenbauer/pimcore-docker-php-fpm:PHP7-apache
-# for PHP7.1 use: dpfaffenbauer/pimcore-docker-php-fpm:PHP7.1-apache
-    container_name: pimcore-php-fpm
+    image: dpfaffenbauer/pimcore:PHP7.2-apache
+    container_name: pimcore-php
     volumes:
       - .:/var/www/html:cached
-      - .docker/php/php-ini-overrides.ini:/usr/local/etc/php/conf.d/99-overrides.ini
     ports:
-      - 2000:80
-      - 2001:443
+     - "2000:80"
+     - "2001:443"
     links:
      - db:db
      - redis:redis
+
+  php-debug:
+    image: dpfaffenbauer/pimcore:PHP7.2-apache-debug
+    container_name: pimcore-debug-php
+    volumes:
+      - .:/var/www/html:cached
+    ports:
+     - "2006:80"
+    links:
+     - db:db
+     - redis:redis
+    environment:
+      - PHP_IDE_CONFIG="serverName=localhost"
 
 volumes:
   pimcore-database:
