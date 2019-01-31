@@ -6,6 +6,15 @@ imports:
 
 pimcore:
 
+# IMPORTANT Notice!
+# Following there are only some examples listed, for a full list of possible options, please run the following command:
+# ./bin/console debug:config pimcore
+# you can also filter them by path, eg.
+# ./bin/console debug:config pimcore assets
+# or even more specific:
+# ./bin/console debug:config pimcore assets.image
+
+
 #### TRANSLATIONS
 #    translations:
 #        case_insensitive: true
