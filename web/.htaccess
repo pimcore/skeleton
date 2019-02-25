@@ -127,7 +127,7 @@ RewriteRule ^ %{ENV:BASE}/app.php [L]
 
 <IfModule mod_expires.c>
     ExpiresActive on
-    ExpiresDefault "access plus 1 week"
+    ExpiresDefault "access plus 31536000 seconds"
 
     # specific overrides
     #ExpiresByType text/css "access plus 1 year"
