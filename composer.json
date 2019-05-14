@@ -30,21 +30,16 @@
     "post-create-project-cmd": "Pimcore\\Composer::postCreateProject",
     "post-install-cmd": [
       "Pimcore\\Composer::postInstall",
-      "@symfony-scripts"
+      "@pimcore-scripts"
     ],
     "post-update-cmd": [
       "Pimcore\\Composer::postUpdate",
-      "@symfony-scripts",
+      "@pimcore-scripts",
       "Pimcore\\Composer::executeMigrationsUp"
     ],
-    "pre-package-update": [
-      "Pimcore\\Composer::prePackageUpdate"
-    ],
-    "symfony-scripts": [
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+    "pimcore-scripts": [
+      "Pimcore\\Composer::clearCache",
+      "Pimcore\\Composer::installAssets"
     ]
   },
   "extra": {
