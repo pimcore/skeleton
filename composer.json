@@ -35,7 +35,8 @@
     "post-update-cmd": [
       "Pimcore\\Composer::postUpdate",
       "@pimcore-scripts",
-      "Pimcore\\Composer::executeMigrationsUp"
+      "Pimcore\\Composer::executeMigrationsUp",
+      "@pimcore-scripts"
     ],
     "pimcore-scripts": [
       "Pimcore\\Composer::clearCache",
