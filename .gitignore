@@ -47,7 +47,6 @@
 /composer.local.json
 
 # composer
-/composer.lock
 /vendor/
 
 # PhpStorm / IDEA
