@@ -3434,16 +3434,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.0.1",
+            "version": "v6.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "7abc1aef152698f33dd43eac84e56d5a0bc13d55"
+                "reference": "1c5cefae67b756bae66ef6a5690adc59cd594b91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/7abc1aef152698f33dd43eac84e56d5a0bc13d55",
-                "reference": "7abc1aef152698f33dd43eac84e56d5a0bc13d55",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/1c5cefae67b756bae66ef6a5690adc59cd594b91",
+                "reference": "1c5cefae67b756bae66ef6a5690adc59cd594b91",
                 "shasum": ""
             },
             "require": {
@@ -3495,7 +3495,7 @@
                 "ramsey/uuid": "^3.8",
                 "sabre/dav": "^3.2",
                 "scheb/two-factor-bundle": "^3.8",
-                "sensio/framework-extra-bundle": "^5.2",
+                "sensio/framework-extra-bundle": "^5.4",
                 "sensiolabs/ansi-to-html": "^1.1",
                 "symfony-cmf/routing-bundle": "^2.0",
                 "symfony/contracts": "^1.1",
@@ -3572,7 +3572,7 @@
                 "e-commerce",
                 "rad"
             ],
-            "time": "2019-07-02T12:48:25+00:00"
+            "time": "2019-07-05T07:57:04+00:00"
         },
         {
             "name": "piwik/device-detector",
