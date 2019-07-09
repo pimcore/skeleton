@@ -15,7 +15,7 @@
 
 ob_get_clean();
 
-include __DIR__ . "/../vendor/autoload.php";
+require dirname(__DIR__).'/app/bootstrap.php';
 \Pimcore\Bootstrap::setProjectRoot();
 
 define('PIMCORE_CONSOLE', true);
