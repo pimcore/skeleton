@@ -1,4 +1,4 @@
-# Pimcore 5 Project Skeleton 
+# Pimcore 6 Project Skeleton 
 
 This skeleton should be used by experienced Pimcore developers for starting a new project from the ground up. 
 If you are new to Pimcore, it's better to start with one of our demo packages, listed below 😉
