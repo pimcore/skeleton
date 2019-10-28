@@ -162,16 +162,16 @@
         },
         {
             "name": "colinmollenhour/credis",
-            "version": "1.10.1",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/colinmollenhour/credis.git",
-                "reference": "c1cab895f2331a1877738b282d0d8b1ff6d4c92d"
+                "reference": "ee56982176ebcb8ad6acd51b7cddbc6b0a9de1dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/c1cab895f2331a1877738b282d0d8b1ff6d4c92d",
-                "reference": "c1cab895f2331a1877738b282d0d8b1ff6d4c92d",
+                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/ee56982176ebcb8ad6acd51b7cddbc6b0a9de1dd",
+                "reference": "ee56982176ebcb8ad6acd51b7cddbc6b0a9de1dd",
                 "shasum": ""
             },
             "require": {
@@ -198,7 +198,7 @@
             ],
             "description": "Credis is a lightweight interface to the Redis key-value store which wraps the phpredis library when available for better performance.",
             "homepage": "https://github.com/colinmollenhour/credis",
-            "time": "2019-03-05T16:29:14+00:00"
+            "time": "2019-10-25T19:28:45+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -462,16 +462,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.8.0",
+            "version": "v1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "d768d58baee9a4862ca783840eca1b9add7a7f57"
+                "reference": "d4374ae95b36062d02ef310100ed33d78738d76c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/d768d58baee9a4862ca783840eca1b9add7a7f57",
-                "reference": "d768d58baee9a4862ca783840eca1b9add7a7f57",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/d4374ae95b36062d02ef310100ed33d78738d76c",
+                "reference": "d4374ae95b36062d02ef310100ed33d78738d76c",
                 "shasum": ""
             },
             "require": {
@@ -507,16 +507,16 @@
             ],
             "authors": [
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
                 },
                 {
                     "name": "Jonathan Wage",
@@ -533,7 +533,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2018-08-21T18:01:43+00:00"
+            "time": "2019-10-28T09:31:32+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -1836,16 +1836,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.119",
+            "version": "v0.120",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "580beda87338639b18fc2135b8945d4f898fefae"
+                "reference": "ddf9d37944bf3f1420363d135622ddb7d667dcb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/580beda87338639b18fc2135b8945d4f898fefae",
-                "reference": "580beda87338639b18fc2135b8945d4f898fefae",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/ddf9d37944bf3f1420363d135622ddb7d667dcb6",
+                "reference": "ddf9d37944bf3f1420363d135622ddb7d667dcb6",
                 "shasum": ""
             },
             "require": {
@@ -1869,7 +1869,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2019-10-18T00:23:50+00:00"
+            "time": "2019-10-27T00:24:10+00:00"
         },
         {
             "name": "google/auth",
@@ -3666,16 +3666,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.2.2",
+            "version": "v6.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "75a93f6e3edf90444d88695d190a6dfaa8c2499e"
+                "reference": "053e8625d6a9966cfb29644fbc57c9e4846a1534"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/75a93f6e3edf90444d88695d190a6dfaa8c2499e",
-                "reference": "75a93f6e3edf90444d88695d190a6dfaa8c2499e",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/053e8625d6a9966cfb29644fbc57c9e4846a1534",
+                "reference": "053e8625d6a9966cfb29644fbc57c9e4846a1534",
                 "shasum": ""
             },
             "require": {
@@ -3811,7 +3811,7 @@
                 "e-commerce",
                 "rad"
             ],
-            "time": "2019-10-25T07:56:23+00:00"
+            "time": "2019-10-28T08:29:36+00:00"
         },
         {
             "name": "piwik/device-detector",
@@ -7550,16 +7550,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.16",
+            "version": "7.5.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "316afa6888d2562e04aeb67ea7f2017a0eb41661"
+                "reference": "4c92a15296e58191a4cd74cff3b34fc8e374174a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/316afa6888d2562e04aeb67ea7f2017a0eb41661",
-                "reference": "316afa6888d2562e04aeb67ea7f2017a0eb41661",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4c92a15296e58191a4cd74cff3b34fc8e374174a",
+                "reference": "4c92a15296e58191a4cd74cff3b34fc8e374174a",
                 "shasum": ""
             },
             "require": {
@@ -7630,7 +7630,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-09-14T09:08:39+00:00"
+            "time": "2019-10-28T10:37:36+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
