@@ -9,7 +9,7 @@
   "require": {
     "php": ">=7.2",
     "wikimedia/composer-merge-plugin": "^1.4",
-    "pimcore/pimcore": "~6.2.0"
+    "pimcore/pimcore": "~6.3.0"
   },
   "require-dev": {
     "cache/integration-tests": "^0.16.0",
