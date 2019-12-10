@@ -30,6 +30,8 @@ services:
     ports:
      - 80:80
      - 443:443
+    depends_on:
+     - db
 
   php-debug:
     image: pimcore/pimcore:PHP7.4-apache-debug
