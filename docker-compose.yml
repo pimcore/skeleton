@@ -30,8 +30,6 @@ services:
     ports:
      - 80:80
      - 443:443
-    links:
-     - db:db
 
   php-debug:
     image: pimcore/pimcore:PHP7.4-apache-debug
@@ -40,8 +38,6 @@ services:
       - .:/var/www/html:cached
     ports:
      - 88:80
-    links:
-     - db:db
     environment:
       - PHP_IDE_CONFIG="serverName=localhost"
 
