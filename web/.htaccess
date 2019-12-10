@@ -20,6 +20,7 @@ DirectoryIndex app.php
 # mime types
 AddType video/mp4 .mp4
 AddType video/webm .webm
+AddType image/webp .webp
 AddType image/jpeg .pjpeg
 
 Options +SymLinksIfOwnerMatch
