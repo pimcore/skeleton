@@ -32,7 +32,6 @@ services:
      - 443:443
     links:
      - db:db
-     - redis:redis
 
   php-debug:
     image: pimcore/pimcore:PHP7.4-apache-debug
@@ -43,7 +42,6 @@ services:
      - 88:80
     links:
      - db:db
-     - redis:redis
     environment:
       - PHP_IDE_CONFIG="serverName=localhost"
 
