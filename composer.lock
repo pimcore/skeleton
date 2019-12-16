@@ -2344,16 +2344,16 @@
         },
         {
             "name": "league/csv",
-            "version": "9.4.1",
+            "version": "9.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/csv.git",
-                "reference": "bf83acc23a7d60978fce36a384f97bf9d7d2ea0c"
+                "reference": "b348d09d0d258a4f068efb50a2510dc63101c213"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/csv/zipball/bf83acc23a7d60978fce36a384f97bf9d7d2ea0c",
-                "reference": "bf83acc23a7d60978fce36a384f97bf9d7d2ea0c",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/b348d09d0d258a4f068efb50a2510dc63101c213",
+                "reference": "b348d09d0d258a4f068efb50a2510dc63101c213",
                 "shasum": ""
             },
             "require": {
@@ -2409,7 +2409,7 @@
                 "read",
                 "write"
             ],
-            "time": "2019-10-17T06:05:32+00:00"
+            "time": "2019-12-15T19:51:41+00:00"
         },
         {
             "name": "linfo/linfo",
@@ -2980,16 +2980,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.9.3",
+            "version": "1.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "007c053ae6f31bba39dfa19a7726f56e9763bbea"
+                "reference": "579bb7356d91f9456ccd505f24ca8b667966a0a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/007c053ae6f31bba39dfa19a7726f56e9763bbea",
-                "reference": "007c053ae6f31bba39dfa19a7726f56e9763bbea",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/579bb7356d91f9456ccd505f24ca8b667966a0a7",
+                "reference": "579bb7356d91f9456ccd505f24ca8b667966a0a7",
                 "shasum": ""
             },
             "require": {
@@ -3024,7 +3024,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2019-08-09T12:45:53+00:00"
+            "time": "2019-12-15T19:12:40+00:00"
         },
         {
             "name": "myclabs/php-enum",
@@ -5200,37 +5200,39 @@
         },
         {
             "name": "symfony-cmf/routing-bundle",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/routing-bundle.git",
-                "reference": "9200b91d2985f9634f2a64536279aee6a1e1a0d8"
+                "reference": "9e113de47f64d1f2e51552eb1a630cbaeea75f90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/routing-bundle/zipball/9200b91d2985f9634f2a64536279aee6a1e1a0d8",
-                "reference": "9200b91d2985f9634f2a64536279aee6a1e1a0d8",
+                "url": "https://api.github.com/repos/symfony-cmf/routing-bundle/zipball/9e113de47f64d1f2e51552eb1a630cbaeea75f90",
+                "reference": "9e113de47f64d1f2e51552eb1a630cbaeea75f90",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1",
                 "symfony-cmf/routing": "^2.1.0",
-                "symfony/framework-bundle": "^2.8 || ^3.3 || ^4.0",
-                "twig/twig": "^1.35 || ^2.4.4"
+                "symfony/framework-bundle": "^3.4 || ^4.3",
+                "twig/twig": "^2.4.4 || ^3.0"
             },
             "conflict": {
                 "doctrine/phpcr-odm": "<1.4",
-                "phpunit/phpunit": "<5.7"
+                "phpunit/phpunit": "<6"
             },
             "require-dev": {
                 "doctrine/data-fixtures": "^1.0.0",
                 "doctrine/orm": "^2.5",
                 "doctrine/phpcr-odm": "^1.4|^2.0",
-                "matthiasnoback/symfony-config-test": "^2.2",
-                "matthiasnoback/symfony-dependency-injection-test": "^1.0",
-                "symfony-cmf/testing": "^2.1.0",
-                "symfony/phpunit-bridge": "^3.3 || ^4.0",
-                "symfony/validator": "^2.8 || ^3.3 || ^4.0"
+                "matthiasnoback/symfony-config-test": "^3.1.1",
+                "matthiasnoback/symfony-dependency-injection-test": "^2.3.1",
+                "symfony-cmf/testing": "^3@dev",
+                "symfony/form": "^3.4 || ^4.3",
+                "symfony/phpunit-bridge": "^4.2.2",
+                "symfony/translation": "^3.4 || ^4.3",
+                "symfony/validator": "^3.4 || ^4.3"
             },
             "suggest": {
                 "doctrine/orm": "To enable support for the ORM entities (^2.5)",
@@ -5240,7 +5242,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -5264,7 +5266,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2018-09-24T06:49:35+00:00"
+            "time": "2019-12-16T08:45:55+00:00"
         },
         {
             "name": "symfony/contracts",
