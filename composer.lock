@@ -790,16 +790,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "1.12.5",
+            "version": "1.12.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "5d477e6fecac2718b8c43e658abe2a19b225ba25"
+                "reference": "08f944760ac471aa97a9b0386dfdb559db80b32d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/5d477e6fecac2718b8c43e658abe2a19b225ba25",
-                "reference": "5d477e6fecac2718b8c43e658abe2a19b225ba25",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/08f944760ac471aa97a9b0386dfdb559db80b32d",
+                "reference": "08f944760ac471aa97a9b0386dfdb559db80b32d",
                 "shasum": ""
             },
             "require": {
@@ -879,7 +879,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2019-12-18T18:15:25+00:00"
+            "time": "2019-12-19T09:08:00+00:00"
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
@@ -2633,20 +2633,23 @@
         },
         {
             "name": "maxmind-db/reader",
-            "version": "v1.5.1",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmind/MaxMind-DB-Reader-php.git",
-                "reference": "f096bbe4d37e3d93e62626297bfc2179472a972d"
+                "reference": "febd4920bf17c1da84cef58e56a8227dfb37fbe4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/f096bbe4d37e3d93e62626297bfc2179472a972d",
-                "reference": "f096bbe4d37e3d93e62626297bfc2179472a972d",
+                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/febd4920bf17c1da84cef58e56a8227dfb37fbe4",
+                "reference": "febd4920bf17c1da84cef58e56a8227dfb37fbe4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6"
+            },
+            "conflict": {
+                "ext-maxminddb": "<1.6.0,>=2.0.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "2.*",
@@ -2686,7 +2689,7 @@
                 "geolocation",
                 "maxmind"
             ],
-            "time": "2019-12-12T18:32:55+00:00"
+            "time": "2019-12-19T22:59:03+00:00"
         },
         {
             "name": "maxmind/web-service-common",
@@ -4835,16 +4838,16 @@
         },
         {
             "name": "scheb/two-factor-bundle",
-            "version": "v3.26.0",
+            "version": "v3.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/two-factor-bundle.git",
-                "reference": "8171d2a09920e4545310d7061e7e7d69faef0fd0"
+                "reference": "17645522179969b431b89a509a322ca4c4b338dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/two-factor-bundle/zipball/8171d2a09920e4545310d7061e7e7d69faef0fd0",
-                "reference": "8171d2a09920e4545310d7061e7e7d69faef0fd0",
+                "url": "https://api.github.com/repos/scheb/two-factor-bundle/zipball/17645522179969b431b89a509a322ca4c4b338dc",
+                "reference": "17645522179969b431b89a509a322ca4c4b338dc",
                 "shasum": ""
             },
             "require": {
@@ -4896,7 +4899,7 @@
                 "two-factor",
                 "two-step"
             ],
-            "time": "2019-12-08T16:03:50+00:00"
+            "time": "2019-12-19T12:06:19+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -5884,21 +5887,21 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v4.4.1",
+            "version": "v4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "04863e4457b0a9b2a34b34fe53e7fd4f1203e1c0"
+                "reference": "5973dacbd9587d9bf1234dfcb546c3cbdfbc4c9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/04863e4457b0a9b2a34b34fe53e7fd4f1203e1c0",
-                "reference": "04863e4457b0a9b2a34b34fe53e7fd4f1203e1c0",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/5973dacbd9587d9bf1234dfcb546c3cbdfbc4c9e",
+                "reference": "5973dacbd9587d9bf1234dfcb546c3cbdfbc4c9e",
                 "shasum": ""
             },
             "require": {
                 "doctrine/event-manager": "~1.0",
-                "doctrine/persistence": "~1.0",
+                "doctrine/persistence": "^1.3",
                 "ext-xml": "*",
                 "php": "^7.1.3",
                 "psr/cache": "~1.0",
@@ -6055,7 +6058,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2019-12-01T14:06:54+00:00"
+            "time": "2019-12-19T16:23:58+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
