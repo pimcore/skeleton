@@ -162,16 +162,16 @@
         },
         {
             "name": "colinmollenhour/credis",
-            "version": "1.11.0",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/colinmollenhour/credis.git",
-                "reference": "ee56982176ebcb8ad6acd51b7cddbc6b0a9de1dd"
+                "reference": "bd1da4698ab1918477f9e71e5ff0062b9a345008"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/ee56982176ebcb8ad6acd51b7cddbc6b0a9de1dd",
-                "reference": "ee56982176ebcb8ad6acd51b7cddbc6b0a9de1dd",
+                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/bd1da4698ab1918477f9e71e5ff0062b9a345008",
+                "reference": "bd1da4698ab1918477f9e71e5ff0062b9a345008",
                 "shasum": ""
             },
             "require": {
@@ -198,7 +198,7 @@
             ],
             "description": "Credis is a lightweight interface to the Redis key-value store which wraps the phpredis library when available for better performance.",
             "homepage": "https://github.com/colinmollenhour/credis",
-            "time": "2019-10-25T19:28:45+00:00"
+            "time": "2019-11-26T18:09:45+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -1896,16 +1896,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.5.1",
+            "version": "6.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "0274c05370a7bc9bb3a33838858253418bd7d14b"
+                "reference": "43ece0e75098b7ecd8d13918293029e555a50f82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/0274c05370a7bc9bb3a33838858253418bd7d14b",
-                "reference": "0274c05370a7bc9bb3a33838858253418bd7d14b",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/43ece0e75098b7ecd8d13918293029e555a50f82",
+                "reference": "43ece0e75098b7ecd8d13918293029e555a50f82",
                 "shasum": ""
             },
             "require": {
@@ -1959,7 +1959,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2019-12-21T08:51:15+00:00"
+            "time": "2019-12-23T11:57:10+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -3845,16 +3845,16 @@
         },
         {
             "name": "piwik/device-detector",
-            "version": "3.12.1",
+            "version": "3.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matomo-org/device-detector.git",
-                "reference": "72630c0cc012da96fe9fb842e7af480ffa740b76"
+                "reference": "c352144e2ab1aff81e659aa38224be987b87855b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/72630c0cc012da96fe9fb842e7af480ffa740b76",
-                "reference": "72630c0cc012da96fe9fb842e7af480ffa740b76",
+                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/c352144e2ab1aff81e659aa38224be987b87855b",
+                "reference": "c352144e2ab1aff81e659aa38224be987b87855b",
                 "shasum": ""
             },
             "require": {
@@ -3896,7 +3896,7 @@
                 "parser",
                 "useragent"
             ],
-            "time": "2019-10-24T15:38:52+00:00"
+            "time": "2019-12-22T21:23:31+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
