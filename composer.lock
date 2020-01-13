@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f46389f5dcf5182ea4ffb9950b009e6",
+    "content-hash": "28561f16f341d91a48819270bc29e67c",
     "packages": [
         {
             "name": "amnuts/opcache-gui",
@@ -202,16 +202,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.5",
+            "version": "1.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149"
+                "reference": "47fe531de31fca4a1b997f87308e7d7804348f7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/62e8fc2dc550e5d6d8c9360c7721662670f58149",
-                "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/47fe531de31fca4a1b997f87308e7d7804348f7e",
+                "reference": "47fe531de31fca4a1b997f87308e7d7804348f7e",
                 "shasum": ""
             },
             "require": {
@@ -254,7 +254,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2019-12-11T14:44:42+00:00"
+            "time": "2020-01-13T10:02:55+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -3694,16 +3694,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.3.6",
+            "version": "v6.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "1cc5752b0360d59f58b125863744d8e020c9cb54"
+                "reference": "ede8ed7e8f8aeb87b3e266f9498c98d65a419f60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/1cc5752b0360d59f58b125863744d8e020c9cb54",
-                "reference": "1cc5752b0360d59f58b125863744d8e020c9cb54",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/ede8ed7e8f8aeb87b3e266f9498c98d65a419f60",
+                "reference": "ede8ed7e8f8aeb87b3e266f9498c98d65a419f60",
                 "shasum": ""
             },
             "require": {
@@ -3779,9 +3779,8 @@
             "require-dev": {
                 "cache/integration-tests": "^0.16.0",
                 "codeception/codeception": "~2.4.5",
-                "phpstan/phpstan": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-symfony": "^0.11"
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-symfony": "^0.12"
             },
             "suggest": {
                 "ext-curl": "*",
@@ -3843,7 +3842,7 @@
                 "e-commerce",
                 "rad"
             ],
-            "time": "2019-12-11T13:54:08+00:00"
+            "time": "2020-01-13T13:59:30+00:00"
         },
         {
             "name": "piwik/device-detector",
