@@ -4840,16 +4840,16 @@
         },
         {
             "name": "scheb/two-factor-bundle",
-            "version": "v3.26.1",
+            "version": "v3.27.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/two-factor-bundle.git",
-                "reference": "17645522179969b431b89a509a322ca4c4b338dc"
+                "reference": "4a88e84973f91a3a5266b5c5203a0a20e616a876"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/two-factor-bundle/zipball/17645522179969b431b89a509a322ca4c4b338dc",
-                "reference": "17645522179969b431b89a509a322ca4c4b338dc",
+                "url": "https://api.github.com/repos/scheb/two-factor-bundle/zipball/4a88e84973f91a3a5266b5c5203a0a20e616a876",
+                "reference": "4a88e84973f91a3a5266b5c5203a0a20e616a876",
                 "shasum": ""
             },
             "require": {
@@ -4901,7 +4901,7 @@
                 "two-factor",
                 "two-step"
             ],
-            "time": "2019-12-19T12:06:19+00:00"
+            "time": "2020-01-12T14:01:32+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
