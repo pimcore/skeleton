@@ -3696,16 +3696,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.4.1",
+            "version": "v6.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "8de2aed3ca979d82d4f1f5a85196dbe7281c87e4"
+                "reference": "dc3a4eb4c53fb23fc65973b2b6a20bb94dde5c66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/8de2aed3ca979d82d4f1f5a85196dbe7281c87e4",
-                "reference": "8de2aed3ca979d82d4f1f5a85196dbe7281c87e4",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/dc3a4eb4c53fb23fc65973b2b6a20bb94dde5c66",
+                "reference": "dc3a4eb4c53fb23fc65973b2b6a20bb94dde5c66",
                 "shasum": ""
             },
             "require": {
@@ -3844,7 +3844,7 @@
                 "e-commerce",
                 "rad"
             ],
-            "time": "2020-01-21T12:21:04+00:00"
+            "time": "2020-01-21T15:44:43+00:00"
         },
         {
             "name": "piwik/device-detector",
@@ -5890,16 +5890,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v4.4.2",
+            "version": "v4.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "5973dacbd9587d9bf1234dfcb546c3cbdfbc4c9e"
+                "reference": "7b24eb98cc67eacd4e169c141a5bd043eb378f6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/5973dacbd9587d9bf1234dfcb546c3cbdfbc4c9e",
-                "reference": "5973dacbd9587d9bf1234dfcb546c3cbdfbc4c9e",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/7b24eb98cc67eacd4e169c141a5bd043eb378f6d",
+                "reference": "7b24eb98cc67eacd4e169c141a5bd043eb378f6d",
                 "shasum": ""
             },
             "require": {
@@ -6061,7 +6061,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2019-12-19T16:23:58+00:00"
+            "time": "2020-01-21T13:23:35+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
