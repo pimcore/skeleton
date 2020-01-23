@@ -21,7 +21,7 @@ You can also use Docker to setup a new Pimcore Installation:
 ```bash
 COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton my-project
 cd ./my-project
-docker-compose run --rm php vendor/bin/pimcore-install --mysql-host-socket=db
+docker-compose run --rm php vendor/bin/pimcore-install --mysql-host-socket=db --mysql-username=pimcore --mysql-password=pimcore --mysql-database=pimcore
 docker-compose run --rm php chown -R www-data:www-data var/*
 docker-compose up -d
 ```
