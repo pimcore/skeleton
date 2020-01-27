@@ -1812,16 +1812,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.123",
+            "version": "v0.124",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "a8c3c7563729ecb98a9ed66f675366527bcbad4d"
+                "reference": "7bdd526abda4d802e973816cd7b4f3f3bc75fa03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/a8c3c7563729ecb98a9ed66f675366527bcbad4d",
-                "reference": "a8c3c7563729ecb98a9ed66f675366527bcbad4d",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/7bdd526abda4d802e973816cd7b4f3f3bc75fa03",
+                "reference": "7bdd526abda4d802e973816cd7b4f3f3bc75fa03",
                 "shasum": ""
             },
             "require": {
@@ -1845,7 +1845,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2020-01-19T00:24:13+00:00"
+            "time": "2020-01-25T00:24:16+00:00"
         },
         {
             "name": "google/auth",
@@ -2743,23 +2743,23 @@
         },
         {
             "name": "mjaschen/phpgeo",
-            "version": "2.3.1",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mjaschen/phpgeo.git",
-                "reference": "9f37c0fbebe01539cc157cf1d6e85e5d45a24ed6"
+                "reference": "19edd4e1ae7dfcfae7d7a7e887c09801f971df02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mjaschen/phpgeo/zipball/9f37c0fbebe01539cc157cf1d6e85e5d45a24ed6",
-                "reference": "9f37c0fbebe01539cc157cf1d6e85e5d45a24ed6",
+                "url": "https://api.github.com/repos/mjaschen/phpgeo/zipball/19edd4e1ae7dfcfae7d7a7e887c09801f971df02",
+                "reference": "19edd4e1ae7dfcfae7d7a7e887c09801f971df02",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0"
             },
             "require-dev": {
-                "daux/daux.io": "^0.11.1",
+                "daux/daux.io": "^0.12.0",
                 "jakub-onderka/php-parallel-lint": "^1.0"
             },
             "type": "library",
@@ -2779,7 +2779,7 @@
                     "homepage": "https://www.marcusjaschen.de/"
                 }
             ],
-            "description": "Simple Geo Library",
+            "description": "Simple Yet Powerful Geo Library",
             "homepage": "https://phpgeo.marcusjaschen.de/",
             "keywords": [
                 "Polygon",
@@ -2797,6 +2797,7 @@
                 "gps",
                 "haversine",
                 "length",
+                "perpendicular",
                 "point",
                 "polyline",
                 "projection",
@@ -2804,7 +2805,7 @@
                 "track",
                 "vincenty"
             ],
-            "time": "2019-12-21T08:19:47+00:00"
+            "time": "2020-01-27T08:02:12+00:00"
         },
         {
             "name": "monolog/monolog",
