@@ -5891,16 +5891,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v4.4.3",
+            "version": "v4.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "7b24eb98cc67eacd4e169c141a5bd043eb378f6d"
+                "reference": "488093b6fb1fb2064dd79dccd7ed542512188af5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/7b24eb98cc67eacd4e169c141a5bd043eb378f6d",
-                "reference": "7b24eb98cc67eacd4e169c141a5bd043eb378f6d",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/488093b6fb1fb2064dd79dccd7ed542512188af5",
+                "reference": "488093b6fb1fb2064dd79dccd7ed542512188af5",
                 "shasum": ""
             },
             "require": {
@@ -6062,7 +6062,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2020-01-21T13:23:35+00:00"
+            "time": "2020-01-31T12:45:22+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -6277,16 +6277,16 @@
         },
         {
             "name": "vrana/adminer",
-            "version": "v4.7.5",
+            "version": "v4.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vrana/adminer.git",
-                "reference": "8706bc7c0fd23b69a882a4e073c12a260b5e54d1"
+                "reference": "5ef2068837a89309e721a24672b8cdadbe10c179"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vrana/adminer/zipball/8706bc7c0fd23b69a882a4e073c12a260b5e54d1",
-                "reference": "8706bc7c0fd23b69a882a4e073c12a260b5e54d1",
+                "url": "https://api.github.com/repos/vrana/adminer/zipball/5ef2068837a89309e721a24672b8cdadbe10c179",
+                "reference": "5ef2068837a89309e721a24672b8cdadbe10c179",
                 "shasum": ""
             },
             "type": "library",
@@ -6311,7 +6311,7 @@
             "keywords": [
                 "database"
             ],
-            "time": "2019-11-13T07:17:14+00:00"
+            "time": "2020-01-31T10:23:04+00:00"
         },
         {
             "name": "vrana/jush",
