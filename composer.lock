@@ -2743,16 +2743,16 @@
         },
         {
             "name": "mjaschen/phpgeo",
-            "version": "2.4.1",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mjaschen/phpgeo.git",
-                "reference": "34416e691e39771339e18380a41df50f24b3a5e0"
+                "reference": "3bc2788e4e42d586531a3ce076032a52231d9850"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mjaschen/phpgeo/zipball/34416e691e39771339e18380a41df50f24b3a5e0",
-                "reference": "34416e691e39771339e18380a41df50f24b3a5e0",
+                "url": "https://api.github.com/repos/mjaschen/phpgeo/zipball/3bc2788e4e42d586531a3ce076032a52231d9850",
+                "reference": "3bc2788e4e42d586531a3ce076032a52231d9850",
                 "shasum": ""
             },
             "require": {
@@ -2805,7 +2805,7 @@
                 "track",
                 "vincenty"
             ],
-            "time": "2020-01-29T06:30:04+00:00"
+            "time": "2020-02-04T08:17:49+00:00"
         },
         {
             "name": "monolog/monolog",
