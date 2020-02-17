@@ -3699,16 +3699,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.5.0",
+            "version": "v6.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "cc1059ad1d4458aa410f9d46ffe279336993a941"
+                "reference": "049d1be4522474f886568399e6e8552dde53e483"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/cc1059ad1d4458aa410f9d46ffe279336993a941",
-                "reference": "cc1059ad1d4458aa410f9d46ffe279336993a941",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/049d1be4522474f886568399e6e8552dde53e483",
+                "reference": "049d1be4522474f886568399e6e8552dde53e483",
                 "shasum": ""
             },
             "require": {
@@ -3815,7 +3815,7 @@
                 "symfony-tests-dir": "tests",
                 "symfony-assets-install": "relative",
                 "branch-alias": {
-                    "dev-master": "6.4-dev"
+                    "dev-master": "6.5-dev"
                 }
             },
             "autoload": {
@@ -3858,7 +3858,7 @@
                 "e-commerce",
                 "rad"
             ],
-            "time": "2020-02-14T08:59:02+00:00"
+            "time": "2020-02-17T13:44:19+00:00"
         },
         {
             "name": "piwik/device-detector",
