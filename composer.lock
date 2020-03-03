@@ -3120,16 +3120,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.30.0",
+            "version": "2.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "912dff66d2690ca66abddb9b291a1df5f371d3b4"
+                "reference": "bbc0ab53f41a4c6f223c18efcdbd9bc725eb5d2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/912dff66d2690ca66abddb9b291a1df5f371d3b4",
-                "reference": "912dff66d2690ca66abddb9b291a1df5f371d3b4",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bbc0ab53f41a4c6f223c18efcdbd9bc725eb5d2d",
+                "reference": "bbc0ab53f41a4c6f223c18efcdbd9bc725eb5d2d",
                 "shasum": ""
             },
             "require": {
@@ -3186,7 +3186,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2020-02-07T15:25:46+00:00"
+            "time": "2020-03-01T11:11:58+00:00"
         },
         {
             "name": "ocramius/package-versions",
