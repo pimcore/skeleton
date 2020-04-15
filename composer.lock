@@ -3806,16 +3806,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.6.0",
+            "version": "v6.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "e1328ffdb6cdc5416279c72353f2de9817ce9d1f"
+                "reference": "56d75b861ad2d8cb28f71a145ec8f78c05f69cfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/e1328ffdb6cdc5416279c72353f2de9817ce9d1f",
-                "reference": "e1328ffdb6cdc5416279c72353f2de9817ce9d1f",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/56d75b861ad2d8cb28f71a145ec8f78c05f69cfd",
+                "reference": "56d75b861ad2d8cb28f71a145ec8f78c05f69cfd",
                 "shasum": ""
             },
             "require": {
@@ -3966,7 +3966,7 @@
                 "e-commerce",
                 "rad"
             ],
-            "time": "2020-03-31T12:26:29+00:00"
+            "time": "2020-04-15T09:17:00+00:00"
         },
         {
             "name": "piwik/device-detector",
