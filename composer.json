@@ -36,6 +36,7 @@
       "Pimcore\\Composer::postUpdate",
       "@pimcore-scripts",
       "Pimcore\\Composer::executeMigrationsUp",
+      "Pimcore\\Composer::executeBundleMigrationsUp",
       "@pimcore-scripts"
     ],
     "pimcore-scripts": [
