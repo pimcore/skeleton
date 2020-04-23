@@ -52,7 +52,8 @@
     "symfony-assets-install": "relative",
     "merge-plugin": {
       "include": [
-        "composer.local.json"
+        "composer.local.json",
+        "src/*/composer.json"
       ],
       "recurse": true,
       "replace": true,
