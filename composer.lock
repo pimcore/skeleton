@@ -1866,16 +1866,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.131",
+            "version": "v0.132",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "c7085d771c635933baff9714732af2d5042f5dd6"
+                "reference": "317c8555eaea64a38594d9e617b59547cea45f3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/c7085d771c635933baff9714732af2d5042f5dd6",
-                "reference": "c7085d771c635933baff9714732af2d5042f5dd6",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/317c8555eaea64a38594d9e617b59547cea45f3e",
+                "reference": "317c8555eaea64a38594d9e617b59547cea45f3e",
                 "shasum": ""
             },
             "require": {
@@ -1899,7 +1899,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2020-04-20T00:24:47+00:00"
+            "time": "2020-04-22T00:25:30+00:00"
         },
         {
             "name": "google/auth",
@@ -3632,16 +3632,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "c2a205e82f9cf1cc9fab86b79e808d86dd680470"
+                "reference": "f79611d6dc1f6b7e8e30b738fc371b392001dbfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/c2a205e82f9cf1cc9fab86b79e808d86dd680470",
-                "reference": "c2a205e82f9cf1cc9fab86b79e808d86dd680470",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/f79611d6dc1f6b7e8e30b738fc371b392001dbfd",
+                "reference": "f79611d6dc1f6b7e8e30b738fc371b392001dbfd",
                 "shasum": ""
             },
             "require": {
@@ -3721,7 +3721,7 @@
                 "xls",
                 "xlsx"
             ],
-            "time": "2020-03-02T13:09:03+00:00"
+            "time": "2020-04-27T08:12:48+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
