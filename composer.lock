@@ -5289,38 +5289,38 @@
         },
         {
             "name": "symfony-cmf/routing",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/Routing.git",
-                "reference": "12f3f64a0ab89ee0dc5ead8802167de762eac024"
+                "reference": "4f21849ee18c91e17ceaf694c492414046e7f12a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/12f3f64a0ab89ee0dc5ead8802167de762eac024",
-                "reference": "12f3f64a0ab89ee0dc5ead8802167de762eac024",
+                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/4f21849ee18c91e17ceaf694c492414046e7f12a",
+                "reference": "4f21849ee18c91e17ceaf694c492414046e7f12a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1",
+                "php": "^7.2",
                 "psr/log": "^1.0",
-                "symfony/http-kernel": "^3.4 || ^4.3",
-                "symfony/routing": "^3.4 || ^4.3"
+                "symfony/http-kernel": "^4.4 || ^5.0",
+                "symfony/routing": "^4.4 || ^5.0"
             },
             "require-dev": {
                 "symfony-cmf/testing": "^3@dev",
-                "symfony/config": "^3.4 || ^4.3",
-                "symfony/dependency-injection": "^3.4 || ^4.3",
-                "symfony/event-dispatcher": "^3.4 || ^4.3",
-                "symfony/phpunit-bridge": "^4.2.2"
+                "symfony/config": "^4.4 || ^5.0",
+                "symfony/dependency-injection": "^4.4 || ^5.0",
+                "symfony/event-dispatcher": "^4.4 || ^5.0",
+                "symfony/phpunit-bridge": "^5.0"
             },
             "suggest": {
-                "symfony/event-dispatcher": "DynamicRouter can optionally trigger an event at the start of matching. Minimal version (^3.4 || ^4.3)"
+                "symfony/event-dispatcher": "DynamicRouter can optionally trigger an event at the start of matching. Minimal version (^4.4 || ^5.0)"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -5344,26 +5344,26 @@
                 "database",
                 "routing"
             ],
-            "time": "2019-12-10T10:45:30+00:00"
+            "time": "2020-04-21T14:16:32+00:00"
         },
         {
             "name": "symfony-cmf/routing-bundle",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/routing-bundle.git",
-                "reference": "513c269adb2d72bd5daf309d343374bf396be8c2"
+                "reference": "6d5c6fedb0ab74543479b24c8c3b14ab049810ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/routing-bundle/zipball/513c269adb2d72bd5daf309d343374bf396be8c2",
-                "reference": "513c269adb2d72bd5daf309d343374bf396be8c2",
+                "url": "https://api.github.com/repos/symfony-cmf/routing-bundle/zipball/6d5c6fedb0ab74543479b24c8c3b14ab049810ff",
+                "reference": "6d5c6fedb0ab74543479b24c8c3b14ab049810ff",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1",
-                "symfony-cmf/routing": "^2.1.0",
-                "symfony/framework-bundle": "^3.4 || ^4.3",
+                "php": "^7.2",
+                "symfony-cmf/routing": "^2.3.0",
+                "symfony/framework-bundle": "^4.4 || ^5.0",
                 "twig/twig": "^2.4.4 || ^3.0"
             },
             "conflict": {
@@ -5372,15 +5372,22 @@
             },
             "require-dev": {
                 "doctrine/data-fixtures": "^1.0.0",
+                "doctrine/doctrine-bundle": "^2.0",
                 "doctrine/orm": "^2.5",
+                "doctrine/phpcr-bundle": "^2.1",
                 "doctrine/phpcr-odm": "^1.4|^2.0",
-                "matthiasnoback/symfony-config-test": "^3.1.1",
-                "matthiasnoback/symfony-dependency-injection-test": "^2.3.1",
-                "symfony-cmf/testing": "^3@dev",
-                "symfony/form": "^3.4 || ^4.3",
-                "symfony/phpunit-bridge": "^4.2.2",
-                "symfony/translation": "^3.4 || ^4.3",
-                "symfony/validator": "^3.4 || ^4.3"
+                "jackalope/jackalope-doctrine-dbal": "^1.3",
+                "matthiasnoback/symfony-config-test": "^4.1.0",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.1.0",
+                "symfony-cmf/testing": "^3.2",
+                "symfony/form": "^4.4 || ^5.0",
+                "symfony/monolog-bundle": "^3.5",
+                "symfony/phpunit-bridge": "^5.0",
+                "symfony/security-bundle": "^4.4 || ^5.0",
+                "symfony/serializer": "^4.4 || ^5.0",
+                "symfony/translation": "^4.4 || ^5.0",
+                "symfony/twig-bundle": "^4.4 || ^5.0",
+                "symfony/validator": "^4.4 || ^5.0"
             },
             "suggest": {
                 "doctrine/orm": "To enable support for the ORM entities (^2.5)",
@@ -5414,7 +5421,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2020-02-25T10:25:49+00:00"
+            "time": "2020-04-28T13:59:52+00:00"
         },
         {
             "name": "symfony/contracts",
@@ -6130,16 +6137,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v4.4.7",
+            "version": "v4.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "0889df1e88559968eb291c938d25b96e252f7bed"
+                "reference": "8e1c507fce81169c3889ba5c34d023447b4952e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/0889df1e88559968eb291c938d25b96e252f7bed",
-                "reference": "0889df1e88559968eb291c938d25b96e252f7bed",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/8e1c507fce81169c3889ba5c34d023447b4952e3",
+                "reference": "8e1c507fce81169c3889ba5c34d023447b4952e3",
                 "shasum": ""
             },
             "require": {
@@ -6254,7 +6261,7 @@
                 "predis/predis": "~1.1",
                 "psr/http-client": "^1.0",
                 "psr/simple-cache": "^1.0",
-                "symfony/phpunit-bridge": "^3.4.31|^4.3.4|~5.0",
+                "symfony/phpunit-bridge": "^5.0.8",
                 "symfony/security-acl": "~2.8|~3.0",
                 "twig/cssinliner-extra": "^2.12",
                 "twig/inky-extra": "^2.12",
@@ -6315,7 +6322,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-03-30T14:59:37+00:00"
+            "time": "2020-04-28T18:48:03+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
