@@ -5290,16 +5290,16 @@
         },
         {
             "name": "symfony-cmf/routing",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/Routing.git",
-                "reference": "4f21849ee18c91e17ceaf694c492414046e7f12a"
+                "reference": "ab47aab7096db01fe40047e1d7597b181110d0f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/4f21849ee18c91e17ceaf694c492414046e7f12a",
-                "reference": "4f21849ee18c91e17ceaf694c492414046e7f12a",
+                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/ab47aab7096db01fe40047e1d7597b181110d0f7",
+                "reference": "ab47aab7096db01fe40047e1d7597b181110d0f7",
                 "shasum": ""
             },
             "require": {
@@ -5345,7 +5345,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2020-04-21T14:16:32+00:00"
+            "time": "2020-05-04T14:09:57+00:00"
         },
         {
             "name": "symfony-cmf/routing-bundle",
