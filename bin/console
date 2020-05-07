@@ -19,7 +19,7 @@ if (file_exists($a = getcwd() . '/vendor/autoload.php')) {
     include $a;
 } elseif (file_exists($a = __DIR__ . '/../../../../vendor/autoload.php')) {
     include $a;
-} elseif (file_exists($a = __DIR__ . '/../autoload.php')) {
+} elseif (file_exists($a = __DIR__ . '/../vendor/autoload.php')) {
     include $a;
 } else {
     fwrite(STDERR, 'Cannot locate autoloader; please run "composer install"' . PHP_EOL);
