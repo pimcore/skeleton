@@ -1139,16 +1139,16 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "ab5de36233a1995f9c776c741b803eb8207aebef"
+                "reference": "4111f6853aea6f28b2b1dcfdde83d12dd3d5e6e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/ab5de36233a1995f9c776c741b803eb8207aebef",
-                "reference": "ab5de36233a1995f9c776c741b803eb8207aebef",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/4111f6853aea6f28b2b1dcfdde83d12dd3d5e6e3",
+                "reference": "4111f6853aea6f28b2b1dcfdde83d12dd3d5e6e3",
                 "shasum": ""
             },
             "require": {
@@ -1227,7 +1227,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-06T11:01:57+00:00"
+            "time": "2020-05-09T15:09:09+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -6563,16 +6563,16 @@
         },
         {
             "name": "vrana/adminer",
-            "version": "v4.7.6",
+            "version": "v4.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vrana/adminer.git",
-                "reference": "5ef2068837a89309e721a24672b8cdadbe10c179"
+                "reference": "ac40be998d9fcf2a7e3fcdbd5efa3dec9e070f14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vrana/adminer/zipball/5ef2068837a89309e721a24672b8cdadbe10c179",
-                "reference": "5ef2068837a89309e721a24672b8cdadbe10c179",
+                "url": "https://api.github.com/repos/vrana/adminer/zipball/ac40be998d9fcf2a7e3fcdbd5efa3dec9e070f14",
+                "reference": "ac40be998d9fcf2a7e3fcdbd5efa3dec9e070f14",
                 "shasum": ""
             },
             "type": "library",
@@ -6597,7 +6597,17 @@
             "keywords": [
                 "database"
             ],
-            "time": "2020-01-31T10:23:04+00:00"
+            "funding": [
+                {
+                    "url": "https://sourceforge.net/p/adminer/donate/",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/jakubvrana",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-05-11T09:51:57+00:00"
         },
         {
             "name": "vrana/jush",
