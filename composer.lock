@@ -474,20 +474,20 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "1.10.0",
+            "version": "1.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "382e7f4db9a12dc6c19431743a2b096041bcdd62"
+                "reference": "35a4a70cd94e09e2259dfae7488afc6b474ecbd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/382e7f4db9a12dc6c19431743a2b096041bcdd62",
-                "reference": "382e7f4db9a12dc6c19431743a2b096041bcdd62",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/35a4a70cd94e09e2259dfae7488afc6b474ecbd3",
+                "reference": "35a4a70cd94e09e2259dfae7488afc6b474ecbd3",
                 "shasum": ""
             },
             "require": {
-                "php": "~7.1"
+                "php": "~7.1 || ^8.0"
             },
             "conflict": {
                 "doctrine/common": ">2.2,<2.4"
@@ -552,7 +552,21 @@
                 "redis",
                 "xcache"
             ],
-            "time": "2019-11-29T15:36:20+00:00"
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcache",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-05-27T16:24:54+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -5379,16 +5393,16 @@
         },
         {
             "name": "symfony-cmf/routing",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/Routing.git",
-                "reference": "ab47aab7096db01fe40047e1d7597b181110d0f7"
+                "reference": "e073c3b6db0e9a5f4c8d7a7bb8a092cd5e191fba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/ab47aab7096db01fe40047e1d7597b181110d0f7",
-                "reference": "ab47aab7096db01fe40047e1d7597b181110d0f7",
+                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/e073c3b6db0e9a5f4c8d7a7bb8a092cd5e191fba",
+                "reference": "e073c3b6db0e9a5f4c8d7a7bb8a092cd5e191fba",
                 "shasum": ""
             },
             "require": {
@@ -5434,7 +5448,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2020-05-04T14:09:57+00:00"
+            "time": "2020-05-27T08:26:50+00:00"
         },
         {
             "name": "symfony-cmf/routing-bundle",
