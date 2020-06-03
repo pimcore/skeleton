@@ -1651,16 +1651,16 @@
         },
         {
             "name": "endroid/qr-code",
-            "version": "3.8.0",
+            "version": "3.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/qr-code.git",
-                "reference": "a44bae807b5f3722695920e4e494a466cbd79bec"
+                "reference": "a7e07d26fad46d7032b39a076f6c85e07757028d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/qr-code/zipball/a44bae807b5f3722695920e4e494a466cbd79bec",
-                "reference": "a44bae807b5f3722695920e4e494a466cbd79bec",
+                "url": "https://api.github.com/repos/endroid/qr-code/zipball/a7e07d26fad46d7032b39a076f6c85e07757028d",
+                "reference": "a7e07d26fad46d7032b39a076f6c85e07757028d",
                 "shasum": ""
             },
             "require": {
@@ -1716,7 +1716,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-05-25T20:02:47+00:00"
+            "time": "2020-06-02T20:10:27+00:00"
         },
         {
             "name": "facebook/graph-sdk",
@@ -3754,12 +3754,12 @@
             "version": "v2.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rybakit/twig-deferred-extension.git",
+                "url": "https://github.com/rybakit/twig-extensions-deferred-legacy.git",
                 "reference": "0c2da51bcaeefac09d94d9125d837f8f63b01325"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rybakit/twig-deferred-extension/zipball/0c2da51bcaeefac09d94d9125d837f8f63b01325",
+                "url": "https://api.github.com/repos/rybakit/twig-extensions-deferred-legacy/zipball/0c2da51bcaeefac09d94d9125d837f8f63b01325",
                 "reference": "0c2da51bcaeefac09d94d9125d837f8f63b01325",
                 "shasum": ""
             },
