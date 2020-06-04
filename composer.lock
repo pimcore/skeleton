@@ -3751,16 +3751,16 @@
         },
         {
             "name": "phive/twig-extensions-deferred",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rybakit/twig-extensions-deferred-legacy.git",
-                "reference": "0c2da51bcaeefac09d94d9125d837f8f63b01325"
+                "reference": "2d8514ef779e1e33724befed86be62cc3c23c405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rybakit/twig-extensions-deferred-legacy/zipball/0c2da51bcaeefac09d94d9125d837f8f63b01325",
-                "reference": "0c2da51bcaeefac09d94d9125d837f8f63b01325",
+                "url": "https://api.github.com/repos/rybakit/twig-extensions-deferred-legacy/zipball/2d8514ef779e1e33724befed86be62cc3c23c405",
+                "reference": "2d8514ef779e1e33724befed86be62cc3c23c405",
                 "shasum": ""
             },
             "require": {
@@ -3793,7 +3793,13 @@
                 "lazy",
                 "twig"
             ],
-            "time": "2019-05-24T21:57:45+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/rybakit",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-06-03T12:45:28+00:00"
         },
         {
             "name": "phpoffice/phpspreadsheet",
