@@ -1827,6 +1827,68 @@
             "time": "2020-03-25T18:49:23+00:00"
         },
         {
+            "name": "friendsofsymfony/jsrouting-bundle",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle.git",
+                "reference": "9deaf916760ce1d64cf46460473260b02751cee5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/9deaf916760ce1d64cf46460473260b02751cee5",
+                "reference": "9deaf916760ce1d64cf46460473260b02751cee5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "symfony/console": "~3.3|^4.0|^5.0",
+                "symfony/framework-bundle": "~3.3|^4.0|^5.0",
+                "symfony/serializer": "~3.3|^4.0|^5.0",
+                "willdurand/jsonp-callback-validator": "~1.0"
+            },
+            "require-dev": {
+                "symfony/expression-language": "~3.3|^4.0|^5.0",
+                "symfony/phpunit-bridge": "^3.3|^4.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FOS\\JsRoutingBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "will+git@drnd.me"
+                },
+                {
+                    "name": "FriendsOfSymfony Community",
+                    "homepage": "https://github.com/friendsofsymfony/FOSJsRoutingBundle/contributors"
+                }
+            ],
+            "description": "A pretty nice way to expose your Symfony2 routing to client applications.",
+            "homepage": "http://friendsofsymfony.github.com",
+            "keywords": [
+                "Js Routing",
+                "javascript",
+                "routing"
+            ],
+            "time": "2020-05-20T09:38:45+00:00"
+        },
+        {
             "name": "geoip2/geoip2",
             "version": "v2.10.0",
             "source": {
@@ -4003,16 +4065,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.6.4",
+            "version": "v6.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "569a798efac5f450f66e7dbf24b60ffe5b996f5a"
+                "reference": "abc6b383e8099070873369c0df3f8b7ff5b4d18e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/569a798efac5f450f66e7dbf24b60ffe5b996f5a",
-                "reference": "569a798efac5f450f66e7dbf24b60ffe5b996f5a",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/abc6b383e8099070873369c0df3f8b7ff5b4d18e",
+                "reference": "abc6b383e8099070873369c0df3f8b7ff5b4d18e",
                 "shasum": ""
             },
             "require": {
@@ -4042,6 +4104,7 @@
                 "ext-simplexml": "*",
                 "ext-zip": "*",
                 "ext-zlib": "*",
+                "friendsofsymfony/jsrouting-bundle": "^2.5",
                 "geoip2/geoip2": "^2.9",
                 "google/apiclient": "^2.0",
                 "guzzlehttp/guzzle": "^6.3",
@@ -4163,7 +4226,7 @@
                 "e-commerce",
                 "rad"
             ],
-            "time": "2020-05-11T09:40:50+00:00"
+            "time": "2020-06-04T08:48:07+00:00"
         },
         {
             "name": "piwik/device-detector",
@@ -6920,6 +6983,46 @@
             ],
             "description": "Composer plugin to merge multiple composer.json files",
             "time": "2017-04-25T02:31:25+00:00"
+        },
+        {
+            "name": "willdurand/jsonp-callback-validator",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/willdurand/JsonpCallbackValidator.git",
+                "reference": "1a7d388bb521959e612ef50c5c7b1691b097e909"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/willdurand/JsonpCallbackValidator/zipball/1a7d388bb521959e612ef50c5c7b1691b097e909",
+                "reference": "1a7d388bb521959e612ef50c5c7b1691b097e909",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JsonpCallbackValidator": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "william.durand1@gmail.com",
+                    "homepage": "http://www.willdurand.fr"
+                }
+            ],
+            "description": "JSONP callback validator.",
+            "time": "2014-01-20T22:35:06+00:00"
         },
         {
             "name": "zendframework/zend-code",
