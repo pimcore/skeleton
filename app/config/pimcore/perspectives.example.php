@@ -129,7 +129,8 @@ return [
                         'items' => [
                             'add' => 0,
                             'cut' => 0,
-                            'rename' => 0
+                            'rename' => 0,
+                            'addBlankDocument' => false,        // Hides the '> Blank' default document
                         ]
                     ]
                 ]
