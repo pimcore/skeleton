@@ -3211,16 +3211,16 @@
         },
         {
             "name": "mpratt/embera",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mpratt/Embera.git",
-                "reference": "a8813934ccfdc9d9df78c19328c2e29df839dd0f"
+                "reference": "fbf831b725bd82b4872af1cafe46871a66550c07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mpratt/Embera/zipball/a8813934ccfdc9d9df78c19328c2e29df839dd0f",
-                "reference": "a8813934ccfdc9d9df78c19328c2e29df839dd0f",
+                "url": "https://api.github.com/repos/mpratt/Embera/zipball/fbf831b725bd82b4872af1cafe46871a66550c07",
+                "reference": "fbf831b725bd82b4872af1cafe46871a66550c07",
                 "shasum": ""
             },
             "require": {
@@ -3266,7 +3266,7 @@
                 "vine",
                 "youtube"
             ],
-            "time": "2020-06-17T20:00:33+00:00"
+            "time": "2020-06-23T01:03:55+00:00"
         },
         {
             "name": "mustangostang/spyc",
