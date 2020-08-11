@@ -2,8 +2,8 @@
 
 namespace AppBundle;
 
-use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Pimcore\Extension\Bundle\AbstractPimcoreBundle;
 
-class AppBundle extends Bundle
+class AppBundle extends AbstractPimcoreBundle
 {
 }
