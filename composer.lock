@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c0a1ae0f3cd22f1ea078829558ef76bc",
+    "content-hash": "4f9e655e3345cd3ef6d6a334d53ef228",
     "packages": [
         {
             "name": "amnuts/opcache-gui",
@@ -4085,16 +4085,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.6.10",
+            "version": "v6.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "926ac062992164a7c88f31c584f644b0e7ddb37b"
+                "reference": "454e6661269ba4f19dbca66cf4a4be9f192c1998"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/926ac062992164a7c88f31c584f644b0e7ddb37b",
-                "reference": "926ac062992164a7c88f31c584f644b0e7ddb37b",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/454e6661269ba4f19dbca66cf4a4be9f192c1998",
+                "reference": "454e6661269ba4f19dbca66cf4a4be9f192c1998",
                 "shasum": ""
             },
             "require": {
@@ -4145,7 +4145,7 @@
                 "php": ">=7.2",
                 "phpoffice/phpspreadsheet": "^1.9",
                 "piwik/device-detector": "^3.9",
-                "presta/sitemap-bundle": "^1.5",
+                "presta/sitemap-bundle": "^1.5 || ^2.1",
                 "psr/simple-cache": "^1.0.0",
                 "ramsey/uuid": "^3.8",
                 "sabre/dav": "^3.2",
@@ -4163,22 +4163,24 @@
                 "umpirsky/country-list": "^2.0.4",
                 "vrana/adminer": "^4.6.3",
                 "vrana/jush": "~2.0.2",
+                "webmozarts/console-parallelization": "^1.1.0",
                 "zendframework/zend-paginator": "^2.7",
                 "zendframework/zend-servicemanager": "^3.2"
             },
             "conflict": {
-                "monolog/monolog": ">=2"
+                "monolog/monolog": ">=2",
+                "symfony/symfony": "3.4.43 || 4.4.11"
             },
             "require-dev": {
                 "cache/integration-tests": "^0.16.0",
                 "codeception/codeception": "~2.4.5",
                 "composer/composer": "*",
-                "elasticsearch/elasticsearch": "2.0.0",
+                "elasticsearch/elasticsearch": "^6",
                 "heidelpay/heidelpay-php": "^1.2.5.1",
                 "klarna/checkout": "^3.0.0",
                 "mpay24/mpay24-php": "^4.2",
                 "paypal/paypal-checkout-sdk": "^1",
-                "phpstan/phpstan": "0.12.25",
+                "phpstan/phpstan": "^0.12.26",
                 "phpstan/phpstan-symfony": "^0.12"
             },
             "suggest": {
@@ -4203,7 +4205,7 @@
                 "symfony-tests-dir": "tests",
                 "symfony-assets-install": "relative",
                 "branch-alias": {
-                    "dev-master": "6.6-dev"
+                    "dev-master": "6.7-dev"
                 }
             },
             "autoload": {
@@ -4246,7 +4248,7 @@
                 "e-commerce",
                 "rad"
             ],
-            "time": "2020-07-23T09:20:43+00:00"
+            "time": "2020-08-12T13:28:45+00:00"
         },
         {
             "name": "piwik/device-detector",
@@ -4305,32 +4307,30 @@
         },
         {
             "name": "presta/sitemap-bundle",
-            "version": "v1.7.2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSitemapBundle.git",
-                "reference": "04387d54f922386d2ff80a7945df3cdf98ffabde"
+                "reference": "c20626a95e38684e320c9dc07a23671d8417be12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/04387d54f922386d2ff80a7945df3cdf98ffabde",
-                "reference": "04387d54f922386d2ff80a7945df3cdf98ffabde",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/c20626a95e38684e320c9dc07a23671d8417be12",
+                "reference": "c20626a95e38684e320c9dc07a23671d8417be12",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0",
-                "symfony/console": "~2.2|~3.0|~4.0",
-                "symfony/framework-bundle": "~2.2|~3.0|~4.0"
+                "php": ">=7.1.0",
+                "symfony/console": "^3.4|~4.0|~5.0",
+                "symfony/framework-bundle": "^3.4|~4.0|~5.0"
             },
             "require-dev": {
-                "doctrine/annotations": "~1.0",
-                "phpunit/phpunit": "5.*",
-                "symfony/browser-kit": "~2.2|~3.0|~4.0",
-                "symfony/form": "~2.2|~3.0|~4.0",
-                "symfony/phpunit-bridge": "~2.7|~3.0|~4.0",
-                "symfony/security-bundle": "~2.2|~3.0|~4.0",
-                "symfony/translation": "~2.2|~3.0|~4.0",
-                "symfony/validator": "~2.2|~3.0|~4.0"
+                "doctrine/annotations": ">=1.0",
+                "ext-simplexml": "*",
+                "phpunit/phpunit": "^7.5",
+                "symfony/browser-kit": ">=3.4",
+                "symfony/phpunit-bridge": ">=3.4",
+                "symfony/yaml": ">=3.4"
             },
             "suggest": {
                 "doctrine/doctrine-cache-bundle": "Allows to store sitemaps in cache"
@@ -4345,7 +4345,10 @@
             "autoload": {
                 "psr-4": {
                     "Presta\\SitemapBundle\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4365,7 +4368,7 @@
                 "symfony",
                 "xml"
             ],
-            "time": "2019-10-22T07:14:03+00:00"
+            "time": "2020-08-03T08:49:41+00:00"
         },
         {
             "name": "psr/cache",
@@ -6732,21 +6735,21 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v4.4.11",
+            "version": "v4.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "f5721c658ea5752000baca99f07cc0554708b56f"
+                "reference": "7eef70427b37763aebfe4ba8aa33e052f91fee3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/f5721c658ea5752000baca99f07cc0554708b56f",
-                "reference": "f5721c658ea5752000baca99f07cc0554708b56f",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/7eef70427b37763aebfe4ba8aa33e052f91fee3f",
+                "reference": "7eef70427b37763aebfe4ba8aa33e052f91fee3f",
                 "shasum": ""
             },
             "require": {
                 "doctrine/event-manager": "~1.0",
-                "doctrine/persistence": "^1.3|^2",
+                "doctrine/persistence": "^1.3",
                 "ext-xml": "*",
                 "php": ">=7.1.3",
                 "psr/cache": "~1.0",
@@ -6837,11 +6840,10 @@
             },
             "require-dev": {
                 "cache/integration-tests": "dev-master",
-                "composer/package-versions-deprecated": "^1.8",
                 "doctrine/annotations": "~1.0",
                 "doctrine/cache": "~1.6",
                 "doctrine/collections": "~1.0",
-                "doctrine/data-fixtures": "^1.1",
+                "doctrine/data-fixtures": "1.0.*",
                 "doctrine/dbal": "~2.4",
                 "doctrine/doctrine-bundle": "^1.5|^2.0",
                 "doctrine/orm": "~2.4,>=2.4.5",
@@ -6854,7 +6856,7 @@
                 "ocramius/proxy-manager": "^2.1",
                 "paragonie/sodium_compat": "^1.8",
                 "php-http/httplug": "^1.0|^2.0",
-                "phpdocumentor/reflection-docblock": "^3.0|^4.0|^5.0",
+                "phpdocumentor/reflection-docblock": "^3.0|^4.0",
                 "predis/predis": "~1.1",
                 "psr/http-client": "^1.0",
                 "psr/simple-cache": "^1.0",
@@ -6919,7 +6921,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-24T04:10:27+00:00"
+            "time": "2020-06-12T11:15:53+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -7223,6 +7225,106 @@
                 "javascript"
             ],
             "time": "2018-03-02T08:41:11+00:00"
+        },
+        {
+            "name": "webmozart/assert",
+            "version": "1.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozart/assert.git",
+                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0 || ^8.0",
+                "symfony/polyfill-ctype": "^1.8"
+            },
+            "conflict": {
+                "phpstan/phpstan": "<0.12.20",
+                "vimeo/psalm": "<3.9.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.36 || ^7.5.13"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Webmozart\\Assert\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "Assertions to validate method input/output with nice error messages.",
+            "keywords": [
+                "assert",
+                "check",
+                "validate"
+            ],
+            "time": "2020-07-08T17:02:28+00:00"
+        },
+        {
+            "name": "webmozarts/console-parallelization",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozarts/console-parallelization.git",
+                "reference": "60f99ee8953caf88679709622fd4fac58f7f4bbe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozarts/console-parallelization/zipball/60f99ee8953caf88679709622fd4fac58f7f4bbe",
+                "reference": "60f99ee8953caf88679709622fd4fac58f7f4bbe",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "psr/log": "^1.1",
+                "symfony/console": "^3.0 || ^4.0 || ^5.0",
+                "symfony/dependency-injection": "^3.0 || ^4.1.12 || ^5.0",
+                "symfony/process": "^3.0 || ^4.0 || ^5.0",
+                "webmozart/assert": "^1.5"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "friendsofphp/php-cs-fixer": "^2.15",
+                "phpunit/phpunit": "^8.4",
+                "symfony/framework-bundle": "^3.0 || ^4.1 || ^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Webmozarts\\Console\\Parallelization\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bernhard.schussek@webmozarts.com"
+                },
+                {
+                    "name": "Théo Fidry",
+                    "email": "theo.fidry@webmozarts.com"
+                }
+            ],
+            "description": "Enables parallelization of Symfony Console commands",
+            "time": "2020-06-11T06:04:51+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
@@ -9286,55 +9388,6 @@
                 }
             ],
             "time": "2020-07-12T23:59:07+00:00"
-        },
-        {
-            "name": "webmozart/assert",
-            "version": "1.9.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
-                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
-                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3.3 || ^7.0 || ^8.0",
-                "symfony/polyfill-ctype": "^1.8"
-            },
-            "conflict": {
-                "phpstan/phpstan": "<0.12.20",
-                "vimeo/psalm": "<3.9.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.36 || ^7.5.13"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Webmozart\\Assert\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bernhard Schussek",
-                    "email": "bschussek@gmail.com"
-                }
-            ],
-            "description": "Assertions to validate method input/output with nice error messages.",
-            "keywords": [
-                "assert",
-                "check",
-                "validate"
-            ],
-            "time": "2020-07-08T17:02:28+00:00"
         }
     ],
     "aliases": [],
