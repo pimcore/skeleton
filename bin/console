@@ -15,7 +15,7 @@
 
 ob_get_clean();
 
-if (file_exists($a = getcwd() . '/vendor/autoload.php')) {
+if (file_exists($a = dirname(__DIR__) . '/vendor/autoload.php')) {
     include $a;
 } elseif (file_exists($a = __DIR__ . '/../../../../vendor/autoload.php')) {
     include $a;
