@@ -3467,16 +3467,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.38.0",
+            "version": "2.39.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "d8f6a6a91d1eb9304527b040500f61923e97674b"
+                "reference": "0a41ea7f7fedacf307b7a339800e10356a042918"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d8f6a6a91d1eb9304527b040500f61923e97674b",
-                "reference": "d8f6a6a91d1eb9304527b040500f61923e97674b",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/0a41ea7f7fedacf307b7a339800e10356a042918",
+                "reference": "0a41ea7f7fedacf307b7a339800e10356a042918",
                 "shasum": ""
             },
             "require": {
@@ -3552,7 +3552,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-04T19:12:46+00:00"
+            "time": "2020-08-24T12:35:58+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -4311,30 +4311,31 @@
         },
         {
             "name": "presta/sitemap-bundle",
-            "version": "v2.2.0",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSitemapBundle.git",
-                "reference": "c20626a95e38684e320c9dc07a23671d8417be12"
+                "reference": "2847d080907880a7411e0efca5a8ee42ffae785c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/c20626a95e38684e320c9dc07a23671d8417be12",
-                "reference": "c20626a95e38684e320c9dc07a23671d8417be12",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/2847d080907880a7411e0efca5a8ee42ffae785c",
+                "reference": "2847d080907880a7411e0efca5a8ee42ffae785c",
                 "shasum": ""
             },
             "require": {
+                "ext-simplexml": "*",
                 "php": ">=7.1.0",
                 "symfony/console": "^3.4|~4.0|~5.0",
                 "symfony/framework-bundle": "^3.4|~4.0|~5.0"
             },
             "require-dev": {
-                "doctrine/annotations": ">=1.0",
+                "doctrine/annotations": "^1.0",
                 "ext-simplexml": "*",
                 "phpunit/phpunit": "^7.5",
-                "symfony/browser-kit": ">=3.4",
-                "symfony/phpunit-bridge": ">=3.4",
-                "symfony/yaml": ">=3.4"
+                "symfony/browser-kit": "^4.4",
+                "symfony/phpunit-bridge": "^4.4",
+                "symfony/yaml": "^4.4"
             },
             "suggest": {
                 "doctrine/doctrine-cache-bundle": "Allows to store sitemaps in cache"
@@ -4372,7 +4373,7 @@
                 "symfony",
                 "xml"
             ],
-            "time": "2020-08-03T08:49:41+00:00"
+            "time": "2020-08-24T14:40:20+00:00"
         },
         {
             "name": "psr/cache",
