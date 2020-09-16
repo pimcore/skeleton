@@ -3483,16 +3483,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.39.2",
+            "version": "2.40.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "326efde1bc09077a26cb77f6e2e32e13f06c27f2"
+                "reference": "6c7646154181013ecd55e80c201b9fd873c6ee5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/326efde1bc09077a26cb77f6e2e32e13f06c27f2",
-                "reference": "326efde1bc09077a26cb77f6e2e32e13f06c27f2",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/6c7646154181013ecd55e80c201b9fd873c6ee5d",
+                "reference": "6c7646154181013ecd55e80c201b9fd873c6ee5d",
                 "shasum": ""
             },
             "require": {
@@ -3568,7 +3568,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-10T12:16:42+00:00"
+            "time": "2020-09-11T19:00:58+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -4104,16 +4104,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.7.1",
+            "version": "v6.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "dee82b6069915b0b1a42913cfd70c74ec37254cd"
+                "reference": "12fa6853dd8ebaac781610af9d475fd5724ee487"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/dee82b6069915b0b1a42913cfd70c74ec37254cd",
-                "reference": "dee82b6069915b0b1a42913cfd70c74ec37254cd",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/12fa6853dd8ebaac781610af9d475fd5724ee487",
+                "reference": "12fa6853dd8ebaac781610af9d475fd5724ee487",
                 "shasum": ""
             },
             "require": {
@@ -4267,7 +4267,7 @@
                 "e-commerce",
                 "rad"
             ],
-            "time": "2020-08-20T13:32:32+00:00"
+            "time": "2020-09-16T08:36:14+00:00"
         },
         {
             "name": "piwik/device-detector",
