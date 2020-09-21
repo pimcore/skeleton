@@ -42,7 +42,8 @@ return [
                         'unlock' => 0,                                          // hide "Unlock"
                         'lockAndPropagate' => 0,                                // hide "Lock and Propagate"
                         'unlockAndPropagete' => 0,                              // hide "Unlock and Propagate"
-                        'reload' => 0                                           // hide reload
+                        'reload' => 0,                                          // hide reload
+                        'changeChildrenSortBy' => 0                             // hide "Sort Children By"
                     ]
                 ]
             ]
