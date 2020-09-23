@@ -11,7 +11,7 @@
     body {
         padding:0;
         margin: 0;
-        font-family: "Lucida Sans Unicode", Arial;
+        font-family: "Lucida Sans Unicode", Arial, sans-serif;
         font-size: 14px;
     }
 
@@ -102,7 +102,7 @@
 
 <div id="site">
     <div id="logo">
-        <a href="http://www.pimcore.com/"><img src="/bundles/pimcoreadmin/img/logo-claim-gray.svg" style="width: 400px;" /></a>
+        <a href="http://www.pimcore.com/"><img src="/bundles/pimcoreadmin/img/logo-claim-gray.svg" alt="Logo claim grey" style="width: 400px;" /></a>
         <hr />
     </div>
 
