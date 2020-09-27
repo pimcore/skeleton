@@ -6758,16 +6758,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v4.4.13",
+            "version": "v4.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "9b8314080fb15e84e030f94488d9e1fa17adb846"
+                "reference": "c589c9a6047fdb06d4c06459ac7358d930d1fff9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/9b8314080fb15e84e030f94488d9e1fa17adb846",
-                "reference": "9b8314080fb15e84e030f94488d9e1fa17adb846",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/c589c9a6047fdb06d4c06459ac7358d930d1fff9",
+                "reference": "c589c9a6047fdb06d4c06459ac7358d930d1fff9",
                 "shasum": ""
             },
             "require": {
@@ -6945,7 +6945,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-02T08:11:15+00:00"
+            "time": "2020-09-27T04:26:00+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
