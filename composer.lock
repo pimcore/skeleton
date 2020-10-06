@@ -4,30 +4,30 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f9e655e3345cd3ef6d6a334d53ef228",
+    "content-hash": "74e32e7050195822bc65efd11802da24",
     "packages": [
         {
             "name": "amnuts/opcache-gui",
-            "version": "2.5.4",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amnuts/opcache-gui.git",
-                "reference": "95a728871e794abf0db440a68543d647f0868035"
+                "reference": "db965ad03e5741cb7fdfe23d9c66e95cec7a4d1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amnuts/opcache-gui/zipball/95a728871e794abf0db440a68543d647f0868035",
-                "reference": "95a728871e794abf0db440a68543d647f0868035",
+                "url": "https://api.github.com/repos/amnuts/opcache-gui/zipball/db965ad03e5741cb7fdfe23d9c66e95cec7a4d1c",
+                "reference": "db965ad03e5741cb7fdfe23d9c66e95cec7a4d1c",
                 "shasum": ""
             },
             "require": {
                 "ext-zend-opcache": "*",
-                "php": ">=5.4"
+                "php": ">=7.1.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "OpcacheGui\\": "/"
+                    "Amnuts\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -54,7 +54,7 @@
                 "interface",
                 "opcodes"
             ],
-            "time": "2020-04-07T21:43:20+00:00"
+            "time": "2020-09-25T18:23:43+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -159,6 +159,57 @@
                 "tag"
             ],
             "time": "2017-03-13T09:14:27+00:00"
+        },
+        {
+            "name": "cbschuld/browser.php",
+            "version": "v1.9.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cbschuld/Browser.php.git",
+                "reference": "9d07d6410977d494d7b8ecc2f3c877645c5477d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cbschuld/Browser.php/zipball/9d07d6410977d494d7b8ecc2f3c877645c5477d9",
+                "reference": "9d07d6410977d494d7b8ecc2f3c877645c5477d9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/Browser.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Schuld",
+                    "email": "chris@chrisschuld.com",
+                    "homepage": "https://chrisschuld.com"
+                }
+            ],
+            "description": "A PHP Class to detect a user's Browser.  This encapsulation provides a breakdown of the browser and the version of the browser using the browser's user-agent string.  This is not a guaranteed solution but provides an overall accurate way to detect what browser a user is using.",
+            "homepage": "https://chrisschuld.com/projects/browser-php-detecting-a-users-browser-from-php/",
+            "keywords": [
+                "browser",
+                "detection",
+                "user agent"
+            ],
+            "time": "2020-04-14T18:46:44+00:00"
         },
         {
             "name": "colinmollenhour/credis",
@@ -4104,21 +4155,22 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.7.3",
+            "version": "v6.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "edec9b269efb1a0bbe7fe41cab1434ec86887820"
+                "reference": "20e15263b8cc8f016d651fbca2842cc0f6f43022"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/edec9b269efb1a0bbe7fe41cab1434ec86887820",
-                "reference": "edec9b269efb1a0bbe7fe41cab1434ec86887820",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/20e15263b8cc8f016d651fbca2842cc0f6f43022",
+                "reference": "20e15263b8cc8f016d651fbca2842cc0f6f43022",
                 "shasum": ""
             },
             "require": {
-                "amnuts/opcache-gui": "^2.4.0",
+                "amnuts/opcache-gui": "^3.0.1",
                 "cache/tag-interop": "^1",
+                "cbschuld/browser.php": "^1.9.6",
                 "colinmollenhour/credis": "^1.10.0",
                 "composer/ca-bundle": "^1",
                 "defuse/php-encryption": "^2.2.0",
@@ -4224,7 +4276,7 @@
                 "symfony-tests-dir": "tests",
                 "symfony-assets-install": "relative",
                 "branch-alias": {
-                    "dev-master": "6.7-dev"
+                    "dev-master": "6.8-dev"
                 }
             },
             "autoload": {
@@ -4267,7 +4319,7 @@
                 "e-commerce",
                 "rad"
             ],
-            "time": "2020-10-05T12:20:43+00:00"
+            "time": "2020-10-06T08:28:17+00:00"
         },
         {
             "name": "piwik/device-detector",
