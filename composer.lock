@@ -1724,7 +1724,7 @@
         },
         {
             "name": "endroid/qr-code",
-            "version": "3.9.2",
+            "version": "3.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/qr-code.git",
