@@ -3942,12 +3942,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "64d4e38d08615aa18d3f05f4c29eda95e46af0bb"
+                "reference": "f037214e93be9854f8811aee40b1b8c6405c238e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/64d4e38d08615aa18d3f05f4c29eda95e46af0bb",
-                "reference": "64d4e38d08615aa18d3f05f4c29eda95e46af0bb",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/f037214e93be9854f8811aee40b1b8c6405c238e",
+                "reference": "f037214e93be9854f8811aee40b1b8c6405c238e",
                 "shasum": ""
             },
             "require": {
