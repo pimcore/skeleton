@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74e32e7050195822bc65efd11802da24",
+    "content-hash": "1915ec87d743404e8a1ab5574e46d493",
     "packages": [
         {
             "name": "amnuts/opcache-gui",
@@ -213,16 +213,16 @@
         },
         {
             "name": "colinmollenhour/credis",
-            "version": "1.11.2",
+            "version": "v1.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/colinmollenhour/credis.git",
-                "reference": "b8b2bd6b87d2d4df67065f3510efb80d5f9c4e53"
+                "reference": "dc200278d644be1de8c99a17462aa9ef70cedc89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/b8b2bd6b87d2d4df67065f3510efb80d5f9c4e53",
-                "reference": "b8b2bd6b87d2d4df67065f3510efb80d5f9c4e53",
+                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/dc200278d644be1de8c99a17462aa9ef70cedc89",
+                "reference": "dc200278d644be1de8c99a17462aa9ef70cedc89",
                 "shasum": ""
             },
             "require": {
@@ -249,7 +249,7 @@
             ],
             "description": "Credis is a lightweight interface to the Redis key-value store which wraps the phpredis library when available for better performance.",
             "homepage": "https://github.com/colinmollenhour/credis",
-            "time": "2020-06-15T19:25:47+00:00"
+            "time": "2020-10-12T20:38:47+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -3367,16 +3367,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.41.2",
+            "version": "2.41.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "35959c93ada06469107a05df6b15b65074a960cf"
+                "reference": "e148788eeae9b9b7b87996520358b86faad37b52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/35959c93ada06469107a05df6b15b65074a960cf",
-                "reference": "35959c93ada06469107a05df6b15b65074a960cf",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e148788eeae9b9b7b87996520358b86faad37b52",
+                "reference": "e148788eeae9b9b7b87996520358b86faad37b52",
                 "shasum": ""
             },
             "require": {
@@ -3452,7 +3452,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-10T23:35:06+00:00"
+            "time": "2020-10-12T20:36:09+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -7195,55 +7195,6 @@
             ],
             "description": "Enables parallelization of Symfony Console commands",
             "time": "2020-06-11T06:04:51+00:00"
-        },
-        {
-            "name": "wikimedia/composer-merge-plugin",
-            "version": "v1.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wikimedia/composer-merge-plugin.git",
-                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
-                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "composer/composer": "~1.0.0",
-                "jakub-onderka/php-parallel-lint": "~0.8",
-                "phpunit/phpunit": "~4.8|~5.0",
-                "squizlabs/php_codesniffer": "~2.1.0"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3.x-dev"
-                },
-                "class": "Wikimedia\\Composer\\MergePlugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Wikimedia\\Composer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bryan Davis",
-                    "email": "bd808@wikimedia.org"
-                }
-            ],
-            "description": "Composer plugin to merge multiple composer.json files",
-            "time": "2017-04-25T02:31:25+00:00"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
