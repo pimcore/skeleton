@@ -213,16 +213,16 @@
         },
         {
             "name": "colinmollenhour/credis",
-            "version": "v1.11.3",
+            "version": "v1.11.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/colinmollenhour/credis.git",
-                "reference": "dc200278d644be1de8c99a17462aa9ef70cedc89"
+                "reference": "b458b7c65d156744f5f0c4667c0f8ce45d955435"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/dc200278d644be1de8c99a17462aa9ef70cedc89",
-                "reference": "dc200278d644be1de8c99a17462aa9ef70cedc89",
+                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/b458b7c65d156744f5f0c4667c0f8ce45d955435",
+                "reference": "b458b7c65d156744f5f0c4667c0f8ce45d955435",
                 "shasum": ""
             },
             "require": {
@@ -249,7 +249,7 @@
             ],
             "description": "Credis is a lightweight interface to the Redis key-value store which wraps the phpredis library when available for better performance.",
             "homepage": "https://github.com/colinmollenhour/credis",
-            "time": "2020-10-12T20:38:47+00:00"
+            "time": "2020-10-13T23:55:13+00:00"
         },
         {
             "name": "composer/ca-bundle",
