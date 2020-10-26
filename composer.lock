@@ -2084,16 +2084,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.151",
+            "version": "v0.152",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "784a4fdb110b67a2344cfbdbf927194bd29f9e73"
+                "reference": "e1cc05269e852d62677387f831271ad984b245f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/784a4fdb110b67a2344cfbdbf927194bd29f9e73",
-                "reference": "784a4fdb110b67a2344cfbdbf927194bd29f9e73",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/e1cc05269e852d62677387f831271ad984b245f8",
+                "reference": "e1cc05269e852d62677387f831271ad984b245f8",
                 "shasum": ""
             },
             "require": {
@@ -2117,7 +2117,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2020-10-19T00:26:26+00:00"
+            "time": "2020-10-25T00:25:04+00:00"
         },
         {
             "name": "google/auth",
@@ -4329,16 +4329,16 @@
         },
         {
             "name": "piwik/device-detector",
-            "version": "3.13.0",
+            "version": "3.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matomo-org/device-detector.git",
-                "reference": "75ca5b690e38c40d199ade93e677bc5d7c3bc498"
+                "reference": "e90533302c58acf41f0d8075a0151537d0ddf34d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/75ca5b690e38c40d199ade93e677bc5d7c3bc498",
-                "reference": "75ca5b690e38c40d199ade93e677bc5d7c3bc498",
+                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/e90533302c58acf41f0d8075a0151537d0ddf34d",
+                "reference": "e90533302c58acf41f0d8075a0151537d0ddf34d",
                 "shasum": ""
             },
             "require": {
@@ -4360,7 +4360,10 @@
             "autoload": {
                 "psr-4": {
                     "DeviceDetector\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4380,7 +4383,7 @@
                 "parser",
                 "useragent"
             ],
-            "time": "2020-08-17T07:37:33+00:00"
+            "time": "2020-10-25T10:17:36+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
