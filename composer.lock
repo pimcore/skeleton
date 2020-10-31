@@ -4673,6 +4673,7 @@
                 "source": "https://github.com/matomo-org/piwik",
                 "wiki": "https://dev.matomo.org/"
             },
+            "abandoned": "matomo/device-detector",
             "time": "2020-10-25T10:17:36+00:00"
         },
         {
