@@ -230,16 +230,16 @@
         },
         {
             "name": "colinmollenhour/credis",
-            "version": "v1.11.4",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/colinmollenhour/credis.git",
-                "reference": "b458b7c65d156744f5f0c4667c0f8ce45d955435"
+                "reference": "efdf60db997e8f4330b24cfb7e5c5dc0bd612a48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/b458b7c65d156744f5f0c4667c0f8ce45d955435",
-                "reference": "b458b7c65d156744f5f0c4667c0f8ce45d955435",
+                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/efdf60db997e8f4330b24cfb7e5c5dc0bd612a48",
+                "reference": "efdf60db997e8f4330b24cfb7e5c5dc0bd612a48",
                 "shasum": ""
             },
             "require": {
@@ -268,9 +268,9 @@
             "homepage": "https://github.com/colinmollenhour/credis",
             "support": {
                 "issues": "https://github.com/colinmollenhour/credis/issues",
-                "source": "https://github.com/colinmollenhour/credis/tree/v1.11.4"
+                "source": "https://github.com/colinmollenhour/credis/tree/v1.12.0"
             },
-            "time": "2020-10-13T23:55:13+00:00"
+            "time": "2020-11-02T17:20:09+00:00"
         },
         {
             "name": "composer/ca-bundle",
