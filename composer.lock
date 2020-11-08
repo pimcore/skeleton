@@ -3572,16 +3572,16 @@
         },
         {
             "name": "mpratt/embera",
-            "version": "2.0.13",
+            "version": "2.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mpratt/Embera.git",
-                "reference": "7081e4d3b13ed82b25fd125fb38af796a34bf234"
+                "reference": "a24824abc539d54b8a950612b7c196f575de8257"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mpratt/Embera/zipball/7081e4d3b13ed82b25fd125fb38af796a34bf234",
-                "reference": "7081e4d3b13ed82b25fd125fb38af796a34bf234",
+                "url": "https://api.github.com/repos/mpratt/Embera/zipball/a24824abc539d54b8a950612b7c196f575de8257",
+                "reference": "a24824abc539d54b8a950612b7c196f575de8257",
                 "shasum": ""
             },
             "require": {
@@ -3629,9 +3629,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mpratt/Embera/issues",
-                "source": "https://github.com/mpratt/Embera/tree/2.0.13"
+                "source": "https://github.com/mpratt/Embera/tree/2.0.14"
             },
-            "time": "2020-08-26T17:29:36+00:00"
+            "time": "2020-11-08T04:32:00+00:00"
         },
         {
             "name": "mustangostang/spyc",
