@@ -5,6 +5,9 @@ imports:
     - { resource: migrations.yml }
     - { resource: 'local/' }
 
+twig:
+    default_path: "%kernel.project_dir%/app/Resources/views"
+
 pimcore:
 
 # IMPORTANT Notice!
