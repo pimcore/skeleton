@@ -2852,16 +2852,16 @@
         },
         {
             "name": "lcobucci/jwt",
-            "version": "3.4.0",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "320b9f05741b24acbbaf1106ed267ff3817fd74d"
+                "reference": "958a9873a63b0244a72f6e354ccc86019ee674a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/320b9f05741b24acbbaf1106ed267ff3817fd74d",
-                "reference": "320b9f05741b24acbbaf1106ed267ff3817fd74d",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/958a9873a63b0244a72f6e354ccc86019ee674a5",
+                "reference": "958a9873a63b0244a72f6e354ccc86019ee674a5",
                 "shasum": ""
             },
             "require": {
@@ -2913,7 +2913,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lcobucci/jwt/issues",
-                "source": "https://github.com/lcobucci/jwt/tree/3.4.0"
+                "source": "https://github.com/lcobucci/jwt/tree/3.4.1"
             },
             "funding": [
                 {
@@ -2925,7 +2925,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-11-25T01:46:26+00:00"
+            "time": "2020-11-27T01:17:14+00:00"
         },
         {
             "name": "league/csv",
