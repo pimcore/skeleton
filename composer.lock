@@ -4468,16 +4468,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.8.4",
+            "version": "v6.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "e2d8837a46ce0a99711be8cc5927418bb221286b"
+                "reference": "4256328a6362ffcdcc83b9c95bee17804bd0cc71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/e2d8837a46ce0a99711be8cc5927418bb221286b",
-                "reference": "e2d8837a46ce0a99711be8cc5927418bb221286b",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/4256328a6362ffcdcc83b9c95bee17804bd0cc71",
+                "reference": "4256328a6362ffcdcc83b9c95bee17804bd0cc71",
                 "shasum": ""
             },
             "require": {
@@ -4553,6 +4553,7 @@
             },
             "conflict": {
                 "monolog/monolog": ">=2",
+                "phpstan/phpstan": "^0.12.55",
                 "symfony/monolog-bundle": "3.6.0",
                 "symfony/symfony": "3.4.43 || 4.4.11"
             },
@@ -4588,10 +4589,7 @@
                 "symfony-var-dir": "var",
                 "symfony-web-dir": "web",
                 "symfony-tests-dir": "tests",
-                "symfony-assets-install": "relative",
-                "branch-alias": {
-                    "dev-master": "6.8-dev"
-                }
+                "symfony-assets-install": "relative"
             },
             "autoload": {
                 "files": [
@@ -4640,7 +4638,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2020-10-29T08:55:09+00:00"
+            "time": "2020-11-30T10:31:46+00:00"
         },
         {
             "name": "piwik/device-detector",
