@@ -3,7 +3,7 @@
 # mod_rewrite). Additionally, this reduces the matching process for the
 # start page (path "/") because otherwise Apache will apply the rewriting rules
 # to each configured DirectoryIndex file (e.g. index.php, index.html, index.pl).
-DirectoryIndex app.php
+DirectoryIndex index.php
 
 # By default, Apache does not evaluate symbolic links if you did not enable this
 # feature in your server configuration. Uncomment the following line if you
@@ -12,7 +12,7 @@ DirectoryIndex app.php
 # Options FollowSymlinks
 
 # Disabling MultiViews prevents unwanted negotiation, e.g. "/app" should not resolve
-# to the front controller "/app.php" but be rewritten to "/app.php/app".
+# to the front controller "/index.php" but be rewritten to "/index.php/index".
 <IfModule mod_negotiation.c>
     Options -MultiViews
 </IfModule>
@@ -39,7 +39,7 @@ RewriteEngine On
 # Determine the RewriteBase automatically and set it as environment variable.
 # If you are using Apache aliases to do mass virtual hosting or installed the
 # project in a subdirectory, the base path will be prepended to allow proper
-# resolution of the app.php file and to redirect to the correct URI. It will
+# resolution of the index.php file and to redirect to the correct URI. It will
 # work in environments without path prefix as well, providing a safe, one-size
 # fits all solution. But as you do not need it in this case, you can comment
 # the following 2 lines to eliminate the overhead.
@@ -51,7 +51,7 @@ RewriteCond %{HTTP:Authorization} .
 RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
 # Redirect to URI without front controller to prevent duplicate content
-# (with and without `/app.php`). Only do this redirect on the initial
+# (with and without `/index.php`). Only do this redirect on the initial
 # rewrite by Apache and not on subsequent cycles. Otherwise we would get an
 # endless redirect loop (request -> rewrite to front controller ->
 # redirect -> request -> ...).
@@ -94,7 +94,7 @@ RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^ - [L]
 
 # Rewrite all other queries to the front controller.
-RewriteRule ^ %{ENV:BASE}/app.php [L]
+RewriteRule ^ %{ENV:BASE}/index.php [L]
 
 
 

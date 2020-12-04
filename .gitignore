@@ -6,7 +6,7 @@
 /app/config/parameters.yml
 /build/
 /phpunit.xml
-/web/bundles/
+/public/bundles/
 
 # local config
 /.env.local
@@ -37,8 +37,8 @@
 /var/config/reports.php
 
 
-/web/var/
-/web/sitemap*.xml
+/public/var/
+/public/sitemap*.xml
 
 # PHP-CS-Fixer
 /.php_cs
