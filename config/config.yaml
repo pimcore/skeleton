@@ -1,8 +1,7 @@
 imports:
-    - { resource: parameters.yml }
-    - { resource: security.yml }
-    - { resource: services.yml }
-    - { resource: migrations.yml }
+    - { resource: security.yaml }
+    - { resource: services.yaml }
+    - { resource: migrations.yaml }
     - { resource: 'local/' }
 
 twig:
