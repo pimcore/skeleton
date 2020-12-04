@@ -7593,24 +7593,24 @@
         },
         {
             "name": "umpirsky/country-list",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/umpirsky/country-list.git",
-                "reference": "05fda51cd97b3294e8175ffed06104c44b3c71d7"
+                "reference": "6dddae6983c1bc4d314b513c5decb7c8c6c879dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/umpirsky/country-list/zipball/05fda51cd97b3294e8175ffed06104c44b3c71d7",
-                "reference": "05fda51cd97b3294e8175ffed06104c44b3c71d7",
+                "url": "https://api.github.com/repos/umpirsky/country-list/zipball/6dddae6983c1bc4d314b513c5decb7c8c6c879dc",
+                "reference": "6dddae6983c1bc4d314b513c5decb7c8c6c879dc",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0"
+                "php": "^7.0 || ^8.0"
             },
             "require-dev": {
                 "slowprog/composer-copy-file": "^0.2",
-                "symfony/intl": "^4.2",
+                "symfony/intl": "^4.3",
                 "umpirsky/list-generator": "^1.2"
             },
             "type": "library",
@@ -7633,9 +7633,9 @@
             "description": "List of all countries with names and ISO 3166-1 codes in all languages and data formats.",
             "support": {
                 "issues": "https://github.com/umpirsky/country-list/issues",
-                "source": "https://github.com/umpirsky/country-list/tree/master"
+                "source": "https://github.com/umpirsky/country-list/tree/2.0.6"
             },
-            "time": "2019-04-12T14:29:29+00:00"
+            "time": "2020-12-03T10:09:09+00:00"
         },
         {
             "name": "vrana/adminer",
