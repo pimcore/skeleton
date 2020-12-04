@@ -14,7 +14,7 @@ services:
     #
 
     # auto-register all controllers as services
-    AppBundle\Controller\:
+    App\Controller\:
         resource: '../../Controller'
         public: true
         tags: ['controller.service_arguments']
@@ -25,7 +25,7 @@ services:
     #
 
     # auto-register all commands as services
-    AppBundle\Command\:
+    App\Command\:
         resource: '../../Command/*'
         tags: ['console.command']
         

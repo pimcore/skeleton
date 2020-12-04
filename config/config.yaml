@@ -4,8 +4,6 @@ imports:
     - { resource: migrations.yaml }
     - { resource: 'local/' }
 
-twig:
-    default_path: "%kernel.project_dir%/app/Resources/views"
 
 pimcore:
 
@@ -38,21 +36,21 @@ pimcore:
 #### CLASS OVERRIDES EXAMPLES
 #    models:
 #        class_overrides:
-#            'Pimcore\Model\DataObject\News': 'AppBundle\Model\DataObject\News'
-#            'Pimcore\Model\DataObject\News\Listing': 'AppBundle\Model\DataObject\News\Listing'
-#            'Pimcore\Model\DataObject\Folder': 'AppBundle\Model\DataObject\Folder'
-#            'Pimcore\Model\Asset\Folder': 'AppBundle\Model\Asset\Folder'
-#            'Pimcore\Model\Asset\Image': 'AppBundle\Model\Asset\Image'
-#            'Pimcore\Model\Document\Page': 'AppBundle\Model\Document\Page'
-#            'Pimcore\Model\Document\Link': 'AppBundle\Model\Document\Link'
-#            'Pimcore\Model\Document\Listing': 'AppBundle\Model\Document\Listing'
+#            'Pimcore\Model\DataObject\News': 'App\Model\DataObject\News'
+#            'Pimcore\Model\DataObject\News\Listing': 'App\Model\DataObject\News\Listing'
+#            'Pimcore\Model\DataObject\Folder': 'App\Model\DataObject\Folder'
+#            'Pimcore\Model\Asset\Folder': 'App\Model\Asset\Folder'
+#            'Pimcore\Model\Asset\Image': 'App\Model\Asset\Image'
+#            'Pimcore\Model\Document\Page': 'App\Model\Document\Page'
+#            'Pimcore\Model\Document\Link': 'App\Model\Document\Link'
+#            'Pimcore\Model\Document\Listing': 'App\Model\Document\Listing'
 
 
 #### CUSTOM DOCUMENT EDITABLES
 #    documents:
 #        tags:
 #            map:
-#                markdown: \AppBundle\Model\Document\Tag\Markdown
+#                markdown: \App\Model\Document\Tag\Markdown
 
 
 #### CUSTOM OBJECT DATA TYPES
@@ -60,7 +58,7 @@ pimcore:
 #        class_definitions:
 #            data:
 #                map:
-#                  myDataType: \AppBundle\Model\DataObject\Data\MyDataType
+#                  myDataType: \App\Model\DataObject\Data\MyDataType
 
 
 #### ASSET CUSTOM SETTINGS

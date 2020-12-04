@@ -1,9 +1,9 @@
 # remove the following ignores for your project
-/app/constants.php
+/config/pimcore/constants.php
 
 # symfony default
 /.web-server-pid
-/app/config/parameters.yml
+/config/pimcore/parameters.yml
 /build/
 /phpunit.xml
 /public/bundles/
@@ -12,9 +12,9 @@
 /.env.local
 /.env.local.php
 /.env.*.local
-!/app/config/local
-/app/config/local/*
-!app/config/local/.gitkeep
+!/config/local
+/config/local/*
+!config/local/.gitkeep
 
 # pimcore legacy (remove this for your own development)
 !/legacy
