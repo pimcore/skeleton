@@ -7639,16 +7639,16 @@
         },
         {
             "name": "vrana/adminer",
-            "version": "v4.7.7",
+            "version": "v4.7.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vrana/adminer.git",
-                "reference": "ac40be998d9fcf2a7e3fcdbd5efa3dec9e070f14"
+                "reference": "190146672f6ce9b8f08af2d7e7a5e8f768d32ee6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vrana/adminer/zipball/ac40be998d9fcf2a7e3fcdbd5efa3dec9e070f14",
-                "reference": "ac40be998d9fcf2a7e3fcdbd5efa3dec9e070f14",
+                "url": "https://api.github.com/repos/vrana/adminer/zipball/190146672f6ce9b8f08af2d7e7a5e8f768d32ee6",
+                "reference": "190146672f6ce9b8f08af2d7e7a5e8f768d32ee6",
                 "shasum": ""
             },
             "type": "library",
@@ -7688,7 +7688,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-05-11T09:51:57+00:00"
+            "time": "2020-12-06T12:58:20+00:00"
         },
         {
             "name": "vrana/jush",
