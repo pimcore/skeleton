@@ -5,6 +5,7 @@ namespace App\Controller;
 use Pimcore\Controller\FrontendController;
 use Symfony\Component\HttpFoundation\Request;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends FrontendController
 {
@@ -14,17 +15,6 @@ class DefaultController extends FrontendController
      * @return array
      */
     public function defaultAction(Request $request)
-    {
-        return [];
-    }
-
-    /**
-     * @Route("/examples", name="examples")
-     *
-     * @param Request $request
-     * @return Response
-     */
-    public function examplesAction(Request $request)
     {
         return [];
     }
