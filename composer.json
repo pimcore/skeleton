@@ -4,7 +4,8 @@
   "license": "GPL-3.0-or-later",
   "config": {
     "optimize-autoloader": true,
-    "sort-packages": true
+    "sort-packages": true,
+    "process-timeout": 0
   },
   "require": {
     "pimcore/pimcore": "7.0.x-dev as 6.8.x-dev"
