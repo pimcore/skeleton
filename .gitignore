@@ -1,20 +1,20 @@
 # remove the following ignores for your project
-/app/constants.php
+/config/pimcore/constants.php
 
 # symfony default
 /.web-server-pid
-/app/config/parameters.yml
+/config/pimcore/parameters.yml
 /build/
 /phpunit.xml
-/web/bundles/
+/public/bundles/
 
 # local config
 /.env.local
 /.env.local.php
 /.env.*.local
-!/app/config/local
-/app/config/local/*
-!app/config/local/.gitkeep
+!/config/local
+/config/local/*
+!config/local/.gitkeep
 
 # pimcore legacy (remove this for your own development)
 !/legacy
@@ -37,8 +37,8 @@
 /var/config/reports.php
 
 
-/web/var/
-/web/sitemap*.xml
+/public/var/
+/public/sitemap*.xml
 
 # PHP-CS-Fixer
 /.php_cs

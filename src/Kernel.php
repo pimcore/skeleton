@@ -11,10 +11,14 @@
  * @copyright  Copyright (c) Pimcore GmbH (http://www.pimcore.org)
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
-use Pimcore\HttpKernel\BundleCollection\BundleCollection;
-use Pimcore\Kernel;
 
-class AppKernel extends Kernel
+namespace App;
+
+use HWI\Bundle\OAuthBundle\HWIOAuthBundle;
+use Pimcore\HttpKernel\BundleCollection\BundleCollection;
+use Pimcore\Kernel as PimcoreKernel;
+
+class Kernel extends PimcoreKernel
 {
     /**
      * Adds bundles to register to the bundle collection. The collection is able
