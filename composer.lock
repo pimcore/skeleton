@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "amnuts/opcache-gui",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amnuts/opcache-gui.git",
-                "reference": "d07fa787984ca70ea2a39b6b2bca139c58867fef"
+                "reference": "d660fbee43ad12a1a5114bdedad88625cf4db91c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amnuts/opcache-gui/zipball/d07fa787984ca70ea2a39b6b2bca139c58867fef",
-                "reference": "d07fa787984ca70ea2a39b6b2bca139c58867fef",
+                "url": "https://api.github.com/repos/amnuts/opcache-gui/zipball/d660fbee43ad12a1a5114bdedad88625cf4db91c",
+                "reference": "d660fbee43ad12a1a5114bdedad88625cf4db91c",
                 "shasum": ""
             },
             "require": {
@@ -58,9 +58,9 @@
             "support": {
                 "email": "andy@amnuts.com",
                 "issues": "https://github.com/amnuts/opcache-gui/issues",
-                "source": "https://github.com/amnuts/opcache-gui/tree/3.2.0"
+                "source": "https://github.com/amnuts/opcache-gui/tree/3.2.1"
             },
-            "time": "2020-12-08T21:59:47+00:00"
+            "time": "2020-12-16T15:55:55+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -4354,16 +4354,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "2.0.29",
+            "version": "2.0.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "497856a8d997f640b4a516062f84228a772a48a8"
+                "reference": "136b9ca7eebef78be14abf90d65c5e57b6bc5d36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/497856a8d997f640b4a516062f84228a772a48a8",
-                "reference": "497856a8d997f640b4a516062f84228a772a48a8",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/136b9ca7eebef78be14abf90d65c5e57b6bc5d36",
+                "reference": "136b9ca7eebef78be14abf90d65c5e57b6bc5d36",
                 "shasum": ""
             },
             "require": {
@@ -4371,7 +4371,7 @@
             },
             "require-dev": {
                 "phing/phing": "~2.7",
-                "phpunit/phpunit": "^4.8.35|^5.7|^6.0",
+                "phpunit/phpunit": "^4.8.35|^5.7|^6.0|^9.4",
                 "squizlabs/php_codesniffer": "~2.0"
             },
             "suggest": {
@@ -4443,7 +4443,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/2.0"
+                "source": "https://github.com/phpseclib/phpseclib/tree/2.0.30"
             },
             "funding": [
                 {
@@ -4459,7 +4459,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-08T04:24:43+00:00"
+            "time": "2020-12-17T05:42:04+00:00"
         },
         {
             "name": "pimcore/pimcore",
