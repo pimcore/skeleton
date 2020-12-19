@@ -7213,16 +7213,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v4.4.17",
+            "version": "v4.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "02562a0eff211123b7ee2204f9b7fc86134a8a8e"
+                "reference": "a05cc024d3d43cb84faea3969de8cc2e590e7a83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/02562a0eff211123b7ee2204f9b7fc86134a8a8e",
-                "reference": "02562a0eff211123b7ee2204f9b7fc86134a8a8e",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/a05cc024d3d43cb84faea3969de8cc2e590e7a83",
+                "reference": "a05cc024d3d43cb84faea3969de8cc2e590e7a83",
                 "shasum": ""
             },
             "require": {
@@ -7385,7 +7385,7 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/symfony/issues",
-                "source": "https://github.com/symfony/symfony/tree/v4.4.17"
+                "source": "https://github.com/symfony/symfony/tree/v4.4.18"
             },
             "funding": [
                 {
@@ -7401,7 +7401,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-29T09:23:30+00:00"
+            "time": "2020-12-18T13:32:50+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
