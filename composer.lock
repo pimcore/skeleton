@@ -4438,12 +4438,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "2df81956940852f63f4fb6ac82c441675f8ad1c4"
+                "reference": "75e970c96d65d78890264f94a9e7e7885433c9f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/2df81956940852f63f4fb6ac82c441675f8ad1c4",
-                "reference": "2df81956940852f63f4fb6ac82c441675f8ad1c4",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/75e970c96d65d78890264f94a9e7e7885433c9f6",
+                "reference": "75e970c96d65d78890264f94a9e7e7885433c9f6",
                 "shasum": ""
             },
             "require": {
@@ -4610,7 +4610,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2020-12-18T09:36:24+00:00"
+            "time": "2020-12-19T09:35:48+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -7421,16 +7421,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v5.2.0",
+            "version": "v5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "8b51547061b29081803eb9fdf9b02cf80a1e1a74"
+                "reference": "649fa3f8cd42ad928fb573ebe34f4aff57fe9d26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/8b51547061b29081803eb9fdf9b02cf80a1e1a74",
-                "reference": "8b51547061b29081803eb9fdf9b02cf80a1e1a74",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/649fa3f8cd42ad928fb573ebe34f4aff57fe9d26",
+                "reference": "649fa3f8cd42ad928fb573ebe34f4aff57fe9d26",
                 "shasum": ""
             },
             "require": {
@@ -7604,7 +7604,7 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/symfony/issues",
-                "source": "https://github.com/symfony/symfony/tree/v5.2.0"
+                "source": "https://github.com/symfony/symfony/tree/v5.2.1"
             },
             "funding": [
                 {
@@ -7620,7 +7620,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-30T05:56:34+00:00"
+            "time": "2020-12-18T13:49:55+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
