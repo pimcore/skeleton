@@ -4438,12 +4438,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "75e970c96d65d78890264f94a9e7e7885433c9f6"
+                "reference": "aafac1f50c1e2f8e0fc39656cd4f12f343d76cc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/75e970c96d65d78890264f94a9e7e7885433c9f6",
-                "reference": "75e970c96d65d78890264f94a9e7e7885433c9f6",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/aafac1f50c1e2f8e0fc39656cd4f12f343d76cc7",
+                "reference": "aafac1f50c1e2f8e0fc39656cd4f12f343d76cc7",
                 "shasum": ""
             },
             "require": {
@@ -4518,14 +4518,13 @@
                 "webmozarts/console-parallelization": "^1.1.0"
             },
             "conflict": {
-                "codeception/module-symfony": "1.5.1",
                 "monolog/monolog": ">=2",
                 "symfony/monolog-bundle": "3.6.0"
             },
             "require-dev": {
                 "cache/integration-tests": "dev-master",
                 "codeception/codeception": "^4.1.12",
-                "codeception/module-symfony": "^1.5.0",
+                "codeception/module-symfony": "^1.6.0",
                 "codeception/phpunit-wrapper": "^9",
                 "composer/composer": "*",
                 "elasticsearch/elasticsearch": "^6",
@@ -4610,7 +4609,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2020-12-19T09:35:48+00:00"
+            "time": "2020-12-22T13:26:13+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
