@@ -4438,12 +4438,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "aafac1f50c1e2f8e0fc39656cd4f12f343d76cc7"
+                "reference": "6b157548f12c82a03a64211b02fb1be7104f5c60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/aafac1f50c1e2f8e0fc39656cd4f12f343d76cc7",
-                "reference": "aafac1f50c1e2f8e0fc39656cd4f12f343d76cc7",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/6b157548f12c82a03a64211b02fb1be7104f5c60",
+                "reference": "6b157548f12c82a03a64211b02fb1be7104f5c60",
                 "shasum": ""
             },
             "require": {
@@ -4527,7 +4527,7 @@
                 "codeception/module-symfony": "^1.6.0",
                 "codeception/phpunit-wrapper": "^9",
                 "composer/composer": "*",
-                "elasticsearch/elasticsearch": "^6",
+                "elasticsearch/elasticsearch": "^6 || ^7",
                 "heidelpay/heidelpay-php": "^1.2.5.1",
                 "klarna/checkout": "^3.0.0",
                 "mpay24/mpay24-php": "^4.2",
@@ -4609,7 +4609,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2020-12-22T13:26:13+00:00"
+            "time": "2020-12-23T09:36:56+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
