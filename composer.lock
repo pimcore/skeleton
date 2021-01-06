@@ -4493,12 +4493,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "5140780027526737f76cfce6dee85c97d8efb7ff"
+                "reference": "75ecac39acf126b1a8fd16dc7eeb8dbacf3f428d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/5140780027526737f76cfce6dee85c97d8efb7ff",
-                "reference": "5140780027526737f76cfce6dee85c97d8efb7ff",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/75ecac39acf126b1a8fd16dc7eeb8dbacf3f428d",
+                "reference": "75ecac39acf126b1a8fd16dc7eeb8dbacf3f428d",
                 "shasum": ""
             },
             "require": {
@@ -4664,7 +4664,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-01-05T08:35:03+00:00"
+            "time": "2021-01-06T09:35:32+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -7791,16 +7791,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.14.1",
+            "version": "v2.14.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "5eb9ac5dfdd20c3f59495c22841adc5da980d312"
+                "reference": "8bc568d460d88b25c00c046256ec14a787ea60d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/5eb9ac5dfdd20c3f59495c22841adc5da980d312",
-                "reference": "5eb9ac5dfdd20c3f59495c22841adc5da980d312",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/8bc568d460d88b25c00c046256ec14a787ea60d9",
+                "reference": "8bc568d460d88b25c00c046256ec14a787ea60d9",
                 "shasum": ""
             },
             "require": {
@@ -7854,7 +7854,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v2.14.1"
+                "source": "https://github.com/twigphp/Twig/tree/v2.14.3"
             },
             "funding": [
                 {
@@ -7866,7 +7866,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-27T19:25:29+00:00"
+            "time": "2021-01-05T15:34:33+00:00"
         },
         {
             "name": "umpirsky/country-list",
