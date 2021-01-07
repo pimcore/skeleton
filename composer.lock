@@ -3520,16 +3520,16 @@
         },
         {
             "name": "mpratt/embera",
-            "version": "2.0.14",
+            "version": "2.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mpratt/Embera.git",
-                "reference": "a24824abc539d54b8a950612b7c196f575de8257"
+                "reference": "59155a8fd7d268a10bb79477f21e4865186f83d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mpratt/Embera/zipball/a24824abc539d54b8a950612b7c196f575de8257",
-                "reference": "a24824abc539d54b8a950612b7c196f575de8257",
+                "url": "https://api.github.com/repos/mpratt/Embera/zipball/59155a8fd7d268a10bb79477f21e4865186f83d3",
+                "reference": "59155a8fd7d268a10bb79477f21e4865186f83d3",
                 "shasum": ""
             },
             "require": {
@@ -3577,9 +3577,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mpratt/Embera/issues",
-                "source": "https://github.com/mpratt/Embera/tree/2.0.14"
+                "source": "https://github.com/mpratt/Embera/tree/2.0.16"
             },
-            "time": "2020-11-08T04:32:00+00:00"
+            "time": "2021-01-07T02:36:52+00:00"
         },
         {
             "name": "mustangostang/spyc",
@@ -4493,12 +4493,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "75ecac39acf126b1a8fd16dc7eeb8dbacf3f428d"
+                "reference": "c4bbc314cfbe0510f9ada93a929535d08247d176"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/75ecac39acf126b1a8fd16dc7eeb8dbacf3f428d",
-                "reference": "75ecac39acf126b1a8fd16dc7eeb8dbacf3f428d",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/c4bbc314cfbe0510f9ada93a929535d08247d176",
+                "reference": "c4bbc314cfbe0510f9ada93a929535d08247d176",
                 "shasum": ""
             },
             "require": {
@@ -4664,7 +4664,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-01-06T09:35:32+00:00"
+            "time": "2021-01-07T09:36:14+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
