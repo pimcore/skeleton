@@ -4,8 +4,7 @@ return [
     'views' => [
         [
             'treetype' => 'object',                                             // element type is "object"
-            'name' => 'Articles',                                               // display name
-            'condition' => null,                                                // SQL condition
+            'name' => 'Articles',                                               // display name                                          
             'icon' => '/bundles/pimcoreadmin/img/flat-color-icons/reading.svg',      // tree icon
             'id' => 1,                                                          // unique (!!!) custom view ID
             'rootfolder' => '/blog',                                            // root node
@@ -23,7 +22,7 @@ return [
                     'columns' => ['o5' => 'title']
                 ]
             ],
-            'where' => '',
+            'where' => '',                                                      // SQL where condition
             'treeContextMenu' => [
                 'object' => [
                     'items' => [
