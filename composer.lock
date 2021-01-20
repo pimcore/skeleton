@@ -4750,12 +4750,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "2e3df044f1211ea16f64a2350000f3b6791783e2"
+                "reference": "3d30f266582df752a10418dc70be7811bdd4d10b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/2e3df044f1211ea16f64a2350000f3b6791783e2",
-                "reference": "2e3df044f1211ea16f64a2350000f3b6791783e2",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/3d30f266582df752a10418dc70be7811bdd4d10b",
+                "reference": "3d30f266582df752a10418dc70be7811bdd4d10b",
                 "shasum": ""
             },
             "require": {
@@ -4815,7 +4815,6 @@
                 "sabre/dav": "^4.1.1",
                 "scheb/2fa-bundle": "^5.3",
                 "scheb/2fa-google-authenticator": "^5.3",
-                "scheb/2fa-qr-code": "^5.3",
                 "sensio/framework-extra-bundle": "^5.4",
                 "sensiolabs/ansi-to-html": "^1.1",
                 "soundasleep/html2text": "^1.1.0",
@@ -4924,7 +4923,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-01-20T09:37:25+00:00"
+            "time": "2021-01-20T14:38:10+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -6149,55 +6148,6 @@
             ],
             "support": {
                 "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.3.1"
-            },
-            "time": "2020-12-31T11:27:00+00:00"
-        },
-        {
-            "name": "scheb/2fa-qr-code",
-            "version": "v5.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/scheb/2fa-qr-code.git",
-                "reference": "ccacde1d24646aa3b0890459b9050344a26b4e8c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scheb/2fa-qr-code/zipball/ccacde1d24646aa3b0890459b9050344a26b4e8c",
-                "reference": "ccacde1d24646aa3b0890459b9050344a26b4e8c",
-                "shasum": ""
-            },
-            "require": {
-                "endroid/qr-code": "^3.0",
-                "scheb/2fa-bundle": "self.version"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Scheb\\TwoFactorBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christian Scheb",
-                    "email": "me@christianscheb.de"
-                }
-            ],
-            "description": "Extends scheb/2fa-bundle with the ability to render QR-codes for Google Authenticator or TOTP",
-            "homepage": "https://github.com/scheb/2fa",
-            "keywords": [
-                "2fa",
-                "Authentication",
-                "qr-code",
-                "symfony",
-                "two-factor",
-                "two-step"
-            ],
-            "support": {
-                "source": "https://github.com/scheb/2fa-qr-code/tree/v5.3.1"
             },
             "time": "2020-12-31T11:27:00+00:00"
         },
