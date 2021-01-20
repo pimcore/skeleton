@@ -2274,34 +2274,34 @@
         },
         {
             "name": "google/apiclient",
-            "version": "v2.8.3",
+            "version": "v2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client.git",
-                "reference": "81696e6206322e38c643cfcc96c4494ccfef8a32"
+                "reference": "2fb6e702aca5d68203fa737f89f6f774022494c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client/zipball/81696e6206322e38c643cfcc96c4494ccfef8a32",
-                "reference": "81696e6206322e38c643cfcc96c4494ccfef8a32",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client/zipball/2fb6e702aca5d68203fa737f89f6f774022494c6",
+                "reference": "2fb6e702aca5d68203fa737f89f6f774022494c6",
                 "shasum": ""
             },
             "require": {
                 "firebase/php-jwt": "~2.0||~3.0||~4.0||~5.0",
                 "google/apiclient-services": "~0.13",
                 "google/auth": "^1.10",
-                "guzzlehttp/guzzle": "~5.3.1||~6.0||~7.0",
+                "guzzlehttp/guzzle": "~5.3.3||~6.0||~7.0",
                 "guzzlehttp/psr7": "^1.2",
                 "monolog/monolog": "^1.17|^2.0",
-                "php": ">=5.4",
-                "phpseclib/phpseclib": "~0.3.10||~2.0"
+                "php": "^5.6|^7.0|^8.0",
+                "phpseclib/phpseclib": "~2.0||^3.0.2"
             },
             "require-dev": {
-                "cache/filesystem-adapter": "^0.3.2",
+                "cache/filesystem-adapter": "^0.3.2|^1.1",
                 "composer/composer": "^1.10",
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
                 "phpcompatibility/php-compatibility": "^9.2",
-                "phpunit/phpunit": "^4.8.36|^5.0",
+                "phpunit/phpunit": "^5.7||^8.5.13",
                 "squizlabs/php_codesniffer": "~2.3",
                 "symfony/css-selector": "~2.1",
                 "symfony/dom-crawler": "~2.1"
@@ -2337,22 +2337,22 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client/issues",
-                "source": "https://github.com/googleapis/google-api-php-client/tree/v2.8.3"
+                "source": "https://github.com/googleapis/google-api-php-client/tree/v2.9.1"
             },
-            "time": "2020-11-17T17:33:35+00:00"
+            "time": "2021-01-19T17:48:59+00:00"
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.156",
+            "version": "v0.157.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "2f5e54fdef034f856208328126bddd8376dae4b3"
+                "reference": "957846303c28c10033fa83d8688ffd325c260a3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/2f5e54fdef034f856208328126bddd8376dae4b3",
-                "reference": "2f5e54fdef034f856208328126bddd8376dae4b3",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/957846303c28c10033fa83d8688ffd325c260a3e",
+                "reference": "957846303c28c10033fa83d8688ffd325c260a3e",
                 "shasum": ""
             },
             "require": {
@@ -2378,9 +2378,9 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.156"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.157.0"
             },
-            "time": "2020-11-30T20:03:55+00:00"
+            "time": "2021-01-19T12:20:06+00:00"
         },
         {
             "name": "google/auth",
@@ -4758,16 +4758,16 @@
         },
         {
             "name": "presta/sitemap-bundle",
-            "version": "v2.3.1",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSitemapBundle.git",
-                "reference": "f6e68a197f5a8cc20e3383477f26b328c173a4b2"
+                "reference": "63f54b809cc2f3cb82bf16cc866b9ea24421700b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/f6e68a197f5a8cc20e3383477f26b328c173a4b2",
-                "reference": "f6e68a197f5a8cc20e3383477f26b328c173a4b2",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/63f54b809cc2f3cb82bf16cc866b9ea24421700b",
+                "reference": "63f54b809cc2f3cb82bf16cc866b9ea24421700b",
                 "shasum": ""
             },
             "require": {
@@ -4778,14 +4778,10 @@
             },
             "require-dev": {
                 "doctrine/annotations": "^1.0",
-                "ext-simplexml": "*",
                 "phpunit/phpunit": "^7.5",
                 "symfony/browser-kit": "^4.4",
                 "symfony/phpunit-bridge": "^4.4",
                 "symfony/yaml": "^4.4"
-            },
-            "suggest": {
-                "doctrine/doctrine-cache-bundle": "Allows to store sitemaps in cache"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -4822,9 +4818,9 @@
             ],
             "support": {
                 "issues": "https://github.com/prestaconcept/PrestaSitemapBundle/issues",
-                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v2.3.1"
+                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v2.4.0"
             },
-            "time": "2020-10-02T07:53:28+00:00"
+            "time": "2020-12-17T13:18:32+00:00"
         },
         {
             "name": "psr/cache",
