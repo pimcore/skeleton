@@ -4519,16 +4519,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.8.6",
+            "version": "v6.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "f4b761df8aa6f9a955ae02fa0f883423f5215ee9"
+                "reference": "d66a9628f92d75ecb75d5ade8a50283da70a0070"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/f4b761df8aa6f9a955ae02fa0f883423f5215ee9",
-                "reference": "f4b761df8aa6f9a955ae02fa0f883423f5215ee9",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/d66a9628f92d75ecb75d5ade8a50283da70a0070",
+                "reference": "d66a9628f92d75ecb75d5ade8a50283da70a0070",
                 "shasum": ""
             },
             "require": {
@@ -4580,7 +4580,7 @@
                 "php": ">=7.2",
                 "phpoffice/phpspreadsheet": "^1.9",
                 "piwik/device-detector": "^3.9",
-                "presta/sitemap-bundle": "^1.5 || ^2.1",
+                "presta/sitemap-bundle": "^1.7 || ^2.1",
                 "psr/simple-cache": "^1.0.0",
                 "ramsey/uuid": "^3.8",
                 "sabre/dav": "^3.2",
@@ -4689,7 +4689,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2020-12-22T13:57:44+00:00"
+            "time": "2021-01-20T13:53:12+00:00"
         },
         {
             "name": "piwik/device-detector",
