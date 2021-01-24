@@ -5932,19 +5932,20 @@
         },
         {
             "name": "scheb/2fa-bundle",
-            "version": "v5.3.1",
+            "version": "v5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-bundle.git",
-                "reference": "545309000efb435fed9b7e9cff0fae7b53a72eb8"
+                "reference": "05e7669088a02199e3f81abddb363f426ca0bbc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/545309000efb435fed9b7e9cff0fae7b53a72eb8",
-                "reference": "545309000efb435fed9b7e9cff0fae7b53a72eb8",
+                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/05e7669088a02199e3f81abddb363f426ca0bbc1",
+                "reference": "05e7669088a02199e3f81abddb363f426ca0bbc1",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "php": ">=7.2.5",
                 "symfony/config": "^4.4|^5.0",
                 "symfony/dependency-injection": "^4.4|^5.0",
@@ -5955,6 +5956,9 @@
                 "symfony/property-access": "^4.4|^5.0",
                 "symfony/security-bundle": "^4.4.1|^5.0",
                 "symfony/twig-bundle": "^4.4|^5.0"
+            },
+            "conflict": {
+                "scheb/two-factor-bundle": "*"
             },
             "suggest": {
                 "scheb/2fa-backup-code": "Emergency codes when you have no access to other methods",
@@ -5990,13 +5994,13 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-bundle/tree/v5.3.1"
+                "source": "https://github.com/scheb/2fa-bundle/tree/v5.4.0"
             },
-            "time": "2021-01-01T15:52:24+00:00"
+            "time": "2021-01-23T19:01:12+00:00"
         },
         {
             "name": "scheb/2fa-google-authenticator",
-            "version": "v5.3.1",
+            "version": "v5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-google-authenticator.git",
@@ -6040,7 +6044,7 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.3.1"
+                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.4.0"
             },
             "time": "2020-12-31T11:27:00+00:00"
         },
