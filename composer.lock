@@ -5932,16 +5932,16 @@
         },
         {
             "name": "scheb/2fa-bundle",
-            "version": "v5.4.0",
+            "version": "v5.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-bundle.git",
-                "reference": "05e7669088a02199e3f81abddb363f426ca0bbc1"
+                "reference": "5ce5763a16af4a28bef4c7306a3ca68ca9e07ac7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/05e7669088a02199e3f81abddb363f426ca0bbc1",
-                "reference": "05e7669088a02199e3f81abddb363f426ca0bbc1",
+                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/5ce5763a16af4a28bef4c7306a3ca68ca9e07ac7",
+                "reference": "5ce5763a16af4a28bef4c7306a3ca68ca9e07ac7",
                 "shasum": ""
             },
             "require": {
@@ -5994,13 +5994,13 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-bundle/tree/v5.4.0"
+                "source": "https://github.com/scheb/2fa-bundle/tree/v5.4.1"
             },
-            "time": "2021-01-23T19:01:12+00:00"
+            "time": "2021-01-24T12:59:37+00:00"
         },
         {
             "name": "scheb/2fa-google-authenticator",
-            "version": "v5.4.0",
+            "version": "v5.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-google-authenticator.git",
@@ -6044,7 +6044,7 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.4.0"
+                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.4.1"
             },
             "time": "2020-12-31T11:27:00+00:00"
         },
@@ -8500,23 +8500,23 @@
     "packages-dev": [
         {
             "name": "behat/gherkin",
-            "version": "v4.6.2",
+            "version": "v4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Gherkin.git",
-                "reference": "51ac4500c4dc30cbaaabcd2f25694299df666a31"
+                "reference": "0ffe6a7f67f8d038166143d71b30a9088f932576"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/51ac4500c4dc30cbaaabcd2f25694299df666a31",
-                "reference": "51ac4500c4dc30cbaaabcd2f25694299df666a31",
+                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/0ffe6a7f67f8d038166143d71b30a9088f932576",
+                "reference": "0ffe6a7f67f8d038166143d71b30a9088f932576",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.1"
+                "php": ">=5.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.5|~5",
+                "phpunit/phpunit": "~5.7|~6|~7",
                 "symfony/phpunit-bridge": "~2.7|~3|~4",
                 "symfony/yaml": "~2.3|~3|~4"
             },
@@ -8545,7 +8545,7 @@
                     "homepage": "http://everzet.com"
                 }
             ],
-            "description": "Gherkin DSL parser for PHP 5.3",
+            "description": "Gherkin DSL parser for PHP",
             "homepage": "http://behat.org/",
             "keywords": [
                 "BDD",
@@ -8557,9 +8557,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Behat/Gherkin/issues",
-                "source": "https://github.com/Behat/Gherkin/tree/master"
+                "source": "https://github.com/Behat/Gherkin/tree/v4.7.0"
             },
-            "time": "2020-03-17T14:03:26+00:00"
+            "time": "2021-01-24T14:06:27+00:00"
         },
         {
             "name": "cache/integration-tests",
