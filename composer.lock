@@ -826,16 +826,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "044d33eeffdb236d5013b6b4af99f87519e10751"
+                "reference": "015fdd490074d4daa891e2d1df998dc35ba54924"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/044d33eeffdb236d5013b6b4af99f87519e10751",
-                "reference": "044d33eeffdb236d5013b6b4af99f87519e10751",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/015fdd490074d4daa891e2d1df998dc35ba54924",
+                "reference": "015fdd490074d4daa891e2d1df998dc35ba54924",
                 "shasum": ""
             },
             "require": {
@@ -858,7 +858,7 @@
             "require-dev": {
                 "doctrine/coding-standard": "^8.0",
                 "doctrine/orm": "^2.6",
-                "ocramius/proxy-manager": "^2.1",
+                "friendsofphp/proxy-manager-lts": "^1.0",
                 "phpunit/phpunit": "^7.5 || ^8.0 || ^9.3",
                 "symfony/phpunit-bridge": "^4.2",
                 "symfony/property-info": "^4.3.3|^5.0",
@@ -916,7 +916,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.2.2"
+                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.2.3"
             },
             "funding": [
                 {
@@ -932,7 +932,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-05T15:07:10+00:00"
+            "time": "2021-01-19T20:29:53+00:00"
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
@@ -4532,24 +4532,26 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "2.0.30",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "136b9ca7eebef78be14abf90d65c5e57b6bc5d36"
+                "reference": "845a2275e886ba9fb386c8f59cb383dd9c8963e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/136b9ca7eebef78be14abf90d65c5e57b6bc5d36",
-                "reference": "136b9ca7eebef78be14abf90d65c5e57b6bc5d36",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/845a2275e886ba9fb386c8f59cb383dd9c8963e9",
+                "reference": "845a2275e886ba9fb386c8f59cb383dd9c8963e9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "paragonie/constant_time_encoding": "^1|^2",
+                "paragonie/random_compat": "^1.4|^2.0|^9.99.99",
+                "php": ">=5.6.1"
             },
             "require-dev": {
                 "phing/phing": "~2.7",
-                "phpunit/phpunit": "^4.8.35|^5.7|^6.0|^9.4",
+                "phpunit/phpunit": "^5.7|^6.0|^9.4",
                 "squizlabs/php_codesniffer": "~2.0"
             },
             "suggest": {
@@ -4564,7 +4566,7 @@
                     "phpseclib/bootstrap.php"
                 ],
                 "psr-4": {
-                    "phpseclib\\": "phpseclib/"
+                    "phpseclib3\\": "phpseclib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4621,7 +4623,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/2.0.30"
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.4"
             },
             "funding": [
                 {
@@ -4637,7 +4639,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-17T05:42:04+00:00"
+            "time": "2021-01-25T19:02:05+00:00"
         },
         {
             "name": "pimcore/pimcore",
@@ -4645,12 +4647,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "d101e12b16c243ab062c79ed5541a6460a97e805"
+                "reference": "f04960c30097e9031159d7abae9a74ffdd88c4d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/d101e12b16c243ab062c79ed5541a6460a97e805",
-                "reference": "d101e12b16c243ab062c79ed5541a6460a97e805",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/f04960c30097e9031159d7abae9a74ffdd88c4d6",
+                "reference": "f04960c30097e9031159d7abae9a74ffdd88c4d6",
                 "shasum": ""
             },
             "require": {
@@ -4816,7 +4818,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-01-22T10:51:36+00:00"
+            "time": "2021-01-25T15:24:44+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -7596,16 +7598,16 @@
         },
         {
             "name": "symfony/swiftmailer-bundle",
-            "version": "v3.5.1",
+            "version": "v3.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/swiftmailer-bundle.git",
-                "reference": "933be6a3196fb354615290f53ff7ff61e0bdde58"
+                "reference": "6b72355549f02823a2209180f9c035e46ca3f178"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/swiftmailer-bundle/zipball/933be6a3196fb354615290f53ff7ff61e0bdde58",
-                "reference": "933be6a3196fb354615290f53ff7ff61e0bdde58",
+                "url": "https://api.github.com/repos/symfony/swiftmailer-bundle/zipball/6b72355549f02823a2209180f9c035e46ca3f178",
+                "reference": "6b72355549f02823a2209180f9c035e46ca3f178",
                 "shasum": ""
             },
             "require": {
@@ -7616,7 +7618,7 @@
                 "symfony/http-kernel": "^4.4|^5.0"
             },
             "conflict": {
-                "twig/twig": "<1.41|<2.10"
+                "twig/twig": "<1.41|>=2.0,<2.10"
             },
             "require-dev": {
                 "symfony/console": "^4.4|^5.0",
@@ -7627,7 +7629,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.5-dev"
+                    "dev-main": "3.5-dev"
                 }
             },
             "autoload": {
@@ -7656,7 +7658,7 @@
             "homepage": "http://symfony.com",
             "support": {
                 "issues": "https://github.com/symfony/swiftmailer-bundle/issues",
-                "source": "https://github.com/symfony/swiftmailer-bundle/tree/v3.5.1"
+                "source": "https://github.com/symfony/swiftmailer-bundle/tree/v3.5.2"
             },
             "funding": [
                 {
@@ -7672,7 +7674,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-06T05:51:35+00:00"
+            "time": "2021-01-25T17:31:39+00:00"
         },
         {
             "name": "symfony/symfony",
@@ -8685,16 +8687,16 @@
         },
         {
             "name": "codeception/codeception",
-            "version": "4.1.15",
+            "version": "4.1.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "9b174d18ba58bb2e8cc4cecce619d6124df1d83a"
+                "reference": "daf4fe110b33855252009a0dcab87ce8bcf7c009"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/9b174d18ba58bb2e8cc4cecce619d6124df1d83a",
-                "reference": "9b174d18ba58bb2e8cc4cecce619d6124df1d83a",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/daf4fe110b33855252009a0dcab87ce8bcf7c009",
+                "reference": "daf4fe110b33855252009a0dcab87ce8bcf7c009",
                 "shasum": ""
             },
             "require": {
@@ -8768,7 +8770,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Codeception/Codeception/issues",
-                "source": "https://github.com/Codeception/Codeception/tree/4.1.15"
+                "source": "https://github.com/Codeception/Codeception/tree/4.1.16"
             },
             "funding": [
                 {
@@ -8776,7 +8778,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2021-01-17T19:19:40+00:00"
+            "time": "2021-01-26T07:25:32+00:00"
         },
         {
             "name": "codeception/lib-asserts",
