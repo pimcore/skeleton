@@ -3347,16 +3347,16 @@
         },
         {
             "name": "linfo/linfo",
-            "version": "v4.0.5",
+            "version": "v4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jrgp/linfo.git",
-                "reference": "e3d50585556a92546f1899f354078f96c0a12298"
+                "reference": "aea87565d4fd1124e637581b66a41c8b86ee22bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jrgp/linfo/zipball/e3d50585556a92546f1899f354078f96c0a12298",
-                "reference": "e3d50585556a92546f1899f354078f96c0a12298",
+                "url": "https://api.github.com/repos/jrgp/linfo/zipball/aea87565d4fd1124e637581b66a41c8b86ee22bb",
+                "reference": "aea87565d4fd1124e637581b66a41c8b86ee22bb",
                 "shasum": ""
             },
             "require": {
@@ -3398,9 +3398,9 @@
             ],
             "support": {
                 "issues": "https://github.com/jrgp/linfo/issues",
-                "source": "https://github.com/jrgp/linfo/tree/v4.0.5"
+                "source": "https://github.com/jrgp/linfo/tree/v4.0.6"
             },
-            "time": "2020-11-15T00:33:01+00:00"
+            "time": "2021-01-28T17:51:22+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
