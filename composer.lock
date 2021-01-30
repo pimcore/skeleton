@@ -5934,16 +5934,16 @@
         },
         {
             "name": "scheb/2fa-bundle",
-            "version": "v5.4.1",
+            "version": "v5.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-bundle.git",
-                "reference": "5ce5763a16af4a28bef4c7306a3ca68ca9e07ac7"
+                "reference": "ca3887f3d21f6de606d0b9881b82f859382d8a3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/5ce5763a16af4a28bef4c7306a3ca68ca9e07ac7",
-                "reference": "5ce5763a16af4a28bef4c7306a3ca68ca9e07ac7",
+                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/ca3887f3d21f6de606d0b9881b82f859382d8a3f",
+                "reference": "ca3887f3d21f6de606d0b9881b82f859382d8a3f",
                 "shasum": ""
             },
             "require": {
@@ -5996,13 +5996,13 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-bundle/tree/v5.4.1"
+                "source": "https://github.com/scheb/2fa-bundle/tree/v5.4.2"
             },
-            "time": "2021-01-24T12:59:37+00:00"
+            "time": "2021-01-29T13:16:42+00:00"
         },
         {
             "name": "scheb/2fa-google-authenticator",
-            "version": "v5.4.1",
+            "version": "v5.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-google-authenticator.git",
@@ -6046,7 +6046,7 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.4.1"
+                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.4.2"
             },
             "time": "2020-12-31T11:27:00+00:00"
         },
@@ -8836,16 +8836,16 @@
         },
         {
             "name": "codeception/lib-innerbrowser",
-            "version": "1.3.6",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/lib-innerbrowser.git",
-                "reference": "41b79ba6761001bdb1f373a347400180693ad4e7"
+                "reference": "b7406c710684c255d9b067d7795269a5585a0406"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/lib-innerbrowser/zipball/41b79ba6761001bdb1f373a347400180693ad4e7",
-                "reference": "41b79ba6761001bdb1f373a347400180693ad4e7",
+                "url": "https://api.github.com/repos/Codeception/lib-innerbrowser/zipball/b7406c710684c255d9b067d7795269a5585a0406",
+                "reference": "b7406c710684c255d9b067d7795269a5585a0406",
                 "shasum": ""
             },
             "require": {
@@ -8890,9 +8890,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Codeception/lib-innerbrowser/issues",
-                "source": "https://github.com/Codeception/lib-innerbrowser/tree/1.3.6"
+                "source": "https://github.com/Codeception/lib-innerbrowser/tree/1.4.0"
             },
-            "time": "2021-01-17T11:21:09+00:00"
+            "time": "2021-01-29T18:17:25+00:00"
         },
         {
             "name": "codeception/module-symfony",
