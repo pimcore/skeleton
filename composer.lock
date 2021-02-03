@@ -4647,12 +4647,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "3f973da590e39ce986b912b272ff661fffb70af0"
+                "reference": "c4c599ae3d32ba047e8940b7d5eacaccc4ceaf56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/3f973da590e39ce986b912b272ff661fffb70af0",
-                "reference": "3f973da590e39ce986b912b272ff661fffb70af0",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/c4c599ae3d32ba047e8940b7d5eacaccc4ceaf56",
+                "reference": "c4c599ae3d32ba047e8940b7d5eacaccc4ceaf56",
                 "shasum": ""
             },
             "require": {
@@ -4818,7 +4818,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-02-02T09:36:11+00:00"
+            "time": "2021-02-03T09:35:33+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -7678,16 +7678,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v5.2.2",
+            "version": "v5.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "b8c9ce9c703da60266d9f0225b696b31778e9df9"
+                "reference": "e16bbdc1a02033e0e3ac060224953aee90570776"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/b8c9ce9c703da60266d9f0225b696b31778e9df9",
-                "reference": "b8c9ce9c703da60266d9f0225b696b31778e9df9",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/e16bbdc1a02033e0e3ac060224953aee90570776",
+                "reference": "e16bbdc1a02033e0e3ac060224953aee90570776",
                 "shasum": ""
             },
             "require": {
@@ -7821,9 +7821,6 @@
                 "twig/markdown-extra": "^2.12"
             },
             "type": "library",
-            "extra": {
-                "branch-version": "5.2"
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Bridge\\Doctrine\\": "src/Symfony/Bridge/Doctrine/",
@@ -7861,7 +7858,7 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/symfony/issues",
-                "source": "https://github.com/symfony/symfony/tree/v5.2.2"
+                "source": "https://github.com/symfony/symfony/tree/v5.2.3"
             },
             "funding": [
                 {
@@ -7877,7 +7874,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-27T14:46:07+00:00"
+            "time": "2021-02-03T04:52:17+00:00"
         },
         {
             "name": "thecodingmachine/safe",
@@ -9817,16 +9814,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.1",
+            "version": "9.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "e7bdf4085de85a825f4424eae52c99a1cec2f360"
+                "reference": "f661659747f2f87f9e72095bb207bceb0f151cb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e7bdf4085de85a825f4424eae52c99a1cec2f360",
-                "reference": "e7bdf4085de85a825f4424eae52c99a1cec2f360",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f661659747f2f87f9e72095bb207bceb0f151cb4",
+                "reference": "f661659747f2f87f9e72095bb207bceb0f151cb4",
                 "shasum": ""
             },
             "require": {
@@ -9904,7 +9901,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.1"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.2"
             },
             "funding": [
                 {
@@ -9916,7 +9913,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-17T07:42:25+00:00"
+            "time": "2021-02-02T14:45:58+00:00"
         },
         {
             "name": "sebastian/cli-parser",
