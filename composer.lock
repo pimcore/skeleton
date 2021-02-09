@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cbb43000a92d87a4a14bfc7544c11072",
+    "content-hash": "2455664411ccc1d891365a179a10ee68",
     "packages": [
         {
             "name": "amnuts/opcache-gui",
@@ -4002,16 +4002,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.44.0",
+            "version": "2.45.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "e6ef33cb1f67a4bed831ed6d0f7e156739a5d8cd"
+                "reference": "e2ba3174ce869da1713c38340dbb36572dfacd5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e6ef33cb1f67a4bed831ed6d0f7e156739a5d8cd",
-                "reference": "e6ef33cb1f67a4bed831ed6d0f7e156739a5d8cd",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e2ba3174ce869da1713c38340dbb36572dfacd5a",
+                "reference": "e2ba3174ce869da1713c38340dbb36572dfacd5a",
                 "shasum": ""
             },
             "require": {
@@ -4091,7 +4091,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-26T20:46:41+00:00"
+            "time": "2021-02-07T21:35:59+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -4678,12 +4678,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "5c6141da1a595c9349d7c23972b929c7a9eae546"
+                "reference": "76a4ef2d76983c928aa4478de80f90f25e450327"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/5c6141da1a595c9349d7c23972b929c7a9eae546",
-                "reference": "5c6141da1a595c9349d7c23972b929c7a9eae546",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/76a4ef2d76983c928aa4478de80f90f25e450327",
+                "reference": "76a4ef2d76983c928aa4478de80f90f25e450327",
                 "shasum": ""
             },
             "require": {
@@ -4842,7 +4842,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-02-05T13:41:52+00:00"
+            "time": "2021-02-09T09:35:26+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -8588,30 +8588,33 @@
         },
         {
             "name": "cache/integration-tests",
-            "version": "0.16.0",
+            "version": "0.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-cache/integration-tests.git",
-                "reference": "a8d9538a44ed5a70d551f9b87f534c98dfe6b0ee"
+                "reference": "eda2e6b8bc5abcd623c8047e2345cda38dd6479e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-cache/integration-tests/zipball/a8d9538a44ed5a70d551f9b87f534c98dfe6b0ee",
-                "reference": "a8d9538a44ed5a70d551f9b87f534c98dfe6b0ee",
+                "url": "https://api.github.com/repos/php-cache/integration-tests/zipball/eda2e6b8bc5abcd623c8047e2345cda38dd6479e",
+                "reference": "eda2e6b8bc5abcd623c8047e2345cda38dd6479e",
                 "shasum": ""
             },
             "require": {
                 "cache/tag-interop": "^1.0",
-                "php": "^5.4|^7",
+                "php": ">=5.5.9",
                 "psr/cache": "~1.0"
             },
+            "conflict": {
+                "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0"
+            },
             "require-dev": {
-                "cache/cache": "dev-master",
-                "illuminate/cache": "^5.0",
-                "madewithlove/illuminate-psr-cache-bridge": "^1.0",
-                "phpunit/phpunit": "^4.0|^5.0",
-                "symfony/cache": "^3.1",
-                "tedivm/stash": "dev-master"
+                "cache/cache": "^1.0",
+                "illuminate/cache": "^5.4|^5.5|^5.6",
+                "mockery/mockery": "^1.0",
+                "symfony/cache": "^3.4.31|^4.3.4|^5.0",
+                "symfony/phpunit-bridge": "^5.1",
+                "tedivm/stash": "^0.14"
             },
             "type": "library",
             "autoload": {
@@ -8632,7 +8635,7 @@
                 {
                     "name": "Tobias Nyholm",
                     "email": "tobias.nyholm@gmail.com",
-                    "homepage": "https://github.com/Nyholm"
+                    "homepage": "https://github.com/nyholm"
                 }
             ],
             "description": "Integration tests for PSR-6 and PSR-16 cache implementations",
@@ -8645,9 +8648,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-cache/integration-tests/issues",
-                "source": "https://github.com/php-cache/integration-tests/tree/master"
+                "source": "https://github.com/php-cache/integration-tests/tree/0.17.0"
             },
-            "time": "2017-02-02T14:29:50+00:00"
+            "time": "2020-11-03T12:52:23+00:00"
         },
         {
             "name": "cache/tag-interop",
