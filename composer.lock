@@ -2859,16 +2859,16 @@
         },
         {
             "name": "lcobucci/jwt",
-            "version": "3.4.3",
+            "version": "3.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "cd83b5421df3dbbbc66bd07a5b970c9efb6371b9"
+                "reference": "ff92156cd27d3abe7fc8814516ae0615215f01ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/cd83b5421df3dbbbc66bd07a5b970c9efb6371b9",
-                "reference": "cd83b5421df3dbbbc66bd07a5b970c9efb6371b9",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/ff92156cd27d3abe7fc8814516ae0615215f01ae",
+                "reference": "ff92156cd27d3abe7fc8814516ae0615215f01ae",
                 "shasum": ""
             },
             "require": {
@@ -2920,7 +2920,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lcobucci/jwt/issues",
-                "source": "https://github.com/lcobucci/jwt/tree/3.4.3"
+                "source": "https://github.com/lcobucci/jwt/tree/3.4.4"
             },
             "funding": [
                 {
@@ -2932,7 +2932,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-01-27T23:38:30+00:00"
+            "time": "2021-02-10T11:08:20+00:00"
         },
         {
             "name": "league/csv",
@@ -4679,12 +4679,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "0b79bde8658369a8e8a20e93fd6f6fd2dfc53e38"
+                "reference": "e4b162c37c6a08046feaffc4ddd3b8de82f574f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/0b79bde8658369a8e8a20e93fd6f6fd2dfc53e38",
-                "reference": "0b79bde8658369a8e8a20e93fd6f6fd2dfc53e38",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/e4b162c37c6a08046feaffc4ddd3b8de82f574f4",
+                "reference": "e4b162c37c6a08046feaffc4ddd3b8de82f574f4",
                 "shasum": ""
             },
             "require": {
@@ -4843,7 +4843,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-02-09T11:38:02+00:00"
+            "time": "2021-02-11T09:35:26+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -8281,16 +8281,16 @@
         },
         {
             "name": "vrana/adminer",
-            "version": "v4.7.9",
+            "version": "v4.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vrana/adminer.git",
-                "reference": "93c7fb248ca008e3247eb3a43812e1096e7b262c"
+                "reference": "b83c61fca3f491073cd5f5888a2acbf6f044366b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vrana/adminer/zipball/93c7fb248ca008e3247eb3a43812e1096e7b262c",
-                "reference": "93c7fb248ca008e3247eb3a43812e1096e7b262c",
+                "url": "https://api.github.com/repos/vrana/adminer/zipball/b83c61fca3f491073cd5f5888a2acbf6f044366b",
+                "reference": "b83c61fca3f491073cd5f5888a2acbf6f044366b",
                 "shasum": ""
             },
             "type": "library",
@@ -8330,7 +8330,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-02-07T17:25:18+00:00"
+            "time": "2021-02-10T16:21:55+00:00"
         },
         {
             "name": "vrana/jush",
