@@ -4792,16 +4792,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.8.8",
+            "version": "v6.8.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "1786bdd4962ee51544fad537352c2b4223309442"
+                "reference": "78f26d9fb4c7bbef9c26d1357ab72fd2917effb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/1786bdd4962ee51544fad537352c2b4223309442",
-                "reference": "1786bdd4962ee51544fad537352c2b4223309442",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/78f26d9fb4c7bbef9c26d1357ab72fd2917effb1",
+                "reference": "78f26d9fb4c7bbef9c26d1357ab72fd2917effb1",
                 "shasum": ""
             },
             "require": {
@@ -4869,7 +4869,7 @@
                 "twig/extensions": "^1.5",
                 "twig/twig": "^2.4",
                 "umpirsky/country-list": "^2.0.4",
-                "vrana/adminer": "^4.6.3",
+                "vrana/adminer": "^4.8.0",
                 "vrana/jush": "~2.0.2",
                 "webmozarts/console-parallelization": "^1.1.0",
                 "zendframework/zend-paginator": "^2.7",
@@ -4962,7 +4962,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-02-05T09:39:02+00:00"
+            "time": "2021-02-12T10:21:57+00:00"
         },
         {
             "name": "piwik/device-detector",
