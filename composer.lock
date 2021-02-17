@@ -4765,12 +4765,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "4611c68db899256398811e84872e086dfc2eef02"
+                "reference": "8644e904c0c6320bf5d69e344374aded8a849d5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/4611c68db899256398811e84872e086dfc2eef02",
-                "reference": "4611c68db899256398811e84872e086dfc2eef02",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/8644e904c0c6320bf5d69e344374aded8a849d5c",
+                "reference": "8644e904c0c6320bf5d69e344374aded8a849d5c",
                 "shasum": ""
             },
             "require": {
@@ -4837,7 +4837,6 @@
                 "symfony/monolog-bundle": "^3.1.0",
                 "symfony/symfony": "^5.2.0",
                 "tijsverkoyen/css-to-inline-styles": "^2.2.1",
-                "twig/extensions": "^1.5",
                 "twig/twig": "^2.10",
                 "umpirsky/country-list": "^2.0.4",
                 "vrana/adminer": "^4.8.0",
@@ -4928,7 +4927,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-02-17T09:35:30+00:00"
+            "time": "2021-02-17T15:49:39+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -7888,66 +7887,6 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.3"
             },
             "time": "2020-07-13T06:12:54+00:00"
-        },
-        {
-            "name": "twig/extensions",
-            "version": "v1.5.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/twigphp/Twig-extensions.git",
-                "reference": "57873c8b0c1be51caa47df2cdb824490beb16202"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig-extensions/zipball/57873c8b0c1be51caa47df2cdb824490beb16202",
-                "reference": "57873c8b0c1be51caa47df2cdb824490beb16202",
-                "shasum": ""
-            },
-            "require": {
-                "twig/twig": "^1.27|^2.0"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "^3.4",
-                "symfony/translation": "^2.7|^3.4"
-            },
-            "suggest": {
-                "symfony/translation": "Allow the time_diff output to be translated"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.5-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Twig_Extensions_": "lib/"
-                },
-                "psr-4": {
-                    "Twig\\Extensions\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Common additional features for Twig that do not directly belong in core",
-            "keywords": [
-                "i18n",
-                "text"
-            ],
-            "support": {
-                "issues": "https://github.com/twigphp/Twig-extensions/issues",
-                "source": "https://github.com/twigphp/Twig-extensions/tree/master"
-            },
-            "abandoned": true,
-            "time": "2018-12-05T18:34:18+00:00"
         },
         {
             "name": "twig/twig",
