@@ -1541,27 +1541,27 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.25",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "0dbf5d78455d4d6a41d186da50adc1122ec066f4"
+                "reference": "e5df72f45f0ba585a278ce02607b8b542aabfec7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/0dbf5d78455d4d6a41d186da50adc1122ec066f4",
-                "reference": "0dbf5d78455d4d6a41d186da50adc1122ec066f4",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/e5df72f45f0ba585a278ce02607b8b542aabfec7",
+                "reference": "e5df72f45f0ba585a278ce02607b8b542aabfec7",
                 "shasum": ""
             },
             "require": {
-                "doctrine/lexer": "^1.0.1",
-                "php": ">=5.5",
-                "symfony/polyfill-intl-idn": "^1.10"
+                "doctrine/lexer": "^1.2",
+                "php": ">=7.2",
+                "symfony/polyfill-intl-idn": "^1.15"
             },
             "require-dev": {
-                "dominicsayers/isemail": "^3.0.7",
-                "phpunit/phpunit": "^4.8.36|^7.5.15",
-                "satooshi/php-coveralls": "^1.0.1"
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpunit/phpunit": "^8.5.8|^9.3.3",
+                "vimeo/psalm": "^4"
             },
             "suggest": {
                 "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
@@ -1569,7 +1569,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "3.0.x-dev"
                 }
             },
             "autoload": {
@@ -1597,7 +1597,7 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/2.1.25"
+                "source": "https://github.com/egulias/EmailValidator/tree/3.0.0"
             },
             "funding": [
                 {
@@ -1605,7 +1605,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-29T14:50:06+00:00"
+            "time": "2020-12-29T15:04:19+00:00"
         },
         {
             "name": "endroid/qr-code",
@@ -3350,28 +3350,33 @@
         },
         {
             "name": "matomo/device-detector",
-            "version": "3.13.1",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matomo-org/device-detector.git",
-                "reference": "e90533302c58acf41f0d8075a0151537d0ddf34d"
+                "reference": "6b3facc35e7a465bc4223fddfa5fa88c5b327554"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/e90533302c58acf41f0d8075a0151537d0ddf34d",
-                "reference": "e90533302c58acf41f0d8075a0151537d0ddf34d",
+                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/6b3facc35e7a465bc4223fddfa5fa88c5b327554",
+                "reference": "6b3facc35e7a465bc4223fddfa5fa88c5b327554",
                 "shasum": ""
             },
             "require": {
                 "mustangostang/spyc": "*",
-                "php": ">=5.5"
+                "php": ">=7.2"
+            },
+            "replace": {
+                "piwik/device-detector": "self.version"
             },
             "require-dev": {
-                "fabpot/php-cs-fixer": "~1.7",
-                "matthiasmullie/scrapbook": "@stable",
-                "phpunit/phpunit": "^4.8.36",
-                "psr/cache": "^1.0",
-                "psr/simple-cache": "^1.0"
+                "matthiasmullie/scrapbook": "^1.4.7",
+                "mayflower/mo4-coding-standard": "dev-master#275cb9d",
+                "phpstan/phpstan": "^0.12.52",
+                "phpunit/phpunit": "^8.5.8",
+                "psr/cache": "^1.0.1",
+                "psr/simple-cache": "^1.0.1",
+                "symfony/yaml": "^5.1.7"
             },
             "suggest": {
                 "doctrine/cache": "Can directly be used for caching purpose",
@@ -3410,7 +3415,7 @@
                 "source": "https://github.com/matomo-org/piwik",
                 "wiki": "https://dev.matomo.org/"
             },
-            "time": "2020-10-25T10:17:36+00:00"
+            "time": "2021-01-08T14:14:55+00:00"
         },
         {
             "name": "matthiasmullie/minify",
@@ -3660,24 +3665,28 @@
         },
         {
             "name": "mjaschen/phpgeo",
-            "version": "2.6.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mjaschen/phpgeo.git",
-                "reference": "75b20ef705f6da256b3326bca40a54732a0528a7"
+                "reference": "ed5e371e78ef86237f917e6832a8bd9d8f36777f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mjaschen/phpgeo/zipball/75b20ef705f6da256b3326bca40a54732a0528a7",
-                "reference": "75b20ef705f6da256b3326bca40a54732a0528a7",
+                "url": "https://api.github.com/repos/mjaschen/phpgeo/zipball/ed5e371e78ef86237f917e6832a8bd9d8f36777f",
+                "reference": "ed5e371e78ef86237f917e6832a8bd9d8f36777f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0"
+                "php": ">=7.2"
             },
             "require-dev": {
-                "daux/daux.io": "^0.11.0",
-                "jakub-onderka/php-parallel-lint": "^1.0"
+                "daux/daux.io": "^0.14.0",
+                "phploc/phploc": "^5.0",
+                "phpunit/phpunit": "^8.0",
+                "squizlabs/php_codesniffer": "^3.5",
+                "theseer/phpdox": "^0.12.0",
+                "vimeo/psalm": "^3.12"
             },
             "type": "library",
             "autoload": {
@@ -3723,29 +3732,30 @@
                 "vincenty"
             ],
             "support": {
+                "docs": "https://phpgeo.marcusjaschen.de/Installation.html",
                 "email": "mjaschen@gmail.com",
                 "issues": "https://github.com/mjaschen/phpgeo/issues",
-                "source": "https://github.com/mjaschen/phpgeo/tree/2.6.0"
+                "source": "https://github.com/mjaschen/phpgeo/tree/3.2.0"
             },
-            "time": "2020-02-05T17:39:53+00:00"
+            "time": "2020-10-09T14:57:20+00:00"
         },
         {
             "name": "monolog/monolog",
-            "version": "1.26.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33"
+                "reference": "1cb1cde8e8dd0f70cc0fe51354a59acad9302084"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
-                "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1cb1cde8e8dd0f70cc0fe51354a59acad9302084",
+                "reference": "1cb1cde8e8dd0f70cc0fe51354a59acad9302084",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0",
-                "psr/log": "~1.0"
+                "php": ">=7.2",
+                "psr/log": "^1.0.1"
             },
             "provide": {
                 "psr/log-implementation": "1.0.0"
@@ -3753,29 +3763,39 @@
             "require-dev": {
                 "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
-                "graylog2/gelf-php": "~1.0",
+                "elasticsearch/elasticsearch": "^7",
+                "graylog2/gelf-php": "^1.4.2",
+                "mongodb/mongodb": "^1.8",
                 "php-amqplib/php-amqplib": "~2.4",
                 "php-console/php-console": "^3.1.3",
+                "phpspec/prophecy": "^1.6.1",
                 "phpstan/phpstan": "^0.12.59",
-                "phpunit/phpunit": "~4.5",
-                "ruflin/elastica": ">=0.90 <3.0",
-                "sentry/sentry": "^0.13",
+                "phpunit/phpunit": "^8.5",
+                "predis/predis": "^1.1",
+                "rollbar/rollbar": "^1.3",
+                "ruflin/elastica": ">=0.90 <7.0.1",
                 "swiftmailer/swiftmailer": "^5.3|^6.0"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
                 "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
-                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "ext-mbstring": "Allow to work properly with unicode symbols",
+                "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
                 "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
                 "php-console/php-console": "Allow sending log messages to Google Chrome",
                 "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
-                "sentry/sentry": "Allow sending log messages to a Sentry server"
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Monolog\\": "src/Monolog"
@@ -3789,11 +3809,11 @@
                 {
                     "name": "Jordi Boggiano",
                     "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be"
+                    "homepage": "https://seld.be"
                 }
             ],
             "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
-            "homepage": "http://github.com/Seldaek/monolog",
+            "homepage": "https://github.com/Seldaek/monolog",
             "keywords": [
                 "log",
                 "logging",
@@ -3801,7 +3821,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/1.26.0"
+                "source": "https://github.com/Seldaek/monolog/tree/2.2.0"
             },
             "funding": [
                 {
@@ -3813,7 +3833,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-14T12:56:38+00:00"
+            "time": "2020-12-14T13:15:25+00:00"
         },
         {
             "name": "mpratt/embera",
@@ -4244,21 +4264,21 @@
         },
         {
             "name": "onnov/detect-encoding",
-            "version": "v1.2.0",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/onnov/detect-encoding.git",
-                "reference": "c88cea4f0c83d7f7e0675f2801e0995f328de1ce"
+                "reference": "6a8159ac3e6178ae043244b9d66a9b2701121e07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/onnov/detect-encoding/zipball/c88cea4f0c83d7f7e0675f2801e0995f328de1ce",
-                "reference": "c88cea4f0c83d7f7e0675f2801e0995f328de1ce",
+                "url": "https://api.github.com/repos/onnov/detect-encoding/zipball/6a8159ac3e6178ae043244b9d66a9b2701121e07",
+                "reference": "6a8159ac3e6178ae043244b9d66a9b2701121e07",
                 "shasum": ""
             },
             "require": {
                 "ext-iconv": "*",
-                "php": ">=7.2"
+                "php": ">=7.3"
             },
             "require-dev": {
                 "infection/infection": "*",
@@ -4302,9 +4322,9 @@
             ],
             "support": {
                 "issues": "https://github.com/onnov/detect-encoding/issues",
-                "source": "https://github.com/onnov/detect-encoding/tree/master"
+                "source": "https://github.com/onnov/detect-encoding/tree/v2.0.0"
             },
-            "time": "2019-09-20T16:11:46+00:00"
+            "time": "2021-01-04T14:29:34+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -4375,20 +4395,20 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v9.99.99",
+            "version": "v9.99.100",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95"
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7"
+                "php": ">= 7"
             },
             "require-dev": {
                 "phpunit/phpunit": "4.*|5.*",
@@ -4421,7 +4441,7 @@
                 "issues": "https://github.com/paragonie/random_compat/issues",
                 "source": "https://github.com/paragonie/random_compat"
             },
-            "time": "2018-07-02T15:55:56+00:00"
+            "time": "2020-10-15T08:29:30+00:00"
         },
         {
             "name": "pear/net_url2",
@@ -4490,62 +4510,6 @@
                 "source": "https://github.com/pear/Net_URL2"
             },
             "time": "2017-08-25T06:16:11+00:00"
-        },
-        {
-            "name": "phive/twig-extensions-deferred",
-            "version": "v2.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/rybakit/twig-extensions-deferred-legacy.git",
-                "reference": "2d8514ef779e1e33724befed86be62cc3c23c405"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/rybakit/twig-extensions-deferred-legacy/zipball/2d8514ef779e1e33724befed86be62cc3c23c405",
-                "reference": "2d8514ef779e1e33724befed86be62cc3c23c405",
-                "shasum": ""
-            },
-            "require": {
-                "twig/twig": "^2.8"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phive\\Twig\\Extensions\\Deferred\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eugene Leonovich",
-                    "email": "gen.work@gmail.com"
-                }
-            ],
-            "description": "An extension for Twig that allows to defer block rendering",
-            "homepage": "https://github.com/rybakit/twig-extensions-deferred",
-            "keywords": [
-                "defer",
-                "extension",
-                "lazy",
-                "twig"
-            ],
-            "support": {
-                "issues": "https://github.com/rybakit/twig-extensions-deferred-legacy/issues",
-                "source": "https://github.com/rybakit/twig-extensions-deferred-legacy/tree/v2.0.3"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/rybakit",
-                    "type": "github"
-                }
-            ],
-            "time": "2020-06-03T12:45:28+00:00"
         },
         {
             "name": "phpoffice/phpspreadsheet",
@@ -4765,12 +4729,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "a8492f6eb48968813b21cf3ab7bc149bcede4f6d"
+                "reference": "23c898e27661eb7889fd97ebfc41d41d864a3e04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/a8492f6eb48968813b21cf3ab7bc149bcede4f6d",
-                "reference": "a8492f6eb48968813b21cf3ab7bc149bcede4f6d",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/23c898e27661eb7889fd97ebfc41d41d864a3e04",
+                "reference": "23c898e27661eb7889fd97ebfc41d41d864a3e04",
                 "shasum": ""
             },
             "require": {
@@ -4786,7 +4750,7 @@
                 "doctrine/doctrine-migrations-bundle": "^3.0.1",
                 "doctrine/inflector": "^1.4.0 || ^2.0.0",
                 "doctrine/persistence": "^2.1.0",
-                "egulias/email-validator": "^2.1.16",
+                "egulias/email-validator": "^3.0.0",
                 "endroid/qr-code": "^3.4.4",
                 "ext-curl": "*",
                 "ext-dom": "*",
@@ -4811,40 +4775,38 @@
                 "lcobucci/jwt": "^3.2",
                 "league/csv": "^9.1",
                 "league/html-to-markdown": "^4.10.0",
-                "matomo/device-detector": "^3.9",
+                "matomo/device-detector": "^4.0",
                 "matthiasmullie/minify": "^1.3",
-                "mjaschen/phpgeo": "^2.0",
+                "mjaschen/phpgeo": "^3.0",
                 "mpratt/embera": "^2.0.14",
                 "myclabs/deep-copy": "^1.7",
                 "neitanod/forceutf8": "^2.0.4",
                 "nesbot/carbon": "^1.34.0 || ^2.11.0",
                 "ocramius/package-versions": "^2.1",
-                "onnov/detect-encoding": "^1.2",
+                "onnov/detect-encoding": "^2.0",
                 "pear/net_url2": "^2.2",
-                "phive/twig-extensions-deferred": "^2.0",
                 "php": "^7.4 || ^8.0 ",
                 "phpoffice/phpspreadsheet": "^1.9",
                 "presta/sitemap-bundle": "^1.7 || ^2.1",
                 "psr/simple-cache": "^1.0.0",
-                "ramsey/uuid": "^3.8",
+                "rybakit/twig-deferred-extension": "^3.0",
                 "sabre/dav": "^4.1.1",
                 "scheb/2fa-bundle": "^5.3",
                 "scheb/2fa-google-authenticator": "^5.3",
-                "sensio/framework-extra-bundle": "^5.4",
+                "sensio/framework-extra-bundle": "^6.1",
                 "sensiolabs/ansi-to-html": "^1.1",
                 "symfony-cmf/routing-bundle": "^2.0",
                 "symfony/contracts": "^2.0",
                 "symfony/monolog-bundle": "^3.1.0",
                 "symfony/symfony": "^5.2.0",
                 "tijsverkoyen/css-to-inline-styles": "^2.2.1",
-                "twig/twig": "^2.10",
+                "twig/twig": "^3.0",
                 "umpirsky/country-list": "^2.0.4",
                 "vrana/adminer": "^4.8.0",
                 "vrana/jush": "~2.0.2",
                 "webmozarts/console-parallelization": "^1.2.0"
             },
             "conflict": {
-                "monolog/monolog": ">=2",
                 "symfony/monolog-bundle": "3.6.0",
                 "thecodingmachine/safe": "<1.2.0"
             },
@@ -4927,7 +4889,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-02-18T09:35:51+00:00"
+            "time": "2021-02-18T16:10:20+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -5505,63 +5467,31 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
-            "name": "ramsey/uuid",
-            "version": "3.9.3",
+            "name": "rybakit/twig-deferred-extension",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ramsey/uuid.git",
-                "reference": "7e1633a6964b48589b142d60542f9ed31bd37a92"
+                "url": "https://github.com/rybakit/twig-deferred-extension.git",
+                "reference": "1e52be819788d1e194f2d688921e6254647a30f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/7e1633a6964b48589b142d60542f9ed31bd37a92",
-                "reference": "7e1633a6964b48589b142d60542f9ed31bd37a92",
+                "url": "https://api.github.com/repos/rybakit/twig-deferred-extension/zipball/1e52be819788d1e194f2d688921e6254647a30f7",
+                "reference": "1e52be819788d1e194f2d688921e6254647a30f7",
                 "shasum": ""
             },
             "require": {
-                "ext-json": "*",
-                "paragonie/random_compat": "^1 | ^2 | 9.99.99",
-                "php": "^5.4 | ^7 | ^8",
-                "symfony/polyfill-ctype": "^1.8"
-            },
-            "replace": {
-                "rhumsaa/uuid": "self.version"
+                "twig/twig": "^3.0"
             },
             "require-dev": {
-                "codeception/aspect-mock": "^1 | ^2",
-                "doctrine/annotations": "^1.2",
-                "goaop/framework": "1.0.0-alpha.2 | ^1 | ^2.1",
-                "jakub-onderka/php-parallel-lint": "^1",
-                "mockery/mockery": "^0.9.11 | ^1",
-                "moontoast/math": "^1.1",
-                "paragonie/random-lib": "^2",
-                "php-mock/php-mock-phpunit": "^0.3 | ^1.1",
-                "phpunit/phpunit": "^4.8 | ^5.4 | ^6.5",
-                "squizlabs/php_codesniffer": "^3.5"
-            },
-            "suggest": {
-                "ext-ctype": "Provides support for PHP Ctype functions",
-                "ext-libsodium": "Provides the PECL libsodium extension for use with the SodiumRandomGenerator",
-                "ext-openssl": "Provides the OpenSSL extension for use with the OpenSslGenerator",
-                "ext-uuid": "Provides the PECL UUID extension for use with the PeclUuidTimeGenerator and PeclUuidRandomGenerator",
-                "moontoast/math": "Provides support for converting UUID to 128-bit integer (in string form).",
-                "paragonie/random-lib": "Provides RandomLib for use with the RandomLibAdapter",
-                "ramsey/uuid-console": "A console application for generating UUIDs with ramsey/uuid",
-                "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^6.1|^7.0|^8.0|^9.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "Ramsey\\Uuid\\": "src/"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
+                    "Twig\\DeferredExtension\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -5569,33 +5499,30 @@
             ],
             "authors": [
                 {
-                    "name": "Ben Ramsey",
-                    "email": "ben@benramsey.com",
-                    "homepage": "https://benramsey.com"
-                },
-                {
-                    "name": "Marijn Huizendveld",
-                    "email": "marijn.huizendveld@gmail.com"
-                },
-                {
-                    "name": "Thibaud Fabre",
-                    "email": "thibaud@aztech.io"
+                    "name": "Eugene Leonovich",
+                    "email": "gen.work@gmail.com"
                 }
             ],
-            "description": "Formerly rhumsaa/uuid. A PHP 5.4+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
-            "homepage": "https://github.com/ramsey/uuid",
+            "description": "An extension for Twig that allows to defer block rendering.",
+            "homepage": "https://github.com/rybakit/twig-deferred-extension",
             "keywords": [
-                "guid",
-                "identifier",
-                "uuid"
+                "defer",
+                "extension",
+                "lazy",
+                "override",
+                "twig"
             ],
             "support": {
-                "issues": "https://github.com/ramsey/uuid/issues",
-                "rss": "https://github.com/ramsey/uuid/releases.atom",
-                "source": "https://github.com/ramsey/uuid",
-                "wiki": "https://github.com/ramsey/uuid/wiki"
+                "issues": "https://github.com/rybakit/twig-deferred-extension/issues",
+                "source": "https://github.com/rybakit/twig-deferred-extension/tree/master"
             },
-            "time": "2020-02-21T04:36:14+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/rybakit",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-06-03T08:06:23+00:00"
         },
         {
             "name": "sabre/dav",
@@ -6044,16 +5971,16 @@
         },
         {
             "name": "scheb/2fa-bundle",
-            "version": "v5.5.0",
+            "version": "v5.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-bundle.git",
-                "reference": "e10155a04a71cb19e89294e455146625d2329771"
+                "reference": "ce390194d43529ab75e0163b7501e9d96ff402f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/e10155a04a71cb19e89294e455146625d2329771",
-                "reference": "e10155a04a71cb19e89294e455146625d2329771",
+                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/ce390194d43529ab75e0163b7501e9d96ff402f7",
+                "reference": "ce390194d43529ab75e0163b7501e9d96ff402f7",
                 "shasum": ""
             },
             "require": {
@@ -6106,13 +6033,13 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-bundle/tree/v5.5.0"
+                "source": "https://github.com/scheb/2fa-bundle/tree/v5.6.0"
             },
-            "time": "2021-02-14T15:53:45+00:00"
+            "time": "2021-02-18T17:09:24+00:00"
         },
         {
             "name": "scheb/2fa-google-authenticator",
-            "version": "v5.5.0",
+            "version": "v5.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-google-authenticator.git",
@@ -6156,22 +6083,22 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.5.0"
+                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.6.0"
             },
             "time": "2020-12-31T11:27:00+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v5.6.1",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "430d14c01836b77c28092883d195a43ce413ee32"
+                "reference": "b3596907c3d35bee5a9a1096baaeb7d465a04f30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/430d14c01836b77c28092883d195a43ce413ee32",
-                "reference": "430d14c01836b77c28092883d195a43ce413ee32",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/b3596907c3d35bee5a9a1096baaeb7d465a04f30",
+                "reference": "b3596907c3d35bee5a9a1096baaeb7d465a04f30",
                 "shasum": ""
             },
             "require": {
@@ -6190,7 +6117,6 @@
                 "doctrine/dbal": "^2.10|^3.0",
                 "doctrine/doctrine-bundle": "^1.11|^2.0",
                 "doctrine/orm": "^2.5",
-                "nyholm/psr7": "^1.1",
                 "symfony/browser-kit": "^4.4|^5.0",
                 "symfony/doctrine-bridge": "^4.4|^5.0",
                 "symfony/dom-crawler": "^4.4|^5.0",
@@ -6199,7 +6125,6 @@
                 "symfony/monolog-bridge": "^4.0|^5.0",
                 "symfony/monolog-bundle": "^3.2",
                 "symfony/phpunit-bridge": "^4.4.9|^5.0.9",
-                "symfony/psr-http-message-bridge": "^1.1",
                 "symfony/security-bundle": "^4.4|^5.0",
                 "symfony/twig-bundle": "^4.4|^5.0",
                 "symfony/yaml": "^4.4|^5.0",
@@ -6208,7 +6133,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.6.x-dev"
+                    "dev-master": "6.1.x-dev"
                 }
             },
             "autoload": {
@@ -6236,9 +6161,9 @@
             ],
             "support": {
                 "issues": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/issues",
-                "source": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/tree/v5.6.1"
+                "source": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/tree/v6.1.0"
             },
-            "time": "2020-08-25T19:10:18+00:00"
+            "time": "2021-02-16T10:59:31+00:00"
         },
         {
             "name": "sensiolabs/ansi-to-html",
@@ -7890,16 +7815,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.14.3",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "8bc568d460d88b25c00c046256ec14a787ea60d9"
+                "reference": "1f3b7e2c06cc05d42936a8ad508ff1db7975cdc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/8bc568d460d88b25c00c046256ec14a787ea60d9",
-                "reference": "8bc568d460d88b25c00c046256ec14a787ea60d9",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/1f3b7e2c06cc05d42936a8ad508ff1db7975cdc5",
+                "reference": "1f3b7e2c06cc05d42936a8ad508ff1db7975cdc5",
                 "shasum": ""
             },
             "require": {
@@ -7914,13 +7839,10 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.14-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Twig_": "lib/"
-                },
                 "psr-4": {
                     "Twig\\": "src/"
                 }
@@ -7953,7 +7875,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v2.14.3"
+                "source": "https://github.com/twigphp/Twig/tree/v3.3.0"
             },
             "funding": [
                 {
@@ -7965,7 +7887,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-05T15:34:33+00:00"
+            "time": "2021-02-08T09:54:36+00:00"
         },
         {
             "name": "umpirsky/country-list",
