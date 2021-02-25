@@ -17,11 +17,6 @@ services:
       - MYSQL_USER=pimcore
       - MYSQL_PASSWORD=pimcore
 
-  adminer:
-    image: adminer
-    ports:
-      - 8080:8080
-
   php:
     image: pimcore/pimcore:PHP7.4-apache
     container_name: pimcore-php
