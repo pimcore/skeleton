@@ -2,11 +2,9 @@ version: '2.4'
 services:
   redis:
     image: redis:alpine
-    container_name: pimcore-redis
 
   db:
     image: mariadb:10.4
-    container_name: pimcore-mariadb
     working_dir: /application
     command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --innodb-file-format=Barracuda, --innodb-large-prefix=1, --innodb-file-per-table=1]
     volumes:
@@ -19,7 +17,6 @@ services:
 
   php:
     image: pimcore/pimcore:PHP7.4-apache
-    container_name: pimcore-php
     volumes:
       - .:/var/www/html:cached
     ports:
@@ -32,7 +29,6 @@ services:
 
   php-debug:
     image: pimcore/pimcore:PHP7.4-apache-debug
-    container_name: pimcore-debug-php
     volumes:
       - .:/var/www/html:cached
     ports:
