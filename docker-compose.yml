@@ -4,7 +4,7 @@ services:
     image: redis:alpine
 
   db:
-    image: mariadb:10.4
+    image: mariadb:10.5
     working_dir: /application
     command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --innodb-file-format=Barracuda, --innodb-large-prefix=1, --innodb-file-per-table=1]
     volumes:
@@ -16,7 +16,7 @@ services:
       - MYSQL_PASSWORD=pimcore
 
   php:
-    image: pimcore/pimcore:PHP7.4-apache
+    image: pimcore/pimcore:PHP8.0-apache
     volumes:
       - .:/var/www/html:cached
     ports:
@@ -28,7 +28,7 @@ services:
       - APACHE_DOCUMENT_ROOT=/var/www/html/public
 
   php-debug:
-    image: pimcore/pimcore:PHP7.4-apache-debug
+    image: pimcore/pimcore:PHP8.0-apache-debug
     volumes:
       - .:/var/www/html:cached
     ports:
