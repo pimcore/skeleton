@@ -27,6 +27,8 @@ services:
      - 443:443
     depends_on:
      - db
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html/public
 
   php-debug:
     image: pimcore/pimcore:PHP7.4-apache-debug
@@ -37,6 +39,7 @@ services:
      - 88:80
     environment:
       - PHP_IDE_CONFIG="serverName=localhost"
+      - APACHE_DOCUMENT_ROOT=/var/www/html/public
 
 volumes:
   pimcore-database:
