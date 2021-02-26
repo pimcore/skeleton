@@ -5026,16 +5026,16 @@
         },
         {
             "name": "presta/sitemap-bundle",
-            "version": "v2.4.0",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSitemapBundle.git",
-                "reference": "63f54b809cc2f3cb82bf16cc866b9ea24421700b"
+                "reference": "fb83304ce365699b879cf7e998f1d5bbec8ddb27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/63f54b809cc2f3cb82bf16cc866b9ea24421700b",
-                "reference": "63f54b809cc2f3cb82bf16cc866b9ea24421700b",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/fb83304ce365699b879cf7e998f1d5bbec8ddb27",
+                "reference": "fb83304ce365699b879cf7e998f1d5bbec8ddb27",
                 "shasum": ""
             },
             "require": {
@@ -5086,9 +5086,9 @@
             ],
             "support": {
                 "issues": "https://github.com/prestaconcept/PrestaSitemapBundle/issues",
-                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v2.4.0"
+                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v2.5.0"
             },
-            "time": "2020-12-17T13:18:32+00:00"
+            "time": "2021-02-25T13:54:55+00:00"
         },
         {
             "name": "psr/cache",
