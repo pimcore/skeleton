@@ -2794,24 +2794,26 @@
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "6ede70583e101030bcace4dcddd648f760ddf642"
+                "reference": "6cccbddfcfc742eb02158d6137ca5687d92cee32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6ede70583e101030bcace4dcddd648f760ddf642",
-                "reference": "6ede70583e101030bcace4dcddd648f760ddf642",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6cccbddfcfc742eb02158d6137ca5687d92cee32",
+                "reference": "6cccbddfcfc742eb02158d6137ca5687d92cee32",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0 || ^8.0"
+                "php": "^7.3 || ^8.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1 || ^9.3",
-                "squizlabs/php_codesniffer": "^3.5"
+                "psalm/plugin-phpunit": "^0.15.1",
+                "squizlabs/php_codesniffer": "^3.5",
+                "vimeo/psalm": "^4.6"
             },
             "type": "library",
             "extra": {
@@ -2850,7 +2852,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-09-14T14:23:00+00:00"
+            "time": "2021-02-25T21:54:58+00:00"
         },
         {
             "name": "lcobucci/jwt",
@@ -3345,16 +3347,16 @@
         },
         {
             "name": "matomo/device-detector",
-            "version": "4.2.1",
+            "version": "4.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matomo-org/device-detector.git",
-                "reference": "8e13f1f933fd2677ab6c3979cdd8da3412a51c5a"
+                "reference": "dc270e7645d286d6f01d516a6634aba8b31ad668"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/8e13f1f933fd2677ab6c3979cdd8da3412a51c5a",
-                "reference": "8e13f1f933fd2677ab6c3979cdd8da3412a51c5a",
+                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/dc270e7645d286d6f01d516a6634aba8b31ad668",
+                "reference": "dc270e7645d286d6f01d516a6634aba8b31ad668",
                 "shasum": ""
             },
             "require": {
@@ -3410,7 +3412,7 @@
                 "source": "https://github.com/matomo-org/matomo",
                 "wiki": "https://dev.matomo.org/"
             },
-            "time": "2021-02-25T09:43:19+00:00"
+            "time": "2021-02-26T07:31:42+00:00"
         },
         {
             "name": "matthiasmullie/minify",
@@ -4724,12 +4726,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "4c014177460720c30f70114bf9acee5c7bdac8a9"
+                "reference": "f2af127c58355f08d0f39012788b6f8dca42fcaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/4c014177460720c30f70114bf9acee5c7bdac8a9",
-                "reference": "4c014177460720c30f70114bf9acee5c7bdac8a9",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/f2af127c58355f08d0f39012788b6f8dca42fcaa",
+                "reference": "f2af127c58355f08d0f39012788b6f8dca42fcaa",
                 "shasum": ""
             },
             "require": {
@@ -4818,7 +4820,7 @@
             },
             "suggest": {
                 "elasticsearch/elasticsearch": "Required for Elastic Search service",
-                "ext-imagick": "*",
+                "ext-imagick": "^3.2.0",
                 "ext-redis": "*"
             },
             "default-branch": true,
@@ -4884,20 +4886,20 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-02-25T09:48:20+00:00"
+            "time": "2021-02-26T09:04:26+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
-            "version": "v2.4.0",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSitemapBundle.git",
-                "reference": "63f54b809cc2f3cb82bf16cc866b9ea24421700b"
+                "reference": "fb83304ce365699b879cf7e998f1d5bbec8ddb27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/63f54b809cc2f3cb82bf16cc866b9ea24421700b",
-                "reference": "63f54b809cc2f3cb82bf16cc866b9ea24421700b",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/fb83304ce365699b879cf7e998f1d5bbec8ddb27",
+                "reference": "fb83304ce365699b879cf7e998f1d5bbec8ddb27",
                 "shasum": ""
             },
             "require": {
@@ -4948,9 +4950,9 @@
             ],
             "support": {
                 "issues": "https://github.com/prestaconcept/PrestaSitemapBundle/issues",
-                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v2.4.0"
+                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v2.5.0"
             },
-            "time": "2020-12-17T13:18:32+00:00"
+            "time": "2021-02-25T13:54:55+00:00"
         },
         {
             "name": "psr/cache",
