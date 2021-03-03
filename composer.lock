@@ -4568,16 +4568,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "1.16.0",
+            "version": "1.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "76d4323b85129d0c368149c831a07a3e258b2b50"
+                "reference": "c55269cb06911575a126dc225a05c0e4626e5fb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/76d4323b85129d0c368149c831a07a3e258b2b50",
-                "reference": "76d4323b85129d0c368149c831a07a3e258b2b50",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/c55269cb06911575a126dc225a05c0e4626e5fb4",
+                "reference": "c55269cb06911575a126dc225a05c0e4626e5fb4",
                 "shasum": ""
             },
             "require": {
@@ -4605,7 +4605,7 @@
             },
             "require-dev": {
                 "dompdf/dompdf": "^0.8.5",
-                "friendsofphp/php-cs-fixer": "^2.16",
+                "friendsofphp/php-cs-fixer": "^2.18",
                 "jpgraph/jpgraph": "^4.0",
                 "mpdf/mpdf": "^8.0",
                 "phpcompatibility/php-compatibility": "^9.3",
@@ -4663,9 +4663,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.16.0"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.17.1"
             },
-            "time": "2020-12-31T18:03:49+00:00"
+            "time": "2021-03-02T17:54:11+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -4784,12 +4784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "23f2b8728c428f7d30ab6acb82ffd3c8a50a9bb3"
+                "reference": "ca4d9b5f6da8c81600d3eb7b508d3129c02e0a3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/23f2b8728c428f7d30ab6acb82ffd3c8a50a9bb3",
-                "reference": "23f2b8728c428f7d30ab6acb82ffd3c8a50a9bb3",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/ca4d9b5f6da8c81600d3eb7b508d3129c02e0a3f",
+                "reference": "ca4d9b5f6da8c81600d3eb7b508d3129c02e0a3f",
                 "shasum": ""
             },
             "require": {
@@ -4944,7 +4944,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-03-02T09:35:34+00:00"
+            "time": "2021-03-03T09:35:34+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
