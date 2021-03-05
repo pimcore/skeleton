@@ -2499,16 +2499,16 @@
         },
         {
             "name": "knplabs/knp-components",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/knp-components.git",
-                "reference": "246b700fdc40020f1db1c887cd462b9b9d3b79b0"
+                "reference": "b235cf756c6a72d1d378453c58ebd7fc2e8d911d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/246b700fdc40020f1db1c887cd462b9b9d3b79b0",
-                "reference": "246b700fdc40020f1db1c887cd462b9b9d3b79b0",
+                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/b235cf756c6a72d1d378453c58ebd7fc2e8d911d",
+                "reference": "b235cf756c6a72d1d378453c58ebd7fc2e8d911d",
                 "shasum": ""
             },
             "require": {
@@ -2520,9 +2520,10 @@
                 "doctrine/mongodb-odm": "^2.0",
                 "doctrine/orm": "^2.7",
                 "doctrine/phpcr-odm": "^1.2",
+                "ext-pdo_sqlite": "*",
                 "jackalope/jackalope-doctrine-dbal": "^1.2",
-                "phpunit/phpunit": "^9.4",
-                "ruflin/elastica": "^1.0",
+                "phpunit/phpunit": "^9.5",
+                "ruflin/elastica": "^7.0",
                 "symfony/http-kernel": "^4.4 || ^5.1",
                 "symfony/property-access": "^4.4 || ^5.1"
             },
@@ -2572,9 +2573,9 @@
             ],
             "support": {
                 "issues": "https://github.com/KnpLabs/knp-components/issues",
-                "source": "https://github.com/KnpLabs/knp-components/tree/v3.0.0"
+                "source": "https://github.com/KnpLabs/knp-components/tree/v3.0.1"
             },
-            "time": "2020-11-30T09:24:34+00:00"
+            "time": "2021-03-05T08:30:55+00:00"
         },
         {
             "name": "knplabs/knp-paginator-bundle",
@@ -3720,27 +3721,24 @@
         },
         {
             "name": "mjaschen/phpgeo",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mjaschen/phpgeo.git",
-                "reference": "ed5e371e78ef86237f917e6832a8bd9d8f36777f"
+                "reference": "c26fd54ba2f792f6a286fe5738fea9ce1c33ed28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mjaschen/phpgeo/zipball/ed5e371e78ef86237f917e6832a8bd9d8f36777f",
-                "reference": "ed5e371e78ef86237f917e6832a8bd9d8f36777f",
+                "url": "https://api.github.com/repos/mjaschen/phpgeo/zipball/c26fd54ba2f792f6a286fe5738fea9ce1c33ed28",
+                "reference": "c26fd54ba2f792f6a286fe5738fea9ce1c33ed28",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2"
             },
             "require-dev": {
-                "daux/daux.io": "^0.14.0",
-                "phploc/phploc": "^5.0",
                 "phpunit/phpunit": "^8.0",
                 "squizlabs/php_codesniffer": "^3.5",
-                "theseer/phpdox": "^0.12.0",
                 "vimeo/psalm": "^3.12"
             },
             "type": "library",
@@ -3790,9 +3788,9 @@
                 "docs": "https://phpgeo.marcusjaschen.de/Installation.html",
                 "email": "mjaschen@gmail.com",
                 "issues": "https://github.com/mjaschen/phpgeo/issues",
-                "source": "https://github.com/mjaschen/phpgeo/tree/3.2.0"
+                "source": "https://github.com/mjaschen/phpgeo/tree/3.2.1"
             },
-            "time": "2020-10-09T14:57:20+00:00"
+            "time": "2021-03-04T10:03:03+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -4784,12 +4782,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "234360e575cdc6cdc6d812082b6585055817d882"
+                "reference": "988edf57f45b8db2493d469d3ae9f527b9e3dbf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/234360e575cdc6cdc6d812082b6585055817d882",
-                "reference": "234360e575cdc6cdc6d812082b6585055817d882",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/988edf57f45b8db2493d469d3ae9f527b9e3dbf1",
+                "reference": "988edf57f45b8db2493d469d3ae9f527b9e3dbf1",
                 "shasum": ""
             },
             "require": {
@@ -4944,7 +4942,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-03-04T09:35:33+00:00"
+            "time": "2021-03-05T09:35:29+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -7478,16 +7476,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v5.2.3",
+            "version": "v5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "e16bbdc1a02033e0e3ac060224953aee90570776"
+                "reference": "5216698b81beac7c9f8fd1fc8921deada8ae70c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/e16bbdc1a02033e0e3ac060224953aee90570776",
-                "reference": "e16bbdc1a02033e0e3ac060224953aee90570776",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/5216698b81beac7c9f8fd1fc8921deada8ae70c0",
+                "reference": "5216698b81beac7c9f8fd1fc8921deada8ae70c0",
                 "shasum": ""
             },
             "require": {
@@ -7496,7 +7494,7 @@
                 "ext-xml": "*",
                 "friendsofphp/proxy-manager-lts": "^1.0.2",
                 "php": ">=7.2.5",
-                "psr/cache": "~1.0",
+                "psr/cache": "^1.0|^2.0",
                 "psr/container": "^1.0",
                 "psr/event-dispatcher": "^1.0",
                 "psr/link": "^1.0",
@@ -7520,6 +7518,22 @@
                 "phpdocumentor/reflection-docblock": "<3.2.2",
                 "phpdocumentor/type-resolver": "<1.4.0",
                 "phpunit/phpunit": "<5.4.3"
+            },
+            "provide": {
+                "php-http/async-client-implementation": "*",
+                "php-http/client-implementation": "*",
+                "psr/cache-implementation": "1.0|2.0",
+                "psr/container-implementation": "1.0",
+                "psr/event-dispatcher-implementation": "1.0",
+                "psr/http-client-implementation": "1.0",
+                "psr/link-implementation": "1.0",
+                "psr/log-implementation": "1.0",
+                "psr/simple-cache-implementation": "1.0",
+                "symfony/cache-implementation": "1.0|2.0",
+                "symfony/event-dispatcher-implementation": "2.0",
+                "symfony/http-client-implementation": "2.2",
+                "symfony/service-implementation": "1.0|2.0",
+                "symfony/translation-implementation": "2.3"
             },
             "replace": {
                 "symfony/amazon-mailer": "self.version",
@@ -7630,6 +7644,9 @@
                     "Symfony\\Bundle\\": "src/Symfony/Bundle/",
                     "Symfony\\Component\\": "src/Symfony/Component/"
                 },
+                "files": [
+                    "src/Symfony/Component/String/Resources/functions.php"
+                ],
                 "classmap": [
                     "src/Symfony/Component/Intl/Resources/stubs"
                 ],
@@ -7658,7 +7675,7 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/symfony/issues",
-                "source": "https://github.com/symfony/symfony/tree/v5.2.3"
+                "source": "https://github.com/symfony/symfony/tree/v5.2.4"
             },
             "funding": [
                 {
@@ -7674,7 +7691,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-03T04:52:17+00:00"
+            "time": "2021-03-04T18:06:14+00:00"
         },
         {
             "name": "thecodingmachine/safe",
