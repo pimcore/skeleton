@@ -1536,16 +1536,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "e5df72f45f0ba585a278ce02607b8b542aabfec7"
+                "reference": "451b4389027aa5c74abf43fb331daf3dec7f146e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/e5df72f45f0ba585a278ce02607b8b542aabfec7",
-                "reference": "e5df72f45f0ba585a278ce02607b8b542aabfec7",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/451b4389027aa5c74abf43fb331daf3dec7f146e",
+                "reference": "451b4389027aa5c74abf43fb331daf3dec7f146e",
                 "shasum": ""
             },
             "require": {
@@ -1592,7 +1592,7 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/3.0.0"
+                "source": "https://github.com/egulias/EmailValidator/tree/3.0.1"
             },
             "funding": [
                 {
@@ -1600,7 +1600,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-29T15:04:19+00:00"
+            "time": "2021-02-28T14:27:57+00:00"
         },
         {
             "name": "endroid/qr-code",
@@ -2261,16 +2261,16 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "60d379c243457e073cff02bc323a2a86cb355631"
+                "reference": "8e7d04f1f6450fef59366c399cfad4b9383aa30d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/60d379c243457e073cff02bc323a2a86cb355631",
-                "reference": "60d379c243457e073cff02bc323a2a86cb355631",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/8e7d04f1f6450fef59366c399cfad4b9383aa30d",
+                "reference": "8e7d04f1f6450fef59366c399cfad4b9383aa30d",
                 "shasum": ""
             },
             "require": {
@@ -2310,9 +2310,9 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/1.4.0"
+                "source": "https://github.com/guzzle/promises/tree/1.4.1"
             },
-            "time": "2020-09-30T07:37:28+00:00"
+            "time": "2021-03-07T09:25:29+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -6019,16 +6019,16 @@
         },
         {
             "name": "scheb/2fa-bundle",
-            "version": "v5.6.0",
+            "version": "v5.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-bundle.git",
-                "reference": "ce390194d43529ab75e0163b7501e9d96ff402f7"
+                "reference": "88e31146321b82f31a47e86da9f6d6cca10b5ebb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/ce390194d43529ab75e0163b7501e9d96ff402f7",
-                "reference": "ce390194d43529ab75e0163b7501e9d96ff402f7",
+                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/88e31146321b82f31a47e86da9f6d6cca10b5ebb",
+                "reference": "88e31146321b82f31a47e86da9f6d6cca10b5ebb",
                 "shasum": ""
             },
             "require": {
@@ -6081,22 +6081,22 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-bundle/tree/v5.6.0"
+                "source": "https://github.com/scheb/2fa-bundle/tree/v5.7.0"
             },
-            "time": "2021-02-18T17:09:24+00:00"
+            "time": "2021-03-06T19:14:17+00:00"
         },
         {
             "name": "scheb/2fa-google-authenticator",
-            "version": "v5.6.0",
+            "version": "v5.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-google-authenticator.git",
-                "reference": "7fe0494c8edd432605829e5b4403bb84eb6ac842"
+                "reference": "6bbab3e19949ed882ce2b396e1fb50d15c6addd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/2fa-google-authenticator/zipball/7fe0494c8edd432605829e5b4403bb84eb6ac842",
-                "reference": "7fe0494c8edd432605829e5b4403bb84eb6ac842",
+                "url": "https://api.github.com/repos/scheb/2fa-google-authenticator/zipball/6bbab3e19949ed882ce2b396e1fb50d15c6addd7",
+                "reference": "6bbab3e19949ed882ce2b396e1fb50d15c6addd7",
                 "shasum": ""
             },
             "require": {
@@ -6131,9 +6131,9 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.6.0"
+                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.7.0"
             },
-            "time": "2020-12-31T11:27:00+00:00"
+            "time": "2021-02-28T12:09:54+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
