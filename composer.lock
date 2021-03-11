@@ -4845,12 +4845,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "1dbbc2ba1c73f8f12d235ffdc13b63971aaa7ad4"
+                "reference": "053348b3abdce91a49bf875bac0c5278f94a6778"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/1dbbc2ba1c73f8f12d235ffdc13b63971aaa7ad4",
-                "reference": "1dbbc2ba1c73f8f12d235ffdc13b63971aaa7ad4",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/053348b3abdce91a49bf875bac0c5278f94a6778",
+                "reference": "053348b3abdce91a49bf875bac0c5278f94a6778",
                 "shasum": ""
             },
             "require": {
@@ -5006,7 +5006,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-03-10T09:40:38+00:00"
+            "time": "2021-03-11T09:35:42+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -7535,16 +7535,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v5.2.4",
+            "version": "v5.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "5216698b81beac7c9f8fd1fc8921deada8ae70c0"
+                "reference": "8f9f599e7fc56c051730850eee92da9b8f18ba21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/5216698b81beac7c9f8fd1fc8921deada8ae70c0",
-                "reference": "5216698b81beac7c9f8fd1fc8921deada8ae70c0",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/8f9f599e7fc56c051730850eee92da9b8f18ba21",
+                "reference": "8f9f599e7fc56c051730850eee92da9b8f18ba21",
                 "shasum": ""
             },
             "require": {
@@ -7572,6 +7572,7 @@
             },
             "conflict": {
                 "doctrine/dbal": "<2.10",
+                "egulias/email-validator": "~3.0.0",
                 "masterminds/html5": "<2.6",
                 "ocramius/proxy-manager": "<2.1",
                 "phpdocumentor/reflection-docblock": "<3.2.2",
@@ -7675,7 +7676,7 @@
                 "doctrine/dbal": "^2.10|^3.0",
                 "doctrine/doctrine-bundle": "^2.0",
                 "doctrine/orm": "^2.7.3",
-                "egulias/email-validator": "^2.1.10",
+                "egulias/email-validator": "^2.1.10|^3.1",
                 "guzzlehttp/promises": "^1.4",
                 "masterminds/html5": "^2.6",
                 "monolog/monolog": "^1.25.1|^2",
@@ -7734,7 +7735,7 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/symfony/issues",
-                "source": "https://github.com/symfony/symfony/tree/v5.2.4"
+                "source": "https://github.com/symfony/symfony/tree/v5.2.5"
             },
             "funding": [
                 {
@@ -7750,7 +7751,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-04T18:06:14+00:00"
+            "time": "2021-03-10T17:07:52+00:00"
         },
         {
             "name": "thecodingmachine/safe",
