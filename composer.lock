@@ -1288,16 +1288,16 @@
         },
         {
             "name": "doctrine/migrations",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "260991be753a38aa25b6f2d13dbb7f113f8dbf8f"
+                "reference": "e543224170a61ffe49fcadb8e7339c345df1baa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/260991be753a38aa25b6f2d13dbb7f113f8dbf8f",
-                "reference": "260991be753a38aa25b6f2d13dbb7f113f8dbf8f",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/e543224170a61ffe49fcadb8e7339c345df1baa2",
+                "reference": "e543224170a61ffe49fcadb8e7339c345df1baa2",
                 "shasum": ""
             },
             "require": {
@@ -1375,7 +1375,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/migrations/issues",
-                "source": "https://github.com/doctrine/migrations/tree/3.1.0"
+                "source": "https://github.com/doctrine/migrations/tree/3.1.1"
             },
             "funding": [
                 {
@@ -1391,7 +1391,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-07T21:16:17+00:00"
+            "time": "2021-03-14T11:10:58+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -2061,16 +2061,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.163.0",
+            "version": "v0.164.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "8e326f378a1f505064912fddd19fd93bbdcc80fb"
+                "reference": "266557af3f595681eb9199853641f334a913d1bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/8e326f378a1f505064912fddd19fd93bbdcc80fb",
-                "reference": "8e326f378a1f505064912fddd19fd93bbdcc80fb",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/266557af3f595681eb9199853641f334a913d1bf",
+                "reference": "266557af3f595681eb9199853641f334a913d1bf",
                 "shasum": ""
             },
             "require": {
@@ -2096,9 +2096,9 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.163.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.164.0"
             },
-            "time": "2021-03-06T12:20:02+00:00"
+            "time": "2021-03-13T12:20:04+00:00"
         },
         {
             "name": "google/auth",
@@ -4845,12 +4845,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "494e42acb1b37d4ec1886084bb097e376082c976"
+                "reference": "9c072887af3cd694c15474d4e946c684f373063f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/494e42acb1b37d4ec1886084bb097e376082c976",
-                "reference": "494e42acb1b37d4ec1886084bb097e376082c976",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/9c072887af3cd694c15474d4e946c684f373063f",
+                "reference": "9c072887af3cd694c15474d4e946c684f373063f",
                 "shasum": ""
             },
             "require": {
@@ -5006,7 +5006,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-03-14T09:40:17+00:00"
+            "time": "2021-03-15T09:35:30+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
