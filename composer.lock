@@ -2420,16 +2420,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.165.0",
+            "version": "v0.166.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "c8d7ff2c9cb6cad6e88bc5825491c47b8b2e52fd"
+                "reference": "46b71684a100f3d976e0321cf24f487b314add68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/c8d7ff2c9cb6cad6e88bc5825491c47b8b2e52fd",
-                "reference": "c8d7ff2c9cb6cad6e88bc5825491c47b8b2e52fd",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/46b71684a100f3d976e0321cf24f487b314add68",
+                "reference": "46b71684a100f3d976e0321cf24f487b314add68",
                 "shasum": ""
             },
             "require": {
@@ -2455,9 +2455,9 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.165.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.166.0"
             },
-            "time": "2021-03-21T11:20:02+00:00"
+            "time": "2021-03-22T11:26:04+00:00"
         },
         {
             "name": "google/auth",
@@ -7536,16 +7536,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v4.4.20",
+            "version": "v4.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "fb90227d34531b06c01f1450c0c490fbf3fd7a8e"
+                "reference": "0139b7a74507b39b1ace35fa5544be5aee1dca5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/fb90227d34531b06c01f1450c0c490fbf3fd7a8e",
-                "reference": "fb90227d34531b06c01f1450c0c490fbf3fd7a8e",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/0139b7a74507b39b1ace35fa5544be5aee1dca5f",
+                "reference": "0139b7a74507b39b1ace35fa5544be5aee1dca5f",
                 "shasum": ""
             },
             "require": {
@@ -7569,6 +7569,7 @@
                 "twig/twig": "^1.43|^2.13|^3.0.4"
             },
             "conflict": {
+                "egulias/email-validator": "~3.0.0",
                 "masterminds/html5": "<2.6",
                 "monolog/monolog": ">=2",
                 "ocramius/proxy-manager": "<2.1",
@@ -7666,7 +7667,7 @@
                 "doctrine/dbal": "^2.6|^3.0",
                 "doctrine/doctrine-bundle": "^1.5|^2.0",
                 "doctrine/orm": "^2.6.3",
-                "egulias/email-validator": "^2.1.10",
+                "egulias/email-validator": "^2.1.10|^3.1",
                 "guzzlehttp/promises": "^1.4",
                 "masterminds/html5": "^2.6",
                 "monolog/monolog": "^1.25.1",
@@ -7679,9 +7680,9 @@
                 "psr/simple-cache": "^1.0",
                 "symfony/phpunit-bridge": "^5.2",
                 "symfony/security-acl": "~2.8|~3.0",
-                "twig/cssinliner-extra": "^2.12",
-                "twig/inky-extra": "^2.12",
-                "twig/markdown-extra": "^2.12"
+                "twig/cssinliner-extra": "^2.12|^3",
+                "twig/inky-extra": "^2.12|^3",
+                "twig/markdown-extra": "^2.12|^3"
             },
             "type": "library",
             "autoload": {
@@ -7721,7 +7722,7 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/symfony/issues",
-                "source": "https://github.com/symfony/symfony/tree/v4.4.20"
+                "source": "https://github.com/symfony/symfony/tree/v4.4.21"
             },
             "funding": [
                 {
@@ -7737,7 +7738,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-04T18:00:44+00:00"
+            "time": "2021-03-29T05:11:20+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
