@@ -11,7 +11,7 @@ DirectoryIndex index.php
 # when compiling LESS/Sass/CoffeScript assets.
 # Options FollowSymlinks
 
-# Disabling MultiViews prevents unwanted negotiation, e.g. "/app" should not resolve
+# Disabling MultiViews prevents unwanted negotiation, e.g. "/index" should not resolve
 # to the front controller "/index.php" but be rewritten to "/index.php/index".
 <IfModule mod_negotiation.c>
     Options -MultiViews
@@ -82,8 +82,8 @@ RewriteRule ^(.*)$ /var/assets%{REQUEST_URI} [PT,L]
 
 # Thumbnails
 RewriteCond %{REQUEST_URI} .*/(image|video)-thumb__[\d]+__.*
-RewriteCond %{DOCUMENT_ROOT}/var/tmp/%1-thumbnails%{REQUEST_URI} -f
-RewriteRule ^(.*)$ /var/tmp/%1-thumbnails%{REQUEST_URI} [PT,L]
+RewriteCond %{DOCUMENT_ROOT}/var/tmp/thumbnails%{REQUEST_URI} -f
+RewriteRule ^(.*)$ /var/tmp/thumbnails%{REQUEST_URI} [PT,L]
 
 # cache-buster rule for scripts & stylesheets embedded using view helpers
 RewriteRule ^cache-buster\-[\d]+/(.*) $1 [PT,L]
