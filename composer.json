@@ -8,7 +8,7 @@
   },
   "require": {
     "php": ">=7.2",
-    "pimcore/pimcore": "~6.8.0"
+    "pimcore/pimcore": "~6.9.0"
   },
   "require-dev": {
     "cache/integration-tests": "^0.16.0",
