@@ -8,7 +8,7 @@
   },
   "require": {
     "composer-runtime-api": "^2.0",
-    "pimcore/pimcore": "10.0.x-dev as 6.8.x-dev"
+    "pimcore/pimcore": "10.0.x-dev as 6.9.x-dev"
   },
   "require-dev": {
     "cache/integration-tests": "^0.17.0",
