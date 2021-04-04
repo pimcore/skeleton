@@ -5085,12 +5085,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "732b59f9e884ea4fbd7a3278bd9e516aca2a21ab"
+                "reference": "d2afb1f0aafd6e8a5fa1584382da5c6c0ee9cc24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/732b59f9e884ea4fbd7a3278bd9e516aca2a21ab",
-                "reference": "732b59f9e884ea4fbd7a3278bd9e516aca2a21ab",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/d2afb1f0aafd6e8a5fa1584382da5c6c0ee9cc24",
+                "reference": "d2afb1f0aafd6e8a5fa1584382da5c6c0ee9cc24",
                 "shasum": ""
             },
             "require": {
@@ -5247,7 +5247,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-04-03T08:35:31+00:00"
+            "time": "2021-04-04T07:59:25+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
