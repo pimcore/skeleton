@@ -969,28 +969,27 @@
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
-            "version": "3.1.0",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
-                "reference": "d1248471734c62b94baac36cb18e9c635775eeb0"
+                "reference": "0a9a4ffdb8713d0b7f2bbc04b0bbfa2991b2a238"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/d1248471734c62b94baac36cb18e9c635775eeb0",
-                "reference": "d1248471734c62b94baac36cb18e9c635775eeb0",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/0a9a4ffdb8713d0b7f2bbc04b0bbfa2991b2a238",
+                "reference": "0a9a4ffdb8713d0b7f2bbc04b0bbfa2991b2a238",
                 "shasum": ""
             },
             "require": {
                 "doctrine/doctrine-bundle": "~1.0|~2.0",
-                "doctrine/migrations": "^3.1",
+                "doctrine/migrations": "~3.0",
                 "php": "^7.2|^8.0",
                 "symfony/framework-bundle": "~3.4|~4.0|~5.0"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^8.0",
                 "doctrine/orm": "^2.6",
-                "doctrine/persistence": "^1.3||^2.0",
                 "phpstan/phpstan": "^0.12",
                 "phpstan/phpstan-deprecation-rules": "^0.12",
                 "phpstan/phpstan-phpunit": "^0.12",
@@ -1033,7 +1032,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineMigrationsBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineMigrationsBundle/tree/3.1.0"
+                "source": "https://github.com/doctrine/DoctrineMigrationsBundle/tree/3.0.3"
             },
             "funding": [
                 {
@@ -1049,7 +1048,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-05T20:45:07+00:00"
+            "time": "2021-03-18T21:01:51+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -4966,16 +4965,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.6",
+            "version": "3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "906a5fafabe5e6ba51ef3dc65b2722a677908837"
+                "reference": "d369510df0ebd5e1a5d0fe3d4d23c55fa87a403d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/906a5fafabe5e6ba51ef3dc65b2722a677908837",
-                "reference": "906a5fafabe5e6ba51ef3dc65b2722a677908837",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/d369510df0ebd5e1a5d0fe3d4d23c55fa87a403d",
+                "reference": "d369510df0ebd5e1a5d0fe3d4d23c55fa87a403d",
                 "shasum": ""
             },
             "require": {
@@ -5057,7 +5056,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.6"
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.7"
             },
             "funding": [
                 {
@@ -5073,7 +5072,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-10T13:58:31+00:00"
+            "time": "2021-04-06T14:00:11+00:00"
         },
         {
             "name": "pimcore/pimcore",
@@ -5081,12 +5080,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "78118ef7033adbdb402fa9722e3895db19841bed"
+                "reference": "854e1ff41e151145fb78658fea645fadc6f6ae7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/78118ef7033adbdb402fa9722e3895db19841bed",
-                "reference": "78118ef7033adbdb402fa9722e3895db19841bed",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/854e1ff41e151145fb78658fea645fadc6f6ae7b",
+                "reference": "854e1ff41e151145fb78658fea645fadc6f6ae7b",
                 "shasum": ""
             },
             "require": {
@@ -5162,6 +5161,7 @@
                 "webmozarts/console-parallelization": "^1.2.0"
             },
             "conflict": {
+                "doctrine/doctrine-migrations-bundle": "3.1.0",
                 "symfony/monolog-bundle": "3.6.0",
                 "thecodingmachine/safe": "<1.2.0"
             },
@@ -5178,7 +5178,7 @@
             },
             "suggest": {
                 "elasticsearch/elasticsearch": "Required for Elastic Search service",
-                "ext-imagick": "^3.2.0",
+                "ext-imagick": "^3.4.0",
                 "ext-redis": "*"
             },
             "default-branch": true,
@@ -5243,7 +5243,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-04-06T08:47:13+00:00"
+            "time": "2021-04-07T08:41:12+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
