@@ -16,7 +16,7 @@ cd ./my-project
 
 ## Getting started (Pimcore X beta)
 ```bash
-COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/demo:10.0.x-dev my-project --ignore-platform-req=php
+COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton:10.0.x-dev my-project
 cd ./my-project
 ./vendor/bin/pimcore-install
 ```
