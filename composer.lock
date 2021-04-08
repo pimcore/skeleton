@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd09f595446e521632d2e546825fdb58",
+    "content-hash": "8b6ea92b01e2431e9fd2b5bd636b29ec",
     "packages": [
         {
             "name": "amnuts/opcache-gui",
@@ -5080,12 +5080,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "5e6dd2339060950d86dd1693ba796acc6f49c73e"
+                "reference": "71bd54abaebc8f8b94c57b6445fd14eb23e8aa7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/5e6dd2339060950d86dd1693ba796acc6f49c73e",
-                "reference": "5e6dd2339060950d86dd1693ba796acc6f49c73e",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/71bd54abaebc8f8b94c57b6445fd14eb23e8aa7d",
+                "reference": "71bd54abaebc8f8b94c57b6445fd14eb23e8aa7d",
                 "shasum": ""
             },
             "require": {
@@ -5243,7 +5243,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-04-07T11:32:53+00:00"
+            "time": "2021-04-08T08:47:04+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -11077,14 +11077,7 @@
             "time": "2020-07-12T23:59:07+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "pimcore/pimcore",
-            "version": "10.0.9999999.9999999-dev",
-            "alias": "6.9.x-dev",
-            "alias_normalized": "6.9.9999999.9999999-dev"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "pimcore/pimcore": 20
