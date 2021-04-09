@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b6ea92b01e2431e9fd2b5bd636b29ec",
+    "content-hash": "a479c80b61d4472df599fec8dcc47fce",
     "packages": [
         {
             "name": "amnuts/opcache-gui",
@@ -5076,16 +5076,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "dev-master",
+            "version": "v10.0.0-BETA2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "71bd54abaebc8f8b94c57b6445fd14eb23e8aa7d"
+                "reference": "5e6dd2339060950d86dd1693ba796acc6f49c73e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/71bd54abaebc8f8b94c57b6445fd14eb23e8aa7d",
-                "reference": "71bd54abaebc8f8b94c57b6445fd14eb23e8aa7d",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/5e6dd2339060950d86dd1693ba796acc6f49c73e",
+                "reference": "5e6dd2339060950d86dd1693ba796acc6f49c73e",
                 "shasum": ""
             },
             "require": {
@@ -5181,7 +5181,6 @@
                 "ext-imagick": "^3.4.0",
                 "ext-redis": "*"
             },
-            "default-branch": true,
             "bin": [
                 "bin/pimcore-install"
             ],
@@ -5243,7 +5242,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-04-08T08:47:04+00:00"
+            "time": "2021-04-07T11:32:53+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -11080,7 +11079,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "pimcore/pimcore": 20
+        "pimcore/pimcore": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,
