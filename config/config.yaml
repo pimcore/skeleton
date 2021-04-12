@@ -18,15 +18,6 @@ pimcore:
 #    translations:
 #        case_insensitive: true
 
-#### REDIS CACHE
-#    cache:
-#        pools:
-#            redis:
-#                enabled: true
-#                connection:
-#                    server: localhost
-#                    database: 14
-
 #### FEATURE FLAGS
 #    flags:
 #        zend_date: true
@@ -46,6 +37,8 @@ pimcore:
 
 #### CUSTOM DOCUMENT EDITABLES
 #    documents:
+#        allow_trailing_slash: 'yes'
+#        generate_preview: false
 #        tags:
 #            map:
 #                markdown: \App\Model\Document\Tag\Markdown
@@ -61,6 +54,8 @@ pimcore:
 
 #### ASSET CUSTOM SETTINGS
 #    assets:
+#        icc_rgb_profile: ''
+#        icc_cmyk_profile: ''
 #        versions:
 #            use_hardlinks: false
 #        image:
@@ -71,10 +66,74 @@ pimcore:
 #                webp_auto_support: false
 
 
+#### SYSTEM SETTINGS
+
+#    general:
+#        timezone: Europe/Berlin
+#        path_variable: ''
+#        instance_identifier: ''
+#    services:
+#        google:
+#            client_id: 73893596983.apps.googleusercontent.com
+#            email: 73893596983@developer.gserviceaccount.com
+#            simple_api_key: AIzaSyCo9Wj49hYJWW2WgOju4iMYNTvdcBxmyQ8
+#            browser_api_key: AIzaSyBJX16kWAmUVEz1c1amzp2iKqAfumbcoQQ
+#    full_page_cache:
+#        enabled: false
+#        lifetime: null
+#        exclude_cookie: ''
+#        exclude_patterns: ''
+#    httpclient:
+#        adapter: Socket # use 'Proxy' for custom proxy configuration
+#        proxy_host: ''
+#        proxy_port: ''
+#        proxy_user: ''
+#        proxy_pass: ''
+#    email:
+#        sender:
+#            name: 'Pimcore Demo'
+#            email: demo@pimcore.com
+#        return:
+#            name: ''
+#            email: ''
+#        method: sendmail
+#    newsletter:
+#        use_specific: false # set true to use the following options for newsletter delivery
+#        sender:
+#            name: ''
+#            email: ''
+#        return:
+#            name: ''
+#            email: ''
+#        method: null
+
+#    applicationlog:
+#        mail_notification:
+#            send_log_summary: false
+#            filter_priority: null
+#            mail_receiver: ''
+#        archive_treshold: '30'
+#        archive_alternative_database: ''
+
 #### SYMFONY OVERRIDES
 framework:
+
+#### USE CUSTOM CACHE POOL
+#    cache:
+#        pools:
+#            pimcore.cache.pool:
+#                public: true
+#                tags: true
+#                default_lifetime: 31536000  # 1 year
+#                adapter: pimcore.cache.adapter.redis_tag_aware
+#                provider: 'redis://localhost' # Redis DNS, see: https://symfony.com/doc/current/components/cache/adapters/redis_adapter.html#configure-the-connection
 
 #### USE SESSION HANDLER CONFIGURED IN php.ini
 #    session:
 #        handler_id: null
 
+#### SYMFONY MAILER TRANSPORTS
+#    mailer:
+#        transports:
+#            main: smtp://user:pass@smtp.example.com:port
+#            pimcore_newsletter: smtp://user:pass@smtp.example.com:port
