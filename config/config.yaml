@@ -96,7 +96,6 @@ pimcore:
 #        return:
 #            name: ''
 #            email: ''
-#        method: sendmail
 #    newsletter:
 #        use_specific: false # set true to use the following options for newsletter delivery
 #        sender:
@@ -105,7 +104,6 @@ pimcore:
 #        return:
 #            name: ''
 #            email: ''
-#        method: null
 
 #    applicationlog:
 #        mail_notification:
