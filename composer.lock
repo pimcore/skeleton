@@ -4932,16 +4932,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.9.2",
+            "version": "v6.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "ce1f43d4cc8d02461cce5e9dba488bab53541d2b"
+                "reference": "9eeb134fa741e76737115bb398debb7f2b320dd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/ce1f43d4cc8d02461cce5e9dba488bab53541d2b",
-                "reference": "ce1f43d4cc8d02461cce5e9dba488bab53541d2b",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/9eeb134fa741e76737115bb398debb7f2b320dd4",
+                "reference": "9eeb134fa741e76737115bb398debb7f2b320dd4",
                 "shasum": ""
             },
             "require": {
@@ -5104,7 +5104,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-04-19T12:18:33+00:00"
+            "time": "2021-04-28T10:07:29+00:00"
         },
         {
             "name": "piwik/device-detector",
