@@ -14,7 +14,6 @@
 
 namespace App;
 
-use HWI\Bundle\OAuthBundle\HWIOAuthBundle;
 use Pimcore\HttpKernel\BundleCollection\BundleCollection;
 use Pimcore\Kernel as PimcoreKernel;
 
