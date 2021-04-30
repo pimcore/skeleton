@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+
+    <style type="text/css">
+
+        @page {
+            counter-increment: page;
+
+            -ro-scale-content: none;
+            hyphens: auto;
+
+            size: A4 portrait;
+            margin:15mm 14mm 14mm 14mm;
+
+        }
+
+    </style>
+
+    <style type="text/css" media="screen">
+        body {
+            background:#CCC;
+        }
+
+        .site {
+            margin:0 auto;
+            width: 21cm;
+            padding:1cm 0 1cm 0;
+        }
+
+        .page {
+            width: 21cm;
+            padding:0.5cm 0 0.5cm 0;
+            background:#FFF;
+            -webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+
+            position: relative;
+        }
+    </style>
+
+
+    {% if printermarks is defined and printermarks == true %}
+        <link rel="stylesheet" type="text/css" href="/bundles/pimcoreadmin/css/print/print-printermarks.css" media="print" />
+    {% endif %}
+
+</head>
+
+<body>
+<div class="site">
+    {{ block('content') }}
+</div>
+
+</body>
+</html>
