@@ -7764,16 +7764,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v4.4.21",
+            "version": "v4.4.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "0139b7a74507b39b1ace35fa5544be5aee1dca5f"
+                "reference": "306adcdbc2ae9db1594f04d3b293e2c9c6d4b736"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/0139b7a74507b39b1ace35fa5544be5aee1dca5f",
-                "reference": "0139b7a74507b39b1ace35fa5544be5aee1dca5f",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/306adcdbc2ae9db1594f04d3b293e2c9c6d4b736",
+                "reference": "306adcdbc2ae9db1594f04d3b293e2c9c6d4b736",
                 "shasum": ""
             },
             "require": {
@@ -7950,7 +7950,7 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/symfony/issues",
-                "source": "https://github.com/symfony/symfony/tree/v4.4.21"
+                "source": "https://github.com/symfony/symfony/tree/v4.4.22"
             },
             "funding": [
                 {
@@ -7966,7 +7966,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-29T05:11:20+00:00"
+            "time": "2021-05-01T14:39:01+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
