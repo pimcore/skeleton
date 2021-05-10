@@ -41,11 +41,5 @@
       "Pimcore\\Composer::clearCache",
       "Pimcore\\Composer::installAssets"
     ]
-  },
-  "extra": {
-    "symfony-bin-dir": "bin",
-    "symfony-var-dir": "var",
-    "symfony-tests-dir": "tests",
-    "symfony-assets-install": "relative"
   }
 }
