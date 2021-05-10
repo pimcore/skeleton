@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b81451aa4dacf766246fb2ee99acf854",
+    "content-hash": "3954459ad82806d51e94643c09ff0bf2",
     "packages": [
         {
             "name": "amnuts/opcache-gui",
@@ -860,16 +860,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "a08bc3b4d8567cdff05e89b272ba1e06e9d71c21"
+                "reference": "d6b3c37804539a24ba8a7d647a6144cab2f13242"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/a08bc3b4d8567cdff05e89b272ba1e06e9d71c21",
-                "reference": "a08bc3b4d8567cdff05e89b272ba1e06e9d71c21",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/d6b3c37804539a24ba8a7d647a6144cab2f13242",
+                "reference": "d6b3c37804539a24ba8a7d647a6144cab2f13242",
                 "shasum": ""
             },
             "require": {
@@ -899,7 +899,7 @@
                 "symfony/phpunit-bridge": "^5.2",
                 "symfony/property-info": "^4.3.3|^5.0",
                 "symfony/proxy-manager-bridge": "^3.4|^4.3.3|^5.0",
-                "symfony/security-bundle": "^4.4|5.0",
+                "symfony/security-bundle": "^4.4|^5.0",
                 "symfony/twig-bridge": "^3.4.30|^4.3.3|^5.0",
                 "symfony/validator": "^3.4.30|^4.3.3|^5.0",
                 "symfony/web-profiler-bundle": "^3.4.30|^4.3.3|^5.0",
@@ -950,7 +950,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.3.1"
+                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.3.2"
             },
             "funding": [
                 {
@@ -966,7 +966,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-05T14:21:02+00:00"
+            "time": "2021-05-06T19:21:22+00:00"
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
@@ -2093,16 +2093,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.173.0",
+            "version": "v0.174.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "9034b5ba3e25c9ad8e49b6457b9cad21fd9d9847"
+                "reference": "004c5280f5a26a8acbb6f6af6a792e4872b7648a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/9034b5ba3e25c9ad8e49b6457b9cad21fd9d9847",
-                "reference": "9034b5ba3e25c9ad8e49b6457b9cad21fd9d9847",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/004c5280f5a26a8acbb6f6af6a792e4872b7648a",
+                "reference": "004c5280f5a26a8acbb6f6af6a792e4872b7648a",
                 "shasum": ""
             },
             "require": {
@@ -2128,9 +2128,9 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.173.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.174.0"
             },
-            "time": "2021-05-02T11:20:02+00:00"
+            "time": "2021-05-08T11:20:03+00:00"
         },
         {
             "name": "google/auth",
