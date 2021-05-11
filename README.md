@@ -14,17 +14,6 @@ cd ./my-project
 - Open https://your-host/admin in your browser
 - Done! 😎
 
-## Getting started (Pimcore X beta)
-```bash
-COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton:10.0.x-dev my-project
-cd ./my-project
-./vendor/bin/pimcore-install
-```
-
-- Point your virtual host to `my-project/public`
-- Open https://your-host/admin in your browser
-- Done! 😎
-
 ## Docker
 
 You can also use Docker to setup a new Pimcore Installation:
