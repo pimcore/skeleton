@@ -10,7 +10,7 @@ cd ./my-project
 ./vendor/bin/pimcore-install
 ```
 
-- Point your virtual host to `my-project/web` 
+- Point your virtual host to `my-project/public` 
 - Open https://your-host/admin in your browser
 - Done! 😎
 
