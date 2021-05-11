@@ -7,7 +7,7 @@
     "sort-packages": true
   },
   "require": {
-    "pimcore/pimcore": "10.0.*@beta"
+    "pimcore/pimcore": "^10.0"
   },
   "require-dev": {
     "cache/integration-tests": "^0.17.0",
