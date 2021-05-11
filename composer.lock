@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3954459ad82806d51e94643c09ff0bf2",
+    "content-hash": "be2475c4bcf228793ab6f7705bec4c8b",
     "packages": [
         {
             "name": "amnuts/opcache-gui",
@@ -5076,16 +5076,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v10.0.0-BETA4",
+            "version": "v10.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "c2b5b40217a6d3fcfe7bbf18ba65745d28ebc213"
+                "reference": "5c58cebac1f9061840a262a771b72113e3db4508"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/c2b5b40217a6d3fcfe7bbf18ba65745d28ebc213",
-                "reference": "c2b5b40217a6d3fcfe7bbf18ba65745d28ebc213",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/5c58cebac1f9061840a262a771b72113e3db4508",
+                "reference": "5c58cebac1f9061840a262a771b72113e3db4508",
                 "shasum": ""
             },
             "require": {
@@ -5172,8 +5172,8 @@
                 "codeception/phpunit-wrapper": "^9",
                 "composer/composer": "*",
                 "elasticsearch/elasticsearch": "^7.11",
-                "phpstan/phpstan": "^0.12.56",
-                "phpstan/phpstan-symfony": "^0.12.11",
+                "phpstan/phpstan": "^0.12.85",
+                "phpstan/phpstan-symfony": "^0.12.32",
                 "phpunit/phpunit": "^9",
                 "spiritix/php-chrome-html2pdf": "^1.5"
             },
@@ -5187,17 +5187,6 @@
                 "bin/pimcore-install"
             ],
             "type": "library",
-            "extra": {
-                "symfony-app-dir": "app",
-                "symfony-bin-dir": "bin",
-                "symfony-var-dir": "var",
-                "symfony-web-dir": "public",
-                "symfony-tests-dir": "tests",
-                "symfony-assets-install": "relative",
-                "branch-alias": {
-                    "dev-master": "10.0-dev"
-                }
-            },
             "autoload": {
                 "files": [
                     "lib/helper-functions.php"
@@ -5244,7 +5233,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-04-28T10:11:37+00:00"
+            "time": "2021-05-11T08:39:34+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -11079,9 +11068,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "pimcore/pimcore": 10
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
