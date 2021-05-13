@@ -2686,16 +2686,16 @@
         },
         {
             "name": "laminas/laminas-code",
-            "version": "4.2.2",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-code.git",
-                "reference": "3cbdf2e23e6df1d1beecb5708560c8f6a8115bf9"
+                "reference": "1beb4447f9efd26041eba7eff50614e798c353fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/3cbdf2e23e6df1d1beecb5708560c8f6a8115bf9",
-                "reference": "3cbdf2e23e6df1d1beecb5708560c8f6a8115bf9",
+                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/1beb4447f9efd26041eba7eff50614e798c353fd",
+                "reference": "1beb4447f9efd26041eba7eff50614e798c353fd",
                 "shasum": ""
             },
             "require": {
@@ -2753,7 +2753,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-05-07T14:09:12+00:00"
+            "time": "2021-05-12T12:41:03+00:00"
         },
         {
             "name": "laminas/laminas-eventmanager",
@@ -3704,16 +3704,16 @@
         },
         {
             "name": "matomo/device-detector",
-            "version": "4.2.2",
+            "version": "4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matomo-org/device-detector.git",
-                "reference": "dc270e7645d286d6f01d516a6634aba8b31ad668"
+                "reference": "d879f07496d6e6ee89cef5bcd925383d9b0c2cc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/dc270e7645d286d6f01d516a6634aba8b31ad668",
-                "reference": "dc270e7645d286d6f01d516a6634aba8b31ad668",
+                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/d879f07496d6e6ee89cef5bcd925383d9b0c2cc0",
+                "reference": "d879f07496d6e6ee89cef5bcd925383d9b0c2cc0",
                 "shasum": ""
             },
             "require": {
@@ -3769,7 +3769,7 @@
                 "source": "https://github.com/matomo-org/matomo",
                 "wiki": "https://dev.matomo.org/"
             },
-            "time": "2021-02-26T07:31:42+00:00"
+            "time": "2021-05-12T14:14:25+00:00"
         },
         {
             "name": "matthiasmullie/minify",
@@ -6311,16 +6311,16 @@
         },
         {
             "name": "scheb/2fa-bundle",
-            "version": "v5.8.0",
+            "version": "v5.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-bundle.git",
-                "reference": "93c3579f03d1f4b170d2f790ee78312e374c5e6d"
+                "reference": "c1d267b24f5a1ed9be36b2d464e8729d7ea3f06f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/93c3579f03d1f4b170d2f790ee78312e374c5e6d",
-                "reference": "93c3579f03d1f4b170d2f790ee78312e374c5e6d",
+                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/c1d267b24f5a1ed9be36b2d464e8729d7ea3f06f",
+                "reference": "c1d267b24f5a1ed9be36b2d464e8729d7ea3f06f",
                 "shasum": ""
             },
             "require": {
@@ -6373,13 +6373,13 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-bundle/tree/v5.8.0"
+                "source": "https://github.com/scheb/2fa-bundle/tree/v5.8.1"
             },
-            "time": "2021-04-01T18:17:48+00:00"
+            "time": "2021-05-12T20:32:07+00:00"
         },
         {
             "name": "scheb/2fa-google-authenticator",
-            "version": "v5.8.0",
+            "version": "v5.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-google-authenticator.git",
@@ -6423,7 +6423,7 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.8.0"
+                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.8.1"
             },
             "time": "2021-02-28T12:09:54+00:00"
         },
@@ -7776,16 +7776,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v5.2.7",
+            "version": "v5.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "b9afe804b73183a4b98466f20d35b7c7a10bfacd"
+                "reference": "23147f993c63c9eaafe3fa7ac0363a2e42d66a22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/b9afe804b73183a4b98466f20d35b7c7a10bfacd",
-                "reference": "b9afe804b73183a4b98466f20d35b7c7a10bfacd",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/23147f993c63c9eaafe3fa7ac0363a2e42d66a22",
+                "reference": "23147f993c63c9eaafe3fa7ac0363a2e42d66a22",
                 "shasum": ""
             },
             "require": {
@@ -7976,7 +7976,7 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/symfony/issues",
-                "source": "https://github.com/symfony/symfony/tree/v5.2.7"
+                "source": "https://github.com/symfony/symfony/tree/v5.2.8"
             },
             "funding": [
                 {
@@ -7992,7 +7992,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-01T14:53:29+00:00"
+            "time": "2021-05-12T13:28:09+00:00"
         },
         {
             "name": "thecodingmachine/safe",
