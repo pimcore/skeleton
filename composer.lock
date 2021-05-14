@@ -472,28 +472,30 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.12.1",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "b17c5014ef81d212ac539f07a1001832df1b6d3b"
+                "reference": "03cb2123a67d4be806554fe670d0adc298199808"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/b17c5014ef81d212ac539f07a1001832df1b6d3b",
-                "reference": "b17c5014ef81d212ac539f07a1001832df1b6d3b",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/03cb2123a67d4be806554fe670d0adc298199808",
+                "reference": "03cb2123a67d4be806554fe670d0adc298199808",
                 "shasum": ""
             },
             "require": {
                 "doctrine/lexer": "1.*",
                 "ext-tokenizer": "*",
-                "php": "^7.1 || ^8.0"
+                "php": "^7.1 || ^8.0",
+                "psr/cache": "^1 || ^2 || ^3"
             },
             "require-dev": {
-                "doctrine/cache": "1.*",
+                "doctrine/cache": "^1.11 || ^2.0",
                 "doctrine/coding-standard": "^6.0 || ^8.1",
                 "phpstan/phpstan": "^0.12.20",
-                "phpunit/phpunit": "^7.5 || ^9.1.5"
+                "phpunit/phpunit": "^7.5 || ^9.1.5",
+                "symfony/cache": "^4.4 || ^5.2"
             },
             "type": "library",
             "autoload": {
@@ -536,9 +538,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/annotations/issues",
-                "source": "https://github.com/doctrine/annotations/tree/1.12.1"
+                "source": "https://github.com/doctrine/annotations/tree/1.13.0"
             },
-            "time": "2021-02-21T21:00:45+00:00"
+            "time": "2021-04-29T07:39:39+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -3104,16 +3106,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "2.0.5",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "27ea64cc9d61ae7b6a5f04bebf062d89dd18e8f7"
+                "reference": "f1ecc5c7bf193da14fbc34198ffb16d979ad7d5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/27ea64cc9d61ae7b6a5f04bebf062d89dd18e8f7",
-                "reference": "27ea64cc9d61ae7b6a5f04bebf062d89dd18e8f7",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f1ecc5c7bf193da14fbc34198ffb16d979ad7d5a",
+                "reference": "f1ecc5c7bf193da14fbc34198ffb16d979ad7d5a",
                 "shasum": ""
             },
             "require": {
@@ -3168,7 +3170,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/2.0.5"
+                "source": "https://github.com/thephpleague/flysystem/tree/2.0.7"
             },
             "funding": [
                 {
@@ -3184,7 +3186,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-11T15:03:35+00:00"
+            "time": "2021-05-13T19:36:24+00:00"
         },
         {
             "name": "league/flysystem-bundle",
@@ -4188,16 +4190,16 @@
         },
         {
             "name": "mpratt/embera",
-            "version": "2.0.17",
+            "version": "2.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mpratt/Embera.git",
-                "reference": "e5a1131773236d2f56a5416ef064328cc91a973e"
+                "reference": "17358913e299497e464ad17f1310f8a01505fd9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mpratt/Embera/zipball/e5a1131773236d2f56a5416ef064328cc91a973e",
-                "reference": "e5a1131773236d2f56a5416ef064328cc91a973e",
+                "url": "https://api.github.com/repos/mpratt/Embera/zipball/17358913e299497e464ad17f1310f8a01505fd9c",
+                "reference": "17358913e299497e464ad17f1310f8a01505fd9c",
                 "shasum": ""
             },
             "require": {
@@ -4205,7 +4207,7 @@
                 "php": ">=5.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.3"
+                "phpunit/phpunit": "^9.0"
             },
             "suggest": {
                 "ext-curl": "Allow to fetch data using curl instead of using file_get_contents"
@@ -4245,9 +4247,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mpratt/Embera/issues",
-                "source": "https://github.com/mpratt/Embera/tree/2.0.17"
+                "source": "https://github.com/mpratt/Embera/tree/2.0.18"
             },
-            "time": "2021-03-12T01:38:04+00:00"
+            "time": "2021-05-14T04:44:48+00:00"
         },
         {
             "name": "mustangostang/spyc",
@@ -8382,16 +8384,16 @@
         },
         {
             "name": "vrana/adminer",
-            "version": "v4.8.0",
+            "version": "v4.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vrana/adminer.git",
-                "reference": "b83c61fca3f491073cd5f5888a2acbf6f044366b"
+                "reference": "1f173e18bdf0be29182e0d67989df56eadea4754"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vrana/adminer/zipball/b83c61fca3f491073cd5f5888a2acbf6f044366b",
-                "reference": "b83c61fca3f491073cd5f5888a2acbf6f044366b",
+                "url": "https://api.github.com/repos/vrana/adminer/zipball/1f173e18bdf0be29182e0d67989df56eadea4754",
+                "reference": "1f173e18bdf0be29182e0d67989df56eadea4754",
                 "shasum": ""
             },
             "type": "library",
@@ -8431,7 +8433,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-02-10T16:21:55+00:00"
+            "time": "2021-05-14T05:39:59+00:00"
         },
         {
             "name": "vrana/jush",
