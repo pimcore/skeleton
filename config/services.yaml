@@ -23,6 +23,11 @@ parameters:
     #pimcore_executable_nohup: /opt/tools/nohup
     #pimcore_executable_ffmpeg: /opt/tools/ffmpeg
     #pimcore_executable_exiftool: /opt/tools/exiftool
+    #pimcore_executable_wkhtmltoimage: /usr/local/bin/wkhtmltoimage
+    #pimcore_executable_timeout: /usr/bin/timeout
+    #pimcore_executable_facedetect: /usr/bin/facedetect
+    # graphviz
+    #pimcore_executable_dot: /usr/bin/dot
 
 services:
     # default configuration for services in *this* file
