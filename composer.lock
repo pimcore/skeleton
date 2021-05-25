@@ -2618,16 +2618,16 @@
         },
         {
             "name": "knplabs/knp-paginator-bundle",
-            "version": "v5.4.2",
+            "version": "v5.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpPaginatorBundle.git",
-                "reference": "8a7255062dd9f6ff8a3a4712a4b34bdbbc9f31f7"
+                "reference": "615fa674e38840e4bae901336830f8c9edfef893"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/8a7255062dd9f6ff8a3a4712a4b34bdbbc9f31f7",
-                "reference": "8a7255062dd9f6ff8a3a4712a4b34bdbbc9f31f7",
+                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/615fa674e38840e4bae901336830f8c9edfef893",
+                "reference": "615fa674e38840e4bae901336830f8c9edfef893",
                 "shasum": ""
             },
             "require": {
@@ -2685,9 +2685,9 @@
             ],
             "support": {
                 "issues": "https://github.com/KnpLabs/KnpPaginatorBundle/issues",
-                "source": "https://github.com/KnpLabs/KnpPaginatorBundle/tree/v5.4.2"
+                "source": "https://github.com/KnpLabs/KnpPaginatorBundle/tree/v5.5.0"
             },
-            "time": "2020-12-17T08:19:16+00:00"
+            "time": "2021-05-24T12:28:30+00:00"
         },
         {
             "name": "laminas/laminas-code",
@@ -3467,16 +3467,16 @@
         },
         {
             "name": "markbaker/complex",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MarkBaker/PHPComplex.git",
-                "reference": "7351c0b5beef9eb1f683e57107ecba3aac2ebe67"
+                "reference": "d18272926d58065140314c01e18ec3dd7ae854ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MarkBaker/PHPComplex/zipball/7351c0b5beef9eb1f683e57107ecba3aac2ebe67",
-                "reference": "7351c0b5beef9eb1f683e57107ecba3aac2ebe67",
+                "url": "https://api.github.com/repos/MarkBaker/PHPComplex/zipball/d18272926d58065140314c01e18ec3dd7ae854ea",
+                "reference": "d18272926d58065140314c01e18ec3dd7ae854ea",
                 "shasum": ""
             },
             "require": {
@@ -3556,9 +3556,9 @@
             ],
             "support": {
                 "issues": "https://github.com/MarkBaker/PHPComplex/issues",
-                "source": "https://github.com/MarkBaker/PHPComplex/tree/2.0.1"
+                "source": "https://github.com/MarkBaker/PHPComplex/tree/2.0.2"
             },
-            "time": "2021-05-23T11:48:20+00:00"
+            "time": "2021-05-24T10:53:30+00:00"
         },
         {
             "name": "markbaker/matrix",
@@ -6312,16 +6312,16 @@
         },
         {
             "name": "scheb/2fa-bundle",
-            "version": "v5.8.1",
+            "version": "v5.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-bundle.git",
-                "reference": "c1d267b24f5a1ed9be36b2d464e8729d7ea3f06f"
+                "reference": "8877e39be1b4c29203567211e16b4bcfa55ba576"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/c1d267b24f5a1ed9be36b2d464e8729d7ea3f06f",
-                "reference": "c1d267b24f5a1ed9be36b2d464e8729d7ea3f06f",
+                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/8877e39be1b4c29203567211e16b4bcfa55ba576",
+                "reference": "8877e39be1b4c29203567211e16b4bcfa55ba576",
                 "shasum": ""
             },
             "require": {
@@ -6374,13 +6374,13 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-bundle/tree/v5.8.1"
+                "source": "https://github.com/scheb/2fa-bundle/tree/v5.9.0"
             },
-            "time": "2021-05-12T20:32:07+00:00"
+            "time": "2021-05-24T16:32:54+00:00"
         },
         {
             "name": "scheb/2fa-google-authenticator",
-            "version": "v5.8.1",
+            "version": "v5.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-google-authenticator.git",
@@ -6424,7 +6424,7 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.8.1"
+                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.9.0"
             },
             "time": "2021-02-28T12:09:54+00:00"
         },
