@@ -116,6 +116,10 @@ pimcore:
 #### SYMFONY OVERRIDES
 framework:
 
+#### DEFINE LOCATION OF MANIFEST WHEN WORKING WITH SYMFONY ENCORE
+#    assets:
+#        json_manifest_path: '%kernel.project_dir%/public/build/manifest.json'
+
 #### USE CUSTOM CACHE POOL
 #    cache:
 #        pools:
