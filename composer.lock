@@ -5078,16 +5078,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v10.0.0",
+            "version": "v10.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "015320be1d3358417fd9250a8ee936decd00d710"
+                "reference": "87472aafbbf295c592dd81ad29ee9b04c85803fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/015320be1d3358417fd9250a8ee936decd00d710",
-                "reference": "015320be1d3358417fd9250a8ee936decd00d710",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/87472aafbbf295c592dd81ad29ee9b04c85803fd",
+                "reference": "87472aafbbf295c592dd81ad29ee9b04c85803fd",
                 "shasum": ""
             },
             "require": {
@@ -5142,7 +5142,7 @@
                 "pear/net_url2": "^2.2",
                 "php": "^8.0",
                 "phpoffice/phpspreadsheet": "^1.9",
-                "presta/sitemap-bundle": "^1.7 || ^2.1",
+                "presta/sitemap-bundle": "^2.1",
                 "psr/simple-cache": "^1.0.0",
                 "rybakit/twig-deferred-extension": "^3.0",
                 "sabre/dav": "^4.1.1",
@@ -5235,7 +5235,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-05-11T09:16:24+00:00"
+            "time": "2021-05-26T10:52:20+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
