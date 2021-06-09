@@ -4464,16 +4464,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.48.1",
+            "version": "2.49.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "8d1f50f1436fb4b05e7127360483dd9c6e73da16"
+                "reference": "93d9db91c0235c486875d22f1e08b50bdf3e6eee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8d1f50f1436fb4b05e7127360483dd9c6e73da16",
-                "reference": "8d1f50f1436fb4b05e7127360483dd9c6e73da16",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/93d9db91c0235c486875d22f1e08b50bdf3e6eee",
+                "reference": "93d9db91c0235c486875d22f1e08b50bdf3e6eee",
                 "shasum": ""
             },
             "require": {
@@ -4553,7 +4553,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T22:08:38+00:00"
+            "time": "2021-06-02T07:31:40+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -5083,16 +5083,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v10.0.2",
+            "version": "v10.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "4e9b03c4de4b0b5f6893ab4b9a9402eeacea8350"
+                "reference": "c1c0e4bd4906ed13e66edc4beb95579739ff1b9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/4e9b03c4de4b0b5f6893ab4b9a9402eeacea8350",
-                "reference": "4e9b03c4de4b0b5f6893ab4b9a9402eeacea8350",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/c1c0e4bd4906ed13e66edc4beb95579739ff1b9b",
+                "reference": "c1c0e4bd4906ed13e66edc4beb95579739ff1b9b",
                 "shasum": ""
             },
             "require": {
@@ -5171,7 +5171,8 @@
             "conflict": {
                 "doctrine/doctrine-migrations-bundle": "3.1.0",
                 "symfony/monolog-bundle": "3.6.0",
-                "thecodingmachine/safe": "<1.2.0"
+                "thecodingmachine/safe": "<1.2.0",
+                "webmozarts/console-parallelization": "1.2.2"
             },
             "require-dev": {
                 "cache/integration-tests": "dev-master",
@@ -5241,7 +5242,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-06-02T13:33:03+00:00"
+            "time": "2021-06-09T12:22:40+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
