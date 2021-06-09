@@ -4331,16 +4331,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.48.1",
+            "version": "2.49.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "8d1f50f1436fb4b05e7127360483dd9c6e73da16"
+                "reference": "93d9db91c0235c486875d22f1e08b50bdf3e6eee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8d1f50f1436fb4b05e7127360483dd9c6e73da16",
-                "reference": "8d1f50f1436fb4b05e7127360483dd9c6e73da16",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/93d9db91c0235c486875d22f1e08b50bdf3e6eee",
+                "reference": "93d9db91c0235c486875d22f1e08b50bdf3e6eee",
                 "shasum": ""
             },
             "require": {
@@ -4420,7 +4420,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T22:08:38+00:00"
+            "time": "2021-06-02T07:31:40+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -4934,16 +4934,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.9.4",
+            "version": "v6.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "6d2230bb3f0b12b19ba340517cd12e4022bb6aea"
+                "reference": "27abd84e616803a0139e8c887f1c84d0c35c9248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/6d2230bb3f0b12b19ba340517cd12e4022bb6aea",
-                "reference": "6d2230bb3f0b12b19ba340517cd12e4022bb6aea",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/27abd84e616803a0139e8c887f1c84d0c35c9248",
+                "reference": "27abd84e616803a0139e8c887f1c84d0c35c9248",
                 "shasum": ""
             },
             "require": {
@@ -5023,7 +5023,8 @@
                 "monolog/monolog": ">=2",
                 "phpstan/phpstan": "0.12.55",
                 "symfony/monolog-bundle": "3.6.0",
-                "symfony/symfony": "3.4.43 || 4.4.11"
+                "symfony/symfony": "3.4.43 || 4.4.11",
+                "webmozarts/console-parallelization": "1.2.2"
             },
             "require-dev": {
                 "cache/integration-tests": "^0.16.0",
@@ -5106,7 +5107,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-05-26T08:14:51+00:00"
+            "time": "2021-06-09T11:59:59+00:00"
         },
         {
             "name": "piwik/device-detector",
@@ -8437,7 +8438,7 @@
         },
         {
             "name": "webmozarts/console-parallelization",
-            "version": "1.2.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/console-parallelization.git",
@@ -8486,7 +8487,7 @@
             "description": "Enables parallelization of Symfony Console commands",
             "support": {
                 "issues": "https://github.com/webmozarts/console-parallelization/issues",
-                "source": "https://github.com/webmozarts/console-parallelization/tree/1.2.2"
+                "source": "https://github.com/webmozarts/console-parallelization/tree/1.x"
             },
             "time": "2020-06-11T06:04:51+00:00"
         },
