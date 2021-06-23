@@ -2420,16 +2420,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.201.0",
+            "version": "v0.181.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "0375af405757b36f3bcc82e19d7daf61e0b4cfd8"
+                "reference": "a4ea5fd96887d654d10d446b239e1ff60240e2c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/0375af405757b36f3bcc82e19d7daf61e0b4cfd8",
-                "reference": "0375af405757b36f3bcc82e19d7daf61e0b4cfd8",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/a4ea5fd96887d654d10d446b239e1ff60240e2c1",
+                "reference": "a4ea5fd96887d654d10d446b239e1ff60240e2c1",
                 "shasum": ""
             },
             "require": {
@@ -2440,12 +2440,9 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Google\\Service\\": "src"
-                },
-                "files": [
-                    "autoload.php"
-                ]
+                "psr-0": {
+                    "Google_Service_": "src"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2458,9 +2455,9 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.201.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.181.0"
             },
-            "time": "2021-06-18T15:00:35+00:00"
+            "time": "2021-06-13T11:20:02+00:00"
         },
         {
             "name": "google/auth",
@@ -4937,16 +4934,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.9.5",
+            "version": "v6.9.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "27abd84e616803a0139e8c887f1c84d0c35c9248"
+                "reference": "9a33afacc268d9779bf6419639e8c208355e50c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/27abd84e616803a0139e8c887f1c84d0c35c9248",
-                "reference": "27abd84e616803a0139e8c887f1c84d0c35c9248",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/9a33afacc268d9779bf6419639e8c208355e50c0",
+                "reference": "9a33afacc268d9779bf6419639e8c208355e50c0",
                 "shasum": ""
             },
             "require": {
@@ -5023,6 +5020,8 @@
             },
             "conflict": {
                 "doctrine/dbal": "^2.13.0",
+                "google/apiclient-services": ">=0.200.0",
+                "laminas/laminas-code": ">=4.4",
                 "monolog/monolog": ">=2",
                 "phpstan/phpstan": "0.12.55",
                 "symfony/monolog-bundle": "3.6.0",
@@ -5110,7 +5109,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2021-06-09T11:59:59+00:00"
+            "time": "2021-06-23T08:26:54+00:00"
         },
         {
             "name": "piwik/device-detector",
