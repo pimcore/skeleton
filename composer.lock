@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "amnuts/opcache-gui",
-            "version": "3.2.1",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amnuts/opcache-gui.git",
-                "reference": "d660fbee43ad12a1a5114bdedad88625cf4db91c"
+                "reference": "52d691a82b3aa2407511761928f3279727c6e3f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amnuts/opcache-gui/zipball/d660fbee43ad12a1a5114bdedad88625cf4db91c",
-                "reference": "d660fbee43ad12a1a5114bdedad88625cf4db91c",
+                "url": "https://api.github.com/repos/amnuts/opcache-gui/zipball/52d691a82b3aa2407511761928f3279727c6e3f2",
+                "reference": "52d691a82b3aa2407511761928f3279727c6e3f2",
                 "shasum": ""
             },
             "require": {
@@ -39,7 +39,7 @@
                 {
                     "name": "Andrew Collington",
                     "email": "andy@amnuts.com",
-                    "homepage": "http://www.amnuts.com/",
+                    "homepage": "https://blog.amnuts.com/",
                     "role": "Developer"
                 },
                 {
@@ -58,9 +58,9 @@
             "support": {
                 "email": "andy@amnuts.com",
                 "issues": "https://github.com/amnuts/opcache-gui/issues",
-                "source": "https://github.com/amnuts/opcache-gui/tree/3.2.1"
+                "source": "https://github.com/amnuts/opcache-gui/tree/3.3.0"
             },
-            "time": "2020-12-16T15:55:55+00:00"
+            "time": "2021-06-27T11:47:40+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
