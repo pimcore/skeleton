@@ -8568,16 +8568,16 @@
         },
         {
             "name": "webmozarts/console-parallelization",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/console-parallelization.git",
-                "reference": "873650e99ca61c47750cd035690c1b67a339290a"
+                "reference": "671dc35f5a08911132dee037583d51cef1055766"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/console-parallelization/zipball/873650e99ca61c47750cd035690c1b67a339290a",
-                "reference": "873650e99ca61c47750cd035690c1b67a339290a",
+                "url": "https://api.github.com/repos/webmozarts/console-parallelization/zipball/671dc35f5a08911132dee037583d51cef1055766",
+                "reference": "671dc35f5a08911132dee037583d51cef1055766",
                 "shasum": ""
             },
             "require": {
@@ -8617,9 +8617,9 @@
             "description": "Enables parallelization of Symfony Console commands",
             "support": {
                 "issues": "https://github.com/webmozarts/console-parallelization/issues",
-                "source": "https://github.com/webmozarts/console-parallelization/tree/1.2.3"
+                "source": "https://github.com/webmozarts/console-parallelization/tree/1.2.4"
             },
-            "time": "2021-07-11T09:03:36+00:00"
+            "time": "2021-07-13T13:30:53+00:00"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
