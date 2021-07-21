@@ -2987,16 +2987,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "a3c694de9f7e844b76f9d1b61296ebf6e8d89d74"
+                "reference": "29a3ba148287db3142412ef34f6fdcbc22c957cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/a3c694de9f7e844b76f9d1b61296ebf6e8d89d74",
-                "reference": "a3c694de9f7e844b76f9d1b61296ebf6e8d89d74",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/29a3ba148287db3142412ef34f6fdcbc22c957cd",
+                "reference": "29a3ba148287db3142412ef34f6fdcbc22c957cd",
                 "shasum": ""
             },
             "require": {
@@ -3052,7 +3052,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/2.1.1"
+                "source": "https://github.com/thephpleague/flysystem/tree/2.2.0"
             },
             "funding": [
                 {
@@ -3068,7 +3068,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-23T22:07:10+00:00"
+            "time": "2021-07-20T16:54:08+00:00"
         },
         {
             "name": "league/flysystem-bundle",
@@ -9334,16 +9334,16 @@
         },
         {
             "name": "phar-io/manifest",
-            "version": "2.0.1",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phar-io/manifest.git",
-                "reference": "85265efd3af7ba3ca4b2a2c34dbfc5788dd29133"
+                "reference": "97803eca37d319dfa7826cc2437fc020857acb53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phar-io/manifest/zipball/85265efd3af7ba3ca4b2a2c34dbfc5788dd29133",
-                "reference": "85265efd3af7ba3ca4b2a2c34dbfc5788dd29133",
+                "url": "https://api.github.com/repos/phar-io/manifest/zipball/97803eca37d319dfa7826cc2437fc020857acb53",
+                "reference": "97803eca37d319dfa7826cc2437fc020857acb53",
                 "shasum": ""
             },
             "require": {
@@ -9388,9 +9388,9 @@
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
             "support": {
                 "issues": "https://github.com/phar-io/manifest/issues",
-                "source": "https://github.com/phar-io/manifest/tree/master"
+                "source": "https://github.com/phar-io/manifest/tree/2.0.3"
             },
-            "time": "2020-06-27T14:33:11+00:00"
+            "time": "2021-07-20T11:28:43+00:00"
         },
         {
             "name": "phar-io/version",
