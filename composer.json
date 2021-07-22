@@ -21,9 +21,7 @@
   "autoload": {
     "psr-4": {
       "App\\": "src/",
-      "Pimcore\\Model\\DataObject\\": "var/classes/DataObject",
-      "Pimcore\\Model\\Object\\": "var/classes/Object",
-      "Website\\": "legacy/website/lib"
+      "Pimcore\\Model\\DataObject\\": "var/classes/DataObject"
     }
   },
   "scripts": {
