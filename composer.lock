@@ -3976,16 +3976,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "9738e495f288eec0b187e310b7cdbbb285777dbe"
+                "reference": "71312564759a7db5b789296369c1a264efc43aad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/9738e495f288eec0b187e310b7cdbbb285777dbe",
-                "reference": "9738e495f288eec0b187e310b7cdbbb285777dbe",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/71312564759a7db5b789296369c1a264efc43aad",
+                "reference": "71312564759a7db5b789296369c1a264efc43aad",
                 "shasum": ""
             },
             "require": {
@@ -4056,7 +4056,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/2.3.1"
+                "source": "https://github.com/Seldaek/monolog/tree/2.3.2"
             },
             "funding": [
                 {
@@ -4068,20 +4068,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-14T11:56:39+00:00"
+            "time": "2021-07-23T07:42:52+00:00"
         },
         {
             "name": "mpratt/embera",
-            "version": "2.0.19",
+            "version": "2.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mpratt/Embera.git",
-                "reference": "2d12e16d9c4d3b9f026f3537512fd16869604cab"
+                "reference": "2e15c4bc3e79fd95bbf9de3d6d80fab1475347e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mpratt/Embera/zipball/2d12e16d9c4d3b9f026f3537512fd16869604cab",
-                "reference": "2d12e16d9c4d3b9f026f3537512fd16869604cab",
+                "url": "https://api.github.com/repos/mpratt/Embera/zipball/2e15c4bc3e79fd95bbf9de3d6d80fab1475347e3",
+                "reference": "2e15c4bc3e79fd95bbf9de3d6d80fab1475347e3",
                 "shasum": ""
             },
             "require": {
@@ -4129,9 +4129,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mpratt/Embera/issues",
-                "source": "https://github.com/mpratt/Embera/tree/2.0.19"
+                "source": "https://github.com/mpratt/Embera/tree/2.0.20"
             },
-            "time": "2021-05-28T00:35:13+00:00"
+            "time": "2021-07-22T21:48:58+00:00"
         },
         {
             "name": "mustangostang/spyc",
@@ -10946,6 +10946,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": true,
             "time": "2020-09-28T06:45:17+00:00"
         },
         {
