@@ -6770,16 +6770,16 @@
         },
         {
             "name": "symfony/doctrine-messenger",
-            "version": "v5.3.2",
+            "version": "v5.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/doctrine-messenger.git",
-                "reference": "beedb48475116c8c9c75fc6de70b35a656d4c442"
+                "reference": "f67e8f9f7d0e14d079c655c4c51440c388238e76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/doctrine-messenger/zipball/beedb48475116c8c9c75fc6de70b35a656d4c442",
-                "reference": "beedb48475116c8c9c75fc6de70b35a656d4c442",
+                "url": "https://api.github.com/repos/symfony/doctrine-messenger/zipball/f67e8f9f7d0e14d079c655c4c51440c388238e76",
+                "reference": "f67e8f9f7d0e14d079c655c4c51440c388238e76",
                 "shasum": ""
             },
             "require": {
@@ -6823,7 +6823,7 @@
             "description": "Symfony Doctrine Messenger Bridge",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/doctrine-messenger/tree/v5.3.2"
+                "source": "https://github.com/symfony/doctrine-messenger/tree/v5.3.4"
             },
             "funding": [
                 {
@@ -6839,7 +6839,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-04T22:34:10+00:00"
+            "time": "2021-07-23T15:47:41+00:00"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -7818,16 +7818,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v5.3.3",
+            "version": "v5.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "dbd559ff851c680b7967ff46355b89c50713ae45"
+                "reference": "4f8d9188fc2db2717d806bc7bd5dcd8d6298814a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/dbd559ff851c680b7967ff46355b89c50713ae45",
-                "reference": "dbd559ff851c680b7967ff46355b89c50713ae45",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/4f8d9188fc2db2717d806bc7bd5dcd8d6298814a",
+                "reference": "4f8d9188fc2db2717d806bc7bd5dcd8d6298814a",
                 "shasum": ""
             },
             "require": {
@@ -7840,7 +7840,7 @@
                 "psr/container": "^1.0",
                 "psr/event-dispatcher": "^1.0",
                 "psr/link": "^1.0",
-                "psr/log": "~1.0",
+                "psr/log": "^1|^2",
                 "symfony/contracts": "^2.1",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-intl-grapheme": "~1.0",
@@ -7849,7 +7849,7 @@
                 "symfony/polyfill-intl-normalizer": "~1.0",
                 "symfony/polyfill-mbstring": "~1.0",
                 "symfony/polyfill-php73": "^1.11",
-                "symfony/polyfill-php80": "^1.15",
+                "symfony/polyfill-php80": "^1.16",
                 "symfony/polyfill-php81": "^1.22",
                 "symfony/polyfill-uuid": "^1.15",
                 "twig/twig": "^2.13|^3.0.4"
@@ -7874,7 +7874,7 @@
                 "psr/event-dispatcher-implementation": "1.0",
                 "psr/http-client-implementation": "1.0",
                 "psr/link-implementation": "1.0",
-                "psr/log-implementation": "1.0",
+                "psr/log-implementation": "1.0|2.0",
                 "psr/simple-cache-implementation": "1.0",
                 "symfony/cache-implementation": "1.0|2.0",
                 "symfony/event-dispatcher-implementation": "2.0",
@@ -8018,7 +8018,7 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/symfony/issues",
-                "source": "https://github.com/symfony/symfony/tree/v5.3.3"
+                "source": "https://github.com/symfony/symfony/tree/v5.3.5"
             },
             "funding": [
                 {
@@ -8034,7 +8034,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-30T08:28:04+00:00"
+            "time": "2021-07-27T04:39:36+00:00"
         },
         {
             "name": "thecodingmachine/safe",
