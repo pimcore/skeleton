@@ -16,7 +16,7 @@ class DefaultController extends FrontendController
      */
     public function defaultAction(Request $request)
     {
-        return $this->redirect('/admin');
+        return $this->redirectToRoute('pimcore_admin_login');
     }
     
     /**
