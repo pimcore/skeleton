@@ -6204,16 +6204,16 @@
         },
         {
             "name": "scheb/2fa-bundle",
-            "version": "v5.10.1",
+            "version": "v5.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-bundle.git",
-                "reference": "5a70cba98051fdfad4ae7555d9d8b73dfdf2d658"
+                "reference": "d049b28ed7afccddd12f11e6e84a1ae22f57d6a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/5a70cba98051fdfad4ae7555d9d8b73dfdf2d658",
-                "reference": "5a70cba98051fdfad4ae7555d9d8b73dfdf2d658",
+                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/d049b28ed7afccddd12f11e6e84a1ae22f57d6a1",
+                "reference": "d049b28ed7afccddd12f11e6e84a1ae22f57d6a1",
                 "shasum": ""
             },
             "require": {
@@ -6266,13 +6266,13 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-bundle/tree/v5.10.1"
+                "source": "https://github.com/scheb/2fa-bundle/tree/v5.11.0"
             },
-            "time": "2021-06-02T20:00:05+00:00"
+            "time": "2021-08-11T18:30:37+00:00"
         },
         {
             "name": "scheb/2fa-google-authenticator",
-            "version": "v5.10.1",
+            "version": "v5.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-google-authenticator.git",
@@ -6316,7 +6316,7 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.10.1"
+                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v5.11.0"
             },
             "time": "2021-02-28T12:09:54+00:00"
         },
