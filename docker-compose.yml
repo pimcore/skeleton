@@ -26,6 +26,8 @@ services:
     php-fpm:
         #user: '1000:1000' # set to your uid:gid
         image: pimcore/pimcore:PHP8.0-fpm
+        environment:
+            - COMPOSER_HOME=/var/www/html
         depends_on:
             - db
         volumes:
@@ -42,6 +44,7 @@ services:
             - pimcore-tmp-storage:/tmp:cached
         environment:
             - PHP_IDE_CONFIG="serverName=localhost"
+            - COMPOSER_HOME=/var/www/html
 
 volumes:
     pimcore-demo-database:
