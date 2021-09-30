@@ -19,11 +19,12 @@ cd ./my-project
 You can also use Docker to setup a new Pimcore Installation:
 
 ```bash
-COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton my-project
+docker run --rm -v `pwd`:/var/www/html pimcore/pimcore:PHP8.0-fpm composer create-project pimcore/skeleton my-project
 cd ./my-project
-docker-compose run --rm php-fpm vendor/bin/pimcore-install --mysql-host-socket=db --mysql-username=pimcore --mysql-password=pimcore --mysql-database=pimcore
-docker-compose run --rm php-fpm chown -R www-data:www-data var/*
 docker-compose up -d
+docker-compose exec php-fpm vendor/bin/pimcore-install --mysql-host-socket=db --mysql-username=pimcore --mysql-password=pimcore --mysql-database=pimcore
+docker-compose exec php-fpm chown -R www-data:www-data var/*
+
 ```
 You can now navigate your browser to https://localhost or https://localhost/admin.
 The default docker-compose comes with PHP 8.0 on debian and mariadb 10.5.
