@@ -23,7 +23,7 @@ docker run --rm -v `pwd`:/var/www/html pimcore/pimcore:PHP8.0-fpm composer creat
 cd ./my-project
 docker-compose up -d
 docker-compose exec php-fpm vendor/bin/pimcore-install --mysql-host-socket=db --mysql-username=pimcore --mysql-password=pimcore --mysql-database=pimcore
-docker-compose exec php-fpm chown -R www-data:www-data var/*
+docker-compose exec php-fpm chown -R www-data:www-data var
 
 ```
 You can now navigate your browser to https://localhost or https://localhost/admin.
