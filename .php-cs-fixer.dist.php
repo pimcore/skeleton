@@ -1,48 +1,40 @@
 <?php
 
-$finder = PhpCsFixer\Finder::create()
+$finder = (new PhpCsFixer\Finder)
     ->in([
-        __DIR__ . '/app',
         __DIR__ . '/src',
     ])
 
     ->exclude([
 
     ])
-
-    // do not fix views
-    ->notName('*.html.php')
-
-    // using notPath instead of exclude here as they can be nested (install-profiles)
-    ->notPath('/var\/config/')
-    ->notPath('/var\/classes/')
 ;
 
 // do not enable self_accessor as it breaks pimcore models relying on get_called_class()
-return PhpCsFixer\Config::create()
+return (new PhpCsFixer\Config)
     ->setRules([
         '@PSR1'                  => true,
         '@PSR2'                  => true,
         'array_syntax'           => ['syntax' => 'short'],
 
         // keep aligned = and => operators as they are: do not force aligning, but do not remove it
-        'binary_operator_spaces' => ['align_double_arrow' => null, 'align_equals' => null],
+        'binary_operator_spaces' => ['operators' => ['=' => null, '=>' => null]],
 
-        'blank_line_before_return'            => true,
+        'blank_line_before_statement'         => ['statements' => ['return']],
         'encoding'                            => true,
         'function_typehint_space'             => true,
-        'hash_to_slash_comment'               => true,
+        'single_line_comment_style'           => ['comment_types' => ['hash']],
         'lowercase_cast'                      => true,
         'magic_constant_casing'               => true,
-        'method_argument_space'               => ['ensure_fully_multiline' => false],
-        'method_separation'                   => true,
+        'method_argument_space'               => ['on_multiline' => 'ignore'],
+        'class_attributes_separation'         => ['elements' => ['method' => 'one']],
         'native_function_casing'              => true,
         'no_blank_lines_after_class_opening'  => true,
         'no_blank_lines_after_phpdoc'         => true,
         'no_empty_comment'                    => true,
         'no_empty_phpdoc'                     => true,
         'no_empty_statement'                  => true,
-        'no_extra_consecutive_blank_lines'    => true,
+        'no_extra_blank_lines'                => true,
         'no_leading_import_slash'             => true,
         'no_leading_namespace_whitespace'     => true,
         'no_short_bool_cast'                  => true,
