@@ -2,6 +2,7 @@ version: '2.4'
 services:
     redis:
         image: redis:alpine
+        command: [ redis-server, --maxmemory 128mb, --maxmemory-policy volatile-lru, --save "" ]
 
     db:
         image: mariadb:10.5
