@@ -27,7 +27,7 @@ docker-compose exec php-fpm chown -R www-data:www-data var
 
 ```
 You can now navigate your browser to https://localhost or https://localhost/admin.
-The default docker-compose comes with PHP 8.0 on debian and mariadb 10.5.
+The default docker-compose comes with PHP 8.1 on debian and mariadb 10.7.
 
 ## Other demo/skeleton packages
 - [Pimcore Basic Demo](https://github.com/pimcore/demo)
