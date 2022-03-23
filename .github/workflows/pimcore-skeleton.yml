@@ -5,7 +5,7 @@ on:
   # See: https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-using-multiple-events-with-activity-types-or-configuration
   push:
     branches:
-    - 10.x
+    - "[0-9]+.x"
   pull_request:
     branches:
      - 10.x
