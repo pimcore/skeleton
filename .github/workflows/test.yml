@@ -1,0 +1,24 @@
+
+name: "Test"
+
+on:
+    pull_request:
+        branches:
+            - "[0-9]+.[0-9]+"
+            - "[0-9]+.x"
+    push:
+        branches:
+            - "[0-9]+.[0-9]+"
+            - "[0-9]+.x"
+            - "*_actions"
+
+jobs:
+    docs:
+        name: "Generate docs with Daux"
+        runs-on: "ubuntu-20.04"
+        steps:
+            - name: "Checkout code"
+              uses: "actions/checkout@v2"
+
+            - name: "Test"
+              run: "date"
