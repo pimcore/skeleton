@@ -22,9 +22,9 @@ use Symfony\Component\HttpFoundation\Response;
 
 class Web2printController extends FrontendController
 {
-
     /**
      * @param Request $request
+     *
      * @return Response
      */
     public function defaultAction(Request $request)
@@ -48,7 +48,9 @@ class Web2printController extends FrontendController
 
     /**
      * @param Request $request
+     *
      * @return Response
+     *
      * @throws \Exception
      */
     public function containerAction(Request $request)
@@ -78,5 +80,4 @@ class Web2printController extends FrontendController
 
         return $this->render('web2print/container.html.twig', $paramsBag);
     }
-
 }

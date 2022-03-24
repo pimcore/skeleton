@@ -2,11 +2,12 @@ version: '2.4'
 services:
     redis:
         image: redis:alpine
+        command: [ redis-server, --maxmemory 128mb, --maxmemory-policy volatile-lru, --save "" ]
 
     db:
-        image: mariadb:10.5
+        image: mariadb:10.7
         working_dir: /application
-        command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --innodb-file-format=Barracuda, --innodb-large-prefix=1, --innodb-file-per-table=1]
+        command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --innodb-file-per-table=1]
         volumes:
             - pimcore-demo-database:/var/lib/mysql
         environment:
@@ -28,7 +29,7 @@ services:
 
     php-fpm:
         #user: '1000:1000' # set to your uid:gid
-        image: pimcore/pimcore:PHP8.0-fpm
+        image: pimcore/pimcore:PHP8.1-fpm
         environment:
             COMPOSER_HOME: /var/www/html
         depends_on:
@@ -39,7 +40,7 @@ services:
 
     php-fpm-debug:
         #user: '1000:1000' # set to your uid:gid
-        image: pimcore/pimcore:PHP8.0-fpm-debug
+        image: pimcore/pimcore:PHP8.1-fpm-debug
         depends_on:
             - db
         volumes:
@@ -51,7 +52,7 @@ services:
 
     supervisord:
         #user: '1000:1000' # set to your uid:gid
-        image: pimcore/pimcore:supervisord
+        image: pimcore/pimcore:PHP8.1-supervisord
         depends_on:
             - db
         volumes:
