@@ -69,22 +69,23 @@ jobs:
         cd sample-project/
 
         # Start containers
+        docker-compose pull --quiet
         docker-compose up -d
 
         # Install dockerize into the php-fpm container. We need it to block until
         # database is ready to serve connections.
-        docker-compose exec -- php-fpm bash -c '\
+        docker-compose exec -T -- php-fpm bash -c '\
           curl -sfL https://github.com/powerman/dockerize/releases/download/v0.11.5/dockerize-`uname -s`-`uname -m` \
           | install /dev/stdin /usr/local/bin/dockerize'
 
         # Wait for the database to set up.
-        docker-compose exec -- php-fpm dockerize -wait tcp://db:3306 -timeout 5m
+        docker-compose exec -T -- php-fpm dockerize -wait tcp://db:3306 -timeout 5m
 
         # Run pimcore installation.
-        docker-compose exec \
+        docker-compose exec -T \
         -e PIMCORE_INSTALL_ADMIN_USERNAME=pimcore \
         -e PIMCORE_INSTALL_ADMIN_PASSWORD=pimcore \
         -e PIMCORE_INSTALL_MYSQL_USERNAME=pimcore \
         -e PIMCORE_INSTALL_MYSQL_PASSWORD=pimcore \
-        --user=`id -u`:`id -g` -- \
+        -- \
         php-fpm vendor/bin/pimcore-install -n --mysql-host-socket=db --mysql-database=pimcore
