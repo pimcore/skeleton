@@ -3,12 +3,12 @@ name: Test Pimcore Skeleton
 on:
     pull_request:
         branches:
-            - "[0-9]+\.[0-9]+"
-            - "[0-9]+\.x"
+            - "[0-9]+.[0-9]+"
+            - "[0-9]+.x"
     push:
         branches:
-            - "[0-9]+\.[0-9]+"
-            - "[0-9]+\.x"
+            - "[0-9]+.[0-9]+"
+            - "[0-9]+.x"
             - "*_actions"
 
 jobs:
