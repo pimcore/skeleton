@@ -3,12 +3,12 @@ name: Test Pimcore Skeleton
 on:
     pull_request:
         branches:
-            - "[0-9]+.[0-9]+"
-            - "[0-9]+.x"
+            - "[0-9]+\.[0-9]+"
+            - "[0-9]+\.x"
     push:
         branches:
-            - "[0-9]+.[0-9]+"
-            - "[0-9]+.x"
+            - "[0-9]+\.[0-9]+"
+            - "[0-9]+\.x"
             - "*_actions"
 
 jobs:
@@ -22,15 +22,15 @@ jobs:
       with:
         path: 'skeleton'
 
-    - name: Pull latest pimcore 10.x image
+    - name: Pull latest pimcore image
       run: |
         # Echo commands and terminate on first error
         set -ex
         
         # Pull latest build of pimcore's image
-        docker pull docker.io/pimcore/pimcore:PHP8.0-fpm
+        docker pull docker.io/pimcore/pimcore:PHP8.1-fpm
 
-    - name: Create Project from Skeleton in pimcore 10.x environment
+    - name: Create project from skeleton in latest pimcore environment
       run: |
         # Echo commands and terminate on first error
         set -ex
@@ -56,7 +56,35 @@ jobs:
         # Echo commands and terminate on first error
         set -ex
         
-        # Check the compose file
+        # Check (lint) the compose file
         docker-compose -v
         cd sample-project/
         docker-compose config
+
+    - name: Test pimcore installation
+      run: |
+        # Echo commands and terminate on first error
+        set -ex
+
+        cd sample-project/
+
+        # Start containers
+        docker-compose up -d
+
+        # Install dockerize into the php-fpm container. We need it to block until
+        # database is ready to serve connections.
+        docker-compose exec -- php-fpm bash -c '\
+          curl -sfL https://github.com/powerman/dockerize/releases/download/v0.11.5/dockerize-`uname -s`-`uname -m` \
+          | install /dev/stdin /usr/local/bin/dockerize'
+
+        # Wait for the database to set up.
+        docker-compose exec -- php-fpm dockerize -wait tcp://db:3306 -timeout 5m
+
+        # Run pimcore installation.
+        docker-compose exec \
+        -e PIMCORE_INSTALL_ADMIN_USERNAME=pimcore \
+        -e PIMCORE_INSTALL_ADMIN_PASSWORD=pimcore \
+        -e PIMCORE_INSTALL_MYSQL_USERNAME=pimcore \
+        -e PIMCORE_INSTALL_MYSQL_PASSWORD=pimcore \
+        --user=`id -u`:`id -g` -- \
+        php-fpm vendor/bin/pimcore-install -n --mysql-host-socket=db --mysql-database=pimcore
