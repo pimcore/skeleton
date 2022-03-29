@@ -45,7 +45,7 @@ jobs:
           --volume=${{ github.workspace }}/:/test/ \
           --workdir=/test/ \
           --user=$(id -u):$(id -g) \
-          docker.io/pimcore/pimcore:PHP8.0-fpm \
+          docker.io/pimcore/pimcore:PHP8.1-fpm \
             composer create-project \
               pimcore/skeleton:@dev \
               --repository='{"type": "path", "url": "./skeleton"}' \
