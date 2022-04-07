@@ -35,8 +35,8 @@ services:
         depends_on:
             - db
         volumes:
-            - .:/var/www/html:cached
-            - pimcore-tmp-storage:/tmp:cached
+            - .:/var/www/html
+            - pimcore-tmp-storage:/tmp
 
     php-fpm-debug:
         #user: '1000:1000' # set to your uid:gid
@@ -44,8 +44,8 @@ services:
         depends_on:
             - db
         volumes:
-            - .:/var/www/html:cached
-            - pimcore-tmp-storage:/tmp:cached
+            - .:/var/www/html
+            - pimcore-tmp-storage:/tmp
         environment:
             PHP_IDE_CONFIG: serverName=localhost
             COMPOSER_HOME: /var/www/html
@@ -56,7 +56,7 @@ services:
         depends_on:
             - db
         volumes:
-            - .:/var/www/html:cached
+            - .:/var/www/html
             - ./.docker/supervisord.conf:/etc/supervisor/conf.d/pimcore.conf:ro
 
 
