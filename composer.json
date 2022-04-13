@@ -11,7 +11,6 @@
     "pimcore/pimcore": "^10.0"
   },
   "require-dev": {
-    "cache/integration-tests": "^0.17.0",
     "codeception/codeception": "^4.1.12",
     "codeception/module-symfony": "^1"
   },
