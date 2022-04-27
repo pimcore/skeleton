@@ -42,7 +42,7 @@ You don't need to have a PHP environment with composer installed.
     * When asked for admin user and password: Choose freely
     * This can take a while, up to 20 minutes
     
-5. :heavy_check_mark: DONE - You can now visit your pimcore-demo:
+5. :heavy_check_mark: DONE - You can now visit your pimcore instance:
     * The frontend: <http://localhost>
     * The admin interface, using the credentials you have chosen above:
       <http://localhost/admin>
