@@ -47,8 +47,5 @@ You don't need to have a PHP environment with composer installed.
     * The admin interface, using the credentials you have chosen above:
       <http://localhost/admin>
 
-You can now navigate your browser to https://localhost or https://localhost/admin.
-The default docker-compose comes with PHP 8.1 on debian and mariadb 10.7.
-
 ## Other demo/skeleton packages
 - [Pimcore Basic Demo](https://github.com/pimcore/demo)
