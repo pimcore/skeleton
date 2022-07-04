@@ -3,20 +3,17 @@
 namespace App\Controller;
 
 use Pimcore\Controller\FrontendController;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends FrontendController
 {
     /**
-     * @Template
-     *
      * @param Request $request
-     *
-     * @return array
+     * @return Response
      */
-    public function defaultAction(Request $request)
+    public function defaultAction(Request $request): Response
     {
-        return [];
+        return $this->render('default/default.html.twig');
     }
 }
