@@ -8,7 +8,7 @@
     "process-timeout": 0
   },
   "require": {
-    "pimcore/pimcore": "10.x-dev"
+    "pimcore/pimcore": "11.x-dev as 10.99.99"
   },
   "require-dev": {
     "codeception/codeception": "^4.1.12"
