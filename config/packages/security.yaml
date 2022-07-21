@@ -43,7 +43,6 @@ security:
                 trusted_parameter_name: _trusted       # Name of the parameter for the trusted device option
                 multi_factor: false                    # If ALL active two-factor methods need to be fulfilled (multi-factor authentication)
 
-
     access_control:
         # Pimcore admin ACl  // DO NOT CHANGE!
         - { path: ^/admin/settings/display-custom-logo, roles: PUBLIC_ACCESS }
