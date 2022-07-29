@@ -92,3 +92,6 @@ jobs:
         -e PIMCORE_INSTALL_MYSQL_DATABASE=pimcore \
         -- \
         php vendor/bin/pimcore-install -n
+
+        # Execute codeception tests.
+        docker compose exec -T php-fpm composer test

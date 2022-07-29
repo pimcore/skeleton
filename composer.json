@@ -14,7 +14,8 @@
   },
   "require-dev": {
     "codeception/codeception": "^5.0.3",
-    "codeception/module-symfony": "^3.1.0"
+    "codeception/module-symfony": "^3.1.0",
+    "phpspec/prophecy-phpunit": "^2.0"
   },
   "suggest": {
     "pimcore/data-hub": "Universal data interface for GraphQL, CSV and other formats"
@@ -25,6 +26,14 @@
       "Pimcore\\Model\\DataObject\\": "var/classes/DataObject"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Tests\\": "tests/",
+      "App\\Tests\\Unit\\": "tests/unit",
+      "App\\Tests\\Functional\\": "tests/functional",
+      "App\\Tests\\Support\\": "tests/_support"
+    }
+  },
   "scripts": {
     "post-create-project-cmd": "Pimcore\\Composer::postCreateProject",
     "post-install-cmd": [
@@ -33,11 +42,20 @@
     ],
     "post-update-cmd": [
       "Pimcore\\Composer::postUpdate",
+      "@pimcore-scripts",
+      "Pimcore\\Composer::executeMigrationsUp",
       "@pimcore-scripts"
     ],
     "pimcore-scripts": [
       "Pimcore\\Composer::clearCache",
       "Pimcore\\Composer::installAssets"
+    ],
+    "test": [
+      "Composer\\Config::disableProcessTimeout",
+      "@php codecept run"
     ]
+  },
+  "scripts-descriptions": {
+    "test": "Executes automated tests"
   }
 }
