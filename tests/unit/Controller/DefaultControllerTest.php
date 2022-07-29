@@ -42,16 +42,18 @@ class DefaultControllerTest extends Unit
         $this->twig->method('render')->will(
             $this->returnValueMap([
                 // Simulate rendering of default template.
-                ['default/default.html.twig', [], 'Welcome to awesome PimCore!']
+                ['default/default.html.twig', [], 'At pimcore we love writing tests! ❤️TDD!']
             ])
         );
 
         $response = $this->controller->defaultAction($this->createMock(Request::class));
 
         self::assertEquals(200, $response->getStatusCode());
-        self::assertStringContainsStringIgnoringCase('welcome', $response->getContent());
         self::assertStringContainsStringIgnoringCase('pimcore', $response->getContent());
-        self::assertStringContainsStringIgnoringCase('awesome', $response->getContent());
+        self::assertStringContainsStringIgnoringCase('❤', $response->getContent());
+        self::assertStringContainsStringIgnoringCase('tests', $response->getContent());
         self::assertStringNotContainsStringIgnoringCase('bugs', $response->getContent());
+        self::assertStringNotContainsStringIgnoringCase('hacks', $response->getContent());
+        self::assertStringNotContainsStringIgnoringCase('💩', $response->getContent());
     }
 }
