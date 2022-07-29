@@ -20,6 +20,9 @@ class CliCommandTest extends KernelTestCase
 
     protected function setUp(): void
     {
+        // First, let tests believe that the process is executed as a console application.
+        define('PIMCORE_CONSOLE', true);
+
         parent::setUp();
 
         $application = new Application(self::bootKernel());
