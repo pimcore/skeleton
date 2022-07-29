@@ -2,17 +2,15 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Functional\Importer;
+namespace App\Tests\Functional\Command;
 
 use App\Kernel;
-use Doctrine\Persistence\ObjectManager;
 use Pimcore\Test\KernelTestCase;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
 
 class CliCommandTest extends KernelTestCase
 {
-    private ObjectManager $manager;
     private CommandTester $cmd;
 
     protected static function getKernelClass()
