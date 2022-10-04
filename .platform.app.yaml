@@ -82,9 +82,7 @@ hooks:
     if [ ! -f var/.platform.installed ]; then
         # These values are for the inital setup only.  You really need to change them
         # after the site is installed.
-        export PIMCORE_INSTALL_ADMIN_USERNAME='admin'
-        export PIMCORE_INSTALL_ADMIN_PASSWORD='admin'
-        ./vendor/bin/pimcore-install --no-interaction --ignore-existing-config --no-debug
+        ./vendor/bin/pimcore-install --mysql-username=pimcore --mysql-password=pimcore --no-interaction --ignore-existing-config --no-debug
         touch var/.platform.installed
     fi
 
