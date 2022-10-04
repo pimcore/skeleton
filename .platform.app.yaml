@@ -72,8 +72,6 @@ hooks:
   build: |
     set -e
 
-    bash install-redis.sh 5.1.1
-
     # This is needed for the installer in the deploy hook.
     curl -fsS https://platform.sh/cli/installer | php
 
