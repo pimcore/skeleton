@@ -36,6 +36,10 @@ variables:
   php:
       memory_limit: 1024M
 
+dependencies:
+    php:
+        composer/composer: '^2'
+
 # The 'mounts' describe writable, persistent filesystem mounts in the application.
 mounts:
     "/var":
