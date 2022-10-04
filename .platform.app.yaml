@@ -34,7 +34,7 @@ runtime:
 
 variables:
   php:
-      memory_limit: 400M
+      memory_limit: 1024M
 
 # The 'mounts' describe writable, persistent filesystem mounts in the application.
 mounts:
