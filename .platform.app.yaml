@@ -73,13 +73,11 @@ hooks:
     set -e
 
     # This is needed for the installer in the deploy hook.
-    curl -fsS https://platform.sh/cli/installer | php
-
     COMPOSER_MEMORY_LIMIT=-1 composer install --no-ansi --no-progress --prefer-dist --no-scripts
   deploy: |
+    set -e
+    
     if [ ! -f var/.platform.installed ]; then
-        # These values are for the inital setup only.  You really need to change them
-        # after the site is installed.
         ./vendor/bin/pimcore-install --mysql-username=pimcore --mysql-password=pimcore --no-interaction --ignore-existing-config --no-debug
         touch var/.platform.installed
     fi
@@ -94,9 +92,4 @@ crons:
         commands:
             start: "bin/console maintenance"
 
-source:
-  operations:
-    auto-update:
-      command: |
-        curl -fsS https://raw.githubusercontent.com/platformsh/source-operations/main/setup.sh | { bash /dev/fd/3 sop-autoupdate; } 3<&0
 
