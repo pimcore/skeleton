@@ -1,4 +1,5 @@
 imports:
+    - { resource: parameters_platformsh.php }
     - { resource: 'local/' }
 
 
