@@ -87,7 +87,7 @@ hooks:
     set -e
 
     if [ ! -f var/.platform.installed ]; then
-        ./vendor/bin/pimcore-install --mysql-username=pimcore --mysql-password=pimcore --no-interaction --ignore-existing-config --no-debug
+        ./vendor/bin/pimcore-install --mysql-username=pimcore --mysql-password= --no-interaction --ignore-existing-config --no-debug
         touch var/.platform.installed
     fi
 
