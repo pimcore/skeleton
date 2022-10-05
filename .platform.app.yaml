@@ -45,15 +45,15 @@ mounts:
     "/var":
       source: "local"
       source_path: "var"
-    "/public":
+    "/public/var":
       source: "local"
-      source_path: "public"
+      source_path: "var-public"
 
 # The configuration of app when it is exposed to the web.
 web:
   locations:
     '/':
-      root: public
+      root: "public"
       passthru: "/index.php"
       allow: true
       rules:
@@ -76,7 +76,7 @@ hooks:
     COMPOSER_MEMORY_LIMIT=-1 composer install --no-ansi --no-progress --prefer-dist --no-scripts
   deploy: |
     set -e
-    
+
     if [ ! -f var/.platform.installed ]; then
         ./vendor/bin/pimcore-install --mysql-username=pimcore --mysql-password=pimcore --no-interaction --ignore-existing-config --no-debug
         touch var/.platform.installed
