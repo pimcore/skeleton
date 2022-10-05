@@ -9,7 +9,7 @@ db:
     disk: 2048
 
 # The name given to the Redis service (lowercase alphanumeric only).
-cacheredis:
+redis:
     # The type of your service (redis), which uses the format
     # 'type:version'. Be sure to consult the Redis documentation
     # (https://docs.platform.sh/add-services/redis.html#supported-versions)
