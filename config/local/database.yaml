@@ -1,0 +1,14 @@
+doctrine:
+    dbal: { 
+        connections: { 
+            default: { 
+                host: '%database_host%', 
+                port: '%database_port%', 
+                user: '%database_user%', 
+                password: '%database_password%', 
+                dbname: '%database_name%', 
+                mapping_types: { enum: string, bit: boolean }, 
+                server_version: 8.0.25 
+            }
+        } 
+    }

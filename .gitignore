@@ -13,7 +13,7 @@
 /.env.local.php
 /.env.*.local
 !/config/local
-/config/local/*
+#/config/local/*
 !config/local/.gitkeep
 
 /var/*
