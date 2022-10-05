@@ -24,13 +24,23 @@ build:
 # Add additional PHP extensions.
 runtime:
   extensions:
-    - iconv
+    - apcu
+    - curl
     - dom
-    - simplexml
     - exif
-    - opcache
-    - imagick
     - fileinfo
+    - gd
+    - iconv
+    - imagick
+    - imap
+    - mbstring
+    - opcache
+    - pcntl
+    - pdo_mysql
+    - redis
+    - simplexml
+    - zip
+    - zlib
 
 variables:
   php:
