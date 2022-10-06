@@ -6,7 +6,7 @@
 /config/pimcore/parameters.yml
 /build/
 /phpunit.xml
-/public/bundles/
+#/public/bundles/
 
 # local config
 /.env.local
