@@ -17,11 +17,7 @@ class DefaultController extends FrontendController
         return $this->render('default/default.html.twig');
     }    
     
-    /**
-     * @param Request $request
-     * @return Response
-     */
-    public function loginAction(Request $request)
+    public function loginAction(): Response
     {
         return $this->forward(LoginController::class.'::loginAction');
     }
