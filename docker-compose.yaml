@@ -23,11 +23,11 @@ services:
             - .:/var/www/html:ro
             - ./.docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
         depends_on:
-            - php-fpm
+            - php
 
-    php-fpm:
+    php:
         #user: '1000:1000' # set to your uid:gid
-        image: pimcore/pimcore:PHP8.1-fpm-debug
+        image: pimcore/pimcore:php8.1-debug-latest
         environment:
             COMPOSER_HOME: /var/www/html
             PHP_IDE_CONFIG: serverName=localhost
@@ -38,7 +38,7 @@ services:
 
     supervisord:
         #user: '1000:1000' # set to your uid:gid
-        image: pimcore/pimcore:PHP8.1-supervisord
+        image: pimcore/pimcore:php8.1-supervisord-latest
         depends_on:
             - db
         volumes:
