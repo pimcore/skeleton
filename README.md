@@ -27,7 +27,7 @@ You don't need to have a PHP environment with composer installed.
 
 ### Follow these steps
 1. Initialize the skeleton project using the `pimcore/pimcore` image
-``docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html pimcore/pimcore:PHP8.1-fpm composer create-project pimcore/skeleton my-project``
+``docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html pimcore/pimcore:php8.1-latest composer create-project pimcore/skeleton my-project``
 
 2. Go to your new project
 `cd my-project/`
@@ -38,7 +38,7 @@ You don't need to have a PHP environment with composer installed.
     * Start the needed services with `docker-compose up -d`
 
 4. Install pimcore and initialize the DB
-    `docker-compose exec php-fpm vendor/bin/pimcore-install --mysql-host-socket=db --mysql-username=pimcore --mysql-password=pimcore --mysql-database=pimcore`
+    `docker-compose exec php vendor/bin/pimcore-install --mysql-host-socket=db --mysql-username=pimcore --mysql-password=pimcore --mysql-database=pimcore`
     * When asked for admin user and password: Choose freely
     * This can take a while, up to 20 minutes
     

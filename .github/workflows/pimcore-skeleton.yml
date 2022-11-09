@@ -72,14 +72,14 @@ jobs:
         docker compose pull --quiet
         docker compose up -d
 
-        # Install dockerize into the php-fpm container. We need it to block until
+        # Install dockerize into the php container. We need it to block until
         # database is ready to serve connections.
-        docker compose exec -T -- php-fpm bash -c '\
+        docker compose exec -T -- php bash -c '\
           curl -sfL https://github.com/powerman/dockerize/releases/download/v0.11.5/dockerize-`uname -s`-`uname -m` \
           | install /dev/stdin /usr/local/bin/dockerize'
 
         # Wait for the database to set up.
-        docker compose exec -T -- php-fpm dockerize -wait tcp://db:3306 -timeout 5m
+        docker compose exec -T -- php dockerize -wait tcp://db:3306 -timeout 5m
 
         # Run pimcore installation.
         docker compose exec -T \
@@ -91,4 +91,4 @@ jobs:
         -e PIMCORE_INSTALL_MYSQL_HOST_SOCKET=db \
         -e PIMCORE_INSTALL_MYSQL_DATABASE=pimcore \
         -- \
-        php-fpm vendor/bin/pimcore-install -n
+        php vendor/bin/pimcore-install -n
