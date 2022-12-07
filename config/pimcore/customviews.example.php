@@ -16,12 +16,12 @@ return [
             'position' => 'right',                                              // left or right accordion
             'sort' => '1',                                                      // sort priority. lower values are shown first (prio for standard trees is -3 docs,-2 assets,-1 objects)
             'expanded' => true,                                                 // tree is expanded by default (there can be only one expanded tree on each side)
-            'having' => "o_type = \"folder\" || o5.title NOT LIKE '%magnis%'",  // SQL having clause
+            'having' => "type = \"folder\" || o5.title NOT LIKE '%magnis%'",  // SQL having clause
             'joins' => [                                                        // Joins in Zend_DB_Select-like syntax
                 [
                     'type' => 'left',
                     'name' => ['o5' => 'object_localized_5_en'],
-                    'condition' => 'objects.o_id = o5.oo_id',
+                    'condition' => 'objects.id = o5.oo_id',
                     'columns' => ['o5' => 'title']
                 ]
             ],
