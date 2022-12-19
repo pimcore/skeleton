@@ -7,12 +7,14 @@
     "sort-packages": true,
     "process-timeout": 0
   },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
   "require": {
-    "pimcore/pimcore": "^10.5"
+    "pimcore/pimcore": "^11.0"
   },
   "require-dev": {
-    "codeception/codeception": "^4.1.12",
-    "codeception/module-symfony": "^1"
+    "codeception/codeception": "^5.0.3",
+    "codeception/module-symfony": "^3.1.0"
   },
   "suggest": {
     "pimcore/data-hub": "Universal data interface for GraphQL, CSV and other formats"
