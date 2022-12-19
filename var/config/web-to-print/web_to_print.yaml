@@ -1,0 +1,15 @@
+pimcore:
+    documents:
+        web_to_print:
+            enableInDefaultView: false
+            generalTool: pdfreactor
+            generalDocumentSaveMode: default
+            pdfreactorProtocol: https
+            pdfreactorServer: cloud.pdfreactor.com
+            pdfreactorServerPort: '443'
+            pdfreactorBaseUrl: 'http://my.domain.com'
+            pdfreactorApiKey: ''
+            pdfreactorLicence: ''
+            pdfreactorEnableLenientHttpsMode: false
+            pdfreactorEnableDebugMode: false
+            headlessChromeSettings: ''
