@@ -23,7 +23,6 @@ class DefaultController extends FrontendController
      */
     public function loginAction(): Response
     {
-    {
         return $this->forward(LoginController::class.'::loginCheckAction');
     }
 }
