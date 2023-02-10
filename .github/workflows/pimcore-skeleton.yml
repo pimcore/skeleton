@@ -94,4 +94,4 @@ jobs:
         php vendor/bin/pimcore-install -n
 
         # Execute codeception tests.
-        docker compose exec -T php-fpm composer test
+        docker compose exec -T php composer test
