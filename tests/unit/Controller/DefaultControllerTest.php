@@ -6,6 +6,7 @@ namespace App\Tests\Unit\Controller;
 use App\Controller\DefaultController;
 use Codeception\Test\Unit;
 use PHPUnit\Framework\MockObject\MockObject;
+use Pimcore\Config;
 use Pimcore\Templating\TwigDefaultDelegatingEngine;
 use Symfony\Component\DependencyInjection\Container;
 use Symfony\Component\HttpFoundation\Request;
@@ -18,7 +19,7 @@ class DefaultControllerTest extends Unit
 {
     private DefaultController $controller;
 
-    /** @var MockObject|Environment  */
+    /** @var MockObject|Environment */
     private MockObject $twig;
 
     protected function setUp(): void
@@ -31,7 +32,7 @@ class DefaultControllerTest extends Unit
 
         $container = new Container();
         $container->set('twig', $this->twig);
-        $container->set('pimcore.templating', new TwigDefaultDelegatingEngine($this->twig, []));
+        $container->set('pimcore.templating', new TwigDefaultDelegatingEngine($this->twig, new Config()));
 
         $this->controller = new DefaultController();
         $this->controller->setContainer($container);
@@ -42,7 +43,7 @@ class DefaultControllerTest extends Unit
         $this->twig->method('render')->will(
             $this->returnValueMap([
                 // Simulate rendering of default template.
-                ['default/default.html.twig', [], 'At pimcore we love writing tests! ❤️TDD!']
+                ['default/default.html.twig', [], 'At pimcore we love writing tests! ❤️TDD!'],
             ])
         );
 

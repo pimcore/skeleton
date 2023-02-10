@@ -1,5 +1,4 @@
 <?php
-
 declare(strict_types=1);
 
 namespace App\Tests\Functional\Command;
@@ -13,7 +12,7 @@ class CliCommandTest extends KernelTestCase
 {
     private CommandTester $cmd;
 
-    protected static function getKernelClass()
+    protected static function getKernelClass(): string
     {
         return Kernel::class;
     }
