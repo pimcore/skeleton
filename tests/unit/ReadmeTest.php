@@ -5,7 +5,7 @@ namespace App\Tests\Unit;
 use Codeception\Test\Unit;
 
 /**
- * This is a tongue-in-chick test created to validate codeception functionality.
+ * This is a tongue-in-cheek test created to validate codeception functionality.
  */
 class ReadmeTest extends Unit
 {
