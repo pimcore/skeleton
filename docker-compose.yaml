@@ -35,7 +35,7 @@ services:
             #
             # Warning:
             # We strongly recommend changing this environment variable to use a separate database for tests.
-            # Eexecuting tests against the default database may lead to unexpected results.
+            # Executing tests against the default database may lead to unexpected results.
             PIMCORE_TEST_DB_DSN: ${PIMCORE_TEST_DB_DSN:-mysql://pimcore:pimcore@db/pimcore}
         depends_on:
             - db
