@@ -19,8 +19,7 @@ class DefaultControllerTest extends Unit
 {
     private DefaultController $controller;
 
-    /** @var MockObject|Environment */
-    private MockObject $twig;
+    private MockObject|Environment $twig;
 
     protected function setUp(): void
     {
