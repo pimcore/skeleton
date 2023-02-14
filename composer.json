@@ -10,7 +10,8 @@
   "prefer-stable": true,
   "minimum-stability": "dev",
   "require": {
-    "pimcore/pimcore": "^11.0"
+    "pimcore/pimcore": "^11.0",
+    "symfony/dotenv": "^6.2"
   },
   "require-dev": {
     "codeception/codeception": "^5.0.3",
