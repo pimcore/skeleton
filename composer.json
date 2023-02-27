@@ -27,10 +27,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "App\\Tests\\": "tests/",
-      "App\\Tests\\Unit\\": "tests/unit",
-      "App\\Tests\\Functional\\": "tests/functional",
-      "App\\Tests\\Support\\": "tests/_support"
+      "App\\Tests\\": "tests/"
     }
   },
   "scripts": {

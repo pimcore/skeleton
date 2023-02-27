@@ -1,4 +1,4 @@
-namespace: \\App\\Tests
+namespace: App\Tests
 bootstrap: bootstrap.php
 
 settings:
@@ -8,5 +8,5 @@ settings:
 paths:
     tests: tests
     output: tests/_output
-    support: tests/_support
-    data: tests
+    support: tests/Support
+    data: tests/Support/Data
