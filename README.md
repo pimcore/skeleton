@@ -27,7 +27,7 @@ You don't need to have a PHP environment with composer installed.
 
 ### Follow these steps
 1. Initialize the skeleton project using the `pimcore/pimcore` image
-``docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html pimcore/pimcore:php8.1-latest composer create-project pimcore/skeleton my-project``
+``docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html pimcore/pimcore:php8.2-latest composer create-project pimcore/skeleton my-project``
 
 2. Go to your new project
 `cd my-project/`
