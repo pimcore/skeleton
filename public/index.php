@@ -15,8 +15,7 @@ return function (Request $request, array $context) {
     // request stack available yet
     Tool::setCurrentRequest($request);
 
-    /** @var \Pimcore\Kernel $kernel */
-    $kernel = \Pimcore\Bootstrap::kernel();
+    $kernel = Bootstrap::kernel();
 
     // reset current request - will be read from request stack from now on
     Tool::setCurrentRequest(null);

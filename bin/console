@@ -1,7 +1,6 @@
 #!/usr/bin/env php
 <?php
 
-use App\Kernel;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 
 if (file_exists($a = getcwd() . '/vendor/autoload_runtime.php')) {
