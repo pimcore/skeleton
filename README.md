@@ -42,7 +42,7 @@ You don't need to have a PHP environment with composer installed.
     * When asked for admin user and password: Choose freely
     * This can take a while, up to 20 minutes
 
-5. Run codeception tests: `docker-compose exec pimcore composer test`
+5. Run codeception tests: `docker-compose exec php vendor/bin/codecept run -vv`
 
 6. :heavy_check_mark: DONE - You can now visit your pimcore instance:
     * The frontend: <http://localhost>

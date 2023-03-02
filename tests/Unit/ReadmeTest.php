@@ -26,6 +26,6 @@ class ReadmeTest extends Unit
 
     public function testReadmeContainsInstructionsForExecutingTests(): void
     {
-        self::assertStringContainsString('composer test', $this->readme);
+        self::assertStringContainsString('codecept run', $this->readme);
     }
 }

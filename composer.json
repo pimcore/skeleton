@@ -43,13 +43,6 @@
     "pimcore-scripts": [
       "Pimcore\\Composer::clearCache",
       "Pimcore\\Composer::installAssets"
-    ],
-    "test": [
-      "Composer\\Config::disableProcessTimeout",
-      "@php codecept run"
     ]
-  },
-  "scripts-descriptions": {
-    "test": "Executes automated tests"
   }
 }
