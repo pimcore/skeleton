@@ -27,14 +27,14 @@ You don't need to have a PHP environment with composer installed.
 
 ### Follow these steps
 1. Initialize the skeleton project using the `pimcore/pimcore` image
-``docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html pimcore/pimcore:php8.1-latest composer create-project pimcore/skeleton my-project``
+``docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html pimcore/pimcore:php8.2-latest composer create-project pimcore/skeleton my-project``
 
 2. Go to your new project
 `cd my-project/`
 
 3. Part of the new project is a docker compose file
     * Run `` echo `id -u`:`id -g` `` to retrieve your local user and group id
-    * Open the `docker-compose.yml` file in an editor, uncomment all the `user: '1000:1000'` lines and update the ids if necessary
+    * Open the `docker-compose.yaml` file in an editor, uncomment all the `user: '1000:1000'` lines and update the ids if necessary
     * Start the needed services with `docker-compose up -d`
 
 4. Install pimcore and initialize the DB
