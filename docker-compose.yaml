@@ -6,7 +6,7 @@ services:
     db:
         image: mariadb:10.7
         working_dir: /application
-        command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --innodb-file-per-table=1]
+        command: [ mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --innodb-file-per-table=1 ]
         volumes:
             - pimcore-database:/var/lib/mysql
         environment:
@@ -31,12 +31,14 @@ services:
         environment:
             COMPOSER_HOME: /var/www/html
             PHP_IDE_CONFIG: serverName=localhost
-            # Define the database to run tests against. Fallback to the default database if undefined.
-            #
-            # Warning:
-            # We strongly recommend changing this environment variable to use a separate database for tests.
-            # Executing tests against the default database may lead to unexpected results.
-            PIMCORE_TEST_DB_DSN: ${PIMCORE_TEST_DB_DSN:-mysql://pimcore:pimcore@db/pimcore}
+            # Feed installer configuration via ENV variables.
+            # See: https://pimcore.com/docs/pimcore/current/Development_Documentation/Getting_Started/Advanced_Installation_Topics.html#page_Advanced-Installation-Topics
+            PIMCORE_INSTALL_ADMIN_USERNAME: pimcore
+            PIMCORE_INSTALL_MYSQL_USERNAME: pimcore
+            PIMCORE_INSTALL_MYSQL_PASSWORD: pimcore
+            PIMCORE_INSTALL_MYSQL_PORT: 3306
+            PIMCORE_INSTALL_MYSQL_HOST_SOCKET: db
+            PIMCORE_INSTALL_MYSQL_DATABASE: pimcore
         depends_on:
             - db
         volumes:
@@ -51,5 +53,28 @@ services:
             - .:/var/www/html
             - ./.docker/supervisord.conf:/etc/supervisor/conf.d/pimcore.conf:ro
 
+    # The following two services are used for testing.
+    # We restrict these services to the test profile only, so we don't spin them up with every `docker compose up`.
+    # See: https://docs.docker.com/compose/profiles/
+    test-db:
+        profiles: [ 'test' ]
+        extends: db
+        volumes:
+            - pimcore-test-database:/var/lib/mysql
+
+    test-php:
+        profiles: [ 'test' ]
+        extends: php
+        environment:
+            APP_ENV: test
+            PIMCORE_TEST_DB_DSN: ${PIMCORE_TEST_DB_DSN:-mysql://pimcore:pimcore@test-db/pimcore}
+            PIMCORE_INSTALL_ADMIN_PASSWORD: pimcore
+            PIMCORE_INSTALL_MYSQL_HOST_SOCKET: test-db
+        depends_on:
+            - test-db
+        volumes:
+            - .:/var/www/html
+
 volumes:
     pimcore-database:
+    pimcore-test-database:

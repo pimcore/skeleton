@@ -85,13 +85,9 @@ jobs:
         docker compose exec -T \
         -e PIMCORE_INSTALL_ADMIN_USERNAME=pimcore \
         -e PIMCORE_INSTALL_ADMIN_PASSWORD=pimcore \
-        -e PIMCORE_INSTALL_MYSQL_USERNAME=pimcore \
-        -e PIMCORE_INSTALL_MYSQL_PASSWORD=pimcore \
-        -e PIMCORE_INSTALL_MYSQL_PORT=3306 \
-        -e PIMCORE_INSTALL_MYSQL_HOST_SOCKET=db \
-        -e PIMCORE_INSTALL_MYSQL_DATABASE=pimcore \
         -- \
         php vendor/bin/pimcore-install -n
 
-        # Execute codeception tests, just like README.md suggests.
-        docker compose exec -T php vendor/bin/codecept run -vv
+        # Set up and execute codeception tests, just like README.md suggests.
+        docker compose run --rm -T test-php vendor/bin/pimcore-install -n
+        docker compose run --rm -T php vendor/bin/codecept run -vv
