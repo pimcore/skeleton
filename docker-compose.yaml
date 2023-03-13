@@ -14,6 +14,15 @@ services:
             - MYSQL_DATABASE=pimcore
             - MYSQL_USER=pimcore
             - MYSQL_PASSWORD=pimcore
+        healthcheck:
+            # The service is considered healthy when:
+            # - connection to pimcore db can be established, and
+            # - we can run a simple SQL query.
+            test: [ "CMD-SHELL", "mysql -h db -u$$MYSQL_USER -p$$MYSQL_PASSWORD $$MYSQL_DATABASE -e 'SHOW TABLES;'" ]
+            interval: 10s
+            retries: 6
+            start_period: 1m
+            timeout: 3s
 
     nginx:
         image: nginx:stable-alpine
@@ -40,7 +49,8 @@ services:
             PIMCORE_INSTALL_MYSQL_HOST_SOCKET: db
             PIMCORE_INSTALL_MYSQL_DATABASE: pimcore
         depends_on:
-            - db
+            db:
+                condition: service_healthy
         volumes:
             - .:/var/www/html
 
@@ -48,7 +58,8 @@ services:
         #user: '1000:1000' # set to your uid:gid
         image: pimcore/pimcore:php8.1-supervisord-latest
         depends_on:
-            - db
+            db:
+                condition: service_healthy
         volumes:
             - .:/var/www/html
             - ./.docker/supervisord.conf:/etc/supervisor/conf.d/pimcore.conf:ro
@@ -71,7 +82,8 @@ services:
             PIMCORE_INSTALL_ADMIN_PASSWORD: pimcore
             PIMCORE_INSTALL_MYSQL_HOST_SOCKET: test-db
         depends_on:
-            - test-db
+            test-db:
+                condition: service_healthy
         volumes:
             - pimcore-test-var:/var/www/html/var
             - pimcore-test-public-var:/var/www/html/public/var
