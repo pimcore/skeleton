@@ -79,6 +79,13 @@ jobs:
         -- \
         php vendor/bin/pimcore-install -n
 
+    - name: Run codeception tests
+      run: |
+        # Echo commands and terminate on first error
+        set -ex
+        
+        cd sample-project/
+
         # Set up and execute codeception tests, just like README.md suggests.
         docker compose run --rm -T test-php vendor/bin/pimcore-install -n
-        docker compose run --rm -T php vendor/bin/codecept run -vv
+        docker compose run --rm -T test-php vendor/bin/codecept run -vv
