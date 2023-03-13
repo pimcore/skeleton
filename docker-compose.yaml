@@ -73,8 +73,11 @@ services:
         depends_on:
             - test-db
         volumes:
-            - .:/var/www/html
+            - pimcore-test-var:/var/www/html/var
+            - pimcore-test-public-var:/var/www/html/public/var
 
 volumes:
     pimcore-database:
     pimcore-test-database:
+    pimcore-test-var:
+    pimcore-test-public-var:
