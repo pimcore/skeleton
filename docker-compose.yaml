@@ -42,7 +42,6 @@ services:
             PHP_IDE_CONFIG: serverName=localhost
             # Feed installer configuration via ENV variables.
             # See: https://pimcore.com/docs/pimcore/current/Development_Documentation/Getting_Started/Advanced_Installation_Topics.html#page_Advanced-Installation-Topics
-            PIMCORE_INSTALL_ADMIN_USERNAME: pimcore
             PIMCORE_INSTALL_MYSQL_USERNAME: pimcore
             PIMCORE_INSTALL_MYSQL_PASSWORD: pimcore
             PIMCORE_INSTALL_MYSQL_PORT: 3306
@@ -79,6 +78,7 @@ services:
         environment:
             APP_ENV: test
             PIMCORE_TEST_DB_DSN: ${PIMCORE_TEST_DB_DSN:-mysql://pimcore:pimcore@test-db/pimcore}
+            PIMCORE_INSTALL_ADMIN_USERNAME: pimcore
             PIMCORE_INSTALL_ADMIN_PASSWORD: pimcore
             PIMCORE_INSTALL_MYSQL_HOST_SOCKET: test-db
         depends_on:
