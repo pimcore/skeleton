@@ -1,0 +1,12 @@
+namespace: App\Tests
+bootstrap: bootstrap.php
+
+settings:
+    shuffle: true
+    lint: true
+
+paths:
+    tests: tests
+    output: tests/_output
+    support: tests/Support
+    data: tests/Support/Data

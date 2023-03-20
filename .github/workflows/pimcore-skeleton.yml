@@ -72,23 +72,20 @@ jobs:
         docker compose pull --quiet
         docker compose up -d
 
-        # Install dockerize into the php container. We need it to block until
-        # database is ready to serve connections.
-        docker compose exec -T -- php bash -c '\
-          curl -sfL https://github.com/powerman/dockerize/releases/download/v0.11.5/dockerize-`uname -s`-`uname -m` \
-          | install /dev/stdin /usr/local/bin/dockerize'
-
-        # Wait for the database to set up.
-        docker compose exec -T -- php dockerize -wait tcp://db:3306 -timeout 5m
-
         # Run pimcore installation.
         docker compose exec -T \
         -e PIMCORE_INSTALL_ADMIN_USERNAME=pimcore \
         -e PIMCORE_INSTALL_ADMIN_PASSWORD=pimcore \
-        -e PIMCORE_INSTALL_MYSQL_USERNAME=pimcore \
-        -e PIMCORE_INSTALL_MYSQL_PASSWORD=pimcore \
-        -e PIMCORE_INSTALL_MYSQL_PORT=3306 \
-        -e PIMCORE_INSTALL_MYSQL_HOST_SOCKET=db \
-        -e PIMCORE_INSTALL_MYSQL_DATABASE=pimcore \
         -- \
         php vendor/bin/pimcore-install -n
+
+    - name: Run codeception tests
+      run: |
+        # Echo commands and terminate on first error
+        set -ex
+        
+        cd sample-project/
+
+        # Set up and execute codeception tests, just like README.md suggests.
+        docker compose run --rm -T test-php vendor/bin/pimcore-install -n
+        docker compose run --rm -T test-php vendor/bin/codecept run -vv
