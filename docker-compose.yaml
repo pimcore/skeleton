@@ -4,7 +4,7 @@ services:
         command: [ redis-server, --maxmemory 128mb, --maxmemory-policy volatile-lru, --save "" ]
 
     db:
-        image: mariadb:10.7
+        image: mariadb:10.11
         working_dir: /application
         command: [ mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --innodb-file-per-table=1 ]
         volumes:
@@ -36,7 +36,7 @@ services:
 
     php:
         #user: '1000:1000' # set to your uid:gid
-        image: pimcore/pimcore:php8.2-debug-latest
+        image: pimcore/pimcore:php8.2-debug-v2-dev
         environment:
             COMPOSER_HOME: /var/www/html
             PHP_IDE_CONFIG: serverName=localhost
@@ -55,7 +55,7 @@ services:
 
     supervisord:
         #user: '1000:1000' # set to your uid:gid
-        image: pimcore/pimcore:php8.2-supervisord-latest
+        image: pimcore/pimcore:php8.2-supervisord-v2-dev
         depends_on:
             db:
                 condition: service_healthy
