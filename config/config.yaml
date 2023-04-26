@@ -71,12 +71,6 @@ pimcore:
 #        timezone: Europe/Berlin
 #        path_variable: ''
 #        instance_identifier: ''
-#    services:
-#        google:
-#            client_id: 73893596983.apps.googleusercontent.com
-#            email: 73893596983@developer.gserviceaccount.com
-#            simple_api_key: AIzaSyCo9Wj49hYJWW2WgOju4iMYNTvdcBxmyQ8
-#            browser_api_key: AIzaSyBJX16kWAmUVEz1c1amzp2iKqAfumbcoQQ
 #    full_page_cache:
 #        enabled: false
 #        lifetime: null
@@ -92,14 +86,6 @@ pimcore:
 #        sender:
 #            name: 'Pimcore Demo'
 #            email: demo@pimcore.com
-#        return:
-#            name: ''
-#            email: ''
-#    newsletter:
-#        use_specific: false # set true to use the following options for newsletter delivery
-#        sender:
-#            name: ''
-#            email: ''
 #        return:
 #            name: ''
 #            email: ''
@@ -138,3 +124,14 @@ framework:
 #        transports:
 #            main: smtp://user:pass@smtp.example.com:port
 #            pimcore_newsletter: smtp://user:pass@smtp.example.com:port
+
+# pimcore_newsletter:
+#     default_url_prefix: 'https://my-host.com' # default prefix for your static assets
+#     use_specific: false # set true to use the following options for newsletter delivery
+#     sender:
+#         name: ''
+#         email: ''
+#     return:
+#         name: ''
+#         email: ''
+
