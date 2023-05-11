@@ -17,6 +17,7 @@ declare(strict_types=1);
 
 namespace App\EventSubscriber;
 
+use Pimcore\Bundle\AdminBundle\PimcoreAdminBundle;
 use Pimcore\Bundle\InstallBundle\Event\BundleSetupEvent;
 use Pimcore\Bundle\InstallBundle\Event\InstallEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
@@ -34,7 +35,8 @@ class BundleSetupSubscriber implements EventSubscriberInterface
 
     public function bundleSetup(BundleSetupEvent $event): void
     {
-        // remove bundles to install since they are installed via dump files
-        $event->clearBundlesAndRecommendations();
+        // add PimcoreAdminBundle
+        $event->addBundle('PimcoreAdminBundle', PimcoreAdminBundle::class);
+        $event->addRecommendation('PimcoreAdminBundle');
     }
 }
