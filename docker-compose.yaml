@@ -5,8 +5,6 @@ services:
 
     db:
         image: mariadb:10.11
-        ports:
-            - "3306:3306"
         working_dir: /application
         command: [ mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --innodb-file-per-table=1 ]
         volumes:
@@ -37,7 +35,7 @@ services:
             - php
 
     php:
-        user: '1000:1000' # set to your uid:gid
+        #user: '1000:1000' # set to your uid:gid
         image: pimcore/pimcore:php8.2-debug-v2-dev
         environment:
             COMPOSER_HOME: /var/www/html
@@ -56,7 +54,7 @@ services:
             - .:/var/www/html
 
     supervisord:
-        user: '1000:1000' # set to your uid:gid
+        #user: '1000:1000' # set to your uid:gid
         image: pimcore/pimcore:php8.2-supervisord-v2-dev
         depends_on:
             db:
