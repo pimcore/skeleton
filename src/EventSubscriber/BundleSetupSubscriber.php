@@ -35,8 +35,7 @@ class BundleSetupSubscriber implements EventSubscriberInterface
 
     public function bundleSetup(BundleSetupEvent $event): void
     {
-        // add PimcoreAdminBundle
-        $event->addBundle('PimcoreAdminBundle', PimcoreAdminBundle::class);
-        $event->addRecommendation('PimcoreAdminBundle');
+        // add required PimcoreAdminBundle
+        $event->addRequiredBundle('PimcoreAdminBundle', PimcoreAdminBundle::class);
     }
 }
