@@ -54,14 +54,5 @@
       "Pimcore\\Composer::clearCache",
       "Pimcore\\Composer::installAssets"
     ]
-  },
-  "repositories": {
-    "dev": {
-      "type": "path",
-      "url": "./dev/*/*",
-      "options": {
-        "symlink": true
-      }
-    }
   }
 }
