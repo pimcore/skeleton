@@ -11,6 +11,7 @@
     }
   },
   "prefer-stable": true,
+  "minimum-stability": "dev",
   "require": {
     "pimcore/pimcore": "^11.0",
     "pimcore/admin-ui-classic-bundle": "^1.0",
