@@ -1,0 +1,1 @@
+vendor/krankikom/pimcore-jetpakk/devsetup/devsetup.sh

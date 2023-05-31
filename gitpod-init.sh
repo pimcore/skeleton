@@ -1,0 +1,1 @@
+vendor/krankikom/pimcore-jetpakk/devsetup/gitpod-init.sh

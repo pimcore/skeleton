@@ -1,8 +1,19 @@
 imports:
+    - { resource: services.yaml }
+    - { resource: database.yaml }
+    - { resource: redis.yaml }
     - { resource: 'local/' }
-
+    - { resource: seo.yaml, ignore_errors: true }
 
 pimcore:
+    general:
+        valid_languages: 'en,de'
+        fallback_languages:
+            en: ''
+            de: ''
+        default_language: de
+
+
 
 # IMPORTANT Notice!
 # Following there are only some examples listed, for a full list of possible options, please run the following command:
