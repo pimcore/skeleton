@@ -1,0 +1,24 @@
+{
+  "name": "kk-webpack-base",
+  "version": "1.0.0",
+  "description": "A foundation for your next frontend project based on webpack.",
+  "keywords": [
+    "webpack",
+    "startkit",
+    "frontend",
+    "es6",
+    "javascript",
+    "webdev"
+  ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config node_modules/kk-webpack-base--config",
+    "dev": "NODE_ENV=dev webpack --watch --config node_modules/kk-webpack-base--config",
+    "lint": "npm run lint:styles; npm run lint:scripts",
+    "lint:scripts": "eslint src",
+    "lint:styles": "stylelint src"
+  },
+  "dependencies": {
+    "js-pimcore-formbuilder": "^1.0.6",
+    "kk-webpack-base--config": "^1.4.1"
+  }
+}
