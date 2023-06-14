@@ -1,0 +1,29 @@
+services:
+    Redis:
+        class: Redis
+        calls:
+            - method: connect
+              arguments:
+                  - "%env(REDIS_HOST)%"
+                  - "%env(int:REDIS_PORT)%"
+
+    session_handler_redis:
+        class: Symfony\Component\HttpFoundation\Session\Storage\Handler\RedisSessionHandler
+        arguments:
+            - "@Redis"
+
+
+# config/cache.yaml
+framework:
+    cache:
+        pools:
+            pimcore.cache.pool:
+                public: true
+                tags: true
+                default_lifetime: 31536000  # 1 year
+                #adapter: cache.adapter.pdo
+                #provider: 'doctrine.dbal.default_connection1222133'
+                adapter: pimcore.cache.adapter.redis_tag_aware
+                provider: 'redis://%env(REDIS_HOST)%'
+    session:
+        handler_id: session_handler_redis
