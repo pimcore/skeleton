@@ -1,0 +1,51 @@
+#**/.git
+**/node_modules
+**/.vagrant
+#**/vendor
+!/public/css/sass/**/vendor
+Vagrantfile
+first-install.sh
+docker-compose.yaml
+
+
+# remove the following ignores for your project
+/app/constants.php
+
+# symfony default
+/.web-server-pid
+/build/
+/phpunit.xml
+
+# local config
+!/app/config/local
+/app/config/local/*
+!app/config/local/.gitkeep
+
+# pimcore legacy (remove this for your own development)
+!/legacy
+/legacy/*
+!legacy/.gitkeep
+!legacy/bundle
+
+/var/*
+!/var/.gitkeep
+!/var/classes/
+
+!/var/config
+/var/config/system.php
+/var/config/system.yml
+/var/config/debug-mode.php
+/var/config/maintenance.php
+/var/config/GeoLite2-City.mmdb
+
+# project specific recommendations
+/var/config/tag-manager.php
+/var/config/reports.php
+/web/var/*
+/var/tmp/*
+/var/versions/*
+
+# exclude FormBuilderBundle stuff, so we can add forms while in dev
+!/var/bundles
+/var/bundles/*
+!/var/bundles/FormBuilderBundle
