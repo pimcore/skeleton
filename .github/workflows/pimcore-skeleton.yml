@@ -68,6 +68,9 @@ jobs:
 
         cd sample-project/
 
+        # Set up docker-compose.yaml to use current user's uid:gid, just like README.md suggests.
+        sed -i "s|#user: '1000:1000'|user: '$(id -u):$(id -g)'|g" docker-compose.yaml
+
         # Start containers
         docker compose pull --quiet
         docker compose up -d
@@ -87,5 +90,6 @@ jobs:
         cd sample-project/
 
         # Set up and execute codeception tests, just like README.md suggests.
+        docker compose run --user=root --rm test-php chown -R $(id -u):$(id -g) var/ public/var/
         docker compose run --rm -T test-php vendor/bin/pimcore-install -n
         docker compose run --rm -T test-php vendor/bin/codecept run -vv

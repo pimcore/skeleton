@@ -19,7 +19,7 @@ cd ./my-project
 You can also use Docker to set up a new Pimcore Installation.
 You don't need to have a PHP environment with composer installed.
 
-### Prerequisits
+### Prerequisites
 
 * Your user must be allowed to run docker commands (directly or via sudo).
 * You must have docker compose installed.
@@ -33,8 +33,7 @@ You don't need to have a PHP environment with composer installed.
 `cd my-project/`
 
 3. Part of the new project is a docker compose file
-    * Run `` echo `id -u`:`id -g` `` to retrieve your local user and group id
-    * Open the `docker-compose.yaml` file in an editor, uncomment all the `user: '1000:1000'` lines and update the ids if necessary
+    * Run `sed -i "s|#user: '1000:1000'|user: '$(id -u):$(id -g)'|g" docker-compose.yaml` to set the correct user id and group id.
     * Start the needed services with `docker compose up -d`
 
 4. Install pimcore and initialize the DB
@@ -44,6 +43,7 @@ You don't need to have a PHP environment with composer installed.
     * If you select to install the SimpleBackendSearchBundle please make sure to add the `pimcore_search_backend_message` to your `.docker/supervisord.conf` file.
 
 5. Run codeception tests:
+   * `docker compose run --user=root --rm test-php chown -R $(id -u):$(id -g) var/ public/var/`
    * `docker compose run --rm test-php vendor/bin/pimcore-install -n`
    * `docker compose run --rm test-php vendor/bin/codecept run -vv`
 
