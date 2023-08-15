@@ -1,5 +1,5 @@
 parameters:
-    secret: ThisTokenIsNotSoSecretChangeItImmediately
+    secret: AO5LjlFT21XMFyqI6zEma8MC3daPHhmrW+DrJF/mJRw=
 
     # customize the full path to external executables
     # normally they are auto-detected by `which program` or auto-discovered in the configured path in
