@@ -1,0 +1,39 @@
+version: v1.0
+name: Pipeline - pimcore.mercury.keh.com
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: 'Block #1 - Code'
+    task:
+      env_vars:
+        - name: DEPLOY_APP
+          value: keh-pimcore
+        - name: DEPLOYMENT_BRANCH
+          value: cluster/base
+      jobs:
+        - name: 'Job #1 - Trigger build on ${DEPLOY_APP}/cluster/mercury'
+          commands:
+            - 'echo ${SEMAPHORE_GIT_BRANCH}'
+            - '# clone git repo keh-web'
+            - 'git config --global url."https://${GITHUB_TOKEN}:x-oauth-basic@github.com/KEHCamera".insteadOf "https://github.com/KEHCamera"'
+            - 'git clone --single-branch --branch ${DEPLOYMENT_BRANCH} https://github.com/KEHCamera/keh-web.git /home/semaphore/keh-web'
+            - 'cd /home/semaphore/keh-web && git fetch origin ${DEPLOYMENT_BRANCH}'
+            - '# clone git repo www.keh.com/${SEMAPHORE_GIT_BRANCH} and push to keh-web/${SEMAPHORE_GIT_BRANCH}'
+            - git config --global user.email "builder@keh.com"
+            - git config --global user.name "Builder"
+            - git config uploadpack.allowReachableSHA1InWant true && git submodule update --init --recursive system/applications/${DEPLOY_APP}/code
+            - cd /home/semaphore/keh-web/system/applications/${DEPLOY_APP}/code && git rev-parse --short HEAD
+            - 'cd /home/semaphore/keh-web/system/applications/${DEPLOY_APP}/code && git checkout ${SEMAPHORE_GIT_BRANCH} && git rev-parse --short HEAD'
+            - export SHORT_SHA=$(cd /home/semaphore/keh-web/system/applications/${DEPLOY_APP}/code && git rev-parse --short HEAD)
+            - 'echo "${SHORT_SHA}" > /home/semaphore/keh-web/system/applications/${DEPLOY_APP}/gcpbuild.mercury.txt'
+            - cat /home/semaphore/keh-web/system/applications/${DEPLOY_APP}/gcpbuild.mercury.txt
+            - cd /home/semaphore/keh-web && git add /home/semaphore/keh-web/system/applications/${DEPLOY_APP}/gcpbuild.mercury.txt
+            - '# Had to do this for monorepo'
+            - 'cd /home/semaphore/keh-web && git diff --quiet && git diff --staged --quiet || git commit -m "Built from commit ${SHORT_SHA} of repository ${DEPLOY_APP} Triggered by commit ${SEMAPHORE_GIT_BRANCH}(${SHORT_SHA}) of repository ${DEPLOY_APP} Author $(git log --format=''%an <%ae>'' -n 1 HEAD)" && git push origin ${DEPLOYMENT_BRANCH}'
+      secrets:
+        - name: github-semaphore
+        - name: gcloud
+    run:
+      when: branch = 'cluster/mercury'

@@ -1,0 +1,44 @@
+version: v1.0
+name: Reset Pipeline - keh-pimcore
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: 'Block #1 - Reset keh-pimcore'
+    task:
+      env_vars:
+        - name: DEPLOY_APP
+          value: keh-pimcore
+        - name: CLUSTER_NAMESPACE
+          value: mercury
+      jobs:
+        - name: 'Job #1 - Reset b{DEPLOY_APP}'
+          commands:
+            # GitHub config
+            - 'git config --global url."https://${GITHUB_TOKEN}:x-oauth-basic@github.com/kehcamera".insteadOf "https://github.com/kehcamera"'
+            - 'git config --global url."https://${GITHUB_TOKEN}:x-oauth-basic@github.com/kehcamera".insteadOf "https://github.com/KEHCamera"'
+            - git config --global user.email "builder@keh.com"
+            - git config --global user.name "Builder"
+            # Clone repo
+            - git clone https://github.com/KEHCamera/${DEPLOY_APP}.git /home/semaphore/${DEPLOY_APP}
+            - cd /home/semaphore/${DEPLOY_APP}
+            ## Get the default branch
+            - 'export MAIN_BRANCH_NAME=$(git remote show origin | sed -n "/HEAD branch/s/.*: //p")'
+            - echo ${MAIN_BRANCH_NAME}
+            - echo ${SEMAPHORE_GIT_BRANCH}
+            ## Pull latest
+            - git config uploadpack.allowReachableSHA1InWant true
+            - git status
+            - git fetch --all
+            ### Get the latest from the default branch
+            - git checkout ${MAIN_BRANCH_NAME}
+            ### Get the latest from deployment branch
+            - git checkout ${SEMAPHORE_GIT_BRANCH}
+            # Reset deployment branch from trunk
+            - git reset --hard ${MAIN_BRANCH_NAME}
+            - chmod +x .semaphore/scripts/rebase.sh
+            - .semaphore/scripts/rebase.sh
+            - git push --force origin ${SEMAPHORE_GIT_BRANCH}
+      secrets:
+        - name: github-semaphore
