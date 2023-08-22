@@ -10,7 +10,8 @@ cd ./my-project
 ./vendor/bin/pimcore-install
 ```
 
-- Point your virtual host to `my-project/public` 
+- Point your virtual host to `my-project/public`
+- Create `my-project/public/.htaccess` according to https://pimcore.com/docs/platform/Pimcore/Installation_and_Upgrade/System_Setup_and_Hosting/Apache_Configuration/ 
 - Open https://your-host/admin in your browser
 - Done! 😎
 
