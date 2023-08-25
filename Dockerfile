@@ -28,7 +28,7 @@ RUN touch /var/www/html/var/fpm.err
 # Pimcore Project Setup
 RUN cd /var/www/html && COMPOSER_MEMORY_LIMIT=-1 composer update
 RUN cd /var/www/html && chmod -Rf 0777 bin/ && ./bin/console assets:install public
-RUN ./bin/console pimcore:bundle:install PimcoreDataHubBundle
+#RUN ./bin/console pimcore:bundle:install PimcoreDataHubBundle
 #RUN ./bin/console pimcore:bundle:install PimcoreDataImporterBundle
 RUN cd /var/www/html && chmod -Rf 0777 var/ public/ vendor/pimcore/ var/classes/ var/log/
 RUN chown -R www-data:www-data /var/*
