@@ -1,0 +1,2 @@
+doctrine:
+    dbal: { connections: { default: { host: '%env(string:MYSQL_HOST)%', port: 3306, user: '%env(string:MYSQL_USER)%', password: '%env(string:MYSQL_PASSWORD)%', dbname: '%env(string:MYSQL_DB)%', mapping_types: { enum: string, bit: boolean }, server_version: '5.5.5-10.5.13-MariaDB-1:10.5.13+maria~focal' } } }

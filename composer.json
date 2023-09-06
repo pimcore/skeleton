@@ -15,7 +15,9 @@
     "pimcore/pimcore": "^11.0",
     "pimcore/admin-ui-classic-bundle": "^1.0",
     "symfony/runtime": "^6.2",
-    "symfony/dotenv": "^6.2"
+    "symfony/dotenv": "^6.2",
+    "pimcore/pimcore": "^10.5",
+    "krankikom/pimcore-jetpakk": "@dev"
   },
   "require-dev": {
     "codeception/codeception": "^5.0.3",
@@ -49,5 +51,12 @@
       "Pimcore\\Composer::clearCache",
       "Pimcore\\Composer::installAssets"
     ]
+  },
+  "repositories": {
+    "private-packagist": {
+        "type": "composer",
+        "url": "https://repo.packagist.com/krankikom/"
+    },
+    "packagist.org": false
   }
 }
