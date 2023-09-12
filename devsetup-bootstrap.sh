@@ -9,6 +9,10 @@ if [ $? == "1" ]; then
 fi
 direnv allow
 
+echo "**** Creating proxy network if required"
+docker network list|grep proxy || docker network create proxy 2>&1 >/dev/null
+
+
 echo "**** Creating custom composer docker image"
 
 COMPOSER_REPO_URL="https://repo.packagist.com/krankikom/"
@@ -31,7 +35,7 @@ cat <<EOT >> $TMP_ENVFILE
 COMPOSER_AUTH=$COMPOSER_AUTH_ENVVAR
 EOT
 
-docker run --rm -it --env-file $TMP_ENVFILE -v ${PWD}:/app --user $(id -u):$(id -g) composer-pdo install -v --ignore-platform-reqs --no-scripts
+docker run --rm -it --env-file $TMP_ENVFILE -v "${PWD}:/app" --user $(id -u):$(id -g) composer-pdo install -v --ignore-platform-reqs --no-scripts
 
 if [ -f ./vendor/krankikom/pimcore-jetpakk/devsetup/devsetup-bootstrap.sh ]; then
 	./vendor/krankikom/pimcore-jetpakk/devsetup/devsetup-bootstrap.sh
