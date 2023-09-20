@@ -22,7 +22,6 @@
 
 !/var/config
 /var/config/system.yml
-/var/config/debug-mode.php
 /var/config/maintenance.php
 
 # project specific recommendations
