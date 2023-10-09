@@ -20,12 +20,11 @@ class ReadmeTest extends Unit
 
     public function testReadmeIsWrittenWithLove(): void
     {
-        self::assertStringContainsString('😎', $this->readme);
-        self::assertStringContainsString('pimcore', $this->readme);
+        self::assertStringContainsString('Jetpakk', $this->readme);
     }
 
-    public function testReadmeContainsInstructionsForExecutingTests(): void
+    public function testReadmeContainsInstructionsForBootstrapping(): void
     {
-        self::assertStringContainsString('codecept run', $this->readme);
+        self::assertStringContainsString('devsetup-bootstrap.sh', $this->readme);
     }
 }
