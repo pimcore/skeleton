@@ -10,10 +10,11 @@
       "symfony/runtime": true
     }
   },
+  "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "pimcore/pimcore": "^11.0.4",
-    "pimcore/admin-ui-classic-bundle": "^1.0",
+    "pimcore/pimcore": "^11.1",
+    "pimcore/admin-ui-classic-bundle": "^1.2",
     "symfony/runtime": "^6.2",
     "symfony/dotenv": "^6.2"
   },
