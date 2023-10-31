@@ -10,7 +10,6 @@
       "symfony/runtime": true
     }
   },
-  "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
     "pimcore/pimcore": "^11.1",
