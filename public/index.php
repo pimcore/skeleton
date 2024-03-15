@@ -19,7 +19,6 @@ use Symfony\Component\HttpFoundation\Request;
 require_once dirname(__DIR__).'/vendor/autoload_runtime.php';
 
 Bootstrap::setProjectRoot();
-Bootstrap::bootstrap();
 
 return function (Request $request, array $context) {
 
@@ -27,6 +26,7 @@ return function (Request $request, array $context) {
     // request stack available yet
     Tool::setCurrentRequest($request);
 
+    Bootstrap::bootstrap();
     $kernel = Bootstrap::kernel();
 
     // reset current request - will be read from request stack from now on
