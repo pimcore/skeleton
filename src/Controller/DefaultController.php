@@ -11,13 +11,14 @@ class DefaultController extends FrontendController
 {
     /**
      * @param Request $request
+     *
      * @return Response
      */
     public function defaultAction(Request $request): Response
     {
         return $this->render('default/default.html.twig');
-    }    
-    
+    }
+
     /**
      * Forwards the request to admin login
      */
