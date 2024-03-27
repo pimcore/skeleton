@@ -82,12 +82,15 @@ jobs:
         -- \
         php vendor/bin/pimcore-install -n
 
-    - name: Run codeception tests
+    - name: Test skeleton sources
       run: |
         # Echo commands and terminate on first error
         set -ex
         
         cd sample-project/
+
+        # Check the code style
+        docker compose run --rm -T test-php vendor/bin/php-cs-fixer fix --no-interaction --ansi --verbose --diff --dry-run
 
         # Set up and execute codeception tests, just like README.md suggests.
         docker compose run --user=root --rm test-php chown -R $(id -u):$(id -g) var/ public/var/
