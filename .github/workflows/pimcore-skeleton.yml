@@ -89,6 +89,9 @@ jobs:
         
         cd sample-project/
 
+        # Check the code style
+        docker compose run --rm -T test-php vendor/bin/php-cs-fixer fix --no-interaction --ansi --verbose --diff --dry-run
+
         # Set up and execute codeception tests, just like README.md suggests.
         docker compose run --user=root --rm test-php chown -R $(id -u):$(id -g) var/ public/var/
         docker compose run --rm -T test-php vendor/bin/pimcore-install -n
