@@ -3,12 +3,8 @@
 $finder = (new PhpCsFixer\Finder)
     ->in([
         __DIR__ . '/src',
-    ])
-
-    ->exclude([
-
-    ])
-;
+        __DIR__ . '/tests',
+    ]);
 
 // do not enable self_accessor as it breaks pimcore models relying on get_called_class()
 return (new PhpCsFixer\Config)
