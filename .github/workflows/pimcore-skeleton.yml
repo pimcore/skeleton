@@ -82,7 +82,7 @@ jobs:
         -- \
         php vendor/bin/pimcore-install -n
 
-    - name: Run codeception tests
+    - name: Test skeleton sources
       run: |
         # Echo commands and terminate on first error
         set -ex
