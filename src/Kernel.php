@@ -25,7 +25,6 @@ class Kernel extends PimcoreKernel
      * Adds bundles to register to the bundle collection. The collection is able
      * to handle priorities and environment specific bundles.
      *
-     * @param BundleCollection $collection
      */
     public function registerBundlesToCollection(BundleCollection $collection): void
     {
