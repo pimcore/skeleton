@@ -7,7 +7,7 @@ If you are new to Pimcore, it's better to start with our demo package, listed be
 ```bash
 COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton my-project
 cd ./my-project
-./vendor/bin/pimcore-install
+./vendor/bin/pimcore-install 
 ```
 
 - Point your virtual host to `my-project/public`
