@@ -1,0 +1,167 @@
+{
+    "codeception/codeception": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib"
+        }
+    },
+    "doctrine/annotations": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "doctrine/doctrine-bundle": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "doctrine/doctrine-migrations-bundle": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "friendsofsymfony/jsrouting-bundle": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib"
+        }
+    },
+    "knplabs/knp-paginator-bundle": {
+        "version": "99999"
+    },
+    "league/flysystem-bundle": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "phpunit/phpunit": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "pimcore/pimcore": {
+        "version": "99999"
+    },
+    "presta/sitemap-bundle": {
+        "version": "99999"
+    },
+    "scheb/2fa-bundle": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony-cmf/routing-bundle": {
+        "version": "99999"
+    },
+    "symfony/console": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/debug-bundle": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/flex": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/framework-bundle": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/lock": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/mailer": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/messenger": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/monolog-bundle": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/routing": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/security-bundle": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/translation": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/twig-bundle": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/uid": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/validator": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/web-profiler-bundle": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/webpack-encore-bundle": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "symfony/workflow": {
+        "version": "99999",
+        "recipe": {
+            "repo": "github.com/symfony/recipes"
+        }
+    },
+    "twig/extra-bundle": {
+        "version": "99999"
+    }
+}
