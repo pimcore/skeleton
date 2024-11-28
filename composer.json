@@ -13,12 +13,13 @@
   "prefer-stable": true,
   "require": {
     "pimcore/pimcore": "*",
-    "pimcore/platform-version": "^2024.3",    
+    "pimcore/platform-version": "^2024.3",
     "pimcore/admin-ui-classic-bundle": "*",
     "symfony/dotenv": "^6.4.12",
     "symfony/runtime": "^6.4.12",
     "torqit/pimcore-folder-creator-bundle": "^3.0",
-    "torqit/pimcore-role-creator-bundle": "^3.1"
+    "torqit/pimcore-role-creator-bundle": "^3.1",
+    "coreshop/messenger-bundle": "^4.0"
   },
   "require-dev": {
     "codeception/codeception": "^5.0.3",

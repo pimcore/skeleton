@@ -30,6 +30,7 @@ use Pimcore\HttpKernel\BundleCollection\BundleCollection;
 use Pimcore\Kernel as PimcoreKernel;
 use TorqIT\FolderCreatorBundle\FolderCreatorBundle;
 use TorqIT\RoleCreatorBundle\RoleCreatorBundle;
+use CoreShop\Bundle\MessengerBundle\CoreShopMessengerBundle;
 
 class Kernel extends PimcoreKernel
 {
@@ -55,5 +56,6 @@ class Kernel extends PimcoreKernel
         // Custom bundles
         $collection->addBundle(new FolderCreatorBundle());
         $collection->addBundle(new RoleCreatorBundle());
+        $collection->addBundle(new CoreShopMessengerBundle());
     }
 }
