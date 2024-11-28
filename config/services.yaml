@@ -1,5 +1,6 @@
 parameters:
-    secret: DETzaWisgJOBN+SK87M1o8laf6d+8ZT3sA+Asjm+TNE=
+    env(KERNEL_SECRET_FILE): ./.secrets/kernel-secret
+    secret: '%env(file:KERNEL_SECRET_FILE)%'
 
     # These are default values for connecting to the database/Redis cache that the Docker build sometimes requires to be set.
     # Once the app is actually running, they will be replaced with actual values.

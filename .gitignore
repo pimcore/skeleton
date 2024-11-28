@@ -53,3 +53,7 @@ nbproject
 supervisord.pid
 supervisord.log
 .htaccess
+
+# .secrets
+/.secrets/*
+!/.secrets/.gitkeep

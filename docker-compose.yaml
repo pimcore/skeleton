@@ -34,11 +34,15 @@ services:
         build:
             dockerfile: ./.docker/Dockerfile
             target: init
+            secrets:
+                - kernel-secret
         depends_on:
             db:
                 condition: service_healthy
         env_file:
             -   .env
+        secrets:
+            - kernel-secret
         volumes:
             - .:/var/www/html
             - ./.docker/init/init.sh:/init.sh
@@ -50,10 +54,14 @@ services:
         build:
           dockerfile: ./.docker/Dockerfile
           target: php
+          secrets:
+              - kernel-secret
         environment:
           COMPOSER_HOME: /var/www/html
         env_file:
             -   .env
+        secrets:
+            - kernel-secret
         depends_on:
             init:
                 condition: service_completed_successfully
@@ -68,11 +76,15 @@ services:
         build:
             dockerfile: ./.docker/Dockerfile
             target: php-debug
+            secrets:
+                - kernel-secret
         environment:
             - XDEBUG_CONFIG=remote_enable=1
             - PHP_IDE_CONFIG=serverName=localhost
         env_file:
             - .env
+        secrets:
+            - kernel-secret
         depends_on:
             init:
                 condition: service_completed_successfully
@@ -84,11 +96,15 @@ services:
         build:
             dockerfile: ./.docker/Dockerfile
             target: supervisord
+            secrets:
+                - kernel-secret
         depends_on:
             init:
                 condition: service_completed_successfully
         env_file:
             -   .env
+        secrets:
+            - kernel-secret
         volumes:
             - .:/var/www/html
             - ./.docker/supervisord/supervisord.conf:/etc/supervisor/conf.d/pimcore.conf:ro
@@ -123,3 +139,7 @@ volumes:
     pimcore-test-database:
     pimcore-test-var:
     pimcore-test-public-var:
+
+secrets:
+    kernel-secret:
+      file: ./.secrets/kernel-secret
