@@ -58,7 +58,7 @@ services:
             REDIS_HOST: "redis"
             REDIS_PORT: "6379"
             PIMCORE_TOKEN: "1234567890"
-            RABBITMQ_UR: "amqp://user:pass@rabbitmq:1234"
+            RABBITMQ_URL: "amqp://user:pass@rabbitmq:1234"
         depends_on:
             db:
                 condition: service_healthy
