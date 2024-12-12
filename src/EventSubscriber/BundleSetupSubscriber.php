@@ -38,6 +38,6 @@ class BundleSetupSubscriber implements EventSubscriberInterface
     {
         // add required PimcoreAdminBundle
         $event->addRequiredBundle('PimcoreAdminBundle', PimcoreAdminBundle::class, true);
-        $event->addInstallableBundle('PimcoreQuillBundle', PimcoreQuillBundle::class, true);
+        $event->addRequiredBundle('PimcoreQuillBundle', PimcoreQuillBundle::class, true);
     }
 }
