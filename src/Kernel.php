@@ -29,7 +29,11 @@ class Kernel extends PimcoreKernel
      */
     public function registerBundlesToCollection(BundleCollection $collection): void
     {
-        $collection->addBundle(new PimcoreAdminBundle(), 60);
-        $collection->addBundle(new PimcoreQuillBundle());
+        if(class_exists(PimcoreAdminBundle::class)) {
+            $collection->addBundle(new PimcoreAdminBundle(), 60);
+        }
+        if(class_exists(PimcoreQuillBundle::class)) {
+            $collection->addBundle(new PimcoreQuillBundle());
+        }
     }
 }
