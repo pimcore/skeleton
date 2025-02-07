@@ -52,6 +52,13 @@ services:
             PIMCORE_INSTALL_MYSQL_PORT: 3306
             PIMCORE_INSTALL_MYSQL_HOST_SOCKET: db
             PIMCORE_INSTALL_MYSQL_DATABASE: pimcore
+            GOTENBERG_IP: "1.2.3.4"
+            GOTENBERG_PORT: "3000"
+            PLATFORM_PROJECT_ENTROPY: "1234567890"
+            REDIS_HOST: "redis"
+            REDIS_PORT: "6379"
+            PIMCORE_TOKEN: "1234567890"
+            RABBITMQ_URL: "amqp://user:pass@rabbitmq:1234"
         depends_on:
             db:
                 condition: service_healthy
