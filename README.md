@@ -34,7 +34,7 @@ You don't need to have a PHP environment with composer installed.
 `cd my-project/`
 
 3. Part of the new project is a docker compose file
-    * Run `sed -i "s|#user: '1000:1000'|user: '$(id -u):$(id -g)'|g" docker-compose.yaml` to set the correct user id and group id.
+    * Run `sed -i "s|#user: '1000:1000'|user: '$(id -u):$(id -g)'|g" compose.yaml` to set the correct user id and group id.
     * Start the needed services with `docker compose up -d`
 
 4. Install pimcore and initialize the DB
