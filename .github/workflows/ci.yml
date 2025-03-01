@@ -4,4 +4,4 @@ on:
 
 jobs:
   build-images:
-    uses: TorqIT/pimcore-github-actions-workflows/.github/workflows/ci-docker-builds@ci
+    uses: TorqIT/pimcore-github-actions-workflows/.github/workflows/ci-docker-builds.yml@ci
