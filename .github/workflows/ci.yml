@@ -1,0 +1,7 @@
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  build-images:
+    uses: TorqIT/pimcore-github-actions-workflows/.github/workflows/ci-docker-builds@ci
