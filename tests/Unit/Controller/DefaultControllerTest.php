@@ -39,11 +39,9 @@ class DefaultControllerTest extends Unit
 
     public function testDefaultAction()
     {
-        $this->twig->method('render')->will(
-            $this->returnValueMap([
-                // Simulate rendering of default template.
-                ['default/default.html.twig', [], 'At pimcore we love writing tests! ❤️TDD!'],
-            ])
+        $this->twig->method('render')->willReturnMap(
+            // Simulate rendering of default template.
+            ['default/default.html.twig', [], 'At pimcore we love writing tests! ❤️TDD!'],
         );
 
         $response = $this->controller->defaultAction($this->createMock(Request::class));
