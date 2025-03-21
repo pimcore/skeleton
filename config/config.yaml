@@ -6,9 +6,8 @@ imports:
     - { resource: seo.yaml, ignore_errors: true }
 
 pimcore:
-    general:
-        general:
-            timezone: Europe/Berlin
+   general:
+        timezone: Europe/Berlin
         valid_languages: 'en,de'
         fallback_languages:
             en: ''
