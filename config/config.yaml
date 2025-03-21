@@ -7,6 +7,8 @@ imports:
 
 pimcore:
     general:
+        general:
+            timezone: Europe/Berlin
         valid_languages: 'en,de'
         fallback_languages:
             en: ''
