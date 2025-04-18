@@ -11,6 +11,11 @@ on:
             - "[0-9]+.x"
             - "*_actions"
 
+env:
+  PIMCORE_INSTANCE_IDENTIFIER: ${{ secrets.PIMCORE_CI_INSTANCE_IDENTIFIER }}
+  PIMCORE_ENCRYPTION_SECRET: ${{ secrets.PIMCORE_CI_ENCRYPTION_SECRET }}
+  PIMCORE_PRODUCT_KEY: ${{ secrets.PIMCORE_CI_PRODUCT_KEY }}
+
 jobs:
   test-pimcore-skeleton:
     runs-on: ubuntu-latest
@@ -79,6 +84,9 @@ jobs:
         docker compose exec -T \
         -e PIMCORE_INSTALL_ADMIN_USERNAME=pimcore \
         -e PIMCORE_INSTALL_ADMIN_PASSWORD=pimcore \
+        -e PIMCORE_INSTALL_ENCRYPTION_SECRET=${PIMCORE_ENCRYPTION_SECRET} \
+        -e PIMCORE_INSTALL_INSTANCE_IDENTIFIER=${PIMCORE_INSTANCE_IDENTIFIER} \
+        -e PIMCORE_INSTALL_PRODUCT_KEY=${PIMCORE_PRODUCT_KEY} \        
         -- \
         php vendor/bin/pimcore-install -n
 
