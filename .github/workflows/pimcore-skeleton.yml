@@ -86,6 +86,7 @@ jobs:
           -e PIMCORE_INSTALL_ENCRYPTION_SECRET=${PIMCORE_ENCRYPTION_SECRET} \
           -e PIMCORE_INSTALL_INSTANCE_IDENTIFIER=${PIMCORE_INSTANCE_IDENTIFIER} \
           -e PIMCORE_INSTALL_PRODUCT_KEY=${PIMCORE_PRODUCT_KEY} \
+          -- \
           php vendor/bin/pimcore-install -n
 
     - name: Run codeception tests
