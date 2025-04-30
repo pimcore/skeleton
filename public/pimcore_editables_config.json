@@ -1,0 +1,21 @@
+{
+  "pimcore_button": {
+    "styles": ["primary", "secondary", "contrast"],
+    "types": ["fill", "outline", "link"],
+    "icons": [
+      "arrow-24",
+      "arrow-24/180",
+      "facebook-24",
+      "instagram-24",
+      "linkedin-24",
+      "youtube-24",
+      "xing-24",
+      "tiktok-24",
+      "pinterest-24",
+      "web-24",
+      "external-link-24",
+      "mailto-24",
+      "x-24"
+    ]
+  }
+}
