@@ -17,6 +17,18 @@ return (new PhpCsFixer\Config)
         '@PSR2'                  => true,
         'array_syntax'           => ['syntax' => 'short'],
 
+        'header_comment'         => [
+            'comment_type' => 'PHPDoc',
+            'header' =>
+                'This source file is available under the terms of the' . PHP_EOL .
+                'Pimcore Open Core License (POCL)' . PHP_EOL .
+                'Full copyright and license information is available in' . PHP_EOL .
+                'LICENSE.md which is distributed with this source code.' . PHP_EOL .
+                PHP_EOL .
+                ' @copyright  Copyright (c) Pimcore GmbH (https://www.pimcore.com)' . PHP_EOL .
+                ' @license    Pimcore Open Core License (POCL)'
+        ],
+
         // keep aligned = and => operators as they are: do not force aligning, but do not remove it
         'binary_operator_spaces' => ['operators' => ['=' => null, '=>' => null]],
 
