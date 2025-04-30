@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "js-pimcore-formbuilder": "^1.0.6",
-    "kk-webpack-base--config": "^3.0.0"
+    "kk-webpack-base--config": "^4.0.0"
   }
 }
