@@ -15,7 +15,7 @@
   "require": {
     "php": "~8.3.0 || ~8.4.0",
     "pimcore/pimcore": "^12.0",
-    "pimcore/platform-version": "^2025.2",
+    "pimcore/platform-version": "^2025.3",
     "pimcore/admin-ui-classic-bundle": "*",
     "pimcore/quill-bundle": "*",
     "symfony/amqp-messenger": "^6.2 || ^7.2",
