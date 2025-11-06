@@ -13,6 +13,7 @@ on:
 
 jobs:
   test-pimcore-skeleton:
+    if: github.repository == 'pimcore/skeleton'
     runs-on: ubuntu-latest
     steps:
     # Check out the repo in a sub-dir to see if it can serve as
