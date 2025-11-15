@@ -1,18 +1,18 @@
-name: Ensure Docker images build on PRs
+name: Continous Integration
 
 on:
   pull_request:
     types: [opened, reopened, synchronize]
 
-concurrency: 
-  group: pr-docker-builds__${{ github.sha }}
+concurrency:
+  group: ci__${{ github.sha }}
   cancel-in-progress: true
 
 jobs:
   build-images:
     name: Build Docker images
-    uses: TorqIT/pimcore-github-actions-workflows/.github/workflows/docker-builds.yml@v7
-    permissions: 
+    uses: TorqIT/pimcore-github-actions-workflows/.github/workflows/ci-docker.yml@ci-cd-consolidation
+    permissions:
       contents: read
       actions: read
     secrets:
@@ -22,4 +22,3 @@ jobs:
           "pimcore-instance-identifier": "${{ secrets.PIMCORE_INSTANCE_IDENTIFIER }}",
           "pimcore-encryption-secret": "${{ secrets.PIMCORE_ENCRYPTION_SECRET }}"
         }
-      
