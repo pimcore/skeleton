@@ -27,7 +27,7 @@ RUN --mount=type=secret,id=kernel-secret,uid=1000 \
         runuser -u www-data -- /var/www/html/bin/console cache:warmup
 
 FROM base AS init
-# TODO allow for custom bundles to be passed via args?
+COPY ./.docker/init/install-bundles.sh /install-bundles.sh
 COPY /.docker/init/init.sh /init.sh
 CMD [ "/init.sh" ]
 
