@@ -34,7 +34,7 @@ CMD [ "/init.sh" ]
 FROM base AS php
 RUN set -eux; \
     apt-get update -y; \
-    apt-get install -y --no-install-recommends nginx; \
+    apt-get install -y --no-install-recommends nginx wget; \
     rm -rf /var/lib/apt/lists/*;
 COPY /.docker/php/php.ini /usr/local/etc/php/conf.d/docker-pimcore-php.ini
 COPY /.docker/php/nginx.conf /etc/nginx/sites-available/default
