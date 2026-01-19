@@ -15,6 +15,8 @@ jobs:
     permissions:
       contents: read
       actions: read
+    with:
+      RUN_UNIT_TESTS: true
     secrets:
       BUILD_TIME_SECRETS: >
         {
