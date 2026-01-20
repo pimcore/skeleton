@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 BUNDLES=$(
-    bin/console pimcore:bundle:list --json | \
+    runuser -u www-data -- /var/www/html/bin/console pimcore:bundle:list --json | \
     php -r '
       $bundles = json_decode(stream_get_contents(STDIN), true);
       $toInstall = [];
