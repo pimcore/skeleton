@@ -11,7 +11,7 @@ concurrency:
 jobs:
   ci:
     name: Build Docker images
-    uses: TorqIT/pimcore-github-actions-workflows/.github/workflows/ci-docker.yml@consolidate-pimcore-secrets
+    uses: TorqIT/pimcore-github-actions-workflows/.github/workflows/ci-docker.yml@v7
     permissions:
       contents: read
       actions: read
