@@ -9,8 +9,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  ci:
-    name: Build Docker images
+  CI:
     uses: TorqIT/pimcore-github-actions-workflows/.github/workflows/ci-docker.yml@v7
     permissions:
       contents: read
