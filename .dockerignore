@@ -1,7 +1,8 @@
 .github
 cache
 config/local/*.yaml
-public/var
+public/var/assets
+public/var/tmp
 public/bundles
 var/application-logger
 var/assets
