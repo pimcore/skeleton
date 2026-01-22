@@ -9,16 +9,14 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  ci:
-    name: Build Docker images
+  CI:
     uses: TorqIT/pimcore-github-actions-workflows/.github/workflows/ci-docker.yml@v7
     permissions:
       contents: read
       actions: read
+    with:
+      RUN_UNIT_TESTS: true
     secrets:
-      BUILD_TIME_SECRETS: >
-        {
-          "pimcore-product-key": "${{ secrets.PIMCORE_PRODUCT_KEY }}",
-          "pimcore-instance-identifier": "${{ secrets.PIMCORE_INSTANCE_IDENTIFIER }}",
-          "pimcore-encryption-secret": "${{ secrets.PIMCORE_ENCRYPTION_SECRET }}"
-        }
+      PIMCORE_PRODUCT_KEY: ${{ secrets.PIMCORE_PRODUCT_KEY }}
+      PIMCORE_ENCRYPTION_SECRET: ${{ secrets.PIMCORE_ENCRYPTION_SECRET }}
+      PIMCORE_INSTANCE_IDENTIFIER: ${{ secrets.PIMCORE_INSTANCE_IDENTIFIER }}
