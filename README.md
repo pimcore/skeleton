@@ -25,6 +25,7 @@ Forked from https://github.com/pimcore/skeleton.
     1. Do NOT commit any of the files in this directory to your repository (they should already be gitignored).
 1. Run `docker compose up -d` to build the Docker images and run the containers
 1. By default, go to `localhost:8400` in your browser to access the Pimcore admin (port is controlled by the `WEB_EXTERNAL_PORT` environment variable). Use username `admin` and password `pimcore` to log in.
+1. To run commands in the container, run `docker compose exec --user www-data -it php bash -l`, then run your Symfony/Pimcore `bin/console` commands in the resulting shell.
 
 ## Getting updates
 
