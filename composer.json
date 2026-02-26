@@ -13,14 +13,14 @@
   "prefer-stable": true,
   "minimum-stability": "dev",
   "require": {
-    "php": "~8.3.0 || ~8.4.0",
-    "pimcore/pimcore": "^12.3",
-    "pimcore/platform-version": "2025.x-dev",
-    "pimcore/admin-ui-classic-bundle": "*",
-    "pimcore/quill-bundle": "*",
-    "symfony/amqp-messenger": "^6.2 || ^7.2",
-    "symfony/dotenv": "^6.2 || ^7.2",
-    "symfony/runtime": "^6.2 || ^7.3"
+    "php": "~8.4.0 || ~8.5.0",
+    "pimcore/pimcore": "2026.x-dev",
+    "pimcore/platform-version": "dev-prep2026",
+    "pimcore/admin-ui-classic-bundle": "dev-test-version26",
+    "pimcore/quill-bundle": "2026.x-dev",
+    "symfony/amqp-messenger": "^7.4",
+    "symfony/dotenv": "^7.4",
+    "symfony/runtime": "^7.4"
   },
   "require-dev": {
     "codeception/codeception": "^5.0.3",
