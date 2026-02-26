@@ -29,7 +29,7 @@ jobs:
         set -ex
         
         # Pull latest build of pimcore's image
-        docker pull docker.io/pimcore/pimcore:php8.5-latest
+        docker pull docker.io/pimcore/pimcore:php8.5-3-5.x
 
     - name: Create project from skeleton in latest pimcore environment
       run: |
@@ -46,7 +46,7 @@ jobs:
           --volume=${{ github.workspace }}/:/test/ \
           --workdir=/test/ \
           --user=$(id -u):$(id -g) \
-          docker.io/pimcore/pimcore:php8.5-latest \
+          docker.io/pimcore/pimcore:php8.5-3-5.x \
             composer create-project \
               pimcore/skeleton:@dev \
               --repository='{"type": "path", "url": "./skeleton"}' \
