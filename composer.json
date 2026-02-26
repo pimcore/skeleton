@@ -17,7 +17,7 @@
     "pimcore/pimcore": "^2026.1",
     "pimcore/platform-version": "^2026.1",
     "pimcore/quill-bundle": "*",
-    "symfony/amqp-messenger": "^6.2 || ^7.2",
+    "symfony/amqp-messenger": "^7.2",
     "symfony/dotenv": "^7.2",
     "symfony/runtime": "^7.3"
   },
