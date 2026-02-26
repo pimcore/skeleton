@@ -129,7 +129,7 @@ services:
             - pimcore-encryption-secret
         volumes:
             - .:/var/www/html
-            - ./.docker/supervisord/supervisord.conf:/etc/supervisor/conf.d/pimcore.conf:ro
+            - ./.docker/supervisord/supervisord.conf:/etc/supervisor/supervisord.conf:ro
 
     # The following two services are used for testing.
     # We restrict these services to the test profile only, so we don't spin them up with every `docker compose up`.

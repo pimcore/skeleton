@@ -45,8 +45,7 @@ CMD [ "/start-php.sh" ]
 FROM base AS supervisord
 COPY --from=pimcore/pimcore:php8.4-supervisord-v4 /var/run /var/run
 COPY --from=pimcore/pimcore:php8.4-supervisord-v4 /usr/sbin/cron /usr/sbin/cron
-COPY --from=pimcore/pimcore:php8.4-supervisord-v4 /etc/supervisor/supervisord.conf /etc/supervisor/supervisord.conf
-COPY /.docker/supervisord/supervisord.conf /etc/supervisor/conf.d/pimcore.conf
+COPY /.docker/supervisord/supervisord.conf /etc/supervisor/supervisord.conf
 COPY ./.docker/supervisord/start-supervisord.sh /start-supervisord.sh
 CMD [ "/start-supervisord.sh" ]
 
