@@ -41,7 +41,7 @@ services:
 
     php:
         #user: '1000:1000' # set to your uid:gid
-        image: pimcore/pimcore:php8.5.3-5.x
+        image: pimcore/pimcore:php8.5-max-5.x
         environment:
             COMPOSER_HOME: /var/www/html
             PHP_IDE_CONFIG: serverName=localhost
@@ -61,7 +61,7 @@ services:
 
     supervisord:
         #user: '1000:1000' # set to your uid:gid
-        image: pimcore/pimcore:php8.5.3-supervisord-5.x
+        image: pimcore/pimcore:php8.5-supervisord-5.x
         depends_on:
             rabbitmq:
                 condition: service_started
