@@ -15,7 +15,7 @@
   "require": {
     "php": "~8.4.0 || ~8.5.0",
     "pimcore/pimcore": "2026.1.x-dev",
-    "pimcore/platform-version": "2026.1.x-dev"
+    "pimcore/platform-version": "2026.1.x-dev",
     "pimcore/quill-bundle": "*",
     "symfony/amqp-messenger": "^7.4",
     "symfony/dotenv": "^7.4",
