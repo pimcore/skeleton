@@ -14,10 +14,10 @@
   "minimum-stability": "dev",
   "require": {
     "php": "~8.4.0 || ~8.5.0",
-    "pimcore/pimcore": "2026.x-dev as 2026.1",
-    "pimcore/platform-version": "2026.x-dev as 2026.1",
+    "pimcore/pimcore": "2026.1",
+    "pimcore/platform-version": "2026.1",
     "pimcore/admin-ui-classic-bundle": "dev-test-version26",
-    "pimcore/quill-bundle": "2026.x-dev as 2026.1",
+    "pimcore/quill-bundle": "2026.1",
     "symfony/amqp-messenger": "^7.4",
     "symfony/dotenv": "^7.4",
     "symfony/runtime": "^7.4"
