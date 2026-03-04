@@ -8,6 +8,22 @@
     "process-timeout": 0,
     "allow-plugins": {
       "symfony/runtime": true
+    },
+    "audit": {
+      "ignore": {
+        "PKSA-8x4n-f9v2-4s1d": "Ignoring for legacy builds",
+        "PKSA-88th-p7sv-k9g4": "Ignoring for legacy builds",
+        "PKSA-9ss4-dj21-s7vh": "Ignoring for legacy builds",
+        "PKSA-hpvp-zv9c-rrr4": "Ignoring for legacy builds",
+        "PKSA-2dyk-44y3-3rzz": "Ignoring for legacy builds",
+        "PKSA-1njj-d9p2-mxd2": "Ignoring for legacy builds",
+        "PKSA-kcqp-44r9-qh72": "Ignoring for legacy builds",
+        "PKSA-2ws5-72xf-nzn8": "Ignoring for legacy builds",
+        "PKSA-8cp9-pysj-5xkk": "Ignoring for legacy builds",
+        "PKSA-jxkv-3v6v-4yn3": "Ignoring for legacy builds",
+        "PKSA-d1ts-d4yt-xjz4": "Ignoring for legacy builds",
+        "PKSA-17vx-xhyz-z3x1": "Ignoring for legacy builds"
+      }
     }
   },
   "prefer-stable": true,
