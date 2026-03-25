@@ -1,5 +1,9 @@
 parameters:
-    secret: ThisTokenIsNotSoSecretChangeItImmediately
+    secret: '%env(APPLICATION_SECRET)%'
+    mercure:
+        hub:
+            #To learn more about JWT keys, take a look at https://jwt.io.
+            jwt_key: '%env(MERCURE_JWT_KEY)%'
 
     # customize the full path to external executables
     # normally they are auto-detected by `which program` or auto-discovered in the configured path in
