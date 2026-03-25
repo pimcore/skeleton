@@ -81,12 +81,16 @@ jobs:
         docker compose up -d
 
         # Run pimcore installation.
+        # DATABASE_URL is not in .env (Doctrine ProxyCacheWarmer would crash
+        # during composer create-project). Product registration secrets come
+        # from GitHub secrets. Everything else is read from .env.
         docker compose exec -T \
-          -e PIMCORE_INSTALL_ENCRYPTION_SECRET=${PIMCORE_ENCRYPTION_SECRET} \
-          -e PIMCORE_INSTALL_INSTANCE_IDENTIFIER=${PIMCORE_INSTANCE_IDENTIFIER} \
-          -e PIMCORE_INSTALL_PRODUCT_KEY=${PIMCORE_PRODUCT_KEY} \
+          -e DATABASE_URL=mysql://pimcore:pimcore@db:3306/pimcore \
+          -e PIMCORE_ENCRYPTION_SECRET=${PIMCORE_ENCRYPTION_SECRET} \
+          -e PIMCORE_INSTANCE_IDENTIFIER=${PIMCORE_INSTANCE_IDENTIFIER} \
+          -e PIMCORE_PRODUCT_KEY=${PIMCORE_PRODUCT_KEY} \
           -- \
-          php vendor/bin/pimcore-install -n --install-profile=App\\Installer\\SkeletonProfile --no-interaction
+          php vendor/bin/pimcore-install --install-profile=App\\Installer\\SkeletonProfile --no-interaction --skip-validation=opensearch --skip-validation=messenger-amqp
 
     - name: Run codeception tests
       env:
@@ -102,10 +106,9 @@ jobs:
         # Set up and execute codeception tests, just like README.md suggests.
         docker compose run --user=root --rm test-php chown -R $(id -u):$(id -g) var/ public/var/
         docker compose run --rm -T \
-          -e PIMCORE_INSTALL_ADMIN_USERNAME=pimcore \
-          -e PIMCORE_INSTALL_ADMIN_PASSWORD=pimcore \
-          -e PIMCORE_INSTALL_ENCRYPTION_SECRET=${PIMCORE_ENCRYPTION_SECRET} \
-          -e PIMCORE_INSTALL_INSTANCE_IDENTIFIER=${PIMCORE_INSTANCE_IDENTIFIER} \
-          -e PIMCORE_INSTALL_PRODUCT_KEY=${PIMCORE_PRODUCT_KEY} \
-          test-php vendor/bin/pimcore-install -n
+          -e DATABASE_URL=mysql://pimcore:pimcore@test-db:3306/pimcore \
+          -e PIMCORE_ENCRYPTION_SECRET=${PIMCORE_ENCRYPTION_SECRET} \
+          -e PIMCORE_INSTANCE_IDENTIFIER=${PIMCORE_INSTANCE_IDENTIFIER} \
+          -e PIMCORE_PRODUCT_KEY=${PIMCORE_PRODUCT_KEY} \
+          test-php vendor/bin/pimcore-install --install-profile=App\\Installer\\SkeletonProfile --no-interaction --skip-validation=opensearch --skip-validation=messenger-amqp
         docker compose run --rm -T test-php vendor/bin/codecept run -vv

@@ -40,7 +40,7 @@ services:
             - php
 
     php:
-        user: '1000:1000' # set to your uid:gid
+        #user: '1000:1000' # set to your uid:gid
         image: pimcore/pimcore:php8.5-max-5.x
         environment:
             COMPOSER_HOME: /var/www/html
@@ -55,7 +55,7 @@ services:
             - ./.docker/messenger.yaml:/var/www/html/config/packages/messenger.yaml:ro
 
     supervisord:
-        user: '1000:1000' # set to your uid:gid
+        #user: '1000:1000' # set to your uid:gid
         image: pimcore/pimcore:php8.5-supervisord-5.x
         depends_on:
             rabbitmq:
@@ -129,9 +129,6 @@ services:
         environment:
             APP_ENV: test
             PIMCORE_TEST_DB_DSN: ${PIMCORE_TEST_DB_DSN:-mysql://pimcore:pimcore@test-db/pimcore}
-            PIMCORE_INSTALL_ADMIN_USERNAME: pimcore
-            PIMCORE_INSTALL_ADMIN_PASSWORD: pimcore
-            PIMCORE_INSTALL_MYSQL_HOST_SOCKET: test-db
         depends_on:
             test-db:
                 condition: service_healthy
