@@ -40,6 +40,9 @@ jobs:
         # We execute composer within docker container to suttisfy platform requirements.
         # The value of ´"url":` must match checkout path in the first step.
         #
+        # Using --no-install so dependencies are installed later inside
+        # docker-compose where infrastructure services (db, etc.) are available.
+        #
         # See: https://getcomposer.org/doc/03-cli.md#create-project
         # See: https://getcomposer.org/doc/05-repositories.md#path
         docker run \
@@ -50,6 +53,7 @@ jobs:
             composer create-project \
               pimcore/skeleton:@dev \
               --repository='{"type": "path", "url": "./skeleton"}' \
+              --no-install \
               sample-project
 
     - name: Smoke-test compose file
@@ -80,17 +84,27 @@ jobs:
         docker compose pull --quiet
         docker compose up -d
 
+        # Install dependencies inside docker-compose where services are available.
+        docker compose exec -T -- php composer install
+
+        # Install dockerize to wait for services.
+        docker compose exec -T -- php bash -c '\
+          curl -sfL https://github.com/powerman/dockerize/releases/download/v0.11.5/dockerize-`uname -s`-`uname -m` \
+          | install /dev/stdin /usr/local/bin/dockerize'
+
+        # Wait for infrastructure services to be ready.
+        docker compose exec -T -- php dockerize -wait tcp://db:3306 -timeout 5m
+        docker compose exec -T -- php dockerize -wait tcp://opensearch:9200 -timeout 5m
+        docker compose exec -T -- php dockerize -wait tcp://rabbitmq:5672 -timeout 5m
+
         # Run pimcore installation.
-        # DATABASE_URL is not in .env (Doctrine ProxyCacheWarmer would crash
-        # during composer create-project). Product registration secrets come
-        # from GitHub secrets. Everything else is read from .env.
+        # Product registration secrets come from GitHub secrets.
+        # Everything else is read from .env.
         docker compose exec -T \
-          -e DATABASE_URL=mysql://pimcore:pimcore@db:3306/pimcore \
-          -e PIMCORE_ENCRYPTION_SECRET=${PIMCORE_ENCRYPTION_SECRET} \
-          -e PIMCORE_INSTANCE_IDENTIFIER=${PIMCORE_INSTANCE_IDENTIFIER} \
-          -e PIMCORE_PRODUCT_KEY=${PIMCORE_PRODUCT_KEY} \
-          -- \
-          php vendor/bin/pimcore-install --install-profile=App\\Installer\\SkeletonProfile --no-interaction --skip-validation=opensearch --skip-validation=messenger-amqp
+          -e PIMCORE_ENCRYPTION_SECRET="${PIMCORE_ENCRYPTION_SECRET}" \
+          -e PIMCORE_INSTANCE_IDENTIFIER="${PIMCORE_INSTANCE_IDENTIFIER}" \
+          -e PIMCORE_PRODUCT_KEY="${PIMCORE_PRODUCT_KEY}" \
+          -- php vendor/bin/pimcore-install --install-profile=App\\Installer\\SkeletonProfile --no-interaction
 
     - name: Run codeception tests
       env:
@@ -107,8 +121,8 @@ jobs:
         docker compose run --user=root --rm test-php chown -R $(id -u):$(id -g) var/ public/var/
         docker compose run --rm -T \
           -e DATABASE_URL=mysql://pimcore:pimcore@test-db:3306/pimcore \
-          -e PIMCORE_ENCRYPTION_SECRET=${PIMCORE_ENCRYPTION_SECRET} \
-          -e PIMCORE_INSTANCE_IDENTIFIER=${PIMCORE_INSTANCE_IDENTIFIER} \
-          -e PIMCORE_PRODUCT_KEY=${PIMCORE_PRODUCT_KEY} \
-          test-php vendor/bin/pimcore-install --install-profile=App\\Installer\\SkeletonProfile --no-interaction --skip-validation=opensearch --skip-validation=messenger-amqp
+          -e PIMCORE_ENCRYPTION_SECRET="${PIMCORE_ENCRYPTION_SECRET}" \
+          -e PIMCORE_INSTANCE_IDENTIFIER="${PIMCORE_INSTANCE_IDENTIFIER}" \
+          -e PIMCORE_PRODUCT_KEY="${PIMCORE_PRODUCT_KEY}" \
+          test-php vendor/bin/pimcore-install --install-profile=App\\Installer\\SkeletonProfile --no-interaction --skip-validation=opensearch --skip-validation=messenger-amqp --skip-validation=mercure
         docker compose run --rm -T test-php vendor/bin/codecept run -vv
