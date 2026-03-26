@@ -13,17 +13,19 @@
   "prefer-stable": true,
   "minimum-stability": "dev",
   "require": {
-    "php": "~8.3.0 || ~8.4.0",
+    "php": "~8.4.0 || ~8.5.0",
     "pimcore/pimcore": "*",
-    "pimcore/platform-version": "^2025.0",
-    "pimcore/admin-ui-classic-bundle": "*",
-    "symfony/amqp-messenger": "^6.2",
-    "symfony/dotenv": "^6.2",
-    "symfony/runtime": "^6.2"
+    "pimcore/platform-version": "^2026.0",
+    "pimcore/quill-bundle": "*",
+    "pimcore/studio-backend-bundle": "*",
+    "pimcore/studio-ui-bundle": "*",
+    "symfony/amqp-messenger": "^7.4",
+    "symfony/dotenv": "^7.4",
+    "symfony/runtime": "^7.4"
   },
   "require-dev": {
-    "codeception/codeception": "^5.0.3",
-    "codeception/module-symfony": "^3.1.0"
+    "codeception/codeception": "^5.3",
+    "codeception/module-symfony": "^3.5"
   },
   "suggest": {
     "pimcore/data-hub": "Universal data interface for GraphQL, CSV and other formats"
