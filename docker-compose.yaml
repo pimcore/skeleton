@@ -47,11 +47,6 @@ services:
             PHP_IDE_CONFIG: serverName=localhost
             # Feed installer configuration via ENV variables.
             # See: https://pimcore.com/docs/pimcore/current/Development_Documentation/Getting_Started/Advanced_Installation_Topics.html#page_Advanced-Installation-Topics
-            PIMCORE_INSTALL_MYSQL_USERNAME: pimcore
-            PIMCORE_INSTALL_MYSQL_PASSWORD: pimcore
-            PIMCORE_INSTALL_MYSQL_PORT: 3306
-            PIMCORE_INSTALL_MYSQL_HOST_SOCKET: db
-            PIMCORE_INSTALL_MYSQL_DATABASE: pimcore
         depends_on:
             db:
                 condition: service_healthy
@@ -72,6 +67,51 @@ services:
             - ./.docker/messenger.yaml:/var/www/html/config/packages/messenger.yaml:ro
             - ./.docker/supervisord.conf:/etc/supervisor/conf.d/pimcore.conf:ro
 
+    mercure:
+        image: dunglas/mercure
+        restart: unless-stopped
+        environment:
+            # Uncomment the following line to disable HTTPS
+            SERVER_NAME: ':80'
+            MERCURE_PUBLISHER_JWT_KEY: 'CHANGE_ME_THIS_IS_MY_SECRET_KEY_THAT_IS_LONG_ENOUGH_FOR_VALIDATION'
+            MERCURE_SUBSCRIBER_JWT_KEY: 'CHANGE_ME_THIS_IS_MY_SECRET_KEY_THAT_IS_LONG_ENOUGH_FOR_VALIDATION'
+            MERCURE_EXTRA_DIRECTIVES: anonymous
+        # Uncomment the following line to enable the development mode
+        # command: /usr/bin/caddy run -config /etc/caddy/Caddyfile.dev
+        ports:
+            - "8080:80"
+        #    - "8443:443"
+
+    opensearch:
+        image: opensearchproject/opensearch:2
+        environment:
+            - cluster.name=opensearch-cluster # Name the cluster
+            - node.name=opensearch-node # Name the node that will run in this container
+            - discovery.seed_hosts=opensearch-node # Nodes to look for when discovering the cluster
+            - cluster.routing.allocation.disk.threshold_enabled=false # Disable disk usage watermark
+            # - cluster.initial_cluster_manager_nodes=opensearch-node # Nodes eligible to serve as cluster manager
+            - bootstrap.memory_lock=true # Disable JVM heap memory swapping
+            - "OPENSEARCH_JAVA_OPTS=-Xms1024m -Xmx1024m" # Set min and max JVM heap sizes to at least 50% of system RAM
+            - discovery.type=single-node
+            - action.auto_create_index=false
+            - OPENSEARCH_INITIAL_ADMIN_PASSWORD=gBsVe!Dut723
+        ulimits:
+            memlock:
+                soft: -1 # Set memlock to unlimited (no soft or hard limit)
+                hard: -1
+            nofile:
+                soft: 65536 # Maximum number of open files for the opensearch user - set to at least 65536
+                hard: 65536
+        volumes:
+            - pimcore-demo-opensearch:/usr/share/opensearch/data
+
+    opensearch-dashboards:
+        image: opensearchproject/opensearch-dashboards:2 # Make sure the version of opensearch-dashboards matches the version of opensearch installed on other nodes
+        ports:
+            - 5601:5601
+        environment:
+            OPENSEARCH_HOSTS: '["https://opensearch:9200"]'
+
     # The following two services are used for testing.
     # We restrict these services to the test profile only, so we don't spin them up with every `docker compose up`.
     # See: https://docs.docker.com/compose/profiles/
@@ -87,9 +127,6 @@ services:
         environment:
             APP_ENV: test
             PIMCORE_TEST_DB_DSN: ${PIMCORE_TEST_DB_DSN:-mysql://pimcore:pimcore@test-db/pimcore}
-            PIMCORE_INSTALL_ADMIN_USERNAME: pimcore
-            PIMCORE_INSTALL_ADMIN_PASSWORD: pimcore
-            PIMCORE_INSTALL_MYSQL_HOST_SOCKET: test-db
         depends_on:
             test-db:
                 condition: service_healthy
@@ -103,3 +140,4 @@ volumes:
     pimcore-test-database:
     pimcore-test-var:
     pimcore-test-public-var:
+    pimcore-demo-opensearch:

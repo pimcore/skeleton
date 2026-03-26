@@ -3,6 +3,10 @@ imports:
 
 
 pimcore:
+    documents:
+        error_pages:
+            default: ~
+            localized: []
 
 # IMPORTANT Notice!
 # Following there are only some examples listed, for a full list of possible options, please run the following command:
@@ -137,3 +141,14 @@ framework:
 #         name: ''
 #         email: ''
 
+pimcore_studio_backend:
+    mercure_settings:
+        jwt_key: '%env(MERCURE_JWT_KEY)%'
+        hub_url_client: '%env(MERCURE_URL)%'
+        hub_url_server: '%env(MERCURE_SERVER_URL)%'
+
+pimcore_studio_ui:
+    csp_header:
+        additional_urls:
+            connect-src:
+                - '%env(MERCURE_URL)%'

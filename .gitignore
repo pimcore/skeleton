@@ -39,6 +39,13 @@
 
 # composer
 /vendor/
+/auth.json
+
+# docker
+/docker-compose.override.yml
+
+# pimcore
+/config/reference.php
 
 # PhpStorm / IDEA
 .idea
