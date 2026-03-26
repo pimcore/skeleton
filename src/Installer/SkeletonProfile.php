@@ -14,6 +14,9 @@ declare(strict_types=1);
 
 namespace App\Installer;
 
+use Pimcore\Bundle\CustomReportsBundle\PimcoreCustomReportsBundle;
+use Pimcore\Bundle\GenericDataIndexBundle\PimcoreGenericDataIndexBundle;
+use Pimcore\Bundle\GenericExecutionEngineBundle\PimcoreGenericExecutionEngineBundle;
 use Pimcore\Bundle\InstallBundle\EnvVarDefinition\ConfigParameter;
 use Pimcore\Bundle\InstallBundle\EnvVarDefinition\Definitions\AmqpMessengerEnvVarDefinition;
 use Pimcore\Bundle\InstallBundle\EnvVarDefinition\Definitions\DatabaseEnvVarDefinition;
@@ -24,9 +27,6 @@ use Pimcore\Bundle\InstallBundle\EnvVarDefinition\Definitions\SimpleEnvVarDefini
 use Pimcore\Bundle\InstallBundle\EnvVarDefinition\ParameterType;
 use Pimcore\Bundle\InstallBundle\Profile\DataSource\DataSourceInterface;
 use Pimcore\Bundle\InstallBundle\Profile\InstallProfileInterface;
-use Pimcore\Bundle\CustomReportsBundle\PimcoreCustomReportsBundle;
-use Pimcore\Bundle\GenericDataIndexBundle\PimcoreGenericDataIndexBundle;
-use Pimcore\Bundle\GenericExecutionEngineBundle\PimcoreGenericExecutionEngineBundle;
 use Pimcore\Bundle\QuillBundle\PimcoreQuillBundle;
 use Pimcore\Bundle\StudioBackendBundle\PimcoreStudioBackendBundle;
 use Pimcore\Bundle\StudioUiBundle\PimcoreStudioUiBundle;
