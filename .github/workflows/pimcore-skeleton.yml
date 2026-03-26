@@ -125,4 +125,8 @@ jobs:
           -e PIMCORE_INSTANCE_IDENTIFIER="${PIMCORE_INSTANCE_IDENTIFIER}" \
           -e PIMCORE_PRODUCT_KEY="${PIMCORE_PRODUCT_KEY}" \
           test-php vendor/bin/pimcore-install --install-profile=App\\Installer\\SkeletonProfile --no-interaction --skip-validation=opensearch --skip-validation=messenger-amqp --skip-validation=mercure
-        docker compose run --rm -T test-php vendor/bin/codecept run -vv
+        docker compose run --rm -T \
+          -e PIMCORE_ENCRYPTION_SECRET="${PIMCORE_ENCRYPTION_SECRET}" \
+          -e PIMCORE_INSTANCE_IDENTIFIER="${PIMCORE_INSTANCE_IDENTIFIER}" \
+          -e PIMCORE_PRODUCT_KEY="${PIMCORE_PRODUCT_KEY}" \
+          test-php vendor/bin/codecept run -vv
