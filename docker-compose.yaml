@@ -75,9 +75,7 @@ services:
             SERVER_NAME: ':80'
             MERCURE_PUBLISHER_JWT_KEY: 'CHANGE_ME_THIS_IS_MY_SECRET_KEY_THAT_IS_LONG_ENOUGH_FOR_VALIDATION'
             MERCURE_SUBSCRIBER_JWT_KEY: 'CHANGE_ME_THIS_IS_MY_SECRET_KEY_THAT_IS_LONG_ENOUGH_FOR_VALIDATION'
-            MERCURE_EXTRA_DIRECTIVES: |-
-                cors_origins http://localhost
-                anonymous
+            MERCURE_EXTRA_DIRECTIVES: anonymous
         # Uncomment the following line to enable the development mode
         # command: /usr/bin/caddy run -config /etc/caddy/Caddyfile.dev
         ports:
