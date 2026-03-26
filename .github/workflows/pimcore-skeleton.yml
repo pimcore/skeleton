@@ -87,8 +87,8 @@ jobs:
         # Install dependencies inside docker-compose where services are available.
         docker compose exec -T -- php composer install
 
-        # Install dockerize to wait for services.
-        docker compose exec -T -- php bash -c '\
+        # Install dockerize to wait for services (needs root for /usr/local/bin).
+        docker compose exec --user=root -T -- php bash -c '\
           curl -sfL https://github.com/powerman/dockerize/releases/download/v0.11.5/dockerize-`uname -s`-`uname -m` \
           | install /dev/stdin /usr/local/bin/dockerize'
 
