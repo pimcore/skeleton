@@ -125,9 +125,10 @@ jobs:
           -e PIMCORE_INSTANCE_IDENTIFIER="${PIMCORE_INSTANCE_IDENTIFIER}" \
           -e PIMCORE_PRODUCT_KEY="${PIMCORE_PRODUCT_KEY}" \
           test-php vendor/bin/pimcore-install --install-profile=App\\Installer\\SkeletonProfile --no-interaction --skip-validation=opensearch --skip-validation=messenger-amqp --skip-validation=mercure
-        # PIMCORE_ENCRYPTION_SECRET not needed here — test env uses hardcoded
-        # pimcore.encryption.secret parameter from config/packages/test/config.yaml.
+        # Product registration secrets must be passed as a matched set —
+        # the product key is validated against the encryption secret.
         docker compose run --rm -T \
+          -e PIMCORE_ENCRYPTION_SECRET="${PIMCORE_ENCRYPTION_SECRET}" \
           -e PIMCORE_INSTANCE_IDENTIFIER="${PIMCORE_INSTANCE_IDENTIFIER}" \
           -e PIMCORE_PRODUCT_KEY="${PIMCORE_PRODUCT_KEY}" \
           test-php vendor/bin/codecept run -vv
