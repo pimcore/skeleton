@@ -7,7 +7,7 @@ If you are new to Pimcore, it's better to start with our demo package, listed be
 ```bash
 COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton my-project
 cd ./my-project
-./vendor/bin/pimcore-install
+./vendor/bin/pimcore-install --install-profile='App\Installer\SkeletonProfile'
 ```
 
 - Point your virtual host to `my-project/public`
@@ -38,7 +38,7 @@ You don't need to have a PHP environment with composer installed.
     * Start the needed services with `docker compose up -d`
 
 4. Install pimcore and initialize the DB
-    `docker compose exec php vendor/bin/pimcore-install`
+    `docker compose exec php vendor/bin/pimcore-install --install-profile='App\Installer\SkeletonProfile'`
     * When asked for admin user and password: Choose freely
     * This can take a while, up to 20 minutes
     * If you select to install the SimpleBackendSearchBundle please make sure to add the `pimcore_search_backend_message` to your `.docker/supervisord.conf` file inside value for 'command' like `pimcore_maintenance` already is.
