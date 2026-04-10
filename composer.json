@@ -15,9 +15,10 @@
   "require": {
     "php": "~8.4.0 || ~8.5.0",
     "pimcore/pimcore": "^2026.1.0",
-    "pimcore/quill-bundle": "^2026.1.0",
-    "pimcore/studio-ui-bundle": "^2026.1",
-    "pimcore/studio-backend-bundle": "^2026.1",
+    "pimcore/platform-version": "^2026.1.0",
+    "pimcore/quill-bundle": "*",
+    "pimcore/studio-ui-bundle": "*",
+    "pimcore/studio-backend-bundle": "*",
     "symfony/amqp-messenger": "^7.4",
     "symfony/dotenv": "^7.4",
     "symfony/runtime": "^7.4"
