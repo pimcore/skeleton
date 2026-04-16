@@ -5,7 +5,7 @@ If you are new to Pimcore, it's better to start with our demo package, listed be
 
 ## Getting started
 ```bash
-COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton my-project
+COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton my-project ">=2026"
 cd ./my-project
 ./vendor/bin/pimcore-install --install-profile='App\Installer\SkeletonProfile'
 ```
