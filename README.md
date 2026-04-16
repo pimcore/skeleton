@@ -5,7 +5,7 @@ If you are new to Pimcore, it's better to start with our demo package, listed be
 
 ## Getting started
 ```bash
-COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton my-project ">=2026"
+COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton my-project ">=2026" --no-scripts
 cd ./my-project
 ./vendor/bin/pimcore-install --install-profile='App\Installer\SkeletonProfile'
 ```
@@ -28,14 +28,14 @@ You don't need to have a PHP environment with composer installed.
 
 ### Follow these steps
 1. Initialize the skeleton project using the `pimcore/pimcore` image
-`docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html pimcore/pimcore:php8.3-latest composer create-project pimcore/skeleton my-project ">=2026"`
+`docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html pimcore/pimcore:php8.3-latest composer create-project pimcore/skeleton my-project ">=2026" --no-scripts`
 
 2. Go to your new project
 `cd my-project/`
 
 3. Part of the new project is a docker compose file
     * Run `sed -i "s|#user: '1000:1000'|user: '$(id -u):$(id -g)'|g" docker-compose.yaml` to set the correct user id and group id.
-    * Start the needed services with `docker compose up -d`
+    * Start the necessary services with `docker compose up -d`
 
 4. Install pimcore and initialize the DB
     `docker compose exec php vendor/bin/pimcore-install --install-profile='App\Installer\SkeletonProfile'`
@@ -51,7 +51,7 @@ You don't need to have a PHP environment with composer installed.
 6. :heavy_check_mark: DONE - You can now visit your pimcore instance:
     * The frontend: <http://localhost>
     * The admin interface, using the credentials you have chosen above:
-      <http://localhost/admin>
+      <http://localhost/pimcore-studio/login>
 
 ## Pimcore Platform Version
 By default, Pimcore Platform Version is added as a dependency which ensures installation of compatible and in combination 
