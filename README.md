@@ -5,7 +5,7 @@ If you are new to Pimcore, it's better to start with our demo package, listed be
 
 ## Getting started
 ```bash
-COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton my-project
+COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton --no-scripts my-project
 cd ./my-project
 ./vendor/bin/pimcore-install --install-profile='App\Installer\SkeletonProfile'
 ```
@@ -28,7 +28,7 @@ You don't need to have a PHP environment with composer installed.
 
 ### Follow these steps
 1. Initialize the skeleton project using the `pimcore/pimcore` image
-``docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html pimcore/pimcore:php8.4-latest composer create-project pimcore/skeleton my-project``
+``docker run -u `id -u`:`id -g` --rm -v `pwd`:/var/www/html pimcore/pimcore:php8.4-latest composer create-project pimcore/skeleton --no-scripts my-project``
 
 2. Go to your new project
 `cd my-project/`
