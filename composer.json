@@ -43,10 +43,6 @@
   },
   "scripts": {
     "post-create-project-cmd": "Pimcore\\Composer::postCreateProject",
-    "post-install-cmd": [
-      "Pimcore\\Composer::postInstall",
-      "@pimcore-scripts"
-    ],
     "post-update-cmd": [
       "Pimcore\\Composer::postUpdate",
       "@pimcore-scripts"
@@ -55,5 +51,5 @@
       "Pimcore\\Composer::clearCache",
       "Pimcore\\Composer::installAssets"
     ]
-  }
+  },
 }
