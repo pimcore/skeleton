@@ -1,6 +1,15 @@
 imports:
     - { resource: 'local/' }
 
+# Set the default db server version.
+# This ensures that Doctrine DBAL uses the correct SQL syntax and features for this version.
+# If you are using a different version, you may need to adjust this setting accordingly.
+
+doctrine:
+    dbal:
+        connections:
+            default:
+                server_version: 'mariadb-10.11.7'
 
 pimcore:
     documents:
