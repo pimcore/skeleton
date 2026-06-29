@@ -1,8 +1,0 @@
-framework:
-    messenger:
-        transports:
-            pimcore_core: 'amqp://rabbitmq:5672/%2f/pimcore_core'
-            pimcore_maintenance: 'amqp://rabbitmq:5672/%2f/pimcore_maintenance'
-            pimcore_scheduled_tasks: 'amqp://rabbitmq:5672/%2f/pimcore_scheduled_tasks'
-            pimcore_image_optimize: 'amqp://rabbitmq:5672/%2f/pimcore_image_optimize'
-            pimcore_asset_update: 'amqp://rabbitmq:5672/%2f/pimcore_asset_update'
