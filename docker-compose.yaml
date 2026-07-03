@@ -52,7 +52,6 @@ services:
                 condition: service_healthy
         volumes:
             - .:/var/www/html
-            - ./.docker/messenger.yaml:/var/www/html/config/packages/messenger.yaml:ro
 
     supervisord:
         #user: '1000:1000' # set to your uid:gid
@@ -64,7 +63,6 @@ services:
                 condition: service_healthy
         volumes:
             - .:/var/www/html
-            - ./.docker/messenger.yaml:/var/www/html/config/packages/messenger.yaml:ro
             - ./.docker/supervisord.conf:/etc/supervisor/conf.d/pimcore.conf:ro
 
     mercure:
