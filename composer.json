@@ -14,8 +14,8 @@
   "minimum-stability": "dev",
   "require": {
     "php": "~8.4.0 || ~8.5.0",
-    "pimcore/pimcore": "^2026.1.0",
-    "pimcore/platform-version": "^2026.1.0",
+    "pimcore/pimcore": "^2026.2.0",
+    "pimcore/platform-version": "^2026.2.0",
     "pimcore/quill-bundle": "*",
     "pimcore/studio-ui-bundle": "*",
     "pimcore/studio-backend-bundle": "*",
