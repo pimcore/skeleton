@@ -73,7 +73,14 @@ services:
             SERVER_NAME: ':80'
             MERCURE_PUBLISHER_JWT_KEY: 'CHANGE_ME_THIS_IS_MY_SECRET_KEY_THAT_IS_LONG_ENOUGH_FOR_VALIDATION'
             MERCURE_SUBSCRIBER_JWT_KEY: 'CHANGE_ME_THIS_IS_MY_SECRET_KEY_THAT_IS_LONG_ENOUGH_FOR_VALIDATION'
-            MERCURE_EXTRA_DIRECTIVES: anonymous
+            # Deliberately no `anonymous` directive: the hub authorises a subscription once,
+            # when the EventSource connects, from the mercureAuthorization cookie. With
+            # anonymous subscribers allowed, a connection that carries no cookie (or one that
+            # expired while the tab stayed open) is answered 200 OK and then receives nothing,
+            # so Studio keeps what looks like a healthy stream while every notification, job
+            # progress update and agent chat event is dropped. Answering 401 instead makes the
+            # state visible and lets the client re-authorise.
+            MERCURE_EXTRA_DIRECTIVES: ''
         # Uncomment the following line to enable the development mode
         # command: /usr/bin/caddy run -config /etc/caddy/Caddyfile.dev
         ports:
