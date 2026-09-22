@@ -23,6 +23,10 @@
     "symfony/dotenv": "^7.4",
     "symfony/runtime": "^7.4"
   },
+  "conflict": {
+    "pimcore/elasticsearch-client": "<2026.3 || >=2026.4",
+    "pimcore/opensearch-client": "<2026.3 || >=2026.4"
+  },
   "require-dev": {
     "codeception/codeception": "^5.3",
     "codeception/module-symfony": "^3.5"
