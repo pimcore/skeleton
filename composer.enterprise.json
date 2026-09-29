@@ -15,7 +15,7 @@
   "require": {
     "php": "~8.4.0 || ~8.5.0",
     "pimcore/pimcore": "*",
-    "pimcore/platform-version": "~2026.3.0",
+    "pimcore/platform-version": "^2026.3.0",
     "pimcore/quill-bundle": "*",
     "pimcore/studio-backend-bundle": "*",
     "pimcore/studio-ui-bundle": "*",
