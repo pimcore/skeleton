@@ -23,6 +23,7 @@ use Pimcore\Bundle\InstallBundle\EnvVarDefinition\Definitions\DatabaseEnvVarDefi
 use Pimcore\Bundle\InstallBundle\EnvVarDefinition\Definitions\MercureEnvVarDefinition;
 use Pimcore\Bundle\InstallBundle\EnvVarDefinition\Definitions\OpenSearchEnvVarDefinition;
 use Pimcore\Bundle\InstallBundle\EnvVarDefinition\Definitions\ProductRegistrationEnvVarDefinition;
+use Pimcore\Bundle\InstallBundle\EnvVarDefinition\Definitions\RedisEnvVarDefinition;
 use Pimcore\Bundle\InstallBundle\EnvVarDefinition\Definitions\SimpleEnvVarDefinition;
 use Pimcore\Bundle\InstallBundle\EnvVarDefinition\ParameterType;
 use Pimcore\Bundle\InstallBundle\Profile\DataSource\DataSourceInterface;
@@ -65,6 +66,7 @@ final readonly class SkeletonProfile implements InstallProfileInterface
             new AmqpMessengerEnvVarDefinition(),
             new MercureEnvVarDefinition(),
             new ProductRegistrationEnvVarDefinition(),
+            new RedisEnvVarDefinition(),
             new SimpleEnvVarDefinition(
                 key: 'application-secret',
                 label: 'Application Secret',

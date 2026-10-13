@@ -96,6 +96,7 @@ jobs:
         docker compose exec -T -- php dockerize -wait tcp://db:3306 -timeout 5m
         docker compose exec -T -- php dockerize -wait tcp://opensearch:9200 -timeout 5m
         docker compose exec -T -- php dockerize -wait tcp://rabbitmq:5672 -timeout 5m
+        docker compose exec -T -- php dockerize -wait tcp://valkey:6379 -timeout 5m
 
         # Run pimcore installation.
         # Product registration secrets come from GitHub secrets.

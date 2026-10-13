@@ -1,6 +1,17 @@
 imports:
     - { resource: ../dev/config.yaml }
 
+# Tests use an in-memory cache instead of the Valkey/Redis pool from config.yaml,
+# so they neither depend on the cache service nor share cache entries with the dev instance.
+framework:
+    cache:
+        pools:
+            pimcore.cache.pool:
+                public: true
+                tags: true
+                default_lifetime: 31536000  # 1 year
+                adapter: cache.adapter.array
+
 doctrine:
     dbal:
         connections:
