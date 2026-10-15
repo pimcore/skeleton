@@ -1,7 +1,13 @@
 services:
-    redis:
-        image: redis:alpine
-        command: [ redis-server, --maxmemory 128mb, --maxmemory-policy volatile-lru, --save "" ]
+    valkey:
+        image: valkey/valkey:alpine
+        command: [ valkey-server, --maxmemory, 128mb, --maxmemory-policy, volatile-lru, --save, '""' ]
+
+    # Valkey is a drop-in replacement for Redis. Comment out the valkey service
+    # above and uncomment the one below to use Redis instead.
+#    redis:
+#        image: redis:alpine
+#        command: [ redis-server, --maxmemory, 128mb, --maxmemory-policy, volatile-lru, --save, '""' ]
 
     rabbitmq:
         image: rabbitmq:alpine

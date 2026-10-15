@@ -96,6 +96,7 @@ jobs:
         docker compose exec -T -- php dockerize -wait tcp://db:3306 -timeout 5m
         docker compose exec -T -- php dockerize -wait tcp://opensearch:9200 -timeout 5m
         docker compose exec -T -- php dockerize -wait tcp://rabbitmq:5672 -timeout 5m
+        docker compose exec -T -- php dockerize -wait tcp://valkey:6379 -timeout 5m
 
         # Run pimcore installation.
         # Product registration secrets come from GitHub secrets.
@@ -105,6 +106,23 @@ jobs:
           -e PIMCORE_INSTANCE_IDENTIFIER="${PIMCORE_INSTANCE_IDENTIFIER}" \
           -e PIMCORE_PRODUCT_KEY="${PIMCORE_PRODUCT_KEY}" \
           -- php vendor/bin/pimcore-install --install-profile=App\\Installer\\SkeletonProfile --no-interaction
+
+    - name: Verify the Pimcore cache is served by Valkey
+      run: |
+        # Echo commands and terminate on first error
+        set -ex
+
+        cd sample-project/
+
+        # Warm the object cache. Warming uses forced writes, which bypass the CLI write gate
+        # and go straight through the Redis tag-aware adapter, so a pool that cannot reach
+        # Valkey or an unsupported eviction policy fails right here instead of silently.
+        docker compose exec -T -- php bin/console pimcore:cache:warming --timoutBetweenIteration=0
+
+        # A fresh install has a root document, asset folder and object folder, so Valkey must hold keys now.
+        keys=$(docker compose exec -T -- valkey valkey-cli DBSIZE | tr -dc '0-9')
+        echo "Keys in Valkey after cache warming: ${keys}"
+        test "${keys}" -gt 0
 
     - name: Run codeception tests
       env:
