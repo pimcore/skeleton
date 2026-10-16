@@ -13,6 +13,10 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class ProfilerTest extends KernelTestCase
 {
+    private bool $databaseUrlOverridden = false;
+
+    private string|false $originalDatabaseUrl = false;
+
     protected static function getKernelClass(): string
     {
         return Kernel::class;
@@ -22,8 +26,17 @@ class ProfilerTest extends KernelTestCase
     {
         parent::setUp();
 
+        $this->useTestDatabase();
+
         // The profiler is only available in the dev environment, so boot that one instead of the test environment.
         self::bootKernel(['environment' => 'dev', 'debug' => true]);
+    }
+
+    protected function tearDown(): void
+    {
+        parent::tearDown();
+
+        $this->restoreDatabaseUrl();
     }
 
     public function testPhpinfoRouteIsNotMatched(): void
@@ -65,5 +78,40 @@ class ProfilerTest extends KernelTestCase
             && WebDebugToolbarListener::ENABLED === $container->getParameter('web_profiler.debug_toolbar.mode');
 
         self::assertFalse($enabled);
+    }
+
+    /**
+     * The dev environment does not apply the test database override of config/packages/test, so point the
+     * default connection at the test database explicitly instead of the development one.
+     */
+    private function useTestDatabase(): void
+    {
+        $dsn = $_SERVER['PIMCORE_TEST_DB_DSN'] ?? $_ENV['PIMCORE_TEST_DB_DSN'] ?? getenv('PIMCORE_TEST_DB_DSN');
+        if (!is_string($dsn) || '' === $dsn) {
+            return;
+        }
+
+        $this->originalDatabaseUrl = getenv('DATABASE_URL');
+        $this->databaseUrlOverridden = true;
+
+        $_SERVER['DATABASE_URL'] = $_ENV['DATABASE_URL'] = $dsn;
+        putenv('DATABASE_URL=' . $dsn);
+    }
+
+    private function restoreDatabaseUrl(): void
+    {
+        if (!$this->databaseUrlOverridden) {
+            return;
+        }
+
+        if (false === $this->originalDatabaseUrl) {
+            unset($_SERVER['DATABASE_URL'], $_ENV['DATABASE_URL']);
+            putenv('DATABASE_URL');
+        } else {
+            $_SERVER['DATABASE_URL'] = $_ENV['DATABASE_URL'] = $this->originalDatabaseUrl;
+            putenv('DATABASE_URL=' . $this->originalDatabaseUrl);
+        }
+
+        $this->databaseUrlOverridden = false;
     }
 }
