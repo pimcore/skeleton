@@ -13,9 +13,12 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class ProfilerTest extends KernelTestCase
 {
-    private bool $databaseUrlOverridden = false;
-
-    private string|false $originalDatabaseUrl = false;
+    /**
+     * Original DATABASE_URL of each environment store while it is overridden; null means the store had no entry.
+     *
+     * @var array{server: array{value: mixed}|null, env: array{value: mixed}|null, process: array{value: string}|null}|null
+     */
+    private ?array $originalDatabaseUrl = null;
 
     protected static function getKernelClass(): string
     {
@@ -91,8 +94,12 @@ class ProfilerTest extends KernelTestCase
             return;
         }
 
-        $this->originalDatabaseUrl = getenv('DATABASE_URL');
-        $this->databaseUrlOverridden = true;
+        $processValue = getenv('DATABASE_URL');
+        $this->originalDatabaseUrl = [
+            'server' => array_key_exists('DATABASE_URL', $_SERVER) ? ['value' => $_SERVER['DATABASE_URL']] : null,
+            'env' => array_key_exists('DATABASE_URL', $_ENV) ? ['value' => $_ENV['DATABASE_URL']] : null,
+            'process' => false === $processValue ? null : ['value' => $processValue],
+        ];
 
         $_SERVER['DATABASE_URL'] = $_ENV['DATABASE_URL'] = $dsn;
         putenv('DATABASE_URL=' . $dsn);
@@ -100,18 +107,24 @@ class ProfilerTest extends KernelTestCase
 
     private function restoreDatabaseUrl(): void
     {
-        if (!$this->databaseUrlOverridden) {
+        if (null === $this->originalDatabaseUrl) {
             return;
         }
 
-        if (false === $this->originalDatabaseUrl) {
-            unset($_SERVER['DATABASE_URL'], $_ENV['DATABASE_URL']);
-            putenv('DATABASE_URL');
+        if (null === $this->originalDatabaseUrl['server']) {
+            unset($_SERVER['DATABASE_URL']);
         } else {
-            $_SERVER['DATABASE_URL'] = $_ENV['DATABASE_URL'] = $this->originalDatabaseUrl;
-            putenv('DATABASE_URL=' . $this->originalDatabaseUrl);
+            $_SERVER['DATABASE_URL'] = $this->originalDatabaseUrl['server']['value'];
         }
 
-        $this->databaseUrlOverridden = false;
+        if (null === $this->originalDatabaseUrl['env']) {
+            unset($_ENV['DATABASE_URL']);
+        } else {
+            $_ENV['DATABASE_URL'] = $this->originalDatabaseUrl['env']['value'];
+        }
+
+        putenv('DATABASE_URL' . (null === $this->originalDatabaseUrl['process'] ? '' : '=' . $this->originalDatabaseUrl['process']['value']));
+
+        $this->originalDatabaseUrl = null;
     }
 }
