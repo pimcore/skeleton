@@ -1,2 +1,11 @@
 _pimcore_dev:
     resource: "@PimcoreCoreBundle/config/routing_dev.yaml"
+
+# Symfony's profiler route `/_profiler/phpinfo` prints phpinfo() - including environment variables and secrets - to
+# anyone who can reach the application, and it is not affected by `web_profiler.toolbar`. Redefining the route
+# under the same name replaces it with one that never matches, so the URL falls through to the profiler's token
+# route, which only reports an unknown token, while the rest of the profiler keeps working. Delete this route to
+# get the page back.
+_profiler_phpinfo:
+    path: /_profiler/phpinfo
+    condition: "false"
