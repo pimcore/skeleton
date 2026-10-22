@@ -1,2 +1,7 @@
 imports:
     - { resource: ../../config.yaml }
+
+# The Symfony debug toolbar is off by default, so a dev instance that is reachable from the network does not
+# advertise the profiler on every page. Set it to `true` locally when you want it.
+web_profiler:
+    toolbar: false
