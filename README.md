@@ -58,6 +58,39 @@ You don't need to have a PHP environment with composer installed.
     * Pimcore Studio, using the credentials from `.env` (default `admin` / `admin`):
       <http://localhost/pimcore-studio>
 
+## Symfony profiler (dev environment)
+
+In the `dev` environment (`APP_ENV=dev`) the skeleton ships with two safe defaults for the Symfony web profiler:
+
+* The **debug toolbar is off**.
+* The **`/_profiler/phpinfo` page is blocked**. It prints `phpinfo()` - including environment variables and secrets - to
+  anyone who can reach the instance, and Symfony has no setting to switch it off separately.
+
+The profiler itself keeps collecting data and stays available at `/_profiler`.
+
+Only activate the following on instances that untrusted users cannot reach, and never in production (use `APP_ENV=prod`
+there). After each change, clear the cache - the change does not show up before that - and reload the page:
+`bin/console cache:clear` (with Docker: `docker compose exec php bin/console cache:clear`).
+
+### Activate the toolbar
+
+Set `web_profiler.toolbar` to `true` in `config/packages/dev/config.yaml`:
+
+```yaml
+web_profiler:
+    toolbar: true
+```
+
+### Activate the `/_profiler/phpinfo` page
+
+Delete the `_profiler_phpinfo` route (including its comment) at the end of `config/routes/dev/routes.yaml`, so that only
+the `_pimcore_dev` import remains:
+
+```yaml
+_pimcore_dev:
+    resource: "@PimcoreCoreBundle/config/routing_dev.yaml"
+```
+
 ## Pimcore Platform Version
 By default, Pimcore Platform Version is added as a dependency which ensures installation of compatible and in combination 
 with each other tested versions of additional Pimcore modules. More information about the Platform Version can be found in the 
