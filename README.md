@@ -34,14 +34,15 @@ You don't need to have a PHP environment with composer installed.
 `cd my-project/`
 
 3. Part of the new project is a docker compose file that already defines every required service
-   (PHP, Nginx, MariaDB, Redis, RabbitMQ, OpenSearch, Mercure, and a Supervisord service that runs
-   the messenger workers). You do not need to add any services yourself.
+   (PHP, Nginx, MariaDB, Valkey as Redis-compatible cache, RabbitMQ, OpenSearch, Mercure, and a
+   Supervisord service that runs the messenger workers). You do not need to add any services yourself.
+   The Pimcore cache pool is already wired to Valkey via `REDIS_URL` in `.env` and `config/config.yaml`.
     * Run `sed -i "s|user: '1000:1000'|user: '$(id -u):$(id -g)'|g" docker-compose.yaml` to set the correct user id and group id.
     * Start the services with `docker compose up -d`
 
 4. Install pimcore and initialize the DB
     `docker compose exec php vendor/bin/pimcore-install --install-profile='App\Installer\SkeletonProfile'`
-    * The committed `.env` already provides the database, OpenSearch, RabbitMQ, Mercure, and admin
+    * The committed `.env` already provides the database, OpenSearch, RabbitMQ, Mercure, cache, and admin
       values, so the installer does not re-prompt for them. It only asks for the **product key**
       (product registration is mandatory — see <https://license.pimcore.com/register>).
     * The default admin login is `admin` / `admin` (from `.env`). Change the password after first login.
