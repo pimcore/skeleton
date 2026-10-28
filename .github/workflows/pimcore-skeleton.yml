@@ -142,7 +142,7 @@ jobs:
           -e PIMCORE_ENCRYPTION_SECRET="${PIMCORE_ENCRYPTION_SECRET}" \
           -e PIMCORE_INSTANCE_IDENTIFIER="${PIMCORE_INSTANCE_IDENTIFIER}" \
           -e PIMCORE_PRODUCT_KEY="${PIMCORE_PRODUCT_KEY}" \
-          test-php vendor/bin/pimcore-install --install-profile=App\\Installer\\SkeletonProfile --no-interaction --skip-validation=opensearch --skip-validation=messenger-amqp --skip-validation=mercure
+          test-php vendor/bin/pimcore-install --install-profile=App\\Installer\\SkeletonProfile --no-interaction --skip-validation=opensearch --skip-validation=messenger-amqp --skip-validation=mercure --skip-validation=redis
         # Product registration secrets must be passed as a matched set —
         # the product key is validated against the encryption secret.
         docker compose run --rm -T \
