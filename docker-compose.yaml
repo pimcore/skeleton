@@ -77,8 +77,7 @@ services:
             MERCURE_EXTRA_DIRECTIVES: |-
                 anonymous
                 protocol_version_compatibility 8
-        # Uncomment the following line to enable the development mode
-        # command: /usr/bin/caddy run -config /etc/caddy/Caddyfile.dev
+        # Add "debugger" to MERCURE_EXTRA_DIRECTIVES to serve the debugger UI at /.well-known/mercure/debug/
         ports:
             - "8080:80"
         #    - "8443:443"
