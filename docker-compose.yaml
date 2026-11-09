@@ -66,16 +66,18 @@ services:
             - ./.docker/supervisord.conf:/etc/supervisor/conf.d/pimcore.conf:ro
 
     mercure:
-        image: dunglas/mercure
+        image: dunglas/mercure:v1
         restart: unless-stopped
         environment:
             # Uncomment the following line to disable HTTPS
             SERVER_NAME: ':80'
             MERCURE_PUBLISHER_JWT_KEY: 'CHANGE_ME_THIS_IS_MY_SECRET_KEY_THAT_IS_LONG_ENOUGH_FOR_VALIDATION'
             MERCURE_SUBSCRIBER_JWT_KEY: 'CHANGE_ME_THIS_IS_MY_SECRET_KEY_THAT_IS_LONG_ENOUGH_FOR_VALIDATION'
-            MERCURE_EXTRA_DIRECTIVES: anonymous
-        # Uncomment the following line to enable the development mode
-        # command: /usr/bin/caddy run -config /etc/caddy/Caddyfile.dev
+            # Pimcore Studio still speaks the Mercure 0.x protocol
+            MERCURE_EXTRA_DIRECTIVES: |-
+                anonymous
+                protocol_version_compatibility 8
+        # Add "debugger" to MERCURE_EXTRA_DIRECTIVES to serve the debugger UI at /.well-known/mercure/debug/
         ports:
             - "8080:80"
         #    - "8443:443"
